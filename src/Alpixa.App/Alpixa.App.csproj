@@ -37,6 +37,11 @@
     <CodesignEntitlements Condition="'$(Configuration)' == 'Debug'">Platforms\MacCatalyst\Entitlements.Debug.plist</CodesignEntitlements>
     <CodesignEntitlements Condition="'$(Configuration)' != 'Debug'">Platforms\MacCatalyst\Entitlements.plist</CodesignEntitlements>
     <RuntimeIdentifiers>maccatalyst-arm64;maccatalyst-x64</RuntimeIdentifiers>
+    <!-- EF Core, Scriban and CsvHelper generate code at run time. Keep AOT for speed but allow the
+         interpreter for that dynamic code, otherwise Release builds fail with "Model building is not
+         supported when publishing with NativeAOT". -->
+    <MtouchInterpreter Condition="'$(Configuration)' != 'Debug'">-all</MtouchInterpreter>
+    <PublishAot>false</PublishAot>
   </PropertyGroup>
 
   <ItemGroup>

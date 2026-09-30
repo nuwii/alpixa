@@ -114,24 +114,33 @@ E-postalar bir sunucu üzerinden gönderilir. Üç seçenek vardır:
 
 ## 4. Kurulum
 
+Kurulum dosyaları GitHub'daki **Releases** (Sürümler) sayfasındadır: **https://github.com/nuwii/alpixa/releases/latest**
+
+Sayfanın altındaki **Assets** bölümünde iki dosya bulunur:
+
+| Dosya | Bilgisayar |
+|---|---|
+| `AlpixaSetup.exe` | Windows 10 / 11 (64 bit) |
+| `Alpixa.dmg` | macOS 14 (Sonoma) ve üzeri, Apple Silicon ve Intel |
+
 ### 4.1 Windows
 
-1. `AlpixaSetup.exe` dosyasını indirin.
+1. Releases sayfasından `AlpixaSetup.exe` dosyasını indirin.
 2. Dosyaya çift tıklayın.
-3. Windows "Windows kişisel bilgisayarınızı korudu / Bilinmeyen yayıncı" uyarısı gösterirse **Ek bilgi → Yine de çalıştır** seçin. (İmzalı sürümde bu uyarı çıkmaz.)
+3. Windows "Windows kişisel bilgisayarınızı korudu / Bilinmeyen yayıncı" uyarısı gösterirse **Ek bilgi → Yine de çalıştır** seçin. (Kurulum dosyası dijital imza içermediği için bu uyarı normaldir.)
 4. Kurulum adımlarını **İleri** diyerek tamamlayın. Yönetici (admin) yetkisi gerekmez; uygulama sadece sizin kullanıcı hesabınıza kurulur.
-5. Başlat menüsünden veya masaüstü kısayolundan **Alpixa**'u açın.
+5. Başlat menüsünden veya masaüstü kısayolundan **Alpixa**'yı açın.
 
 ![Windows kurulum ekranı](docs/windows-kurulum.svg)
 
 ### 4.2 macOS
 
-1. `Alpixa.dmg` dosyasını indirin.
+1. Releases sayfasından `Alpixa.dmg` dosyasını indirin.
 2. Dosyaya çift tıklayın. Bir pencere açılır.
 3. **Alpixa** simgesini **Applications** (Uygulamalar) klasörüne sürükleyin.
-4. Launchpad veya Uygulamalar klasöründen Alpixa'yı açın.
-5. İlk açılışta "internetten indirildi" uyarısı çıkarsa **Aç** butonuna basın.
-6. macOS bildirim izni isterse **İzin ver** deyin; gönderim bitince bildirim alırsınız.
+4. Uygulamalar klasöründe **Alpixa**'ya **sağ tıklayıp → Aç** deyin, çıkan uyarıda tekrar **Aç**'a basın. (Paket Apple Developer imzası taşımadığı için ilk açılışta bu gerekir; sonraki açılışlarda normal çift tıklama yeterlidir.)
+   - macOS "Alpixa açılamadı" diyip **Aç** seçeneği sunmazsa: **Sistem Ayarları → Gizlilik ve Güvenlik** sayfasının altındaki **Yine de Aç** düğmesine basın.
+5. macOS bildirim izni isterse **İzin ver** deyin; gönderim bitince bildirim alırsınız.
 
 ![macOS kurulum ekranı](docs/macos-kurulum.svg)
 
@@ -755,6 +764,20 @@ Sadece hızlı testler için: `dotnet test tests/Alpixa.Tests --filter "Category
 Uygulamayı gerçek bir yerel test SMTP sunucusuyla (smtp4dev veya Papercut) elle denemek için sunucuyu `localhost:2525`'te başlatın ve Alpixa'da sağlayıcı olarak **Yerel test sunucusu (smtp4dev / Papercut)** seçerek profil ekleyin. Bu profilde alan adı kontrolleri atlanır.
 
 ### 16.4 Kurulum paketi üretme
+
+**Otomatik (önerilen):** `.github/workflows/release.yml` iki kurulum dosyasını da GitHub'ın sunucularında üretir; kendi bilgisayarınızda Windows veya Xcode gerekmez.
+
+- Deneme derlemesi: GitHub'da **Actions → Build installers → Run workflow**. Bitince dosyalar çalıştırmanın sayfasında **Artifacts** altında olur.
+- Yayınlama: yeni bir sürüm etiketi gönderin; dosyalar otomatik olarak **Releases** sayfasına eklenir.
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+Bu yolla üretilen paketler imzasızdır (bkz. [4. Kurulum](#4-kurulum)). İmzalı paket için aşağıdaki betikleri sertifikalarınızla kendi bilgisayarınızda çalıştırın.
+
+**Elle:**
 
 Windows (`artifacts/AlpixaSetup.exe`, self-contained; Windows'ta çalıştırın):
 

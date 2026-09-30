@@ -47,9 +47,16 @@ dotnet publish "$PROJECT" \
   -p:ApplicationDisplayVersion="$VERSION" \
   "${SIGN_ARGS[@]}"
 
-APP="$(find "$ROOT/src/Alpixa.App/bin/$CONFIGURATION/net10.0-maccatalyst" -maxdepth 3 -name "*.app" -type d | head -n 1)"
+# The universal (Apple Silicon + Intel) bundle sits directly under the framework folder;
+# the per-architecture copies live in maccatalyst-arm64/ and maccatalyst-x64/.
+APP="$ROOT/src/Alpixa.App/bin/$CONFIGURATION/net10.0-maccatalyst/Alpixa.app"
 [[ -d "$APP" ]] || fail ".app paketi bulunamadi."
 cp -R "$APP" "$ARTIFACTS/mac/Alpixa.app"
+
+if [[ "$UNSIGNED" == true ]]; then
+  # Apple Silicon refuses to run code with no signature at all; an ad-hoc signature is enough to open it.
+  codesign --force --deep --sign - "$ARTIFACTS/mac/Alpixa.app"
+fi
 
 echo "==> DMG olusturuluyor..."
 STAGE="$(mktemp -d)"
