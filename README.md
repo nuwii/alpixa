@@ -1,6 +1,30 @@
-# Alpixa
+<p align="center">
+  <img src="docs/logo.svg" width="96" alt="Alpixa logosu">
+</p>
 
-**Windows ve macOS için toplu e-posta gönderim masaüstü uygulaması**
+<h1 align="center">Alpixa</h1>
+
+<p align="center">
+  <b>Windows ve macOS için toplu e-posta gönderim masaüstü uygulaması</b><br>
+  Ücretsiz · Açık kaynak · Verileriniz sadece kendi bilgisayarınızda
+</p>
+
+<p align="center">
+  <a href="https://github.com/nuwii/alpixa/releases/latest/download/AlpixaSetup.exe"><img src="https://img.shields.io/badge/Windows%20i%C3%A7in%20indir-AlpixaSetup.exe-6366F1?style=for-the-badge&logo=windows&logoColor=white" alt="Windows için indir"></a>
+  <a href="https://github.com/nuwii/alpixa/releases/latest/download/Alpixa.dmg"><img src="https://img.shields.io/badge/Mac%20i%C3%A7in%20indir-Alpixa.dmg-A855F7?style=for-the-badge&logo=apple&logoColor=white" alt="Mac için indir"></a>
+</p>
+
+<p align="center">
+  <a href="https://nuwii.github.io/alpixa/">Tanıtım sayfası</a> ·
+  <a href="https://github.com/nuwii/alpixa/releases">Tüm sürümler</a> ·
+  <a href="#4-kurulum">Kurulum rehberi</a>
+</p>
+
+<p align="center">
+  <img src="docs/panel.png" width="900" alt="Alpixa panel ekranı">
+</p>
+
+> Windows 10/11 (64 bit) ve macOS 14 Sonoma veya üzeri (Apple Silicon ve Intel). İlk açılışta çıkan güvenlik uyarısının nasıl geçileceği [Kurulum](#4-kurulum) bölümünde anlatılır.
 
 ---
 
@@ -190,7 +214,6 @@ Sihirbazı **Şimdilik atla** ile geçebilirsiniz. Tekrar açmak için: **Ayarla
 
 - Açık/koyu tema, işletim sisteminizin temasını otomatik izler.
 
-![Panel, açık tema](docs/panel-acik-tema.png)
 - Pencerenin boyutu ve konumu hatırlanır (en küçük boyut 1100x700).
 
 ---
