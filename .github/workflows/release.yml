@@ -19,8 +19,8 @@ jobs:
   windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
         with:
           global-json-file: global.json
       - name: Install MAUI workload
@@ -44,7 +44,7 @@ jobs:
           foreach ($lang in 'en','de','fr','es','ru') {
             if (-not (Test-Path "artifacts/win-x64/$lang/Alpixa.App.resources.dll")) { throw "Missing $lang translations" }
           }
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: AlpixaSetup-windows
           path: artifacts/AlpixaSetup.exe
@@ -53,13 +53,13 @@ jobs:
   macos:
     runs-on: xcode-27 # Xcode 27 is required by .NET 10 for Mac Catalyst
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Select Xcode 27.0
         # .NET for Mac Catalyst 27.0 requires exactly Xcode 27.0 (not the 27.x betas on the image).
         run: |
           sudo xcode-select -s /Applications/Xcode_27.0.app/Contents/Developer
           xcodebuild -version
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v6
         with:
           global-json-file: global.json
       - name: Install MAUI workload
@@ -68,7 +68,7 @@ jobs:
         run: |
           if [[ "$GITHUB_REF_TYPE" == "tag" ]]; then export VERSION="${GITHUB_REF_NAME#v}"; fi
           ./build/build-macos.sh --unsigned
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: Alpixa-macos
           path: artifacts/Alpixa.dmg
@@ -79,7 +79,7 @@ jobs:
     needs: [windows, macos]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           path: dist
           merge-multiple: true

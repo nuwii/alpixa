@@ -84,7 +84,10 @@ public partial class App : Application
 
         if (scene.SizeRestrictions is { } restrictions)
             restrictions.MinimumSize = new CoreGraphics.CGSize(MinWidth, MinHeight);
-        var frame = scene.CoordinateSpace.Bounds;
+        // macOS 26 moved the scene's coordinate space under EffectiveGeometry.
+        var frame = OperatingSystem.IsMacCatalystVersionAtLeast(26)
+            ? scene.EffectiveGeometry.CoordinateSpace.Bounds
+            : scene.CoordinateSpace.Bounds;
         var size = new CoreGraphics.CGSize(width, height);
         if (frame.Width < size.Width || frame.Height < size.Height)
             scene.RequestGeometryUpdate(
