@@ -54,11 +54,11 @@ jobs:
     runs-on: xcode-27 # Xcode 27 is required by .NET 10 for Mac Catalyst
     steps:
       - uses: actions/checkout@v4
-      - name: Select newest Xcode
+      - name: Select Xcode 27.0
+        # .NET for Mac Catalyst 27.0 requires exactly Xcode 27.0 (not the 27.x betas on the image).
         run: |
-          XCODE=$(ls -d /Applications/Xcode*.app | sort -V | tail -n 1)
-          echo "Using $XCODE"
-          sudo xcode-select -s "$XCODE/Contents/Developer"
+          sudo xcode-select -s /Applications/Xcode_27.0.app/Contents/Developer
+          xcodebuild -version
       - uses: actions/setup-dotnet@v4
         with:
           global-json-file: global.json
