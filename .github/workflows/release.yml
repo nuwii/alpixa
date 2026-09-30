@@ -34,6 +34,16 @@ jobs:
         run: |
           $version = if ($env:GITHUB_REF_TYPE -eq 'tag') { $env:GITHUB_REF_NAME.TrimStart('v') } else { '1.0.0' }
           ./build/build-windows.ps1 -Version $version
+      - name: Check translations are packaged
+        shell: pwsh
+        run: |
+          $asm = [Reflection.Assembly]::LoadFile((Resolve-Path artifacts/win-x64/Alpixa.App.dll))
+          $names = $asm.GetManifestResourceNames()
+          $names | Write-Host
+          if (-not ($names -contains 'Alpixa.App.Resources.Strings.AppResources.resources')) { throw 'AppResources is missing from Alpixa.App.dll' }
+          foreach ($lang in 'en','de','fr','es','ru') {
+            if (-not (Test-Path "artifacts/win-x64/$lang/Alpixa.App.resources.dll")) { throw "Missing $lang translations" }
+          }
       - uses: actions/upload-artifact@v4
         with:
           name: AlpixaSetup-windows

@@ -48,17 +48,10 @@
     <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#6366F1" />
     <MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#6366F1" BaseSize="128,128" />
     <EmbeddedResource Include="appsettings.json" LogicalName="Alpixa.App.appsettings.json" />
+    <!-- Fixed manifest name so ResourceManager finds the strings on every platform. -->
+    <EmbeddedResource Update="Resources\Strings\AppResources*.resx" ManifestResourceName="Alpixa.App.Resources.Strings.%(Filename)" />
   </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="Resources\Strings\AppResources.resx">
-      <StronglyTypedLanguage>CSharp</StronglyTypedLanguage>
-      <StronglyTypedNamespace>Alpixa.App.Resources.Strings</StronglyTypedNamespace>
-      <StronglyTypedClassName>AppResources</StronglyTypedClassName>
-      <StronglyTypedFileName>$(IntermediateOutputPath)AppResources.Designer.cs</StronglyTypedFileName>
-      <PublicClass>true</PublicClass>
-    </EmbeddedResource>
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Alpixa.Core\Alpixa.Core.csproj" />
