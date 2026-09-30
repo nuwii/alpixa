@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using CommunityToolkit.Maui;
 using Alpixa.App.Controls;
 using Alpixa.App.Services;
@@ -96,27 +97,45 @@ public static class MauiProgram
 
     private static AlpixaOptions LoadOptions(IAppPaths paths)
     {
-        var options = new AlpixaOptions();
         var jsonOptions = new JsonSerializerOptions { PropertyNameCaseInsensitive = true, ReadCommentHandling = JsonCommentHandling.Skip };
+        var nodeOptions = new JsonDocumentOptions { CommentHandling = JsonCommentHandling.Skip };
+        var merged = new JsonObject();
 
         using (var stream = typeof(MauiProgram).Assembly.GetManifestResourceStream("Alpixa.App.appsettings.json"))
         {
-            if (stream is not null)
-                options = JsonSerializer.Deserialize<AlpixaOptions>(stream, jsonOptions) ?? options;
+            if (stream is not null && JsonNode.Parse(stream, documentOptions: nodeOptions) is JsonObject embedded)
+                merged = embedded;
         }
 
+        // The data-folder file only overrides the values it contains (e.g. OAuth ids saved from Settings).
         var overridePath = Path.Combine(paths.DataDirectory, "appsettings.json");
         if (File.Exists(overridePath))
         {
             try
             {
-                options = JsonSerializer.Deserialize<AlpixaOptions>(File.ReadAllText(overridePath), jsonOptions) ?? options;
+                if (JsonNode.Parse(File.ReadAllText(overridePath), documentOptions: nodeOptions) is JsonObject local)
+                    Merge(merged, local);
             }
             catch (JsonException ex)
             {
                 Log.Warning(ex, "Ignoring invalid appsettings.json override");
             }
         }
-        return options;
+        return merged.Deserialize<AlpixaOptions>(jsonOptions) ?? new AlpixaOptions();
+    }
+
+    private static void Merge(JsonObject target, JsonObject source)
+    {
+        foreach (var (key, value) in source.ToList())
+        {
+            var existing = target.FirstOrDefault(p => string.Equals(p.Key, key, StringComparison.OrdinalIgnoreCase));
+            if (existing.Value is JsonObject targetChild && value is JsonObject sourceChild)
+            {
+                Merge(targetChild, sourceChild);
+                continue;
+            }
+            if (existing.Key is not null) target.Remove(existing.Key);
+            target[key] = value?.DeepClone();
+        }
     }
 }

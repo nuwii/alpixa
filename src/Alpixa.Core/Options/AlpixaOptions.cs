@@ -3,7 +3,7 @@ namespace Alpixa.Core.Options;
 public sealed class AlpixaOptions
 {
     public OAuthOptions OAuth { get; set; } = new();
-    public string HelpBaseUrl { get; set; } = "https://github.com/nuwii/alpixa#";
+    public string HelpBaseUrl { get; set; } = "https://github.com/nuwii/alpixa/blob/main/README.md#";
     public int BackgroundCheckMinutes { get; set; } = 15;
     public string[] DnsblIpZones { get; set; } = ["zen.spamhaus.org", "b.barracudacentral.org", "bl.spamcop.net"];
     public string[] DnsblDomainZones { get; set; } = ["dbl.spamhaus.org"];
