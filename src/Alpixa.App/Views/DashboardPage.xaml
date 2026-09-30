@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     xmlns:m="clr-namespace:Alpixa.Core.Models;assembly=Alpixa.Core"
+                     x:Class="Alpixa.App.Views.DashboardPage"
+                     x:DataType="vm:DashboardViewModel"
+                     Title="{loc:Tr Nav_Dashboard}">
+    <ScrollView>
+        <VerticalStackLayout Padding="36,28,36,36" Spacing="22" MaximumWidthRequest="1240">
+            <fx:PageHeader Eyebrow="{Binding Greeting}" Title="{loc:Tr Dashboard_Title}" Subtitle="{loc:Tr Dashboard_Subtitle}" Icon="Dashboard">
+                <fx:PageHeader.Actions>
+                    <HorizontalStackLayout Spacing="10">
+                        <fx:WithInfo Info="Menu_ImportList">
+                            <Button Text="{loc:Tr Menu_ImportList}" Style="{StaticResource SecondaryButton}" Command="{Binding ImportListCommand}" />
+                        </fx:WithInfo>
+                        <fx:WithInfo Info="Menu_NewCampaign">
+                            <Button Text="{loc:Tr Menu_NewCampaign}" Command="{Binding NewCampaignCommand}" />
+                        </fx:WithInfo>
+                    </HorizontalStackLayout>
+                </fx:PageHeader.Actions>
+            </fx:PageHeader>
+
+            <Border Style="{StaticResource WarningCard}" IsVisible="{Binding SetupIncomplete}">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="16">
+                    <Border Style="{StaticResource IconBadge}" VerticalOptions="Center" Background="#F59E0B">
+                        <Path Data="{fx:Icon Sparkle}" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" Spacing="4" VerticalOptions="Center">
+                        <Label Text="{loc:Tr Dashboard_SetupTitle}" Style="{StaticResource SectionTitle}" />
+                        <Label Text="{loc:Tr Dashboard_SetupBody}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                    <fx:WithInfo Info="Dashboard_SetupButton" Grid.Column="2" VerticalOptions="Center">
+                        <Button Text="{loc:Tr Dashboard_SetupButton}" Command="{Binding OpenSetupCommand}" />
+                    </fx:WithInfo>
+                </Grid>
+            </Border>
+
+            <Border Style="{StaticResource WarningCard}" IsVisible="{Binding HasNoProfile}">
+                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                    <Label Text="{loc:Tr Dashboard_NoProfile}" VerticalOptions="Center" />
+                    <fx:WithInfo Info="Profiles_New" Grid.Column="1" VerticalOptions="Center">
+                        <Button Text="{loc:Tr Profiles_New}" Command="{Binding AddProfileCommand}" />
+                    </fx:WithInfo>
+                </Grid>
+            </Border>
+
+            <Grid ColumnDefinitions="*,*,*,*" ColumnSpacing="16">
+                <Border Grid.Column="0" Style="{StaticResource Card}" Padding="20,18">
+                    <Grid RowDefinitions="Auto,Auto,Auto" RowSpacing="2">
+                        <Border Style="{StaticResource Chip}" BackgroundColor="#6366F1" Padding="8" HorizontalOptions="Start" Margin="0,0,0,10">
+                            <Path Data="{fx:Icon Users}" WidthRequest="16" HeightRequest="16" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                        </Border>
+                        <Label Grid.Row="1" Text="{Binding ContactCount}" Style="{StaticResource StatValue}" />
+                        <Label Grid.Row="2" Text="{loc:Tr Dashboard_ActiveContacts}" Style="{StaticResource MutedLabel}" />
+                    </Grid>
+                </Border>
+                <Border Grid.Column="1" Style="{StaticResource Card}" Padding="20,18">
+                    <Grid RowDefinitions="Auto,Auto,Auto" RowSpacing="2">
+                        <Border Style="{StaticResource Chip}" BackgroundColor="#0EA5E9" Padding="8" HorizontalOptions="Start" Margin="0,0,0,10">
+                            <Path Data="{fx:Icon File}" WidthRequest="16" HeightRequest="16" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                        </Border>
+                        <Label Grid.Row="1" Text="{Binding ListCount}" Style="{StaticResource StatValue}" />
+                        <Label Grid.Row="2" Text="{loc:Tr Dashboard_Lists}" Style="{StaticResource MutedLabel}" />
+                    </Grid>
+                </Border>
+                <Border Grid.Column="2" Style="{StaticResource Card}" Padding="20,18">
+                    <Grid RowDefinitions="Auto,Auto,Auto" RowSpacing="2">
+                        <Border Style="{StaticResource Chip}" BackgroundColor="#A855F7" Padding="8" HorizontalOptions="Start" Margin="0,0,0,10">
+                            <Path Data="{fx:Icon Send}" WidthRequest="16" HeightRequest="16" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                        </Border>
+                        <Label Grid.Row="1" Text="{Binding SentLast30Days}" Style="{StaticResource StatValue}" />
+                        <Label Grid.Row="2" Text="{loc:Tr Dashboard_Sent30}" Style="{StaticResource MutedLabel}" />
+                    </Grid>
+                </Border>
+                <Border Grid.Column="3" Style="{StaticResource Card}" Padding="20,18">
+                    <Grid RowDefinitions="Auto,Auto,Auto" RowSpacing="2">
+                        <Border Style="{StaticResource Chip}" BackgroundColor="#F43F5E" Padding="8" HorizontalOptions="Start" Margin="0,0,0,10">
+                            <Path Data="{fx:Icon Shield}" WidthRequest="16" HeightRequest="16" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                        </Border>
+                        <Label Grid.Row="1" Text="{Binding SuppressedCount}" Style="{StaticResource StatValue}" />
+                        <Label Grid.Row="2" Text="{loc:Tr Dashboard_Suppressed}" Style="{StaticResource MutedLabel}" />
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <Border Style="{StaticResource WarningCard}" IsVisible="{Binding Warnings.Count, Converter={StaticResource HasItems}}">
+                <VerticalStackLayout Spacing="6" BindableLayout.ItemsSource="{Binding Warnings}">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="10">
+                                <Ellipse WidthRequest="8" HeightRequest="8" Fill="{StaticResource StatusWarning}" VerticalOptions="Start" Margin="0,6,0,0" />
+                                <Label Grid.Column="1" Text="{Binding .}" />
+                            </Grid>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </VerticalStackLayout>
+            </Border>
+
+            <Grid ColumnDefinitions="2*,*" ColumnSpacing="16">
+                <Border Style="{StaticResource StaticCard}">
+                    <VerticalStackLayout Spacing="12">
+                        <Label Text="{loc:Tr Dashboard_Recent}" Style="{StaticResource SectionTitle}" />
+                        <Label Text="{loc:Tr Dashboard_NoCampaigns}" Style="{StaticResource MutedLabel}" IsVisible="{Binding RecentCampaigns.Count, Converter={StaticResource NoItems}}" />
+                        <VerticalStackLayout BindableLayout.ItemsSource="{Binding RecentCampaigns}" Spacing="8">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="m:CampaignReport">
+                                    <Border Style="{StaticResource InsetBox}">
+                                        <Grid ColumnDefinitions="Auto,*,Auto,Auto" ColumnSpacing="14">
+                                            <Border Style="{StaticResource IconBadge}" WidthRequest="36" HeightRequest="36" Padding="9" VerticalOptions="Center">
+                                                <Path Data="{fx:Icon Send}" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                                            </Border>
+                                            <VerticalStackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                                                <Label Text="{Binding Name}" FontAttributes="Bold" />
+                                                <Label Text="{Binding Status, Converter={StaticResource EnumText}}" Style="{StaticResource MutedLabel}" />
+                                            </VerticalStackLayout>
+                                            <Label Grid.Column="2" VerticalOptions="Center" LineBreakMode="NoWrap">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding Sent}" FontAttributes="Bold" FontSize="16" />
+                                                        <Span Text=" / " />
+                                                        <Span Text="{Binding Total}" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <fx:WithInfo Info="Dashboard_Common_Open" Grid.Column="3" VerticalOptions="Center">
+                                                <Button Text="{loc:Tr Common_Open}" Style="{StaticResource SecondaryButton}"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:DashboardViewModel}}, Path=OpenCampaignCommand, x:DataType=vm:DashboardViewModel}"
+                                                    CommandParameter="{Binding .}" />
+                                            </fx:WithInfo>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Column="1" Style="{StaticResource HeroCard}">
+                    <VerticalStackLayout Spacing="10">
+                        <Border Style="{StaticResource IconBadge}">
+                            <Path Data="{fx:Icon Shield}" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                        </Border>
+                        <Label Text="{loc:Tr Dashboard_TipsTitle}" Style="{StaticResource SectionTitle}" />
+                        <Label Text="{loc:Tr Dashboard_Tips}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</views:AlpixaPage>

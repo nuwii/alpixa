@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     x:Class="Alpixa.App.Views.CampaignDetailPage"
+                     x:DataType="vm:CampaignDetailViewModel"
+                     Title="{Binding Name}">
+    <ScrollView>
+        <VerticalStackLayout Padding="36,28,36,36" Spacing="18" MaximumWidthRequest="1140">
+            <fx:PageHeader Title="{Binding Name}" Subtitle="{Binding ModeText}" Eyebrow="{Binding Status, Converter={StaticResource EnumText}}" Icon="Send" />
+
+            <Border Style="{StaticResource WarningCard}" IsVisible="{Binding PauseReason, Converter={StaticResource NotNull}}">
+                <Label Text="{Binding PauseReason}" />
+            </Border>
+            <Label Text="{Binding ScheduleText}" IsVisible="{Binding ScheduleText, Converter={StaticResource NotNull}}" TextColor="{StaticResource StatusInfo}" />
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="10">
+                    <ProgressBar Progress="{Binding Progress}" HeightRequest="10" />
+                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="10">
+                        <Label Text="{Binding Progress, StringFormat='{0:P1}'}" FontSize="20" FontAttributes="Bold" />
+                        <Label Grid.Column="1" Text="{Binding RateText}" VerticalOptions="Center" />
+                        <Label Grid.Column="2" Text="{Binding EtaText}" VerticalOptions="Center" HorizontalOptions="End" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <Grid ColumnDefinitions="*,*,*,*,*" ColumnSpacing="12">
+                <Border Style="{StaticResource Card}">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Report.Sent}" Style="{StaticResource StatValue}" />
+                        <Label Text="{loc:Tr Detail_Sent}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Border>
+                <Border Grid.Column="1" Style="{StaticResource Card}">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Report.Pending}" Style="{StaticResource StatValue}" />
+                        <Label Text="{loc:Tr Detail_Pending}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Border>
+                <Border Grid.Column="2" Style="{StaticResource Card}">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Report.Failed}" Style="{StaticResource StatValue}" />
+                        <Label Text="{loc:Tr Detail_Failed}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Border>
+                <Border Grid.Column="3" Style="{StaticResource Card}">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Report.HardBounces}" Style="{StaticResource StatValue}" />
+                        <Label Text="{loc:Tr Detail_Bounces}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Border>
+                <Border Grid.Column="4" Style="{StaticResource Card}">
+                    <VerticalStackLayout>
+                        <Label Text="{Binding Report.Unsubscribes}" Style="{StaticResource StatValue}" />
+                        <Label Text="{loc:Tr Detail_Unsubscribes}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+            <Label Style="{StaticResource MutedLabel}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{loc:Tr Detail_Skipped}" />
+                        <Span Text="{Binding Report.Skipped}" FontAttributes="Bold" />
+                        <Span Text=" · " />
+                        <Span Text="{loc:Tr Detail_Uncertain}" />
+                        <Span Text="{Binding Report.Uncertain}" FontAttributes="Bold" />
+                        <Span Text=" · " />
+                        <Span Text="{loc:Tr Detail_Complaints}" />
+                        <Span Text="{Binding Report.Complaints}" FontAttributes="Bold" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{loc:Tr Detail_BackgroundNote}" Style="{StaticResource MutedLabel}" />
+
+            <HorizontalStackLayout Spacing="10">
+                <fx:WithInfo Info="Campaigns_Pause" IsVisible="{Binding CanPause}">
+                    <Button Text="{loc:Tr Campaigns_Pause}" Style="{StaticResource SecondaryButton}" Command="{Binding PauseCommand}" />
+                </fx:WithInfo>
+                <fx:WithInfo Info="Campaigns_Resume" IsVisible="{Binding CanResume}">
+                    <Button Text="{loc:Tr Campaigns_Resume}" Command="{Binding ResumeCommand}" />
+                </fx:WithInfo>
+                <fx:WithInfo Info="Campaigns_Cancel" IsVisible="{Binding CanCancel}">
+                    <Button Text="{loc:Tr Campaigns_Cancel}" Style="{StaticResource DangerButton}" Command="{Binding CancelCommand}" />
+                </fx:WithInfo>
+                <fx:WithInfo Info="Detail_OpenReports">
+                    <Button Text="{loc:Tr Detail_OpenReports}" Style="{StaticResource SecondaryButton}" Command="{Binding OpenReportsCommand}" />
+                </fx:WithInfo>
+                <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</views:AlpixaPage>

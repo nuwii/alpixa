@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <!-- Brand -->
+    <Color x:Key="Primary">#6366F1</Color>
+    <Color x:Key="PrimaryDark">#8B8DFB</Color>
+    <Color x:Key="Accent">#A855F7</Color>
+    <Color x:Key="AccentPink">#EC4899</Color>
+    <Color x:Key="OnPrimary">#FFFFFF</Color>
+
+    <!-- Light theme -->
+    <Color x:Key="PageLight">#F4F5FA</Color>
+    <Color x:Key="CardLight">#FFFFFF</Color>
+    <Color x:Key="SidebarLight">#FBFBFE</Color>
+    <Color x:Key="InputLight">#F3F4F9</Color>
+    <Color x:Key="BorderLight">#E5E7F0</Color>
+    <Color x:Key="TextLight">#0F172A</Color>
+    <Color x:Key="MutedLight">#64748B</Color>
+    <Color x:Key="SoftLight">#EEF0FF</Color>
+
+    <!-- Dark theme -->
+    <Color x:Key="PageDark">#0A0C12</Color>
+    <Color x:Key="CardDark">#12151E</Color>
+    <Color x:Key="SidebarDark">#0D1017</Color>
+    <Color x:Key="InputDark">#0C0F16</Color>
+    <Color x:Key="BorderDark">#222838</Color>
+    <Color x:Key="TextDark">#EEF1F8</Color>
+    <Color x:Key="MutedDark">#8B94A8</Color>
+    <Color x:Key="SoftDark">#1A1D33</Color>
+
+    <!-- Status -->
+    <Color x:Key="StatusPass">#22C55E</Color>
+    <Color x:Key="StatusInfo">#38BDF8</Color>
+    <Color x:Key="StatusWarning">#F59E0B</Color>
+    <Color x:Key="StatusFail">#F43F5E</Color>
+
+    <LinearGradientBrush x:Key="BrandGradient" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#6366F1" Offset="0" />
+        <GradientStop Color="#A855F7" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="BrandGradientSoftDark" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#1E1B4B" Offset="0" />
+        <GradientStop Color="#2E1065" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="BrandGradientSoftLight" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#EEF2FF" Offset="0" />
+        <GradientStop Color="#F5EDFF" Offset="1" />
+    </LinearGradientBrush>
+</ResourceDictionary>

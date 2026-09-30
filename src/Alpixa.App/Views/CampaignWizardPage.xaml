@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     xmlns:m="clr-namespace:Alpixa.Core.Models;assembly=Alpixa.Core"
+                     xmlns:c="clr-namespace:Alpixa.Infrastructure.Contacts;assembly=Alpixa.Infrastructure"
+                     x:Class="Alpixa.App.Views.CampaignWizardPage"
+                     x:DataType="vm:CampaignWizardViewModel"
+                     Title="{loc:Tr Wizard_Title}">
+    <Grid RowDefinitions="Auto,*,Auto" Padding="36,28,36,24" RowSpacing="18">
+        <VerticalStackLayout Spacing="16" MaximumWidthRequest="940" HorizontalOptions="Fill">
+            <fx:PageHeader Title="{loc:Tr Wizard_Title}" Eyebrow="{Binding StepTitle}" Icon="Send" />
+            <fx:StepBar Step="{Binding Step}" Count="6" />
+        </VerticalStackLayout>
+
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout x:Name="Steps" Spacing="12" MaximumWidthRequest="940" HorizontalOptions="Fill">
+
+                <!-- 1. Profile -->
+                <Border Style="{StaticResource Card}" IsVisible="{Binding IsStep1}">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="{loc:Tr Wizard_Step1Hint}" Style="{StaticResource MutedLabel}" />
+                        <Picker ItemsSource="{Binding Profiles}" SelectedItem="{Binding SelectedProfile}" ItemDisplayBinding="{Binding Name, x:DataType=m:SenderProfile}" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- 2. List -->
+                <Border Style="{StaticResource Card}" IsVisible="{Binding IsStep2}">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="{loc:Tr Wizard_Step2Hint}" Style="{StaticResource MutedLabel}" />
+                        <Picker ItemsSource="{Binding Lists}" SelectedItem="{Binding SelectedList}" ItemDisplayBinding="{Binding Name, x:DataType=c:ContactListSummary}" />
+                        <Label Style="{StaticResource MutedLabel}">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding SelectedList.Active}" FontAttributes="Bold" />
+                                    <Span Text="{loc:Tr Lists_ActiveSuffix}" />
+                                    <Span Text="{Binding SelectedList.Total}" />
+                                    <Span Text="{loc:Tr Wizard_TotalSuffix}" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- 3. Template -->
+                <Border Style="{StaticResource Card}" IsVisible="{Binding IsStep3}">
+                    <VerticalStackLayout Spacing="4">
+                        <fx:InfoLabel Text="{loc:Tr Wizard_CampaignName}" Info="Wizard_CampaignName" LabelStyle="{StaticResource FieldLabel}" />
+                        <Entry Text="{Binding CampaignName}" />
+                        <fx:InfoLabel Text="{loc:Tr Wizard_Template}" Info="Wizard_Template" LabelStyle="{StaticResource FieldLabel}" />
+                        <Picker ItemsSource="{Binding Templates}" SelectedItem="{Binding SelectedTemplate}" ItemDisplayBinding="{Binding Name, x:DataType=m:EmailTemplate}" />
+                        <fx:InfoLabel Text="{loc:Tr TemplateEdit_Subject}" Info="TemplateEdit_Subject" LabelStyle="{StaticResource FieldLabel}" />
+                        <Entry Text="{Binding Subject}" />
+                        <Label Text="{loc:Tr Wizard_Step3Hint}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- 4. Checks -->
+                <VerticalStackLayout Spacing="12" IsVisible="{Binding IsStep4}">
+                    <Border Style="{StaticResource Card}">
+                        <VerticalStackLayout Spacing="6">
+                            <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="8">
+                                <Label Text="{loc:Tr Nav_DomainHealth}" Style="{StaticResource SectionTitle}" />
+                                <fx:WithInfo Info="Health_Recheck" Grid.Column="1">
+                                    <Button Text="{loc:Tr Health_Recheck}" Style="{StaticResource SecondaryButton}" Command="{Binding RecheckCommand}" />
+                                </fx:WithInfo>
+                                <fx:WithInfo Info="Wizard_OpenHealth" Grid.Column="2">
+                                    <Button Text="{loc:Tr Wizard_OpenHealth}" Style="{StaticResource SecondaryButton}" Command="{Binding OpenDomainHealthCommand}" />
+                                </fx:WithInfo>
+                            </Grid>
+                            <Label Text="{Binding HealthSummary}" FontAttributes="Bold" />
+                            <VerticalStackLayout BindableLayout.ItemsSource="{Binding HealthChecks}" Spacing="4">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate x:DataType="m:DomainCheck">
+                                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="10">
+                                            <Ellipse WidthRequest="10" HeightRequest="10" Fill="{Binding Status, Converter={StaticResource StatusColor}}" VerticalOptions="Start" Margin="0,5,0,0" />
+                                            <Label Grid.Column="1" FontSize="13">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding Title}" FontAttributes="Bold" />
+                                                        <Span Text=" — " />
+                                                        <Span Text="{Binding Message}" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                        </Grid>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </VerticalStackLayout>
+                            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6" IsVisible="{Binding HealthBlocks}" Margin="0,6,0,0">
+                                <CheckBox IsChecked="{Binding HealthOverride}" VerticalOptions="Center" Color="{StaticResource StatusFail}" />
+                                <fx:InfoLabel Text="{loc:Tr Wizard_Override}" Info="Wizard_Override" Wrap="True" Grid.Column="1" VerticalOptions="Center" TextColor="{StaticResource StatusFail}" />
+                            </Grid>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Style="{StaticResource Card}">
+                        <VerticalStackLayout Spacing="6">
+                            <fx:InfoLabel Text="{loc:Tr Wizard_ContentCheck}" Info="Wizard_ContentCheck" LabelStyle="{StaticResource SectionTitle}" />
+                            <Label Text="{Binding TemplateErrors}" TextColor="{StaticResource StatusFail}" IsVisible="{Binding TemplateErrors, Converter={StaticResource NotNull}}" />
+                            <Label Text="{loc:Tr TemplateEdit_LintClean}" Style="{StaticResource MutedLabel}" IsVisible="{Binding LintIssues.Count, Converter={StaticResource NoItems}}" />
+                            <VerticalStackLayout BindableLayout.ItemsSource="{Binding LintIssues}" Spacing="4">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate x:DataType="m:LintIssue">
+                                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="8">
+                                            <Ellipse WidthRequest="10" HeightRequest="10" Fill="{Binding Severity, Converter={StaticResource StatusColor}}" VerticalOptions="Start" Margin="0,4,0,0" />
+                                            <Label Grid.Column="1" Text="{Binding Message}" FontSize="13" />
+                                        </Grid>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </VerticalStackLayout>
+                            <Label Text="{loc:Tr Wizard_LintBlocks}" TextColor="{StaticResource StatusFail}" IsVisible="{Binding LintBlocks}" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Style="{StaticResource Card}">
+                        <VerticalStackLayout Spacing="6">
+                            <fx:InfoLabel Text="{loc:Tr Wizard_Volume}" Info="Wizard_Volume" LabelStyle="{StaticResource SectionTitle}" />
+                            <Label Text="{Binding RecipientsText}" />
+                            <Label Text="{Binding QuotaText}" Style="{StaticResource MutedLabel}" />
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border Style="{StaticResource Card}">
+                        <VerticalStackLayout Spacing="6">
+                            <fx:InfoLabel Text="{loc:Tr Wizard_TestTitle}" Info="Wizard_TestTitle" LabelStyle="{StaticResource SectionTitle}" />
+                            <Label Text="{loc:Tr Wizard_TestHint}" Style="{StaticResource MutedLabel}" />
+                            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                                <Entry Text="{Binding SeedAddresses}" Placeholder="ben@gmail.com, ben@outlook.com" />
+                                <fx:WithInfo Info="Wizard_SendTest" Grid.Column="1">
+                                    <Button Text="{loc:Tr Wizard_SendTest}" Command="{Binding SendTestCommand}" />
+                                </fx:WithInfo>
+                            </Grid>
+                            <VerticalStackLayout BindableLayout.ItemsSource="{Binding TestResults}">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate x:DataType="x:String">
+                                        <Label Text="{Binding .}" FontSize="13" />
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </VerticalStackLayout>
+                        </VerticalStackLayout>
+                    </Border>
+                </VerticalStackLayout>
+
+                <!-- 5. Mode and time -->
+                <Border Style="{StaticResource Card}" IsVisible="{Binding IsStep5}">
+                    <VerticalStackLayout Spacing="8">
+                        <fx:InfoLabel Text="{loc:Tr Wizard_Mode}" Info="Wizard_Mode" LabelStyle="{StaticResource SectionTitle}" />
+                        <RadioButton IsChecked="{Binding IsSequential}" Content="{loc:Tr Wizard_ModeSequentialLong}" GroupName="mode" />
+                        <RadioButton IsChecked="{Binding IsSequential, Converter={StaticResource Invert}}" Content="{loc:Tr Wizard_ModeBulkLong}" GroupName="mode" />
+                        <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="10" IsVisible="{Binding IsBulk}" Margin="28,0,0,0">
+                            <Label Text="{loc:Tr Wizard_Parallelism}" VerticalOptions="Center" />
+                            <Stepper Grid.Column="1" Minimum="1" Maximum="{Binding MaxParallelism}" Value="{Binding Parallelism}" Increment="1" />
+                            <Label Grid.Column="2" Text="{Binding Parallelism}" VerticalOptions="Center" FontAttributes="Bold" FontSize="18" />
+                        </Grid>
+                        <Label Text="{loc:Tr Wizard_OneByOne}" Style="{StaticResource MutedLabel}" />
+
+                        <BoxView Style="{StaticResource Divider}" Margin="0,8" />
+                        <fx:InfoLabel Text="{loc:Tr Wizard_When}" Info="Wizard_When" LabelStyle="{StaticResource SectionTitle}" />
+                        <RadioButton IsChecked="{Binding ScheduleLater, Converter={StaticResource Invert}}" Content="{loc:Tr Wizard_Now}" GroupName="when" />
+                        <RadioButton IsChecked="{Binding ScheduleLater}" Content="{loc:Tr Wizard_Later}" GroupName="when" />
+                        <HorizontalStackLayout Spacing="10" IsVisible="{Binding ScheduleLater}" Margin="28,0,0,0">
+                            <DatePicker Date="{Binding ScheduleDate}" />
+                            <TimePicker Time="{Binding ScheduleTime}" />
+                        </HorizontalStackLayout>
+                        <Label Text="{loc:Tr Wizard_LaterNote}" Style="{StaticResource MutedLabel}" IsVisible="{Binding ScheduleLater}" TextColor="{StaticResource StatusWarning}" />
+
+                        <BoxView Style="{StaticResource Divider}" Margin="0,8" />
+                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6">
+                            <CheckBox IsChecked="{Binding DryRun}" VerticalOptions="Center" />
+                            <fx:InfoLabel Text="{loc:Tr Wizard_DryRun}" Info="Wizard_DryRun" Wrap="True" Grid.Column="1" VerticalOptions="Center" />
+                        </Grid>
+                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6">
+                            <CheckBox IsChecked="{Binding TrackOpens}" VerticalOptions="Center" />
+                            <fx:InfoLabel Text="{loc:Tr Wizard_TrackOpens}" Info="Wizard_TrackOpens" Wrap="True" Grid.Column="1" VerticalOptions="Center" />
+                        </Grid>
+                        <Label Text="{loc:Tr Wizard_TrackOpensNote}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- 6. Confirm -->
+                <Border Style="{StaticResource Card}" IsVisible="{Binding IsStep6}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="{Binding Summary}" />
+                        <Label Text="{loc:Tr Wizard_ConfirmNote}" Style="{StaticResource MutedLabel}" />
+                        <fx:WithInfo Info="Wizard_Launch" HorizontalOptions="Start">
+                            <Button Text="{loc:Tr Wizard_Launch}" Command="{Binding LaunchCommand}" FontAttributes="Bold" />
+                        </fx:WithInfo>
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Border Grid.Row="2" Style="{StaticResource StaticCard}" Padding="14,10" MaximumWidthRequest="940" HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="Auto,Auto,Auto,*" ColumnSpacing="10">
+                <fx:WithInfo Info="CampaignWizard_Common_Back" Grid.Column="0">
+                    <Button Text="{loc:Tr Common_Back}" Style="{StaticResource SecondaryButton}" Command="{Binding BackCommand}" IsEnabled="{Binding CanGoBack}" />
+                </fx:WithInfo>
+                <fx:WithInfo Info="CampaignWizard_Common_Next" Grid.Column="1" IsVisible="{Binding CanGoNext}">
+                    <Button Text="{loc:Tr Common_Next}" Command="{Binding NextCommand}" />
+                </fx:WithInfo>
+                <ActivityIndicator Grid.Column="2" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+                <Label Grid.Column="3" Text="{Binding BusyText}" VerticalOptions="Center" Style="{StaticResource MutedLabel}" />
+            </Grid>
+        </Border>
+    </Grid>
+</views:AlpixaPage>

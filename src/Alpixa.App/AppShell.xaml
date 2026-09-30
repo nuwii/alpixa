@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:loc="clr-namespace:Alpixa.App.Services"
+       xmlns:views="clr-namespace:Alpixa.App.Views"
+       xmlns:fx="clr-namespace:Alpixa.App.Controls"
+       x:Class="Alpixa.App.AppShell"
+       Title="Alpixa"
+       FlyoutBehavior="Locked"
+       FlyoutWidth="248"
+       FlyoutBackgroundColor="{AppThemeBinding Light={StaticResource SidebarLight}, Dark={StaticResource SidebarDark}}">
+
+    <Shell.Resources>
+        <fx:RouteIconConverter x:Key="RouteIcon" />
+    </Shell.Resources>
+
+    <Shell.FlyoutHeader>
+        <Grid Padding="20,26,20,18" ColumnDefinitions="Auto,*" ColumnSpacing="12">
+            <Border Style="{StaticResource IconBadge}" WidthRequest="40" HeightRequest="40" Padding="9">
+                <Border.Shadow>
+                    <Shadow Brush="#7C3AED" Opacity="0.45" Radius="16" Offset="0,6" />
+                </Border.Shadow>
+                <Path Data="{fx:Icon Send}" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+            </Border>
+            <VerticalStackLayout Grid.Column="1" Spacing="0" VerticalOptions="Center">
+                <Label Text="Alpixa" FontSize="19" FontAttributes="Bold" CharacterSpacing="-0.4" />
+                <Label Text="{loc:Tr App_Tagline}" FontSize="11" Style="{StaticResource MutedLabel}" />
+            </VerticalStackLayout>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <Shell.ItemTemplate>
+        <DataTemplate x:DataType="BaseShellItem">
+            <Grid Padding="12,2" HeightRequest="44">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter TargetName="Pill" Property="Border.Opacity" Value="0" />
+                                    <Setter TargetName="Icon" Property="Path.Stroke" Value="{AppThemeBinding Light={StaticResource MutedLight}, Dark={StaticResource MutedDark}}" />
+                                    <Setter TargetName="Text" Property="Label.TextColor" Value="{AppThemeBinding Light={StaticResource TextLight}, Dark={StaticResource TextDark}}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter TargetName="Pill" Property="Border.Opacity" Value="1" />
+                                    <Setter TargetName="Icon" Property="Path.Stroke" Value="White" />
+                                    <Setter TargetName="Text" Property="Label.TextColor" Value="White" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </VisualStateManager.VisualStateGroups>
+                <Border x:Name="Pill" StrokeThickness="0" StrokeShape="RoundRectangle 10" Background="{StaticResource BrandGradient}" Opacity="0" />
+                <Grid ColumnDefinitions="20,*" ColumnSpacing="12" Padding="12,0">
+                    <Path x:Name="Icon" Data="{Binding Route, Converter={StaticResource RouteIcon}}" WidthRequest="18" HeightRequest="18"
+                          StrokeThickness="1.8" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" VerticalOptions="Center"
+                          Stroke="{AppThemeBinding Light={StaticResource MutedLight}, Dark={StaticResource MutedDark}}" />
+                    <Label x:Name="Text" Grid.Column="1" Text="{Binding Title}" FontSize="14" VerticalOptions="Center" LineBreakMode="NoWrap" />
+                </Grid>
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <FlyoutItem Title="{loc:Tr Nav_Dashboard}" Route="dashboard">
+        <ShellContent ContentTemplate="{DataTemplate views:DashboardPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="{loc:Tr Nav_Profiles}" Route="profiles">
+        <ShellContent ContentTemplate="{DataTemplate views:ProfilesPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="{loc:Tr Nav_DomainHealth}" Route="domainhealth">
+        <ShellContent ContentTemplate="{DataTemplate views:DomainHealthPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="{loc:Tr Nav_Lists}" Route="lists">
+        <ShellContent ContentTemplate="{DataTemplate views:ListsPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="{loc:Tr Nav_Templates}" Route="templates">
+        <ShellContent ContentTemplate="{DataTemplate views:TemplatesPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="{loc:Tr Nav_Campaigns}" Route="campaigns">
+        <ShellContent ContentTemplate="{DataTemplate views:CampaignsPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="{loc:Tr Nav_Reports}" Route="reports">
+        <ShellContent ContentTemplate="{DataTemplate views:ReportsPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="{loc:Tr Nav_Settings}" Route="settings">
+        <ShellContent ContentTemplate="{DataTemplate views:SettingsPage}" />
+    </FlyoutItem>
+</Shell>

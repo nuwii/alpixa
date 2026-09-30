@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     xmlns:m="clr-namespace:Alpixa.Core.Models;assembly=Alpixa.Core"
+                     xmlns:c="clr-namespace:Alpixa.Infrastructure.Contacts;assembly=Alpixa.Infrastructure"
+                     x:Class="Alpixa.App.Views.ListsPage"
+                     x:DataType="vm:ListsViewModel"
+                     Title="{loc:Tr Nav_Lists}">
+    <ScrollView>
+        <VerticalStackLayout Padding="36,28,36,36" Spacing="18" MaximumWidthRequest="1240">
+            <fx:PageHeader Title="{loc:Tr Nav_Lists}" Subtitle="{loc:Tr Lists_Subtitle}" Icon="Users">
+                <fx:PageHeader.Actions>
+                    <fx:WithInfo Info="Lists_Import">
+                        <Button Text="{loc:Tr Lists_Import}" Command="{Binding ImportCommand}" />
+                    </fx:WithInfo>
+                </fx:PageHeader.Actions>
+            </fx:PageHeader>
+
+            <Border x:Name="DropZone" Style="{StaticResource DropZone}">
+                <Border.GestureRecognizers>
+                    <DropGestureRecognizer AllowDrop="True" DragOver="OnDragOver" DragLeave="OnDragLeave" Drop="OnDrop" />
+                </Border.GestureRecognizers>
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="16">
+                    <Border Style="{StaticResource IconBadge}" WidthRequest="48" HeightRequest="48" Padding="12" VerticalOptions="Center">
+                        <Path Data="{fx:Icon Upload}" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" Spacing="4" VerticalOptions="Center">
+                        <Label Text="{loc:Tr Lists_DropTitle}" FontAttributes="Bold" FontSize="15" />
+                        <Label Text="{loc:Tr Lists_DropHint}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+
+            <Label Text="{loc:Tr Lists_Empty}" Style="{StaticResource MutedLabel}" IsVisible="{Binding Lists.Count, Converter={StaticResource NoItems}}" />
+            <VerticalStackLayout BindableLayout.ItemsSource="{Binding Lists}" Spacing="10">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="c:ContactListSummary">
+                        <Border Style="{StaticResource Card}">
+                            <Grid ColumnDefinitions="Auto,*,Auto,Auto,Auto" ColumnSpacing="12">
+                                <Border Style="{StaticResource IconBadge}" VerticalOptions="Center">
+                                    <Path Data="{fx:Icon Users}" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                                </Border>
+                                <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                                    <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="16" />
+                                    <Label Style="{StaticResource MutedLabel}">
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                <Span Text="{Binding Active}" FontAttributes="Bold" />
+                                                <Span Text="{loc:Tr Lists_ActiveSuffix}" />
+                                                <Span Text="{Binding Total}" />
+                                                <Span Text="{loc:Tr Lists_TotalSuffix}" />
+                                                <Span Text="{Binding Invalid}" />
+                                                <Span Text="{loc:Tr Lists_InvalidSuffix}" />
+                                                <Span Text="{Binding Suppressed}" />
+                                                <Span Text="{loc:Tr Lists_SuppressedSuffix}" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                    </Label>
+                                </VerticalStackLayout>
+                                <fx:WithInfo Info="Lists_Common_Open" Grid.Column="2" VerticalOptions="Center">
+                                    <Button Text="{loc:Tr Common_Open}"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ListsViewModel}}, Path=OpenCommand, x:DataType=vm:ListsViewModel}" CommandParameter="{Binding .}" />
+                                </fx:WithInfo>
+                                <fx:WithInfo Info="Lists_AddMore" Grid.Column="3" VerticalOptions="Center">
+                                    <Button Text="{loc:Tr Lists_AddMore}" Style="{StaticResource SecondaryButton}"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ListsViewModel}}, Path=ImportIntoCommand, x:DataType=vm:ListsViewModel}" CommandParameter="{Binding .}" />
+                                </fx:WithInfo>
+                                <fx:WithInfo Info="Lists_Common_Delete" Grid.Column="4" VerticalOptions="Center">
+                                    <Button Text="{loc:Tr Common_Delete}" Style="{StaticResource DangerButton}"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ListsViewModel}}, Path=DeleteCommand, x:DataType=vm:ListsViewModel}" CommandParameter="{Binding .}" />
+                                </fx:WithInfo>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+
+            <Border Style="{StaticResource StaticCard}">
+                <VerticalStackLayout Spacing="10">
+                    <fx:InfoLabel Text="{loc:Tr Lists_SuppressionTitle}" Info="Lists_SuppressionTitle" LabelStyle="{StaticResource SectionTitle}" />
+                    <Label Text="{loc:Tr Lists_SuppressionIntro}" Style="{StaticResource MutedLabel}" />
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{loc:Tr Lists_SuppressionTotal}" />
+                                <Span Text="{Binding SuppressionTotal}" FontAttributes="Bold" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="10">
+                        <Entry Text="{Binding SuppressionSearch}" Placeholder="{loc:Tr Lists_SuppressionSearch}" ReturnCommand="{Binding SearchSuppressionsCommand}" />
+                        <fx:WithInfo Info="Lists_Common_Search" Grid.Column="1">
+                            <Button Text="{loc:Tr Common_Search}" Style="{StaticResource SecondaryButton}" Command="{Binding SearchSuppressionsCommand}" />
+                        </fx:WithInfo>
+                        <fx:WithInfo Info="Lists_AddSuppression" Grid.Column="2">
+                            <Button Text="{loc:Tr Lists_AddSuppression}" Style="{StaticResource SecondaryButton}" Command="{Binding AddSuppressionCommand}" />
+                        </fx:WithInfo>
+                    </Grid>
+                    <VerticalStackLayout BindableLayout.ItemsSource="{Binding Suppressions}" Spacing="4">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="m:SuppressionEntry">
+                                <Grid ColumnDefinitions="2*,*,*,Auto" ColumnSpacing="10" Padding="0,4">
+                                    <Label Text="{Binding EmailNormalized}" VerticalOptions="Center" LineBreakMode="CharacterWrap" />
+                                    <Label Grid.Column="1" Text="{Binding Reason, Converter={StaticResource EnumText}}" Style="{StaticResource MutedLabel}" VerticalOptions="Center" />
+                                    <Label Grid.Column="2" Text="{Binding CreatedUtc, Converter={StaticResource LocalTime}}" Style="{StaticResource MutedLabel}" VerticalOptions="Center" />
+                                    <fx:WithInfo Info="Lists_Unsuppress" Grid.Column="3">
+                                        <Button Text="{loc:Tr Lists_Unsuppress}" Style="{StaticResource SecondaryButton}" Padding="10,4"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ListsViewModel}}, Path=RemoveSuppressionCommand, x:DataType=vm:ListsViewModel}" CommandParameter="{Binding .}" />
+                                    </fx:WithInfo>
+                                </Grid>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</views:AlpixaPage>

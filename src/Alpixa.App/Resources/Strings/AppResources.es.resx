@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="App_Tagline" xml:space="preserve"><value>Poder masivo que supera los filtros.</value></data>
+  <data name="Campaigns_Cancel" xml:space="preserve"><value>Cancelar campaña</value></data>
+  <data name="Campaigns_CancelConfirm" xml:space="preserve"><value>¿Cancelar «{0}»? Quienes aún no han recibido el correo no lo recibirán. No se puede deshacer.</value></data>
+  <data name="Campaigns_CancelTitle" xml:space="preserve"><value>Cancelar campaña</value></data>
+  <data name="Campaigns_CancelYes" xml:space="preserve"><value>Sí, cancelar</value></data>
+  <data name="Campaigns_DeleteConfirm" xml:space="preserve"><value>¿Eliminar la campaña «{0}» y sus registros de envío?</value></data>
+  <data name="Campaigns_FailedSuffix" xml:space="preserve"><value> fallidos</value></data>
+  <data name="Campaigns_Pause" xml:space="preserve"><value>Pausar</value></data>
+  <data name="Campaigns_Resume" xml:space="preserve"><value>Reanudar</value></data>
+  <data name="Campaigns_SentSuffix" xml:space="preserve"><value> enviados · </value></data>
+  <data name="Common_Back" xml:space="preserve"><value>Atrás</value></data>
+  <data name="Common_Browse" xml:space="preserve"><value>Examinar...</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Cancelar</value></data>
+  <data name="Common_Close" xml:space="preserve"><value>Cerrar</value></data>
+  <data name="Common_Copied" xml:space="preserve"><value>Copiado al portapapeles.</value></data>
+  <data name="Common_Copy" xml:space="preserve"><value>Copiar</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>Eliminar</value></data>
+  <data name="Common_Edit" xml:space="preserve"><value>Editar</value></data>
+  <data name="Common_Error" xml:space="preserve"><value>Algo ha fallado</value></data>
+  <data name="Common_HowTo" xml:space="preserve"><value>Cómo solucionarlo</value></data>
+  <data name="Common_Missing" xml:space="preserve"><value>Falta información</value></data>
+  <data name="Common_Next" xml:space="preserve"><value>Siguiente</value></data>
+  <data name="Common_No" xml:space="preserve"><value>No</value></data>
+  <data name="Common_Ok" xml:space="preserve"><value>Aceptar</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>Abrir</value></data>
+  <data name="Common_Refresh" xml:space="preserve"><value>Actualizar</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>Guardar</value></data>
+  <data name="Common_Saved" xml:space="preserve"><value>Guardado.</value></data>
+  <data name="Common_Search" xml:space="preserve"><value>Buscar</value></data>
+  <data name="Common_ShowAdvanced" xml:space="preserve"><value>Mostrar ajustes avanzados</value></data>
+  <data name="Common_Working" xml:space="preserve"><value>Procesando...</value></data>
+  <data name="Common_Yes" xml:space="preserve"><value>Sí</value></data>
+  <data name="Dashboard_ActiveContacts" xml:space="preserve"><value>contactos activos</value></data>
+  <data name="Dashboard_Lists" xml:space="preserve"><value>listas</value></data>
+  <data name="Dashboard_NoCampaigns" xml:space="preserve"><value>Todavía no hay campañas.</value></data>
+  <data name="Dashboard_NoProfile" xml:space="preserve"><value>Aún no hay perfil de remitente. Añade uno antes de enviar.</value></data>
+  <data name="Dashboard_Recent" xml:space="preserve"><value>Campañas recientes</value></data>
+  <data name="Dashboard_Sent30" xml:space="preserve"><value>enviados en los últimos 30 días</value></data>
+  <data name="Dashboard_SetupBody" xml:space="preserve"><value>Usa el asistente de configuración para añadir tu cuenta de envío y comprobar tu dominio.</value></data>
+  <data name="Dashboard_SetupButton" xml:space="preserve"><value>Abrir asistente</value></data>
+  <data name="Dashboard_SetupTitle" xml:space="preserve"><value>La configuración no está terminada</value></data>
+  <data name="Dashboard_Suppressed" xml:space="preserve"><value>direcciones bloqueadas</value></data>
+  <data name="Dashboard_Tips" xml:space="preserve"><value>1. Pon todo en verde en Salud del dominio.
+2. Envía solo a quien te dio permiso.
+3. Empieza despacio; mantén activo el plan de calentamiento.
+4. Envíate primero una prueba.</value></data>
+  <data name="Dashboard_TipsTitle" xml:space="preserve"><value>Para llegar a la bandeja de entrada</value></data>
+  <data name="Dashboard_Title" xml:space="preserve"><value>Panel</value></data>
+  <data name="Dashboard_WarnBounces" xml:space="preserve"><value>La tasa de rebote de «{0}» es {1}. El objetivo es menos del 2 %. Limpia la lista.</value></data>
+  <data name="Dashboard_WarnComplaints" xml:space="preserve"><value>La tasa de quejas de «{0}» es {1}. El objetivo es menos del 0,1 %.</value></data>
+  <data name="Dashboard_WarnPaused" xml:space="preserve"><value>La campaña «{0}» se detuvo por seguridad. El motivo aparece en la pantalla de la campaña.</value></data>
+  <data name="Detail_BackgroundNote" xml:space="preserve"><value>El equipo no entrará en reposo hasta que termine el envío. Los correos con estado desconocido (app cerrada durante el envío) nunca se reenvían.</value></data>
+  <data name="Detail_Bounces" xml:space="preserve"><value>Rebotados</value></data>
+  <data name="Detail_Complaints" xml:space="preserve"><value>Quejas: </value></data>
+  <data name="Detail_DryRun" xml:space="preserve"><value>Simulación</value></data>
+  <data name="Detail_Eta" xml:space="preserve"><value>Tiempo restante estimado: {0}</value></data>
+  <data name="Detail_Failed" xml:space="preserve"><value>Fallidos</value></data>
+  <data name="Detail_Hours" xml:space="preserve"><value>{0} h {1} min</value></data>
+  <data name="Detail_Minutes" xml:space="preserve"><value>{0} min</value></data>
+  <data name="Detail_NextRun" xml:space="preserve"><value>Continúa a las: {0}</value></data>
+  <data name="Detail_OpenReports" xml:space="preserve"><value>Abrir informes</value></data>
+  <data name="Detail_Pending" xml:space="preserve"><value>Pendientes</value></data>
+  <data name="Detail_Rate" xml:space="preserve"><value>Velocidad: {0} correos/min</value></data>
+  <data name="Detail_Scheduled" xml:space="preserve"><value>Empieza a las: {0}</value></data>
+  <data name="Detail_Sent" xml:space="preserve"><value>Enviados</value></data>
+  <data name="Detail_Skipped" xml:space="preserve"><value>Omitidos: </value></data>
+  <data name="Detail_Uncertain" xml:space="preserve"><value>Estado desconocido: </value></data>
+  <data name="Detail_Unsubscribes" xml:space="preserve"><value>Bajas</value></data>
+  <data name="Enum_CampaignStatus_Cancelled" xml:space="preserve"><value>Cancelada</value></data>
+  <data name="Enum_CampaignStatus_Completed" xml:space="preserve"><value>Completada</value></data>
+  <data name="Enum_CampaignStatus_Draft" xml:space="preserve"><value>Borrador</value></data>
+  <data name="Enum_CampaignStatus_Paused" xml:space="preserve"><value>En pausa</value></data>
+  <data name="Enum_CampaignStatus_PausedBySafety" xml:space="preserve"><value>Detenida por seguridad</value></data>
+  <data name="Enum_CampaignStatus_Running" xml:space="preserve"><value>Enviando</value></data>
+  <data name="Enum_CampaignStatus_Scheduled" xml:space="preserve"><value>Programada</value></data>
+  <data name="Enum_CampaignStatus_WaitingForQuota" xml:space="preserve"><value>Esperando a mañana (límite diario)</value></data>
+  <data name="Enum_CheckStatus_Fail" xml:space="preserve"><value>Debe corregirse</value></data>
+  <data name="Enum_CheckStatus_Info" xml:space="preserve"><value>Info</value></data>
+  <data name="Enum_CheckStatus_Pass" xml:space="preserve"><value>Correcto</value></data>
+  <data name="Enum_CheckStatus_Warning" xml:space="preserve"><value>Aviso</value></data>
+  <data name="Enum_ContactStatus_Active" xml:space="preserve"><value>Activo</value></data>
+  <data name="Enum_ContactStatus_Complained" xml:space="preserve"><value>Queja</value></data>
+  <data name="Enum_ContactStatus_HardBounced" xml:space="preserve"><value>Rebote permanente</value></data>
+  <data name="Enum_ContactStatus_Invalid" xml:space="preserve"><value>No válido</value></data>
+  <data name="Enum_ContactStatus_Suppressed" xml:space="preserve"><value>Bloqueado</value></data>
+  <data name="Enum_ContactStatus_Unsubscribed" xml:space="preserve"><value>Dado de baja</value></data>
+  <data name="Enum_LintSeverity_Error" xml:space="preserve"><value>Error</value></data>
+  <data name="Enum_LintSeverity_Info" xml:space="preserve"><value>Info</value></data>
+  <data name="Enum_LintSeverity_Warning" xml:space="preserve"><value>Aviso</value></data>
+  <data name="Enum_SendJobStatus_Failed" xml:space="preserve"><value>Fallido</value></data>
+  <data name="Enum_SendJobStatus_Pending" xml:space="preserve"><value>Pendiente</value></data>
+  <data name="Enum_SendJobStatus_Sending" xml:space="preserve"><value>Enviando</value></data>
+  <data name="Enum_SendJobStatus_Sent" xml:space="preserve"><value>Enviado</value></data>
+  <data name="Enum_SendJobStatus_Skipped" xml:space="preserve"><value>Omitido</value></data>
+  <data name="Enum_SendJobStatus_Uncertain" xml:space="preserve"><value>Desconocido</value></data>
+  <data name="Enum_SuppressionReason_Complaint" xml:space="preserve"><value>Queja</value></data>
+  <data name="Enum_SuppressionReason_HardBounce" xml:space="preserve"><value>Rebote permanente</value></data>
+  <data name="Enum_SuppressionReason_Manual" xml:space="preserve"><value>Añadido manualmente</value></data>
+  <data name="Enum_SuppressionReason_SoftBounceLimit" xml:space="preserve"><value>3 rebotes temporales</value></data>
+  <data name="Enum_SuppressionReason_Unsubscribed" xml:space="preserve"><value>Dado de baja</value></data>
+  <data name="Enum_TransportKind_AmazonSes" xml:space="preserve"><value>Amazon SES</value></data>
+  <data name="Enum_TransportKind_Brevo" xml:space="preserve"><value>Brevo</value></data>
+  <data name="Enum_TransportKind_CustomSmtp" xml:space="preserve"><value>SMTP personalizado</value></data>
+  <data name="Enum_TransportKind_Gmail" xml:space="preserve"><value>Gmail / Google Workspace</value></data>
+  <data name="Enum_TransportKind_LocalTest" xml:space="preserve"><value>Servidor de prueba local</value></data>
+  <data name="Enum_TransportKind_Mailgun" xml:space="preserve"><value>Mailgun</value></data>
+  <data name="Enum_TransportKind_Microsoft365" xml:space="preserve"><value>Microsoft 365</value></data>
+  <data name="Enum_TransportKind_SendGrid" xml:space="preserve"><value>SendGrid</value></data>
+  <data name="Health_Checking" xml:space="preserve"><value>Comprobando registros DNS...</value></data>
+  <data name="Health_Footer" xml:space="preserve"><value>Los cambios de DNS pueden tardar desde minutos hasta 48 horas. Después pulsa «Comprobar de nuevo».</value></data>
+  <data name="Health_Intro" xml:space="preserve"><value>Comprueba tu dominio antes de enviar. No se puede enviar mientras haya puntos rojos.</value></data>
+  <data name="Health_PickProfile" xml:space="preserve"><value>Elige un perfil</value></data>
+  <data name="Health_Recheck" xml:space="preserve"><value>Comprobar de nuevo</value></data>
+  <data name="Health_SummaryFail" xml:space="preserve"><value>{0} tiene puntos rojos que deben corregirse.</value></data>
+  <data name="Health_SummaryOk" xml:space="preserve"><value>{0} está listo.</value></data>
+  <data name="Health_SummaryWarn" xml:space="preserve"><value>{0} puede enviar, pero algunos puntos se pueden mejorar.</value></data>
+  <data name="Help_CampaignDetail" xml:space="preserve"><value>Esta pantalla muestra el progreso en directo. La app envía despacio a propósito; si se alcanza el plan de calentamiento o el límite diario, el envío continúa solo al día siguiente (la app debe estar abierta).</value></data>
+  <data name="Help_CampaignWizard" xml:space="preserve"><value>El asistente tiene 6 pasos: perfil, lista, plantilla, comprobaciones, modo y hora, confirmación. Corrige primero los avisos rojos. No olvides enviarte una prueba.</value></data>
+  <data name="Help_Campaigns" xml:space="preserve"><value>Aquí ves todos tus envíos. Puedes pausar, reanudar o cancelar una campaña en curso. Nadie recibe la misma campaña dos veces.</value></data>
+  <data name="Help_Dashboard" xml:space="preserve"><value>El panel resume tu situación: contactos activos, campañas recientes y avisos. El botón de arriba a la derecha inicia una campaña nueva.</value></data>
+  <data name="Help_DomainHealth" xml:space="preserve"><value>Esta pantalla comprueba los registros DNS de tu dominio (SPF, DKIM, DMARC, MX). Los puntos rojos hacen que los correos acaben en spam. Debajo de cada punto verás qué hacer y un registro de ejemplo para tu panel DNS.</value></data>
+  <data name="Help_Import" xml:space="preserve"><value>Elige tu archivo, revisa las columnas y marca «Estas personas dieron su consentimiento explícito». Las direcciones no válidas, duplicadas, desechables o ya dadas de baja se separan automáticamente.</value></data>
+  <data name="Help_ListDetail" xml:space="preserve"><value>Busca personas en la lista y filtra por estado. «Historial» muestra qué campañas se enviaron a esa persona.</value></data>
+  <data name="Help_Lists" xml:space="preserve"><value>Las listas contienen tus destinatarios. Arrastra un archivo CSV o Excel a la ventana o usa «Importar lista». Las direcciones de la lista de bloqueo nunca reciben campañas.</value></data>
+  <data name="Help_OpenGuide" xml:space="preserve"><value>Abrir la guía</value></data>
+  <data name="Help_ProfileEdit" xml:space="preserve"><value>Elige primero tu proveedor; los datos del servidor se rellenan solos. La dirección de envío debería ser de tu propio dominio (p. ej. news@tuempresa.es). Las contraseñas se guardan en el almacén seguro del equipo. Mantén el plan de calentamiento en dominios nuevos.</value></data>
+  <data name="Help_Profiles" xml:space="preserve"><value>Un perfil de remitente define la cuenta y el servidor desde los que se envían tus correos. Cada perfil tiene límites por día, hora y minuto. Comprueba los datos con «Probar conexión».</value></data>
+  <data name="Help_Reports" xml:space="preserve"><value>Los informes muestran envíos, rebotes, bajas y quejas por campaña. Mantén la tasa de quejas por debajo del 0,1 % y la de rebotes por debajo del 2 %.</value></data>
+  <data name="Help_Settings" xml:space="preserve"><value>Aquí están el idioma, las direcciones de prueba, el servidor de bajas, la privacidad, las copias de seguridad y el paquete de soporte. La velocidad de envío está en «Avanzado»; los valores predeterminados son seguros.</value></data>
+  <data name="Help_Setup" xml:space="preserve"><value>El asistente hace la configuración inicial en 4 pasos: idioma, cuenta de envío, comprobación del dominio y envío de prueba. Puedes volver a abrirlo en Ajustes &gt; Reiniciar asistente.</value></data>
+  <data name="Help_TemplateEdit" xml:space="preserve"><value>Edita el HTML a la izquierda y mira la vista previa a la derecha. La lista de abajo señala lo que aumenta el riesgo de spam. Si no hay enlace de baja, Alpixa añade uno.</value></data>
+  <data name="Help_Templates" xml:space="preserve"><value>Las plantillas definen el aspecto del correo. Copia una de las plantillas incluidas y edítala. Usa campos como {{ ad }} o {{ firma }} para personalizar.</value></data>
+  <data name="Help_Title" xml:space="preserve"><value>Ayuda</value></data>
+  <data name="Import_CheckMx" xml:space="preserve"><value>Comprobar si el dominio puede recibir correo (MX)</value></data>
+  <data name="Import_ColCompany" xml:space="preserve"><value>Empresa</value></data>
+  <data name="Import_ColConsentDate" xml:space="preserve"><value>Fecha del consentimiento</value></data>
+  <data name="Import_ColConsentSource" xml:space="preserve"><value>Origen del consentimiento</value></data>
+  <data name="Import_ColEmail" xml:space="preserve"><value>Correo (obligatorio)</value></data>
+  <data name="Import_ColFirst" xml:space="preserve"><value>Nombre</value></data>
+  <data name="Import_ColLast" xml:space="preserve"><value>Apellido</value></data>
+  <data name="Import_ColumnNone" xml:space="preserve"><value>(no usar)</value></data>
+  <data name="Import_Consent" xml:space="preserve"><value>Estas personas dieron su consentimiento explícito</value></data>
+  <data name="Import_DoneBody" xml:space="preserve"><value>{0} contactos añadidos.</value></data>
+  <data name="Import_DoneTitle" xml:space="preserve"><value>Importación terminada</value></data>
+  <data name="Import_ExistingList" xml:space="preserve"><value>Añadir a una lista existente</value></data>
+  <data name="Import_FileHint" xml:space="preserve"><value>CSV o Excel (.xlsx). La primera fila debe contener los encabezados. Ejemplo: samples/ornek-liste.csv</value></data>
+  <data name="Import_GoToLists" xml:space="preserve"><value>Volver a las listas</value></data>
+  <data name="Import_LegalNote" xml:space="preserve"><value>No uses listas compradas ni recopiladas. Cumple el RGPD y la legislación local.</value></data>
+  <data name="Import_ListName" xml:space="preserve"><value>Nombre de la lista</value></data>
+  <data name="Import_MappingHint" xml:space="preserve"><value>Alpixa ha emparejado las columnas automáticamente. Corrige lo que esté mal. Las demás columnas se pueden usar en plantillas como {{ nombre_columna }}.</value></data>
+  <data name="Import_NeedConsent" xml:space="preserve"><value>Marca «Estas personas dieron su consentimiento explícito» para continuar.</value></data>
+  <data name="Import_NeedEmailColumn" xml:space="preserve"><value>Elige la columna de correo.</value></data>
+  <data name="Import_NeedFile" xml:space="preserve"><value>Elige primero un archivo o pega direcciones.</value></data>
+  <data name="Import_NeedList" xml:space="preserve"><value>Elige la lista de destino.</value></data>
+  <data name="Import_NeedListName" xml:space="preserve"><value>Escribe un nombre de lista.</value></data>
+  <data name="Import_NewList" xml:space="preserve"><value>Lista nueva</value></data>
+  <data name="Import_OrPaste" xml:space="preserve"><value>o pega las direcciones aquí</value></data>
+  <data name="Import_PastedListName" xml:space="preserve"><value>Lista pegada {0}</value></data>
+  <data name="Import_PickFile" xml:space="preserve"><value>Elegir archivo</value></data>
+  <data name="Import_PickTitle" xml:space="preserve"><value>Elige el archivo de la lista</value></data>
+  <data name="Import_PreviewPasted" xml:space="preserve"><value>Vista previa del texto pegado</value></data>
+  <data name="Import_PreviewTitle" xml:space="preserve"><value>Primeras filas</value></data>
+  <data name="Import_Progress" xml:space="preserve"><value>{0} filas procesadas...</value></data>
+  <data name="Import_Result" xml:space="preserve"><value>Filas totales: {0}
+Añadidos: {1}
+Duplicados (omitidos): {2}
+Sintaxis no válida: {3}
+Dirección desechable: {4}
+Dirección de rol (info@, admin@..., añadida pero marcada): {5}
+Dominio sin correo: {6}
+Ya dados de baja / bloqueados: {7}
+Columna de correo vacía: {8}</value></data>
+  <data name="Import_ResultTitle" xml:space="preserve"><value>Resultado</value></data>
+  <data name="Import_Run" xml:space="preserve"><value>Importar</value></data>
+  <data name="Import_Step1" xml:space="preserve"><value>1. Elige un archivo</value></data>
+  <data name="Import_Step2" xml:space="preserve"><value>2. Revisa las columnas</value></data>
+  <data name="Import_Step3" xml:space="preserve"><value>3. Lista de destino y consentimiento</value></data>
+  <data name="Import_Title" xml:space="preserve"><value>Importar lista</value></data>
+  <data name="Import_Unsupported" xml:space="preserve"><value>Solo se pueden importar archivos .csv, .txt y .xlsx.</value></data>
+  <data name="Import_UnsupportedTitle" xml:space="preserve"><value>Tipo de archivo no compatible</value></data>
+  <data name="Import_Working" xml:space="preserve"><value>Importando...</value></data>
+  <data name="ListDetail_All" xml:space="preserve"><value>Todos los estados</value></data>
+  <data name="ListDetail_Company" xml:space="preserve"><value>Empresa</value></data>
+  <data name="ListDetail_Email" xml:space="preserve"><value>Correo</value></data>
+  <data name="ListDetail_Empty" xml:space="preserve"><value>No se encontraron contactos.</value></data>
+  <data name="ListDetail_History" xml:space="preserve"><value>Historial</value></data>
+  <data name="ListDetail_LoadMore" xml:space="preserve"><value>Cargar más</value></data>
+  <data name="ListDetail_Name" xml:space="preserve"><value>Nombre</value></data>
+  <data name="ListDetail_NoHistory" xml:space="preserve"><value>Todavía no se ha enviado nada a esta dirección.</value></data>
+  <data name="ListDetail_Search" xml:space="preserve"><value>Buscar correo, nombre o empresa</value></data>
+  <data name="ListDetail_Status" xml:space="preserve"><value>Estado</value></data>
+  <data name="Lists_ActiveSuffix" xml:space="preserve"><value> activos · </value></data>
+  <data name="Lists_AddMore" xml:space="preserve"><value>Añadir contactos</value></data>
+  <data name="Lists_AddSuppression" xml:space="preserve"><value>Añadir dirección</value></data>
+  <data name="Lists_AddSuppressionMessage" xml:space="preserve"><value>Escribe la dirección que nunca más debe recibir correos:</value></data>
+  <data name="Lists_AddSuppressionTitle" xml:space="preserve"><value>Añadir a la lista de bloqueo</value></data>
+  <data name="Lists_DeleteConfirm" xml:space="preserve"><value>¿Eliminar la lista «{0}» y sus {1} contactos?</value></data>
+  <data name="Lists_DropHint" xml:space="preserve"><value>o usa el botón «Importar lista» de arriba a la derecha</value></data>
+  <data name="Lists_DropTitle" xml:space="preserve"><value>Arrastra aquí un archivo CSV o Excel</value></data>
+  <data name="Lists_Empty" xml:space="preserve"><value>Todavía no hay listas.</value></data>
+  <data name="Lists_Import" xml:space="preserve"><value>Importar lista</value></data>
+  <data name="Lists_InvalidSuffix" xml:space="preserve"><value> no válidos · </value></data>
+  <data name="Lists_SuppressedSuffix" xml:space="preserve"><value> bajas/bloqueados</value></data>
+  <data name="Lists_SuppressionIntro" xml:space="preserve"><value>Estas direcciones nunca reciben campañas: bajas, rebotes permanentes y quejas.</value></data>
+  <data name="Lists_SuppressionSearch" xml:space="preserve"><value>Buscar dirección</value></data>
+  <data name="Lists_SuppressionTitle" xml:space="preserve"><value>Lista de bloqueo</value></data>
+  <data name="Lists_SuppressionTotal" xml:space="preserve"><value>Total: </value></data>
+  <data name="Lists_TotalSuffix" xml:space="preserve"><value> en total · </value></data>
+  <data name="Lists_Unsuppress" xml:space="preserve"><value>Quitar</value></data>
+  <data name="Lists_UnsuppressConfirm" xml:space="preserve"><value>{0} podrá volver a recibir correos. ¿Seguro que esta persona ha vuelto a dar su permiso?</value></data>
+  <data name="Lists_UnsuppressTitle" xml:space="preserve"><value>Quitar de la lista de bloqueo</value></data>
+  <data name="Menu_File" xml:space="preserve"><value>Archivo</value></data>
+  <data name="Menu_Help" xml:space="preserve"><value>Ayuda</value></data>
+  <data name="Menu_HelpThisPage" xml:space="preserve"><value>Ayuda de esta pantalla</value></data>
+  <data name="Menu_ImportList" xml:space="preserve"><value>Importar lista</value></data>
+  <data name="Menu_NewCampaign" xml:space="preserve"><value>Nueva campaña</value></data>
+  <data name="Menu_Settings" xml:space="preserve"><value>Ajustes</value></data>
+  <data name="Nav_Campaigns" xml:space="preserve"><value>Campañas</value></data>
+  <data name="Nav_Dashboard" xml:space="preserve"><value>Panel</value></data>
+  <data name="Nav_DomainHealth" xml:space="preserve"><value>Salud del dominio</value></data>
+  <data name="Nav_Lists" xml:space="preserve"><value>Listas</value></data>
+  <data name="Nav_Profiles" xml:space="preserve"><value>Perfiles de remitente</value></data>
+  <data name="Nav_Reports" xml:space="preserve"><value>Informes</value></data>
+  <data name="Nav_Settings" xml:space="preserve"><value>Ajustes</value></data>
+  <data name="Nav_Templates" xml:space="preserve"><value>Plantillas</value></data>
+  <data name="ProfileEdit_BadLimits" xml:space="preserve"><value>Los límites de envío deben ser mayores que 0.</value></data>
+  <data name="ProfileEdit_BadReplyTo" xml:space="preserve"><value>La dirección de respuesta no es válida.</value></data>
+  <data name="ProfileEdit_Daily" xml:space="preserve"><value>Por día</value></data>
+  <data name="ProfileEdit_DefaultName" xml:space="preserve"><value>Cuenta de boletín</value></data>
+  <data name="ProfileEdit_DkimDomain" xml:space="preserve"><value>Dominio DKIM (vacío = dominio del remitente)</value></data>
+  <data name="ProfileEdit_DkimHint" xml:space="preserve"><value>Si usas un servicio de envío, él firma con DKIM; escribe solo el selector (para la comprobación del dominio). Si envías desde tu propio servidor, Alpixa puede firmar con un archivo de clave privada.</value></data>
+  <data name="ProfileEdit_DkimKeyPath" xml:space="preserve"><value>Archivo de clave privada (.pem)</value></data>
+  <data name="ProfileEdit_DkimKeyPick" xml:space="preserve"><value>Elige el archivo de clave DKIM</value></data>
+  <data name="ProfileEdit_DkimSelector" xml:space="preserve"><value>Selector DKIM</value></data>
+  <data name="ProfileEdit_DkimSign" xml:space="preserve"><value>Que Alpixa firme los correos (requiere archivo de clave)</value></data>
+  <data name="ProfileEdit_DkimTitle" xml:space="preserve"><value>DKIM</value></data>
+  <data name="ProfileEdit_FromAddress" xml:space="preserve"><value>Dirección del remitente</value></data>
+  <data name="ProfileEdit_FromName" xml:space="preserve"><value>Nombre del remitente</value></data>
+  <data name="ProfileEdit_Host" xml:space="preserve"><value>Dirección del servidor</value></data>
+  <data name="ProfileEdit_Hourly" xml:space="preserve"><value>Por hora</value></data>
+  <data name="ProfileEdit_ImapEnable" xml:space="preserve"><value>Revisar la bandeja con IMAP</value></data>
+  <data name="ProfileEdit_ImapHint" xml:space="preserve"><value>Recomendado. Alpixa lee los rebotes y solicitudes de baja de esta bandeja y quita esas direcciones automáticamente.</value></data>
+  <data name="ProfileEdit_ImapTitle" xml:space="preserve"><value>Seguimiento de rebotes y bajas (IMAP)</value></data>
+  <data name="ProfileEdit_ImapUsername" xml:space="preserve"><value>Usuario IMAP</value></data>
+  <data name="ProfileEdit_LimitsTitle" xml:space="preserve"><value>Límites de envío</value></data>
+  <data name="ProfileEdit_Name" xml:space="preserve"><value>Nombre del perfil</value></data>
+  <data name="ProfileEdit_NeedFrom" xml:space="preserve"><value>El campo «Dirección del remitente» está vacío o no es válido. Escribe la dirección que verán los destinatarios (en Gmail, tu propia dirección de Gmail).</value></data>
+  <data name="ProfileEdit_NeedFromName" xml:space="preserve"><value>El campo «Nombre del remitente» está vacío. Escribe el nombre que verán los destinatarios (por ejemplo, tu empresa).</value></data>
+  <data name="ProfileEdit_NeedHost" xml:space="preserve"><value>Escribe la dirección del servidor.</value></data>
+  <data name="ProfileEdit_NeedName" xml:space="preserve"><value>Escribe un nombre de perfil.</value></data>
+  <data name="ProfileEdit_NeedUser" xml:space="preserve"><value>Escribe el nombre de usuario.</value></data>
+  <data name="ProfileEdit_NewTitle" xml:space="preserve"><value>Perfil nuevo</value></data>
+  <data name="ProfileEdit_OAuthHint" xml:space="preserve"><value>Para Gmail y Microsoft 365, lo más seguro es iniciar sesión con el navegador. En Gmail también puedes usar una «contraseña de aplicación».</value></data>
+  <data name="ProfileEdit_OAuthMissing" xml:space="preserve"><value>El inicio de sesión con navegador necesita primero un ID de cliente. Escribe el ID y el secreto de cliente de Google en Ajustes → «Inicio de sesión con navegador» (ver README) o marca «Usar contraseña de aplicación».</value></data>
+  <data name="ProfileEdit_OAuthMissingTitle" xml:space="preserve"><value>El inicio de sesión con navegador no está configurado</value></data>
+  <data name="ProfileEdit_Password" xml:space="preserve"><value>Contraseña</value></data>
+  <data name="ProfileEdit_PasswordStored" xml:space="preserve"><value>La contraseña se guarda cifrada en el almacén seguro del equipo (DPAPI en Windows, Llavero en macOS).</value></data>
+  <data name="ProfileEdit_PerMinute" xml:space="preserve"><value>Por minuto</value></data>
+  <data name="ProfileEdit_Port" xml:space="preserve"><value>Puerto</value></data>
+  <data name="ProfileEdit_PostalAddress" xml:space="preserve"><value>Dirección de contacto / postal (en el pie del correo)</value></data>
+  <data name="ProfileEdit_PostalAddressHint" xml:space="preserve"><value>Dirección o teléfono de la empresa</value></data>
+  <data name="ProfileEdit_Provider" xml:space="preserve"><value>Proveedor</value></data>
+  <data name="ProfileEdit_ProviderHint" xml:space="preserve"><value>Para listas grandes se recomienda un servicio de envío como Amazon SES, Brevo, Mailgun o SendGrid.</value></data>
+  <data name="ProfileEdit_ReplyTo" xml:space="preserve"><value>Dirección de respuesta (opcional)</value></data>
+  <data name="ProfileEdit_Security" xml:space="preserve"><value>Seguridad</value></data>
+  <data name="ProfileEdit_ServerTitle" xml:space="preserve"><value>Servidor SMTP</value></data>
+  <data name="ProfileEdit_SignIn" xml:space="preserve"><value>Iniciar sesión con el navegador</value></data>
+  <data name="ProfileEdit_SignInTitle" xml:space="preserve"><value>Inicio de sesión</value></data>
+  <data name="ProfileEdit_SignedIn" xml:space="preserve"><value>Sesión iniciada: {0}</value></data>
+  <data name="ProfileEdit_TestImap" xml:space="preserve"><value>Probar conexión IMAP</value></data>
+  <data name="ProfileEdit_UseAppPassword" xml:space="preserve"><value>Usar usuario y contraseña de aplicación en lugar del navegador</value></data>
+  <data name="ProfileEdit_Username" xml:space="preserve"><value>Usuario</value></data>
+  <data name="ProfileEdit_WaitingBrowser" xml:space="preserve"><value>Esperando el inicio de sesión en el navegador...</value></data>
+  <data name="ProfileEdit_Warmup" xml:space="preserve"><value>Plan de calentamiento activo (recomendado)</value></data>
+  <data name="ProfileEdit_WarmupHint" xml:space="preserve"><value>En dominios nuevos el volumen diario empieza en 50 y aumenta poco a poco. Se aplica el menor entre el límite diario y el de calentamiento.</value></data>
+  <data name="Profiles_DeleteConfirm" xml:space="preserve"><value>¿Eliminar el perfil «{0}»? También se borran las contraseñas guardadas.</value></data>
+  <data name="Profiles_Empty" xml:space="preserve"><value>Todavía no hay perfiles. Añade uno con «Perfil nuevo».</value></data>
+  <data name="Profiles_InUse" xml:space="preserve"><value>Este perfil lo usa una campaña en curso o programada. Detén primero la campaña.</value></data>
+  <data name="Profiles_Intro" xml:space="preserve"><value>Gestiona las cuentas desde las que se envían tus correos.</value></data>
+  <data name="Profiles_Limits" xml:space="preserve"><value>Límite por día / hora / minuto:</value></data>
+  <data name="Profiles_New" xml:space="preserve"><value>Perfil nuevo</value></data>
+  <data name="Profiles_Test" xml:space="preserve"><value>Probar conexión</value></data>
+  <data name="Profiles_TestOk" xml:space="preserve"><value>Conectado e identificado en {0}.</value></data>
+  <data name="Profiles_TestOkTitle" xml:space="preserve"><value>La conexión funciona</value></data>
+  <data name="Profiles_Testing" xml:space="preserve"><value>Probando conexión...</value></data>
+  <data name="Reports_Bounce" xml:space="preserve"><value>Rebotes</value></data>
+  <data name="Reports_Campaign" xml:space="preserve"><value>Campaña</value></data>
+  <data name="Reports_Complaint" xml:space="preserve"><value>Quejas</value></data>
+  <data name="Reports_HistoryTitle" xml:space="preserve"><value>Historial de envíos por persona</value></data>
+  <data name="Reports_Opens" xml:space="preserve"><value>Aperturas</value></data>
+  <data name="Reports_Saved" xml:space="preserve"><value>Guardado: {0}</value></data>
+  <data name="Reports_Targets" xml:space="preserve"><value>Objetivos: quejas por debajo del 0,1 % (límite 0,3 %), rebotes permanentes por debajo del 2 % (límite 5 %). Por encima del límite el envío se pausa solo.</value></data>
+  <data name="Reports_Tools" xml:space="preserve"><value>Google Postmaster Tools (postmaster.google.com): cómo ve Gmail tu dominio.
+Microsoft SNDS: lado de Outlook si tienes IP propia.
+MXToolbox (mxtoolbox.com): comprobación de DNS y listas negras.
+mail-tester.com: puntuación de spam de un correo.</value></data>
+  <data name="Reports_ToolsTitle" xml:space="preserve"><value>Supervisión externa</value></data>
+  <data name="Reports_Total" xml:space="preserve"><value>Total</value></data>
+  <data name="Settings_Backup" xml:space="preserve"><value>Crear copia</value></data>
+  <data name="Settings_BackupDone" xml:space="preserve"><value>Copia guardada: {0}</value></data>
+  <data name="Settings_BackupNote" xml:space="preserve"><value>Las contraseñas no se incluyen en las copias. El paquete de soporte no contiene contraseñas, tokens ni contenido de correos.</value></data>
+  <data name="Settings_BackupTitle" xml:space="preserve"><value>Copia guardada</value></data>
+  <data name="Settings_BackupWorking" xml:space="preserve"><value>Preparando la copia...</value></data>
+  <data name="Settings_BadDelay" xml:space="preserve"><value>Esperas no válidas. El máximo no puede ser menor que el mínimo.</value></data>
+  <data name="Settings_BadSeeds" xml:space="preserve"><value>Dirección de prueba no válida: {0}</value></data>
+  <data name="Settings_BadThreshold" xml:space="preserve"><value>La tasa de error debe estar entre 0 y 100.</value></data>
+  <data name="Settings_BadWarmup" xml:space="preserve"><value>No se pudo leer la línea de calentamiento: «{0}». Ejemplo: 3: 100</value></data>
+  <data name="Settings_CheckNow" xml:space="preserve"><value>Revisar rebotes y bajas ahora</value></data>
+  <data name="Settings_CopySecret" xml:space="preserve"><value>Copiar clave secreta</value></data>
+  <data name="Settings_DataFolder" xml:space="preserve"><value>Carpeta de datos: </value></data>
+  <data name="Settings_DataSection" xml:space="preserve"><value>Datos y soporte</value></data>
+  <data name="Settings_DefaultParallel" xml:space="preserve"><value>Conexiones predeterminadas en modo masivo</value></data>
+  <data name="Settings_DelayMax" xml:space="preserve"><value>Espera máx. en modo secuencial (s)</value></data>
+  <data name="Settings_DelayMin" xml:space="preserve"><value>Espera mín. en modo secuencial (s)</value></data>
+  <data name="Settings_DomainLimits" xml:space="preserve"><value>Límite por minuto según el proveedor del destinatario</value></data>
+  <data name="Settings_EndpointHttps" xml:space="preserve"><value>La dirección del servidor debe empezar por https://.</value></data>
+  <data name="Settings_EndpointKey" xml:space="preserve"><value>Clave API</value></data>
+  <data name="Settings_EndpointUrl" xml:space="preserve"><value>Dirección del servidor (https://...)</value></data>
+  <data name="Settings_ErrorThreshold" xml:space="preserve"><value>Parada automática por tasa de error (%)</value></data>
+  <data name="Settings_ExportData" xml:space="preserve"><value>Exportar datos</value></data>
+  <data name="Settings_FeedbackIntro" xml:space="preserve"><value>Gmail y Yahoo esperan una baja con un clic por HTTPS. Despliega el proyecto Alpixa.UnsubscribeEndpoint en tu servidor y escribe aquí su dirección. Sin él se usa la baja por correo (mailto).</value></data>
+  <data name="Settings_FeedbackResult" xml:space="preserve"><value>{0} rebotes/bajas/quejas nuevos procesados.</value></data>
+  <data name="Settings_FeedbackSection" xml:space="preserve"><value>Servidor de bajas (opcional)</value></data>
+  <data name="Settings_FeedbackTitle" xml:space="preserve"><value>Revisión terminada</value></data>
+  <data name="Settings_FeedbackWorking" xml:space="preserve"><value>Revisando la bandeja...</value></data>
+  <data name="Settings_Forget" xml:space="preserve"><value>Eliminar persona</value></data>
+  <data name="Settings_ForgetConfirm" xml:space="preserve"><value>¿Eliminar {0} de todas las listas y registros? No se puede deshacer.</value></data>
+  <data name="Settings_ForgetDone" xml:space="preserve"><value>{0} registros eliminados.</value></data>
+  <data name="Settings_ForgetTitle" xml:space="preserve"><value>Eliminar persona</value></data>
+  <data name="Settings_ForgetYes" xml:space="preserve"><value>Sí, eliminar</value></data>
+  <data name="Settings_General" xml:space="preserve"><value>General</value></data>
+  <data name="Settings_Iys" xml:space="preserve"><value>Integración IYS: </value></data>
+  <data name="Settings_IysHint" xml:space="preserve"><value>En Turquía los mensajes comerciales pueden requerir el consentimiento del destinatario en el IYS. Alpixa tiene un punto de extensión (IConsentProvider) para ello; no está activo en esta instalación.</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Idioma</value></data>
+  <data name="Settings_LanguageRestart" xml:space="preserve"><value>El nuevo idioma se aplica al reiniciar Alpixa.</value></data>
+  <data name="Settings_LanguageTitle" xml:space="preserve"><value>Idioma cambiado</value></data>
+  <data name="Settings_LastCheck" xml:space="preserve"><value>Última revisión: </value></data>
+  <data name="Settings_MaxParallel" xml:space="preserve"><value>Conexiones máx. en modo masivo</value></data>
+  <data name="Settings_NeedEmail" xml:space="preserve"><value>Escribe una dirección de correo válida.</value></data>
+  <data name="Settings_OpenData" xml:space="preserve"><value>Abrir carpeta de datos</value></data>
+  <data name="Settings_OpenLogs" xml:space="preserve"><value>Abrir carpeta de registros</value></data>
+  <data name="Settings_OtherDomains" xml:space="preserve"><value>Otros</value></data>
+  <data name="Settings_PrivacyIntro" xml:space="preserve"><value>Exporta o elimina por completo los datos de una persona (derecho al olvido). Si está en la lista de bloqueo, sigue ahí para no volver a recibir correos.</value></data>
+  <data name="Settings_PrivacySection" xml:space="preserve"><value>Privacidad (RGPD)</value></data>
+  <data name="Settings_RestartSetup" xml:space="preserve"><value>Reiniciar el asistente de configuración</value></data>
+  <data name="Settings_Restore" xml:space="preserve"><value>Restaurar copia</value></data>
+  <data name="Settings_RestoreConfirm" xml:space="preserve"><value>Los datos actuales se sustituirán por la copia. ¿Continuar?</value></data>
+  <data name="Settings_RestoreDone" xml:space="preserve"><value>La copia está lista y se cargará la próxima vez que abras Alpixa. Las contraseñas no están incluidas; vuelve a escribirlas en los perfiles.</value></data>
+  <data name="Settings_RestorePick" xml:space="preserve"><value>Elige el archivo de copia (.zip)</value></data>
+  <data name="Settings_RestoreTitle" xml:space="preserve"><value>Restaurar copia</value></data>
+  <data name="Settings_RestoreYes" xml:space="preserve"><value>Sí, restaurar</value></data>
+  <data name="Settings_Retries" xml:space="preserve"><value>Reintentos ante errores temporales</value></data>
+  <data name="Settings_Seeds" xml:space="preserve"><value>Direcciones de prueba</value></data>
+  <data name="Settings_SeedsHint" xml:space="preserve"><value>Tus propias direcciones de Gmail, Outlook y Yahoo. Los envíos de prueba van aquí. Sepáralas con comas.</value></data>
+  <data name="Settings_SendingSection" xml:space="preserve"><value>Velocidad de envío</value></data>
+  <data name="Settings_SendingWarning" xml:space="preserve"><value>Subir estos valores aumenta el riesgo de spam. Si dudas, deja los predeterminados.</value></data>
+  <data name="Settings_SupportBundle" xml:space="preserve"><value>Crear paquete de soporte</value></data>
+  <data name="Settings_SupportDone" xml:space="preserve"><value>Paquete guardado: {0}
+Puedes enviar este archivo al soporte.</value></data>
+  <data name="Settings_SupportTitle" xml:space="preserve"><value>Paquete de soporte</value></data>
+  <data name="Settings_TrackingDefault" xml:space="preserve"><value>Activar el seguimiento de aperturas en campañas nuevas</value></data>
+  <data name="Settings_TrackingEnable" xml:space="preserve"><value>Activar de todos modos</value></data>
+  <data name="Settings_TrackingTitle" xml:space="preserve"><value>Seguimiento de aperturas</value></data>
+  <data name="Settings_TrackingWarning" xml:space="preserve"><value>El seguimiento de aperturas registra cuándo un destinatario abre el correo. Son datos personales; menciónalo en tu política de privacidad. Apps como Apple Mail pueden falsear las cifras.</value></data>
+  <data name="Settings_WarmupHint" xml:space="preserve"><value>Cada línea es «día: límite diario». Cuatro días después del último paso, el volumen crece un 20 % al día.</value></data>
+  <data name="Settings_WarmupPlan" xml:space="preserve"><value>Plan de calentamiento</value></data>
+  <data name="Settings_WarmupReset" xml:space="preserve"><value>Volver al plan predeterminado</value></data>
+  <data name="Setup_AccountIntro" xml:space="preserve"><value>Añade la cuenta desde la que se enviarán los correos. Usa una dirección de tu propio dominio (p. ej. news@tuempresa.es).</value></data>
+  <data name="Setup_DomainIntro" xml:space="preserve"><value>Se han comprobado los registros DNS de tu dominio. Corrige los puntos rojos en tu panel DNS.</value></data>
+  <data name="Setup_DomainLater" xml:space="preserve"><value>Si ahora no puedes añadir los registros, continúa y vuelve a comprobar en Salud del dominio.</value></data>
+  <data name="Setup_Finish" xml:space="preserve"><value>Terminar</value></data>
+  <data name="Setup_NeedPassword" xml:space="preserve"><value>Escribe la contraseña.</value></data>
+  <data name="Setup_SelectorHint" xml:space="preserve"><value>Aparece en el panel de tu servicio de envío, p. ej. s1 (déjalo vacío si dudas)</value></data>
+  <data name="Setup_Skip" xml:space="preserve"><value>Omitir por ahora</value></data>
+  <data name="Setup_Step1" xml:space="preserve"><value>Idioma</value></data>
+  <data name="Setup_Step2" xml:space="preserve"><value>Cuenta de envío</value></data>
+  <data name="Setup_Step3" xml:space="preserve"><value>Comprobación del dominio</value></data>
+  <data name="Setup_Step4" xml:space="preserve"><value>Envío de prueba</value></data>
+  <data name="Setup_StepTitle" xml:space="preserve"><value>Paso {0}/4: {1}</value></data>
+  <data name="Setup_TestCampaign" xml:space="preserve"><value>Prueba de configuración</value></data>
+  <data name="Setup_TestCheckInbox" xml:space="preserve"><value>Si llega a spam, revisa los puntos de Salud del dominio.</value></data>
+  <data name="Setup_TestIntro" xml:space="preserve"><value>Envía un correo de ejemplo a tus propias direcciones y comprueba que llega a la bandeja de entrada.</value></data>
+  <data name="Setup_TestSubject" xml:space="preserve"><value>Correo de prueba de Alpixa</value></data>
+  <data name="Setup_Title" xml:space="preserve"><value>Asistente de configuración</value></data>
+  <data name="Setup_UseBrowser" xml:space="preserve"><value>Iniciar sesión con el navegador</value></data>
+  <data name="Setup_UsernameHint" xml:space="preserve"><value>Dirección del remitente si está vacío</value></data>
+  <data name="Setup_Welcome" xml:space="preserve"><value>Te damos la bienvenida a Alpixa. En pocos pasos estarás listo para tu primer envío. Los valores predeterminados son seguros: velocidad baja, modo secuencial y calentamiento activo.</value></data>
+  <data name="TemplateEdit_Desktop" xml:space="preserve"><value>Escritorio</value></data>
+  <data name="TemplateEdit_Fields" xml:space="preserve"><value>Campos disponibles: {{ ad }}, {{ soyad }}, {{ firma }}, {{ email }}, {{ gonderen_adi }}, {{ unsubscribe_url }}, otras columnas de la lista. Valor por defecto para campos vacíos: {{ ad ?? "Estimado lector" }}</value></data>
+  <data name="TemplateEdit_Html" xml:space="preserve"><value>Contenido del correo (HTML)</value></data>
+  <data name="TemplateEdit_LintClean" xml:space="preserve"><value>No se encontraron problemas.</value></data>
+  <data name="TemplateEdit_LintTitle" xml:space="preserve"><value>Revisión del contenido</value></data>
+  <data name="TemplateEdit_Mobile" xml:space="preserve"><value>Móvil</value></data>
+  <data name="TemplateEdit_Name" xml:space="preserve"><value>Nombre de la plantilla</value></data>
+  <data name="TemplateEdit_Preview" xml:space="preserve"><value>Vista previa</value></data>
+  <data name="TemplateEdit_Refresh" xml:space="preserve"><value>Actualizar vista previa</value></data>
+  <data name="TemplateEdit_Subject" xml:space="preserve"><value>Asunto</value></data>
+  <data name="TemplateEdit_SubjectPrefix" xml:space="preserve"><value>Asunto: </value></data>
+  <data name="TemplateEdit_TextPlaceholder" xml:space="preserve"><value>Versión de texto plano</value></data>
+  <data name="TemplateEdit_TextToggle" xml:space="preserve"><value>Escribiré yo la versión de texto plano (se genera sola si está vacía)</value></data>
+  <data name="Templates_CopyName" xml:space="preserve"><value>{0} (copia)</value></data>
+  <data name="Templates_DeleteConfirm" xml:space="preserve"><value>¿Eliminar la plantilla «{0}»?</value></data>
+  <data name="Templates_Duplicate" xml:space="preserve"><value>Duplicar</value></data>
+  <data name="Templates_Error" xml:space="preserve"><value>La plantilla tiene un error: {0}</value></data>
+  <data name="Templates_Intro" xml:space="preserve"><value>Los correos sencillos y personales llegan mejor a la bandeja de entrada.</value></data>
+  <data name="Templates_NeedName" xml:space="preserve"><value>Escribe un nombre de plantilla.</value></data>
+  <data name="Templates_New" xml:space="preserve"><value>Plantilla nueva</value></data>
+  <data name="Templates_NewName" xml:space="preserve"><value>Plantilla nueva</value></data>
+  <data name="Templates_SampleAddress" xml:space="preserve"><value>Calle Ejemplo 1, Madrid</value></data>
+  <data name="Templates_SampleSender" xml:space="preserve"><value>Empresa Ejemplo</value></data>
+  <data name="Wizard_Blocked" xml:space="preserve"><value>Las comprobaciones no se han superado. Corrige los avisos rojos (para el dominio puedes marcar «enviar de todos modos»). La lista debe tener destinatarios.</value></data>
+  <data name="Wizard_CampaignName" xml:space="preserve"><value>Nombre de la campaña</value></data>
+  <data name="Wizard_Checking" xml:space="preserve"><value>Comprobando...</value></data>
+  <data name="Wizard_ConfirmNote" xml:space="preserve"><value>Puedes minimizar la ventana durante el envío. Si cierras la app, continuará donde lo dejó al volver a abrirla.</value></data>
+  <data name="Wizard_ContentCheck" xml:space="preserve"><value>Revisión del contenido</value></data>
+  <data name="Wizard_DefaultName" xml:space="preserve"><value>Campaña {0}</value></data>
+  <data name="Wizard_DryRun" xml:space="preserve"><value>Simulación (ejecutar todo el proceso sin enviar de verdad)</value></data>
+  <data name="Wizard_HealthBlocks" xml:space="preserve"><value>El dominio tiene puntos rojos. Se recomienda corregirlos primero.</value></data>
+  <data name="Wizard_HealthOk" xml:space="preserve"><value>Comprobación del dominio superada.</value></data>
+  <data name="Wizard_Later" xml:space="preserve"><value>Más tarde</value></data>
+  <data name="Wizard_LaterNote" xml:space="preserve"><value>Alpixa debe estar abierto a esa hora para que empiece una campaña programada.</value></data>
+  <data name="Wizard_Launch" xml:space="preserve"><value>Iniciar envío</value></data>
+  <data name="Wizard_LintBlocks" xml:space="preserve"><value>El envío no puede empezar hasta corregir los avisos rojos del contenido. Edita la plantilla y comprueba de nuevo con Atrás / Siguiente.</value></data>
+  <data name="Wizard_Mode" xml:space="preserve"><value>Modo de envío</value></data>
+  <data name="Wizard_ModeBulkLong" xml:space="preserve"><value>Masivo: varias conexiones a la vez dentro de los límites de velocidad. Para dominios ya calentados y listas grandes.</value></data>
+  <data name="Wizard_ModeBulkWith" xml:space="preserve"><value>Masivo ({0} conexiones)</value></data>
+  <data name="Wizard_ModeSequential" xml:space="preserve"><value>Secuencial</value></data>
+  <data name="Wizard_ModeSequentialLong" xml:space="preserve"><value>Secuencial (predeterminado): uno a uno con unos segundos entre correos. Lo más seguro para dominios nuevos y listas pequeñas.</value></data>
+  <data name="Wizard_NeedList" xml:space="preserve"><value>Elige una lista.</value></data>
+  <data name="Wizard_NeedProfile" xml:space="preserve"><value>Elige un perfil de remitente.</value></data>
+  <data name="Wizard_NeedSeeds" xml:space="preserve"><value>Escribe al menos una dirección de prueba válida.</value></data>
+  <data name="Wizard_NeedTemplate" xml:space="preserve"><value>El nombre de la campaña, la plantilla y el asunto son obligatorios.</value></data>
+  <data name="Wizard_NoList" xml:space="preserve"><value>Importa primero una lista en Listas.</value></data>
+  <data name="Wizard_NoListTitle" xml:space="preserve"><value>No hay lista</value></data>
+  <data name="Wizard_NoProfile" xml:space="preserve"><value>Añade primero un perfil en Perfiles de remitente.</value></data>
+  <data name="Wizard_NoProfileTitle" xml:space="preserve"><value>No hay perfil de remitente</value></data>
+  <data name="Wizard_Now" xml:space="preserve"><value>Ahora</value></data>
+  <data name="Wizard_OneByOne" xml:space="preserve"><value>En ambos modos cada destinatario recibe un correo aparte; nunca se ven entre sí.</value></data>
+  <data name="Wizard_OpenHealth" xml:space="preserve"><value>Abrir Salud del dominio</value></data>
+  <data name="Wizard_Override" xml:space="preserve"><value>Entiendo los riesgos, enviar de todos modos</value></data>
+  <data name="Wizard_Parallelism" xml:space="preserve"><value>Conexiones en paralelo:</value></data>
+  <data name="Wizard_PastSchedule" xml:space="preserve"><value>La hora programada no puede estar en el pasado.</value></data>
+  <data name="Wizard_Quota" xml:space="preserve"><value>Límite de hoy: {0} (enviados hoy: {1})</value></data>
+  <data name="Wizard_QuotaWarmup" xml:space="preserve"><value>Día de calentamiento {0}: límite de hoy {1} (enviados hoy: {2}). Duración estimada: {3} días.</value></data>
+  <data name="Wizard_Recipients" xml:space="preserve"><value>Destinatarios: {0}</value></data>
+  <data name="Wizard_SendTest" xml:space="preserve"><value>Enviar prueba</value></data>
+  <data name="Wizard_Sending" xml:space="preserve"><value>Enviando...</value></data>
+  <data name="Wizard_Starting" xml:space="preserve"><value>Iniciando...</value></data>
+  <data name="Wizard_Step1" xml:space="preserve"><value>Perfil</value></data>
+  <data name="Wizard_Step1Hint" xml:space="preserve"><value>¿Desde qué cuenta se enviarán los correos?</value></data>
+  <data name="Wizard_Step2" xml:space="preserve"><value>Lista</value></data>
+  <data name="Wizard_Step2Hint" xml:space="preserve"><value>¿A qué lista envías? Solo se envía a contactos activos; las direcciones bloqueadas se omiten.</value></data>
+  <data name="Wizard_Step3" xml:space="preserve"><value>Plantilla</value></data>
+  <data name="Wizard_Step3Hint" xml:space="preserve"><value>Edita las plantillas en la pantalla Plantillas. Aquí puedes cambiar el asunto.</value></data>
+  <data name="Wizard_Step4" xml:space="preserve"><value>Comprobaciones</value></data>
+  <data name="Wizard_Step5" xml:space="preserve"><value>Modo y hora</value></data>
+  <data name="Wizard_Step6" xml:space="preserve"><value>Confirmar</value></data>
+  <data name="Wizard_StepTitle" xml:space="preserve"><value>Paso {0}/{1}: {2}</value></data>
+  <data name="Wizard_Summary" xml:space="preserve"><value>Campaña: {0}
+Remitente: {1}
+Lista: {2} ({3} personas)
+Plantilla: {4}
+Asunto: {5}
+Modo: {6}
+Hora: {7}
+Simulación: {8}
+Seguimiento de aperturas: {9}</value></data>
+  <data name="Wizard_Template" xml:space="preserve"><value>Plantilla</value></data>
+  <data name="Wizard_TestFail" xml:space="preserve"><value>✗ {0}: {1}</value></data>
+  <data name="Wizard_TestHint" xml:space="preserve"><value>Envía a tus propias direcciones de Gmail, Outlook y Yahoo y comprueba que llega a la bandeja de entrada. Se añade [TEST] al asunto.</value></data>
+  <data name="Wizard_TestOk" xml:space="preserve"><value>✓ {0}: enviado</value></data>
+  <data name="Wizard_TestTitle" xml:space="preserve"><value>Envío de prueba</value></data>
+  <data name="Wizard_Title" xml:space="preserve"><value>Nueva campaña</value></data>
+  <data name="Wizard_TrackOpens" xml:space="preserve"><value>Seguimiento de aperturas</value></data>
+  <data name="Wizard_TrackOpensNote" xml:space="preserve"><value>El seguimiento de aperturas añade una imagen invisible. Está desactivado por defecto por privacidad y requiere configurar el servidor de bajas.</value></data>
+  <data name="Wizard_Volume" xml:space="preserve"><value>Volumen</value></data>
+  <data name="Wizard_When" xml:space="preserve"><value>¿Cuándo?</value></data>
+  <data name="Wizard_TotalSuffix" xml:space="preserve"><value> en total</value></data>
+  <data name="ProfileEdit_NoAuth" xml:space="preserve"><value>Este proveedor no requiere inicio de sesión.</value></data>
+  <data name="TemplateEdit_PickImage" xml:space="preserve"><value>Elige una imagen</value></data>
+  <data name="TemplateEdit_PickAttachment" xml:space="preserve"><value>Elige los archivos que quieres adjuntar</value></data>
+  <data name="TemplateEdit_Added" xml:space="preserve"><value>Añadido: {0}</value></data>
+  <data name="TemplateEdit_Adding" xml:space="preserve"><value>Añadiendo archivos…</value></data>
+  <data name="TemplateEdit_AttachmentSummary" xml:space="preserve"><value>{0} archivo(s) · {1} de {2} MB</value></data>
+  <data name="TemplateEdit_DropHint" xml:space="preserve"><value>Las imágenes se colocan dentro del correo en la posición del cursor (hasta {0} cada una). Los demás archivos se envían como adjuntos (hasta {1} MB en total).</value></data>
+  <data name="TemplateEdit_DropTitle" xml:space="preserve"><value>Arrastra aquí una imagen o un archivo</value></data>
+  <data name="TemplateEdit_AddImage" xml:space="preserve"><value>Añadir imagen</value></data>
+  <data name="TemplateEdit_AddFile" xml:space="preserve"><value>Adjuntar archivo</value></data>
+  <data name="TemplateEdit_Attachments" xml:space="preserve"><value>Adjuntos</value></data>
+  <data name="TemplateEdit_NoAttachments" xml:space="preserve"><value>Todavía no hay adjuntos. Los adjuntos van a cada destinatario; compartir un enlace en lugar de un archivo grande mejora la entrega.</value></data>
+  <data name="TemplateEdit_Remove" xml:space="preserve"><value>Quitar</value></data>
+  <data name="TemplateEdit_Basics" xml:space="preserve"><value>Datos básicos</value></data>
+  <data name="TemplateEdit_Eyebrow" xml:space="preserve"><value>EDITOR DE PLANTILLAS</value></data>
+  <data name="TemplateEdit_AutoPreview" xml:space="preserve"><value>La vista previa se actualiza sola mientras escribes.</value></data>
+  <data name="Settings_MaxAttachment" xml:space="preserve"><value>Límite de adjuntos (MB, total por plantilla)</value></data>
+  <data name="Settings_MaxImage" xml:space="preserve"><value>Límite por imagen (KB)</value></data>
+  <data name="Dashboard_Subtitle" xml:space="preserve"><value>Tus contactos, campañas y entregabilidad de un vistazo.</value></data>
+  <data name="Dashboard_GreetingNight" xml:space="preserve"><value>Buenas noches</value></data>
+  <data name="Dashboard_GreetingMorning" xml:space="preserve"><value>Buenos días</value></data>
+  <data name="Dashboard_GreetingDay" xml:space="preserve"><value>Buenas tardes</value></data>
+  <data name="Dashboard_GreetingEvening" xml:space="preserve"><value>Buenas tardes</value></data>
+  <data name="Lists_Subtitle" xml:space="preserve"><value>Importa, limpia y gestiona tus listas de destinatarios.</value></data>
+  <data name="Campaigns_Subtitle" xml:space="preserve"><value>Inicia, supervisa, pausa o reanuda tus envíos.</value></data>
+  <data name="Settings_Subtitle" xml:space="preserve"><value>Idioma, velocidad de envío, privacidad y copias de seguridad.</value></data>
+  <data name="ProfileEdit_Subtitle" xml:space="preserve"><value>Elige desde qué cuenta y con qué nombre se envían tus correos.</value></data>
+  <data name="Import_Subtitle" xml:space="preserve"><value>Importa contactos de forma segura desde CSV, Excel o texto pegado.</value></data>
+  <data name="ListDetail_Subtitle" xml:space="preserve"><value>Busca, filtra y gestiona las personas de esta lista.</value></data>
+  <data name="ProfileEdit_AppPasswordHelp" xml:space="preserve"><value>Gmail no acepta tu contraseña normal; necesitas una contraseña de aplicación de 16 caracteres. 1) Activa la verificación en dos pasos en tu cuenta de Google. 2) Crea una contraseña de aplicación llamada «Alpixa» en myaccount.google.com/apppasswords. 3) Escribe tu dirección de Gmail como usuario y la contraseña de 16 caracteres (sin espacios). Si la dirección del remitente está vacía, se usa el usuario. En Microsoft 365 solo funciona si tu administrador lo permite.</value></data>
+  <data name="Settings_OAuthSection" xml:space="preserve"><value>Inicio de sesión con navegador (Google / Microsoft)</value></data>
+  <data name="Settings_OAuthIntro" xml:space="preserve"><value>Para iniciar sesión en Gmail o Microsoft 365 con el navegador, escribe el ID de cliente que creaste en tu propia cuenta de Google Cloud / Microsoft Entra y pulsa Guardar. No hace falta reiniciar. Los pasos detallados están en la sección «ID de cliente OAuth» del README. Si no, usa una contraseña de aplicación en el perfil.</value></data>
+  <data name="Settings_GoogleClientId" xml:space="preserve"><value>ID de cliente de Google</value></data>
+  <data name="Settings_GoogleClientSecret" xml:space="preserve"><value>Secreto de cliente de Google</value></data>
+  <data name="Settings_MicrosoftClientId" xml:space="preserve"><value>ID de aplicación (cliente) de Microsoft</value></data>
+  <data name="Settings_BadGoogleClientId" xml:space="preserve"><value>El ID de cliente de Google debe terminar en «.apps.googleusercontent.com». Copia el valor «Client ID» de Google Cloud Console.</value></data>
+  <data name="Info_WhatTitle" xml:space="preserve"><value>¿Para qué sirve?</value></data>
+  <data name="Info_HowTitle" xml:space="preserve"><value>¿Qué debo hacer?</value></data>
+  <data name="Info_Ok" xml:space="preserve"><value>Entendido</value></data>
+  <data name="Info_ProfileEdit_Provider_What" xml:space="preserve"><value>El servidor que entrega tus correos. Al elegirlo se rellenan solos los ajustes técnicos.</value></data>
+  <data name="Info_ProfileEdit_Provider_How" xml:space="preserve"><value>Dirección de Gmail → «Gmail / Google Workspace»; Outlook/Hotmail → «Microsoft 365». Para miles de destinatarios usa un servicio de envío como Amazon SES o Brevo.</value></data>
+  <data name="Info_ProfileEdit_Name_What" xml:space="preserve"><value>Un apodo que solo ves tú, para distinguir tus cuentas.</value></data>
+  <data name="Info_ProfileEdit_Name_How" xml:space="preserve"><value>Ejemplo: «Boletín de la empresa».</value></data>
+  <data name="Info_ProfileEdit_FromName_What" xml:space="preserve"><value>El nombre que ven los destinatarios junto a tu correo.</value></data>
+  <data name="Info_ProfileEdit_FromName_How" xml:space="preserve"><value>Usa un nombre que reconozcan, p. ej. el de tu empresa.</value></data>
+  <data name="Info_ProfileEdit_FromAddress_What" xml:space="preserve"><value>La dirección desde la que llega el correo.</value></data>
+  <data name="Info_ProfileEdit_FromAddress_How" xml:space="preserve"><value>Usa tu propia dirección. Con Gmail debe ser tu dirección de Gmail. Si está vacía, se usa el usuario.</value></data>
+  <data name="Info_ProfileEdit_ReplyTo_What" xml:space="preserve"><value>Opcional: adónde van las respuestas si no es al remitente.</value></data>
+  <data name="Info_ProfileEdit_ReplyTo_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_PostalAddress_What" xml:space="preserve"><value>Datos de contacto al pie de cada correo; obligatorios en envíos masivos.</value></data>
+  <data name="Info_ProfileEdit_PostalAddress_How" xml:space="preserve"><value>La dirección o el teléfono de tu empresa.</value></data>
+  <data name="Info_ProfileEdit_Username_What" xml:space="preserve"><value>El nombre para iniciar sesión en el servidor de correo.</value></data>
+  <data name="Info_ProfileEdit_Username_How" xml:space="preserve"><value>Gmail/Outlook: tu dirección de correo. Otros servicios: el «usuario SMTP» de su panel.</value></data>
+  <data name="Info_ProfileEdit_Password_What" xml:space="preserve"><value>La contraseña del servidor, guardada en el llavero seguro del equipo.</value></data>
+  <data name="Info_ProfileEdit_Password_How" xml:space="preserve"><value>Gmail necesita una contraseña de aplicación de 16 caracteres (myaccount.google.com/apppasswords), no tu contraseña normal.</value></data>
+  <data name="Info_ProfileEdit_Daily_What" xml:space="preserve"><value>Máximo de correos al día desde esta cuenta.</value></data>
+  <data name="Info_ProfileEdit_Daily_How" xml:space="preserve"><value>Con un Gmail personal, no pases de 500 al día.</value></data>
+  <data name="Info_ProfileEdit_Hourly_What" xml:space="preserve"><value>Máximo de correos por hora.</value></data>
+  <data name="Info_ProfileEdit_Hourly_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_PerMinute_What" xml:space="preserve"><value>Máximo de correos por minuto; enviar demasiado rápido parece spam.</value></data>
+  <data name="Info_ProfileEdit_PerMinute_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_Host_What" xml:space="preserve"><value>La dirección del servidor de salida (SMTP).</value></data>
+  <data name="Info_ProfileEdit_Host_How" xml:space="preserve"><value>Se rellena sola. Gmail: smtp.gmail.com, Outlook: smtp.office365.com.</value></data>
+  <data name="Info_ProfileEdit_Port_What" xml:space="preserve"><value>El «número de puerta» del servidor.</value></data>
+  <data name="Info_ProfileEdit_Port_How" xml:space="preserve"><value>Normalmente 587 (StartTls) o 465 (SslOnConnect).</value></data>
+  <data name="Info_ProfileEdit_Security_What" xml:space="preserve"><value>Cómo se cifra la conexión.</value></data>
+  <data name="Info_ProfileEdit_Security_How" xml:space="preserve"><value>Puerto 587 → StartTls, puerto 465 → SslOnConnect.</value></data>
+  <data name="Info_ProfileEdit_DkimSelector_What" xml:space="preserve"><value>DKIM es una firma digital que demuestra que el correo es tuyo; el selector es su nombre.</value></data>
+  <data name="Info_ProfileEdit_DkimSelector_How" xml:space="preserve"><value>Aparece en los registros DNS que te dio tu servicio de envío (la parte antes de «._domainkey»). Déjalo vacío con Gmail.</value></data>
+  <data name="Info_ProfileEdit_DkimDomain_What" xml:space="preserve"><value>El dominio para el que se firma.</value></data>
+  <data name="Info_ProfileEdit_DkimDomain_How" xml:space="preserve"><value>Normalmente déjalo vacío.</value></data>
+  <data name="Info_ProfileEdit_ImapUsername_What" xml:space="preserve"><value>Usuario para leer tu bandeja y encontrar rebotes y bajas.</value></data>
+  <data name="Info_ProfileEdit_ImapUsername_How" xml:space="preserve"><value>Déjalo vacío para usar el mismo usuario de envío.</value></data>
+  <data name="Info_Import_OrPaste_What" xml:space="preserve"><value>¿Sin archivo? Escribe o pega aquí los contactos.</value></data>
+  <data name="Info_Import_OrPaste_How" xml:space="preserve"><value>Primera fila: encabezados; luego un contacto por fila, separado por comas.</value></data>
+  <data name="Info_Import_ColEmail_What" xml:space="preserve"><value>La columna con las direcciones de correo (obligatoria).</value></data>
+  <data name="Info_Import_ColEmail_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ColFirst_What" xml:space="preserve"><value>La columna de nombres, para «Hola Ana».</value></data>
+  <data name="Info_Import_ColFirst_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ColLast_What" xml:space="preserve"><value>La columna de apellidos.</value></data>
+  <data name="Info_Import_ColLast_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ColCompany_What" xml:space="preserve"><value>La columna de empresa; se usa como {{ firma }}.</value></data>
+  <data name="Info_Import_ColCompany_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ColConsentSource_What" xml:space="preserve"><value>Dónde dio su permiso la persona (registro legal).</value></data>
+  <data name="Info_Import_ColConsentSource_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ColConsentDate_What" xml:space="preserve"><value>Cuándo dio su permiso la persona.</value></data>
+  <data name="Info_Import_ColConsentDate_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_PreviewTitle_What" xml:space="preserve"><value>Las primeras filas de tu archivo tal como las lee la app.</value></data>
+  <data name="Info_Import_PreviewTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Email_What" xml:space="preserve"><value>La dirección de correo del contacto.</value></data>
+  <data name="Info_ListDetail_Email_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Name_What" xml:space="preserve"><value>El nombre del contacto.</value></data>
+  <data name="Info_ListDetail_Name_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Company_What" xml:space="preserve"><value>La empresa del contacto.</value></data>
+  <data name="Info_ListDetail_Company_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Status_What" xml:space="preserve"><value>Solo los contactos «Activos» reciben correos; nunca los dados de baja, rebotados o con queja.</value></data>
+  <data name="Info_ListDetail_Status_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Campaign_What" xml:space="preserve"><value>Nombre y estado de la campaña.</value></data>
+  <data name="Info_Reports_Campaign_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Total_What" xml:space="preserve"><value>Total de destinatarios previstos.</value></data>
+  <data name="Info_Reports_Total_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_Sent_What" xml:space="preserve"><value>Correos aceptados por el servidor (pueden acabar en spam igualmente).</value></data>
+  <data name="Info_Detail_Sent_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_Failed_What" xml:space="preserve"><value>Correos que no se pudieron enviar.</value></data>
+  <data name="Info_Detail_Failed_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Bounce_What" xml:space="preserve"><value>Proporción de direcciones que rebotaron. Por encima del 2 % daña tu reputación.</value></data>
+  <data name="Info_Reports_Bounce_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Complaint_What" xml:space="preserve"><value>Proporción de destinatarios que te marcaron como spam. Mantenla por debajo del 0,1 %.</value></data>
+  <data name="Info_Reports_Complaint_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_Unsubscribes_What" xml:space="preserve"><value>Personas que se dieron de baja; no se les volverá a escribir.</value></data>
+  <data name="Info_Detail_Unsubscribes_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Opens_What" xml:space="preserve"><value>Aperturas (solo con el seguimiento activado).</value></data>
+  <data name="Info_Reports_Opens_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Language_What" xml:space="preserve"><value>Idioma de la app.</value></data>
+  <data name="Info_Settings_Language_How" xml:space="preserve"><value>Reinicia la app después de cambiarlo.</value></data>
+  <data name="Info_Settings_Seeds_What" xml:space="preserve"><value>Tus propias direcciones que reciben los correos de prueba.</value></data>
+  <data name="Info_Settings_Seeds_How" xml:space="preserve"><value>Separadas por comas, de distintos proveedores.</value></data>
+  <data name="Info_Settings_EndpointUrl_What" xml:space="preserve"><value>Servidor opcional de baja con un clic.</value></data>
+  <data name="Info_Settings_EndpointUrl_How" xml:space="preserve"><value>Déjalo vacío si no tienes servidor.</value></data>
+  <data name="Info_Settings_EndpointKey_What" xml:space="preserve"><value>Contraseña del servidor de bajas.</value></data>
+  <data name="Info_Settings_EndpointKey_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_DelayMin_What" xml:space="preserve"><value>Espera mínima entre correos en modo secuencial (segundos).</value></data>
+  <data name="Info_Settings_DelayMin_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_DelayMax_What" xml:space="preserve"><value>Espera máxima entre correos (segundos).</value></data>
+  <data name="Info_Settings_DelayMax_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Retries_What" xml:space="preserve"><value>Cuántas veces se reintenta un error temporal.</value></data>
+  <data name="Info_Settings_Retries_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_DefaultParallel_What" xml:space="preserve"><value>Número predeterminado de conexiones en paralelo en modo masivo.</value></data>
+  <data name="Info_Settings_DefaultParallel_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_MaxParallel_What" xml:space="preserve"><value>Máximo de conexiones en paralelo permitidas.</value></data>
+  <data name="Info_Settings_MaxParallel_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_ErrorThreshold_What" xml:space="preserve"><value>Por encima de esta tasa de error el envío se detiene solo.</value></data>
+  <data name="Info_Settings_ErrorThreshold_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_DomainLimits_What" xml:space="preserve"><value>Límites por minuto según el proveedor del destinatario.</value></data>
+  <data name="Info_Settings_DomainLimits_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_WarmupPlan_What" xml:space="preserve"><value>Aumenta poco a poco el límite diario de las cuentas nuevas.</value></data>
+  <data name="Info_Settings_WarmupPlan_How" xml:space="preserve"><value>Una línea por paso: «día: límite».</value></data>
+  <data name="Info_Settings_MaxAttachment_What" xml:space="preserve"><value>Tamaño total de adjuntos por plantilla (MB).</value></data>
+  <data name="Info_Settings_MaxAttachment_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_MaxImage_What" xml:space="preserve"><value>Tamaño máximo por imagen (KB).</value></data>
+  <data name="Info_Settings_MaxImage_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_GoogleClientId_What" xml:space="preserve"><value>ID de aplicación de Google necesario para iniciar sesión en Gmail con el navegador.</value></data>
+  <data name="Info_Settings_GoogleClientId_How" xml:space="preserve"><value>Google Cloud Console → Google Auth Platform → Clients → Aplicación de escritorio.</value></data>
+  <data name="Info_Settings_GoogleClientSecret_What" xml:space="preserve"><value>El secreto que aparece junto al ID de cliente.</value></data>
+  <data name="Info_Settings_GoogleClientSecret_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_MicrosoftClientId_What" xml:space="preserve"><value>ID de aplicación de Microsoft para iniciar sesión en Outlook con el navegador.</value></data>
+  <data name="Info_Settings_MicrosoftClientId_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Name_What" xml:space="preserve"><value>Nombre de la plantilla, solo lo ves tú.</value></data>
+  <data name="Info_TemplateEdit_Name_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Subject_What" xml:space="preserve"><value>La línea de asunto que ven los destinatarios.</value></data>
+  <data name="Info_TemplateEdit_Subject_How" xml:space="preserve"><value>Breve y clara; evita MAYÚSCULAS y !!!.</value></data>
+  <data name="Info_Wizard_CampaignName_What" xml:space="preserve"><value>Un nombre para este envío; solo lo ves tú.</value></data>
+  <data name="Info_Wizard_CampaignName_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Template_What" xml:space="preserve"><value>El diseño del contenido del correo.</value></data>
+  <data name="Info_Wizard_Template_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Common_ShowAdvanced_What" xml:space="preserve"><value>Muestra ajustes técnicos que la mayoría no necesita.</value></data>
+  <data name="Info_Common_ShowAdvanced_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_CheckMx_What" xml:space="preserve"><value>Comprueba en línea que el dominio de cada dirección puede recibir correo.</value></data>
+  <data name="Info_Import_CheckMx_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_Consent_What" xml:space="preserve"><value>Confirma que estas personas aceptaron recibir tus correos.</value></data>
+  <data name="Info_Import_Consent_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_DkimSign_What" xml:space="preserve"><value>Firmar los correos en este equipo con tu propia clave (avanzado).</value></data>
+  <data name="Info_ProfileEdit_DkimSign_How" xml:space="preserve"><value>Déjalo desactivado con Gmail, Outlook o servicios de envío.</value></data>
+  <data name="Info_ProfileEdit_ImapEnable_What" xml:space="preserve"><value>Revisa tu bandeja en busca de rebotes y bajas y quita a esas personas automáticamente.</value></data>
+  <data name="Info_ProfileEdit_ImapEnable_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_UseAppPassword_What" xml:space="preserve"><value>Conectar con usuario y contraseña de aplicación en lugar del navegador.</value></data>
+  <data name="Info_ProfileEdit_UseAppPassword_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_Warmup_What" xml:space="preserve"><value>Empieza las cuentas nuevas con límites bajos y los sube poco a poco.</value></data>
+  <data name="Info_ProfileEdit_Warmup_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_TrackingDefault_What" xml:space="preserve"><value>Cuenta las aperturas con una imagen invisible. Se recomienda desactivado.</value></data>
+  <data name="Info_Settings_TrackingDefault_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Setup_UseBrowser_What" xml:space="preserve"><value>Iniciar sesión en Gmail/Outlook en el navegador sin escribir contraseña.</value></data>
+  <data name="Info_Setup_UseBrowser_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_TextToggle_What" xml:space="preserve"><value>Escribir tú la versión de texto plano (normalmente se genera sola).</value></data>
+  <data name="Info_TemplateEdit_TextToggle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_DryRun_What" xml:space="preserve"><value>Ejecuta todo sin enviar correos reales.</value></data>
+  <data name="Info_Wizard_DryRun_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Override_What" xml:space="preserve"><value>Enviar pese a problemas graves del dominio (no recomendado).</value></data>
+  <data name="Info_Wizard_Override_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_TrackOpens_What" xml:space="preserve"><value>Contar aperturas en esta campaña.</value></data>
+  <data name="Info_Wizard_TrackOpens_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_SuppressionTitle_What" xml:space="preserve"><value>Direcciones a las que nunca se debe escribir (bajas, rebotes, quejas).</value></data>
+  <data name="Info_Lists_SuppressionTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_DkimTitle_What" xml:space="preserve"><value>DKIM es un sello digital que demuestra que tu correo es auténtico.</value></data>
+  <data name="Info_ProfileEdit_DkimTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_ImapTitle_What" xml:space="preserve"><value>Lee rebotes y solicitudes de baja de tu bandeja.</value></data>
+  <data name="Info_ProfileEdit_ImapTitle_How" xml:space="preserve"><value>Gmail: imap.gmail.com, puerto 993.</value></data>
+  <data name="Info_ProfileEdit_LimitsTitle_What" xml:space="preserve"><value>Límites de seguridad sobre la velocidad y el volumen de envío.</value></data>
+  <data name="Info_ProfileEdit_LimitsTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_ServerTitle_What" xml:space="preserve"><value>Ajustes del servidor de salida, rellenados automáticamente.</value></data>
+  <data name="Info_ProfileEdit_ServerTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_SignInTitle_What" xml:space="preserve"><value>Cómo inicia sesión la app en tu cuenta de correo.</value></data>
+  <data name="Info_ProfileEdit_SignInTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_HistoryTitle_What" xml:space="preserve"><value>Todo lo que se envió a una persona.</value></data>
+  <data name="Info_Reports_HistoryTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_DataSection_What" xml:space="preserve"><value>Copias de seguridad, restauración, registros y paquete de soporte.</value></data>
+  <data name="Info_Settings_DataSection_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_FeedbackSection_What" xml:space="preserve"><value>Servidor opcional de baja con un clic.</value></data>
+  <data name="Info_Settings_FeedbackSection_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_OAuthSection_What" xml:space="preserve"><value>ID de cliente necesarios para iniciar sesión en Gmail/Outlook con el navegador.</value></data>
+  <data name="Info_Settings_OAuthSection_How" xml:space="preserve"><value>Consulta la sección 16.7 del README.</value></data>
+  <data name="Info_Settings_PrivacySection_What" xml:space="preserve"><value>Exportar o eliminar los datos de una persona (RGPD).</value></data>
+  <data name="Info_Settings_PrivacySection_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_SendingSection_What" xml:space="preserve"><value>Ajustes avanzados de velocidad y seguridad.</value></data>
+  <data name="Info_Settings_SendingSection_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Attachments_What" xml:space="preserve"><value>Archivos que se envían con el correo.</value></data>
+  <data name="Info_TemplateEdit_Attachments_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Html_What" xml:space="preserve"><value>El contenido del correo; la vista previa muestra el resultado.</value></data>
+  <data name="Info_TemplateEdit_Html_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_LintTitle_What" xml:space="preserve"><value>Revisión de tu contenido al estilo de un filtro antispam.</value></data>
+  <data name="Info_TemplateEdit_LintTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Preview_What" xml:space="preserve"><value>Cómo se verá el correo para un destinatario de ejemplo.</value></data>
+  <data name="Info_TemplateEdit_Preview_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_ContentCheck_What" xml:space="preserve"><value>Problemas de contenido que pueden activar los filtros antispam.</value></data>
+  <data name="Info_Wizard_ContentCheck_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Mode_What" xml:space="preserve"><value>Secuencial envía uno a uno (lo más seguro); masivo envía en paralelo.</value></data>
+  <data name="Info_Wizard_Mode_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_TestTitle_What" xml:space="preserve"><value>Envíate primero el correo a ti.</value></data>
+  <data name="Info_Wizard_TestTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Volume_What" xml:space="preserve"><value>Cuántas personas y cuántos días llevará.</value></data>
+  <data name="Info_Wizard_Volume_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_When_What" xml:space="preserve"><value>Enviar ahora o más tarde.</value></data>
+  <data name="Info_Wizard_When_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ResultTitle_What" xml:space="preserve"><value>Resumen de la importación.</value></data>
+  <data name="Info_Import_ResultTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Profiles_New_What" xml:space="preserve"><value>Añade una cuenta de envío nueva.</value></data>
+  <data name="Info_Profiles_New_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Profiles_Test_What" xml:space="preserve"><value>Intenta conectar con el servidor; no envía nada.</value></data>
+  <data name="Info_Profiles_Test_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Profiles_Common_Edit_What" xml:space="preserve"><value>Abre los ajustes de esta cuenta.</value></data>
+  <data name="Info_Profiles_Common_Edit_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Profiles_Common_Delete_What" xml:space="preserve"><value>Elimina esta cuenta de envío.</value></data>
+  <data name="Info_Profiles_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_SignIn_What" xml:space="preserve"><value>Abre el navegador para iniciar sesión en tu cuenta.</value></data>
+  <data name="Info_ProfileEdit_SignIn_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_TestImap_What" xml:space="preserve"><value>Intenta conectar con tu bandeja de entrada.</value></data>
+  <data name="Info_ProfileEdit_TestImap_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_Common_Save_What" xml:space="preserve"><value>Guarda el perfil.</value></data>
+  <data name="Info_ProfileEdit_Common_Save_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_Common_Browse_What" xml:space="preserve"><value>Elige un archivo de clave privada DKIM.</value></data>
+  <data name="Info_ProfileEdit_Common_Browse_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Menu_NewCampaign_What" xml:space="preserve"><value>Inicia un nuevo envío de correos.</value></data>
+  <data name="Info_Menu_NewCampaign_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Menu_ImportList_What" xml:space="preserve"><value>Importa contactos desde Excel o CSV.</value></data>
+  <data name="Info_Menu_ImportList_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Dashboard_SetupButton_What" xml:space="preserve"><value>Te guía por la configuración inicial.</value></data>
+  <data name="Info_Dashboard_SetupButton_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Dashboard_Common_Open_What" xml:space="preserve"><value>Muestra los detalles de esta campaña.</value></data>
+  <data name="Info_Dashboard_Common_Open_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Health_Recheck_What" xml:space="preserve"><value>Vuelve a comprobar los registros de seguridad de correo de tu dominio.</value></data>
+  <data name="Info_Health_Recheck_How" xml:space="preserve"><value></value></data>
+  <data name="Info_DomainHealth_Common_Copy_What" xml:space="preserve"><value>Copia el registro DNS sugerido para pegarlo en el panel DNS de tu dominio.</value></data>
+  <data name="Info_DomainHealth_Common_Copy_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Import_What" xml:space="preserve"><value>Sube una nueva lista de contactos.</value></data>
+  <data name="Info_Lists_Import_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Common_Open_What" xml:space="preserve"><value>Muestra los contactos de esta lista.</value></data>
+  <data name="Info_Lists_Common_Open_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_AddMore_What" xml:space="preserve"><value>Añade más contactos a esta lista.</value></data>
+  <data name="Info_Lists_AddMore_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Common_Delete_What" xml:space="preserve"><value>Elimina la lista.</value></data>
+  <data name="Info_Lists_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Common_Search_What" xml:space="preserve"><value>Busca en la lista de bloqueo.</value></data>
+  <data name="Info_Lists_Common_Search_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_AddSuppression_What" xml:space="preserve"><value>Añade una dirección a la lista de «nunca escribir».</value></data>
+  <data name="Info_Lists_AddSuppression_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Unsuppress_What" xml:space="preserve"><value>Quita la dirección de la lista de «nunca escribir».</value></data>
+  <data name="Info_Lists_Unsuppress_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_PickFile_What" xml:space="preserve"><value>Elige un archivo Excel o CSV.</value></data>
+  <data name="Info_Import_PickFile_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_PreviewPasted_What" xml:space="preserve"><value>Lee el texto pegado y muestra las columnas.</value></data>
+  <data name="Info_Import_PreviewPasted_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_Run_What" xml:space="preserve"><value>Guarda los contactos descartando direcciones incorrectas.</value></data>
+  <data name="Info_Import_Run_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_GoToLists_What" xml:space="preserve"><value>Volver a las listas.</value></data>
+  <data name="Info_Import_GoToLists_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Common_Search_What" xml:space="preserve"><value>Busca en esta lista.</value></data>
+  <data name="Info_ListDetail_Common_Search_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_History_What" xml:space="preserve"><value>Muestra lo que se envió a esta persona.</value></data>
+  <data name="Info_ListDetail_History_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_LoadMore_What" xml:space="preserve"><value>Carga más contactos.</value></data>
+  <data name="Info_ListDetail_LoadMore_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_New_What" xml:space="preserve"><value>Crea una plantilla vacía.</value></data>
+  <data name="Info_Templates_New_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_Common_Edit_What" xml:space="preserve"><value>Edita la plantilla.</value></data>
+  <data name="Info_Templates_Common_Edit_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_Duplicate_What" xml:space="preserve"><value>Copia la plantilla con sus adjuntos.</value></data>
+  <data name="Info_Templates_Duplicate_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_Common_Delete_What" xml:space="preserve"><value>Elimina la plantilla.</value></data>
+  <data name="Info_Templates_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_AddImage_What" xml:space="preserve"><value>Inserta una imagen en la posición del cursor.</value></data>
+  <data name="Info_TemplateEdit_AddImage_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_AddFile_What" xml:space="preserve"><value>Adjunta archivos al correo.</value></data>
+  <data name="Info_TemplateEdit_AddFile_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Remove_What" xml:space="preserve"><value>Quita este adjunto.</value></data>
+  <data name="Info_TemplateEdit_Remove_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Refresh_What" xml:space="preserve"><value>Actualiza la vista previa al instante.</value></data>
+  <data name="Info_TemplateEdit_Refresh_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Common_Save_What" xml:space="preserve"><value>Guarda la plantilla.</value></data>
+  <data name="Info_TemplateEdit_Common_Save_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Common_Open_What" xml:space="preserve"><value>Muestra el progreso de la campaña.</value></data>
+  <data name="Info_Campaigns_Common_Open_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Pause_What" xml:space="preserve"><value>Pausa el envío.</value></data>
+  <data name="Info_Campaigns_Pause_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Resume_What" xml:space="preserve"><value>Reanuda el envío donde se detuvo.</value></data>
+  <data name="Info_Campaigns_Resume_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Cancel_What" xml:space="preserve"><value>Cancela el envío definitivamente.</value></data>
+  <data name="Info_Campaigns_Cancel_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Common_Delete_What" xml:space="preserve"><value>Elimina la campaña y su informe.</value></data>
+  <data name="Info_Campaigns_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_OpenReports_What" xml:space="preserve"><value>Abre la pantalla de informes.</value></data>
+  <data name="Info_Detail_OpenReports_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_SendTest_What" xml:space="preserve"><value>Envía una copia [TEST] a tus direcciones de prueba.</value></data>
+  <data name="Info_Wizard_SendTest_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_OpenHealth_What" xml:space="preserve"><value>Abre la pantalla Salud del dominio.</value></data>
+  <data name="Info_Wizard_OpenHealth_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Launch_What" xml:space="preserve"><value>Inicia el envío.</value></data>
+  <data name="Info_Wizard_Launch_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Common_Back_What" xml:space="preserve"><value>Paso anterior.</value></data>
+  <data name="Info_Common_Back_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Common_Next_What" xml:space="preserve"><value>Paso siguiente.</value></data>
+  <data name="Info_Common_Next_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Setup_Finish_What" xml:space="preserve"><value>Termina la configuración.</value></data>
+  <data name="Info_Setup_Finish_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Setup_Skip_What" xml:space="preserve"><value>Omite la configuración por ahora.</value></data>
+  <data name="Info_Setup_Skip_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Common_Refresh_What" xml:space="preserve"><value>Actualiza las cifras.</value></data>
+  <data name="Info_Reports_Common_Refresh_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Csv_What" xml:space="preserve"><value>Guarda los resultados por destinatario en CSV.</value></data>
+  <data name="Info_Reports_Csv_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Excel_What" xml:space="preserve"><value>Guarda los resultados por destinatario en Excel.</value></data>
+  <data name="Info_Reports_Excel_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Common_Search_What" xml:space="preserve"><value>Muestra el historial de esta dirección.</value></data>
+  <data name="Info_Reports_Common_Search_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Common_Save_What" xml:space="preserve"><value>Guarda todos los ajustes.</value></data>
+  <data name="Info_Settings_Common_Save_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_RestartSetup_What" xml:space="preserve"><value>Vuelve a abrir el asistente de configuración.</value></data>
+  <data name="Info_Settings_RestartSetup_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_CopySecret_What" xml:space="preserve"><value>Copia la clave secreta del servidor de bajas.</value></data>
+  <data name="Info_Settings_CopySecret_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_CheckNow_What" xml:space="preserve"><value>Revisa ahora tu bandeja en busca de rebotes y bajas.</value></data>
+  <data name="Info_Settings_CheckNow_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_ExportData_What" xml:space="preserve"><value>Exporta los datos de una persona.</value></data>
+  <data name="Info_Settings_ExportData_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Forget_What" xml:space="preserve"><value>Elimina definitivamente los datos de una persona.</value></data>
+  <data name="Info_Settings_Forget_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Backup_What" xml:space="preserve"><value>Copia todos los datos en un archivo (sin contraseñas).</value></data>
+  <data name="Info_Settings_Backup_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Restore_What" xml:space="preserve"><value>Restaura una copia de seguridad.</value></data>
+  <data name="Info_Settings_Restore_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_OpenLogs_What" xml:space="preserve"><value>Abre la carpeta de registros.</value></data>
+  <data name="Info_Settings_OpenLogs_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_OpenData_What" xml:space="preserve"><value>Abre la carpeta de datos.</value></data>
+  <data name="Info_Settings_OpenData_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_SupportBundle_What" xml:space="preserve"><value>Crea un archivo de soporte sin contraseñas ni contenido de correos.</value></data>
+  <data name="Info_Settings_SupportBundle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_WarmupReset_What" xml:space="preserve"><value>Restablece el plan de calentamiento predeterminado.</value></data>
+  <data name="Info_Settings_WarmupReset_How" xml:space="preserve"><value></value></data>
+</root>

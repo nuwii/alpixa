@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Health_01" xml:space="preserve"><value>Этот профиль отправляет на локальный тестовый сервер. Проверки домена пропущены, так как письма не доходят до реальных получателей.</value></data>
+  <data name="Health_02" xml:space="preserve"><value>Адрес отправителя</value></data>
+  <data name="Health_03" xml:space="preserve"><value>Адрес отправителя указан неверно.</value></data>
+  <data name="Health_04" xml:space="preserve"><value>Укажите в профиле корректный адрес отправителя.</value></data>
+  <data name="Health_05" xml:space="preserve"><value>Личный аккаунт</value></data>
+  <data name="Health_06" xml:space="preserve"><value>{0} — личный адрес эл. почты. Массовые рассылки с таких адресов попадают в спам или приводят к блокировке аккаунта.</value></data>
+  <data name="Health_07" xml:space="preserve"><value>Добавьте адрес на своём домене (например, news.вашакомпания.ru).</value></data>
+  <data name="Health_08" xml:space="preserve"><value>У вашего домена нет SPF-записи.</value></data>
+  <data name="Health_09" xml:space="preserve"><value>Добавьте в DNS-панели TXT-запись ниже. Сверьте значение в панели вашего почтового провайдера.</value></data>
+  <data name="Health_10" xml:space="preserve"><value>У домена {0} отдельных SPF-записей. Должна быть только одна.</value></data>
+  <data name="Health_11" xml:space="preserve"><value>Объедините все значения 'include' в одну запись, а остальные удалите.</value></data>
+  <data name="Health_12" xml:space="preserve"><value>Ваша SPF-запись заканчивается на '+all'. Это значит, что кто угодно может отправлять письма от вашего имени.</value></data>
+  <data name="Health_13" xml:space="preserve"><value>Замените окончание записи на '~all' или '-all'.</value></data>
+  <data name="Health_14" xml:space="preserve"><value>Вашей SPF-записи нужно {0} DNS-запросов. Предел — 10; при превышении SPF недействителен.</value></data>
+  <data name="Health_15" xml:space="preserve"><value>Удалите неиспользуемые значения 'include'.</value></data>
+  <data name="Health_16" xml:space="preserve"><value>IP-адрес отправляющего сервера ({0})</value></data>
+  <data name="Health_17" xml:space="preserve"><value>SPF-запись есть, но не охватывает сервер, через который вы отправляете (не хватает {0}).</value></data>
+  <data name="Health_18" xml:space="preserve"><value>Добавьте {0} в существующую SPF-запись.</value></data>
+  <data name="Health_19" xml:space="preserve"><value> DNS-запросов: {0}/10, близко к пределу.</value></data>
+  <data name="Health_20" xml:space="preserve"><value>SPF-запись верна и охватывает отправляющий сервер.</value></data>
+  <data name="Health_21" xml:space="preserve"><value>DKIM-ключ '{0}' отозван (пустой).</value></data>
+  <data name="Health_22" xml:space="preserve"><value>Получите у почтового провайдера новую DKIM-запись и добавьте её в DNS.</value></data>
+  <data name="Health_23" xml:space="preserve"><value>DKIM-ключ слишком короткий ({0} бит). Нужно не меньше 1024, лучше 2048 бит.</value></data>
+  <data name="Health_24" xml:space="preserve"><value>Создайте у провайдера новый DKIM-ключ на 2048 бит.</value></data>
+  <data name="Health_25" xml:space="preserve"><value>DKIM-запись найдена (селектор '{0}', 1024 бит). Работает, но рекомендуется 2048 бит.</value></data>
+  <data name="Health_26" xml:space="preserve"><value>При возможности перейдите на ключ 2048 бит.</value></data>
+  <data name="Health_27" xml:space="preserve"><value>DKIM-запись найдена (селектор '{0}'{1}).</value></data>
+  <data name="Health_28" xml:space="preserve"><value>TXT/CNAME-запись '{0}._domainkey.{1}' не найдена. Добавьте в DNS DKIM-запись от вашего провайдера. Если вы только что её добавили, подождите до 48 часов.</value></data>
+  <data name="Health_29" xml:space="preserve"><value>DKIM-селектор неизвестен. Добавьте в DNS DKIM-запись из панели провайдера, затем укажите имя селектора (например, 's1', 'google', 'selector1') в настройках профиля.</value></data>
+  <data name="Health_30" xml:space="preserve"><value>Не удалось проверить подпись DKIM.</value></data>
+  <data name="Health_31" xml:space="preserve"><value>DMARC-записи нет. Gmail и Yahoo требуют её от массовых отправителей.</value></data>
+  <data name="Health_32" xml:space="preserve"><value>Добавьте в DNS-панели TXT-запись ниже. Через 2–4 недели можно перейти на p=quarantine.</value></data>
+  <data name="Health_33" xml:space="preserve"><value>DMARC-запись есть, политика 'p=none' (только мониторинг). Для начала это правильно. Если в отчётах нет проблем, перейдите на 'p=quarantine'.</value></data>
+  <data name="Health_34" xml:space="preserve"><value> Адрес для отчётов (rua) не задан.</value></data>
+  <data name="Health_35" xml:space="preserve"><value>DMARC-запись есть (p={0}).</value></data>
+  <data name="Health_36" xml:space="preserve"><value>Ваш домен может принимать почту ({0}).</value></data>
+  <data name="Health_37" xml:space="preserve"><value>У домена отправителя нет MX-записи. Ответы и уведомления о недоставке не смогут до вас дойти.</value></data>
+  <data name="Health_38" xml:space="preserve"><value>Используйте адрес отправителя, который может принимать почту, или укажите адрес для ответа.</value></data>
+  <data name="Health_39" xml:space="preserve"><value>Сервер находится в локальной сети; проверка обратного DNS пропущена.</value></data>
+  <data name="Health_40" xml:space="preserve"><value>Обратная DNS-запись для {0} верна ({1}).</value></data>
+  <data name="Health_41" xml:space="preserve"><value>У IP сервера ({0}) нет обратной DNS-записи или она не совпадает с именем сервера. В этом случае Gmail может отклонять письма.</value></data>
+  <data name="Health_42" xml:space="preserve"><value>Попросите хостинг-провайдера установить PTR-запись для {0} в значение '{1}'.</value></data>
+  <data name="Health_43" xml:space="preserve"><value>Домен адреса отправителя совпадает с доменом подписи DKIM. Проверка DMARC пройдена.</value></data>
+  <data name="Health_44" xml:space="preserve"><value>Настройте DKIM для домена отправителя.</value></data>
+  <data name="Health_45" xml:space="preserve"><value>Подтвердите домен отправителя в панели почтового провайдера и добавьте в DNS выданные им DKIM-записи.</value></data>
+  <data name="Health_46" xml:space="preserve"><value>Чёрный список (IP)</value></data>
+  <data name="Health_47" xml:space="preserve"><value>Нет публичного IPv4-адреса для проверки.</value></data>
+  <data name="Health_48" xml:space="preserve"><value>Чёрный список (IP)</value></data>
+  <data name="Health_49" xml:space="preserve"><value>Запросите исключение на сайте списка. Сначала устраните причину попадания (взломанный аккаунт, список без согласия).</value></data>
+  <data name="Health_50" xml:space="preserve"><value>Чёрный список (IP)</value></data>
+  <data name="Health_51" xml:space="preserve"><value>Некоторые списки не удалось проверить ({0}). Публичные DNS-серверы могут блокировать такие запросы. Проверьте вручную на mxtoolbox.com.</value></data>
+  <data name="Health_52" xml:space="preserve"><value>Чёрный список (IP)</value></data>
+  <data name="Health_53" xml:space="preserve"><value>IP вашего сервера нет в проверенных чёрных списках.</value></data>
+  <data name="Health_54" xml:space="preserve"><value>Чёрный список (домен)</value></data>
+  <data name="Health_55" xml:space="preserve"><value>Не удалось проверить {0}. Проверьте вручную на mxtoolbox.com.</value></data>
+  <data name="Health_56" xml:space="preserve"><value>Чёрный список (домен)</value></data>
+  <data name="Health_57" xml:space="preserve"><value>Ваш домен в списке {0}.</value></data>
+  <data name="Health_58" xml:space="preserve"><value>Проверьте домен на сайте Spamhaus и запросите исключение.</value></data>
+  <data name="Health_59" xml:space="preserve"><value>Чёрный список (домен)</value></data>
+  <data name="Health_60" xml:space="preserve"><value>Вашего домена нет в проверенных чёрных списках.</value></data>
+  <data name="Err_01" xml:space="preserve"><value>Откройте профиль в разделе «Профили отправителя» и нажмите «Войти через браузер».</value></data>
+  <data name="Err_02" xml:space="preserve"><value>Проверьте имя пользователя и пароль. Если вы используете сервис рассылок, введите SMTP-логин и пароль из его панели (не пароль от аккаунта).</value></data>
+  <data name="Err_03" xml:space="preserve"><value>Проверьте порт и шифрование: для 587 нужен STARTTLS, для 465 — SSL.</value></data>
+  <data name="Err_04" xml:space="preserve"><value>Возможно, в адресе сервера опечатка. Проверьте также подключение к интернету.</value></data>
+  <data name="Err_05" xml:space="preserve"><value>Проверьте адрес и порт сервера. В корпоративной сети брандмауэр может блокировать порт 587 или 465.</value></data>
+  <data name="Err_06" xml:space="preserve"><value>Это временно. Повторите через несколько минут. Alpixa автоматически снижает скорость во время отправки.</value></data>
+  <data name="Err_07" xml:space="preserve"><value>Сервер отклонил запрос ({0}).</value></data>
+  <data name="Err_08" xml:space="preserve"><value>Убедитесь, что адрес отправителя разрешено использовать с этой учётной записью. Проверьте также раздел «Состояние домена».</value></data>
+  <data name="Err_09" xml:space="preserve"><value>Проверьте порт и шифрование, затем повторите попытку.</value></data>
+  <data name="Err_10" xml:space="preserve"><value>Повторите попытку. Если проблема останется, создайте пакет в разделе Настройки &gt; Создать пакет для поддержки и отправьте его в поддержку.</value></data>
+  <data name="Err_11" xml:space="preserve"><value>Сервер получателя ограничивает нашу скорость. Будет повторная попытка.</value></data>
+  <data name="Err_12" xml:space="preserve"><value>Временная ошибка. Будет повторная попытка.</value></data>
+  <data name="Err_13" xml:space="preserve"><value>Адрес не существует (постоянная ошибка).</value></data>
+  <data name="Err_14" xml:space="preserve"><value>Сервер получателя отказал по соображениям безопасности/политики. Проверьте настройки домена.</value></data>
+  <data name="Err_15" xml:space="preserve"><value>Сервер получателя окончательно отклонил письмо.</value></data>
+  <data name="Err_16" xml:space="preserve"><value>Данные для входа отклонены.</value></data>
+  <data name="Err_17" xml:space="preserve"><value>Соединение с сервером прервалось.</value></data>
+  <data name="Report_01" xml:space="preserve"><value>Эл. почта</value></data>
+  <data name="Report_02" xml:space="preserve"><value>Статус</value></data>
+  <data name="Report_03" xml:space="preserve"><value>Попыток</value></data>
+  <data name="Report_04" xml:space="preserve"><value>Код SMTP</value></data>
+  <data name="Report_05" xml:space="preserve"><value>Ошибка</value></data>
+  <data name="Report_06" xml:space="preserve"><value>Отправлено (UTC)</value></data>
+  <data name="Report_07" xml:space="preserve"><value>События</value></data>
+  <data name="Report_08" xml:space="preserve"><value>В очереди</value></data>
+  <data name="Report_09" xml:space="preserve"><value>Отправляется</value></data>
+  <data name="Report_10" xml:space="preserve"><value>Отправлено</value></data>
+  <data name="Report_11" xml:space="preserve"><value>Ошибка</value></data>
+  <data name="Report_12" xml:space="preserve"><value>Пропущено</value></data>
+  <data name="Report_13" xml:space="preserve"><value>Статус неизвестен</value></data>
+  <data name="Report_14" xml:space="preserve"><value>Не доставлено (постоянно)</value></data>
+  <data name="Report_15" xml:space="preserve"><value>Не доставлено (временно)</value></data>
+  <data name="Report_16" xml:space="preserve"><value>Отписался</value></data>
+  <data name="Report_17" xml:space="preserve"><value>Жалоба</value></data>
+  <data name="Report_18" xml:space="preserve"><value>Открыто</value></data>
+  <data name="Runner_01" xml:space="preserve"><value>Кампания завершена</value></data>
+  <data name="Runner_02" xml:space="preserve"><value>Все письма обработаны. Результаты — в разделе «Отчёты».</value></data>
+  <data name="Runner_03" xml:space="preserve"><value>Отправка остановлена</value></data>
+  <data name="Runner_04" xml:space="preserve"><value>Дневной лимит исчерпан</value></data>
+  <data name="Runner_05" xml:space="preserve"><value>Произошла непредвиденная ошибка. Создайте пакет в разделе Настройки &gt; Создать пакет для поддержки и отправьте его в поддержку.</value></data>
+  <data name="Runner_06" xml:space="preserve"><value>Отправка остановлена</value></data>
+  <data name="Runner_07" xml:space="preserve"><value>Произошла непредвиденная ошибка.</value></data>
+  <data name="Runner_08" xml:space="preserve"><value>Приложение закрылось во время отправки; статус доставки неизвестен. Повторно не отправлялось.</value></data>
+  <data name="Runner_09" xml:space="preserve"><value>Приостановлено пользователем.</value></data>
+  <data name="Runner_10" xml:space="preserve"><value>Отменено пользователем.</value></data>
+  <data name="Runner_11" xml:space="preserve"><value>Кампания отменена</value></data>
+  <data name="Engine_01" xml:space="preserve"><value>Нет согласия на рекламные сообщения (IYS)</value></data>
+  <data name="Engine_02" xml:space="preserve"><value>Доля ошибок превысила {0:0.#} %. Отправка остановлена для безопасности. Изучите ошибки в разделе «Отчёты», устраните проблему и нажмите «Продолжить».</value></data>
+  <data name="Engine_03" xml:space="preserve"><value>Остановлено во время отправки; статус доставки неизвестен</value></data>
+  <data name="Engine_04" xml:space="preserve"><value>Почтовый сервер отклонил данные для входа. Проверьте их кнопкой «Проверить подключение» в разделе «Профили отправителя».</value></data>
+  <data name="Engine_05" xml:space="preserve"><value>Не удалось завершить отправку. Нажмите «Продолжить», чтобы отправить остальное.</value></data>
+  <data name="Engine_06" xml:space="preserve"><value>Доля постоянной недоставки — {0:0.0} %. Предел — {1:0.#} %. Возможно, список устарел или содержит ошибки. Очистите его и нажмите «Продолжить».</value></data>
+  <data name="Engine_07" xml:space="preserve"><value>Доля жалоб на спам — {0:0.00} %. Предел — {1:0.#} %. Убедитесь, что получатели дали согласие.</value></data>
+  <data name="Engine_08" xml:space="preserve"><value>Дневной лимит отправки ({0}) исчерпан. День прогрева {1}. Отправка автоматически продолжится завтра (приложение должно быть открыто).</value></data>
+  <data name="Engine_09" xml:space="preserve"><value>Дневной лимит отправки ({0}) исчерпан. Отправка автоматически продолжится завтра (приложение должно быть открыто).</value></data>
+  <data name="Asset_01" xml:space="preserve"><value>Этот файл не является изображением. Используйте PNG, JPG, GIF или WEBP.</value></data>
+  <data name="Asset_02" xml:space="preserve"><value>Изображение слишком большое ({0}). Лимит на одно изображение — {1}. Уменьшите его и попробуйте снова.</value></data>
+  <data name="Asset_03" xml:space="preserve"><value>Вложения превышают общий лимит {0} МБ (сейчас {1}, добавляется {2}). Большие файлы лучше дать ссылкой на сайт.</value></data>
+  <data name="Asset_04" xml:space="preserve"><value>Недопустимое имя файла.</value></data>
+  <data name="Transport_01" xml:space="preserve"><value>Адрес IMAP-сервера пуст.</value></data>
+  <data name="Transport_02" xml:space="preserve"><value>Укажите IMAP-сервер в настройках профиля.</value></data>
+  <data name="Maint_01" xml:space="preserve"><value>Пароли в резервную копию не входят.</value></data>
+  <data name="Maint_02" xml:space="preserve"><value>Этот файл не является резервной копией Alpixa.</value></data>
+  <data name="Preset_01" xml:space="preserve"><value>Свой SMTP-сервер</value></data>
+  <data name="Contacts_01" xml:space="preserve"><value>Нельзя создать список без явного согласия.</value></data>
+  <data name="Tabular_01" xml:space="preserve"><value>Неподдерживаемый тип файла: {0}. Используйте CSV или XLSX.</value></data>
+  <data name="Import_01" xml:space="preserve"><value>Не выбран столбец с эл. почтой.</value></data>
+  <data name="Suppress_01" xml:space="preserve"><value>В стоп-листе</value></data>
+  <data name="Consent_01" xml:space="preserve"><value>Нет (интеграция IYS не настроена)</value></data>
+  <data name="Campaign_01" xml:space="preserve"><value>Нельзя удалить идущую кампанию. Сначала остановите её.</value></data>
+  <data name="Lint_01" xml:space="preserve"><value>HTML письма занимает {0} КБ. Gmail обрезает всё свыше 102 КБ, и ссылка на отписку может пропасть. Сократите содержимое.</value></data>
+  <data name="Lint_02" xml:space="preserve"><value>Письмо почти целиком состоит из изображений. Спам-фильтры не доверяют письмам из одной картинки. Добавьте рядом с изображением хотя бы несколько предложений текста.</value></data>
+  <data name="Lint_03" xml:space="preserve"><value>У {0} изображений нет описания (alt). Если картинки не загрузятся, читатель не поймёт, что на них. Добавьте alt-текст к каждому изображению.</value></data>
+  <data name="Lint_04" xml:space="preserve"><value>Используется сокращатель ссылок ({0}). Спам-фильтры блокируют сокращённые ссылки. Используйте полный адрес.</value></data>
+  <data name="Lint_05" xml:space="preserve"><value>Текст ссылки показывает '{0}', но ссылка ведёт на '{1}'. Это признак фишинга. Сделайте текст и адрес одинаковыми.</value></data>
+  <data name="Lint_06" xml:space="preserve"><value>Вложения в массовых рассылках не рекомендуются. Загрузите файл на сайт и дайте ссылку.</value></data>
+  <data name="Lint_07" xml:space="preserve"><value>В письме есть JavaScript. Почтовые программы его не выполняют, и он повышает спам-оценку. Удалите его.</value></data>
+  <data name="Lint_08" xml:space="preserve"><value>В письме есть форма. Большинство почтовых программ не поддерживают формы. Дайте ссылку на форму на вашем сайте.</value></data>
+  <data name="Lint_09" xml:space="preserve"><value>В письме есть встроенное видео/iframe. Почтовые программы их не показывают. Поставьте обложку видео и ссылку на него.</value></data>
+  <data name="Lint_10" xml:space="preserve"><value>В шаблоне нет ссылки для отписки. Alpixa автоматически добавит её внизу письма. Чтобы разместить её самостоятельно, используйте {{ unsubscribe_url }}.</value></data>
+  <data name="Lint_11" xml:space="preserve"><value>Найдены выражения, на которые реагируют спам-фильтры: {0}. Пишите естественнее.</value></data>
+  <data name="Lint_12" xml:space="preserve"><value>Тема письма пустая. Напишите короткую и понятную тему.</value></data>
+  <data name="Lint_13" xml:space="preserve"><value>Вся тема написана ЗАГЛАВНЫМИ БУКВАМИ. Это признак спама. Пишите обычным образом.</value></data>
+  <data name="Lint_14" xml:space="preserve"><value>В теме {0} восклицательных знаков. Используйте не больше одного.</value></data>
+  <data name="Lint_15" xml:space="preserve"><value>Тема слишком длинная и обрежется на телефоне. Старайтесь уложиться в 60 символов.</value></data>
+  <data name="Lint_16" xml:space="preserve"><value>В теме сделан акцент на деньгах/процентах. Преувеличения могут повысить спам-оценку.</value></data>
+  <data name="OAuth_DoneTitle" xml:space="preserve"><value>Вход выполнен</value></data>
+  <data name="OAuth_DoneBody" xml:space="preserve"><value>Закройте это окно и вернитесь в Alpixa.</value></data>
+  <data name="OAuth_CancelTitle" xml:space="preserve"><value>Вход отменён</value></data>
+  <data name="OAuth_CancelBody" xml:space="preserve"><value>Вернитесь в Alpixa и попробуйте ещё раз.</value></data>
+  <data name="Footer_SentTo" xml:space="preserve"><value>Мы отправили это письмо на {0}, потому что вы согласились получать наши письма.</value></data>
+  <data name="Footer_Unsubscribe" xml:space="preserve"><value>Отписаться</value></data>
+  <data name="Footer_TextSentTo" xml:space="preserve"><value>Мы отправили это письмо на {0}.</value></data>
+  <data name="Footer_TextUnsubscribe" xml:space="preserve"><value>Чтобы отписаться: {0}</value></data>
+  <data name="Health_61" xml:space="preserve"><value>DMARC проходит только за счёт SPF. При пересылке письма SPF перестаёт работать.</value></data>
+  <data name="Health_62" xml:space="preserve"><value>Домен отправителя не совпадает с доменом SPF/DKIM. Проверка DMARC не проходит, и письма попадают в спам.</value></data>
+  <data name="Err_18" xml:space="preserve"><value>Вход через браузер (OAuth) в этой установке не настроен.</value></data>
+  <data name="Err_19" xml:space="preserve"><value>Для Gmail можно использовать «пароль приложения» или указать ID клиента в разделе Настройки → «Вход через браузер».</value></data>
+  <data name="Err_20" xml:space="preserve"><value>Нужно снова войти в учётную запись.</value></data>
+  <data name="Err_21" xml:space="preserve"><value>Пароль Gmail не принят.</value></data>
+  <data name="Err_22" xml:space="preserve"><value>Обычный пароль Gmail не подходит. Включите двухэтапную аутентификацию, создайте «пароль приложения» и введите его. Или используйте «Войти через браузер».</value></data>
+  <data name="Err_23" xml:space="preserve"><value>Не удалось войти в аккаунт Microsoft.</value></data>
+  <data name="Err_24" xml:space="preserve"><value>Microsoft отключил вход в SMTP по паролю. Используйте «Войти через браузер». Для корпоративных аккаунтов администратору, возможно, нужно включить «SMTP AUTH».</value></data>
+  <data name="Err_25" xml:space="preserve"><value>Имя пользователя или пароль не приняты.</value></data>
+  <data name="Err_26" xml:space="preserve"><value>Не удалось установить защищённое соединение.</value></data>
+  <data name="Err_27" xml:space="preserve"><value>Адрес сервера не найден.</value></data>
+  <data name="Err_28" xml:space="preserve"><value>Не удалось подключиться к серверу.</value></data>
+  <data name="Err_29" xml:space="preserve"><value>Сервер сообщает, что сейчас получает слишком много запросов.</value></data>
+  <data name="Err_30" xml:space="preserve"><value>Соединение с сервером неожиданно закрылось.</value></data>
+  <data name="Err_31" xml:space="preserve"><value>Произошла непредвиденная ошибка.</value></data>
+  <data name="Health_TitleLocal" xml:space="preserve"><value>Локальный тестовый сервер</value></data>
+  <data name="Health_TitlePtr" xml:space="preserve"><value>PTR (обратный DNS)</value></data>
+  <data name="Health_TitleAlignment" xml:space="preserve"><value>Выравнивание (alignment)</value></data>
+  <data name="Preset_LocalTest" xml:space="preserve"><value>Локальный тестовый сервер (smtp4dev / Papercut)</value></data>
+</root>

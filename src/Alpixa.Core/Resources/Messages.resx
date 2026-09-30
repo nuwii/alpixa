@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Health_01" xml:space="preserve"><value>Bu profil yerel test sunucusuna gönderir. Gerçek alıcılara ulaşmadığı için alan adı kontrolleri atlandı.</value></data>
+  <data name="Health_02" xml:space="preserve"><value>Gönderen adresi</value></data>
+  <data name="Health_03" xml:space="preserve"><value>Gönderen adresi geçersiz.</value></data>
+  <data name="Health_04" xml:space="preserve"><value>Profilde geçerli bir gönderen adresi girin.</value></data>
+  <data name="Health_05" xml:space="preserve"><value>Kişisel hesap</value></data>
+  <data name="Health_06" xml:space="preserve"><value>{0} kişisel bir e-posta adresi. Bu adreslerle toplu gönderim yapılırsa e-postalar spama düşer veya hesap kapatılabilir.</value></data>
+  <data name="Health_07" xml:space="preserve"><value>Kendi alan adınızı (örnek bulten.firmaniz.com) kullanan bir adres ekleyin.</value></data>
+  <data name="Health_08" xml:space="preserve"><value>Alan adınızda SPF kaydı yok.</value></data>
+  <data name="Health_09" xml:space="preserve"><value>DNS panelinize aşağıdaki TXT kaydını ekleyin. Değeri e-posta sağlayıcınızın panelinden doğrulayın.</value></data>
+  <data name="Health_10" xml:space="preserve"><value>Alan adınızda {0} ayrı SPF kaydı var. Sadece bir tane olmalı.</value></data>
+  <data name="Health_11" xml:space="preserve"><value>Tüm 'include' değerlerini tek bir kayıtta birleştirin ve diğerlerini silin.</value></data>
+  <data name="Health_12" xml:space="preserve"><value>SPF kaydınız '+all' ile bitiyor. Bu, herkesin sizin adınıza e-posta gönderebileceği anlamına gelir.</value></data>
+  <data name="Health_13" xml:space="preserve"><value>Kaydın sonunu '~all' veya '-all' yapın.</value></data>
+  <data name="Health_14" xml:space="preserve"><value>SPF kaydınız {0} DNS sorgusu gerektiriyor. Sınır 10'dur; fazlası SPF'yi geçersiz kılar.</value></data>
+  <data name="Health_15" xml:space="preserve"><value>Kullanmadığınız 'include' değerlerini kaldırın.</value></data>
+  <data name="Health_16" xml:space="preserve"><value>gönderen sunucunun IP adresi ({0})</value></data>
+  <data name="Health_17" xml:space="preserve"><value>SPF kaydı var ama gönderim yaptığınız sunucuyu kapsamıyor ({0} eksik).</value></data>
+  <data name="Health_18" xml:space="preserve"><value>Mevcut SPF kaydınıza {0} ekleyin.</value></data>
+  <data name="Health_19" xml:space="preserve"><value> DNS sorgu sayısı {0}/10, sınıra yakın.</value></data>
+  <data name="Health_20" xml:space="preserve"><value>SPF kaydı doğru ve gönderen sunucuyu kapsıyor.</value></data>
+  <data name="Health_21" xml:space="preserve"><value>'{0}' DKIM anahtarı iptal edilmiş (boş).</value></data>
+  <data name="Health_22" xml:space="preserve"><value>E-posta sağlayıcınızdan yeni DKIM kaydı alıp DNS'e ekleyin.</value></data>
+  <data name="Health_23" xml:space="preserve"><value>DKIM anahtarı çok kısa ({0} bit). En az 1024, tercihen 2048 bit olmalı.</value></data>
+  <data name="Health_24" xml:space="preserve"><value>Sağlayıcınızdan 2048 bitlik yeni bir DKIM anahtarı oluşturun.</value></data>
+  <data name="Health_25" xml:space="preserve"><value>DKIM kaydı bulundu (selector '{0}', 1024 bit). Çalışır ama 2048 bit önerilir.</value></data>
+  <data name="Health_26" xml:space="preserve"><value>Fırsatınız olduğunda 2048 bitlik anahtara geçin.</value></data>
+  <data name="Health_27" xml:space="preserve"><value>DKIM kaydı bulundu (selector '{0}'{1}).</value></data>
+  <data name="Health_28" xml:space="preserve"><value>'{0}._domainkey.{1}' adında bir TXT/CNAME kaydı bulunamadı. Sağlayıcınızın verdiği DKIM kaydını DNS'e ekleyin. Kayıt yeni eklendiyse 48 saate kadar bekleyin.</value></data>
+  <data name="Health_29" xml:space="preserve"><value>DKIM selector'u bilinmiyor. E-posta sağlayıcınızın panelindeki DKIM kaydını DNS'e ekleyin, sonra selector adını (örnek 's1', 'google', 'selector1') profil ayarlarına girin.</value></data>
+  <data name="Health_30" xml:space="preserve"><value>DKIM imzası doğrulanamadı.</value></data>
+  <data name="Health_31" xml:space="preserve"><value>DMARC kaydı yok. Gmail ve Yahoo toplu göndericilerden DMARC kaydı istiyor.</value></data>
+  <data name="Health_32" xml:space="preserve"><value>DNS panelinize aşağıdaki TXT kaydını ekleyin. 2-4 hafta sonra p=quarantine yapabilirsiniz.</value></data>
+  <data name="Health_33" xml:space="preserve"><value>DMARC kaydı var, politika 'p=none' (sadece izleme). Başlangıç için doğru. Raporlarda sorun görünmezse 'p=quarantine' yapın.</value></data>
+  <data name="Health_34" xml:space="preserve"><value> Rapor adresi (rua) tanımlı değil.</value></data>
+  <data name="Health_35" xml:space="preserve"><value>DMARC kaydı var (p={0}).</value></data>
+  <data name="Health_36" xml:space="preserve"><value>Alan adınız e-posta alabiliyor ({0}).</value></data>
+  <data name="Health_37" xml:space="preserve"><value>Gönderen alan adınızın MX kaydı yok. Alıcıların yanıtları ve geri dönüşler size ulaşamaz.</value></data>
+  <data name="Health_38" xml:space="preserve"><value>Gönderen adresini e-posta alabilen bir adres yapın veya bir Reply-To adresi tanımlayın.</value></data>
+  <data name="Health_39" xml:space="preserve"><value>Sunucu yerel ağda; ters DNS kontrolü atlandı.</value></data>
+  <data name="Health_40" xml:space="preserve"><value>{0} adresinin ters DNS kaydı doğru ({1}).</value></data>
+  <data name="Health_41" xml:space="preserve"><value>Sunucu IP'sinin ({0}) ters DNS kaydı yok veya sunucu adıyla eşleşmiyor. Gmail bu durumda e-postayı reddedebilir.</value></data>
+  <data name="Health_42" xml:space="preserve"><value>Hosting sağlayıcınızdan {0} için PTR kaydını '{1}' olarak ayarlamasını isteyin.</value></data>
+  <data name="Health_43" xml:space="preserve"><value>Gönderen adresinin alan adı ile DKIM imzasının alan adı uyumlu. DMARC testi geçer.</value></data>
+  <data name="Health_44" xml:space="preserve"><value>Gönderen alan adınız için DKIM ayarlayın.</value></data>
+  <data name="Health_45" xml:space="preserve"><value>E-posta sağlayıcınızın panelinde gönderen alan adınızı doğrulayın ve verdiği DKIM kayıtlarını DNS'e ekleyin.</value></data>
+  <data name="Health_46" xml:space="preserve"><value>Kara liste (IP)</value></data>
+  <data name="Health_47" xml:space="preserve"><value>Kontrol edilecek genel IPv4 adresi yok.</value></data>
+  <data name="Health_48" xml:space="preserve"><value>Kara liste (IP)</value></data>
+  <data name="Health_49" xml:space="preserve"><value>Listenin web sitesinden çıkış (delist) talebinde bulunun. Önce listeye girme nedenini (ele geçirilmiş hesap, izinsiz liste) giderin.</value></data>
+  <data name="Health_50" xml:space="preserve"><value>Kara liste (IP)</value></data>
+  <data name="Health_51" xml:space="preserve"><value>Bazı listeler sorgulanamadı ({0}). Genel DNS sunucuları bu sorguları engelleyebilir. mxtoolbox.com ile elle kontrol edin.</value></data>
+  <data name="Health_52" xml:space="preserve"><value>Kara liste (IP)</value></data>
+  <data name="Health_53" xml:space="preserve"><value>Sunucu IP'niz kontrol edilen kara listelerde yok.</value></data>
+  <data name="Health_54" xml:space="preserve"><value>Kara liste (alan adı)</value></data>
+  <data name="Health_55" xml:space="preserve"><value>{0} sorgulanamadı. mxtoolbox.com ile elle kontrol edin.</value></data>
+  <data name="Health_56" xml:space="preserve"><value>Kara liste (alan adı)</value></data>
+  <data name="Health_57" xml:space="preserve"><value>Alan adınız {0} listesinde.</value></data>
+  <data name="Health_58" xml:space="preserve"><value>Spamhaus web sitesinden alan adınızı kontrol edip çıkış talebinde bulunun.</value></data>
+  <data name="Health_59" xml:space="preserve"><value>Kara liste (alan adı)</value></data>
+  <data name="Health_60" xml:space="preserve"><value>Alan adınız kontrol edilen kara listelerde yok.</value></data>
+  <data name="Err_01" xml:space="preserve"><value>Gönderen Profilleri ekranında profili açın ve 'Tarayıcı ile giriş yap' butonuna basın.</value></data>
+  <data name="Err_02" xml:space="preserve"><value>Kullanıcı adını ve şifreyi kontrol edin. ESP kullanıyorsanız, ESP panelinden aldığınız SMTP kullanıcı adı ve şifresini girin (hesap şifreniz değil).</value></data>
+  <data name="Err_03" xml:space="preserve"><value>Port ve güvenlik ayarını kontrol edin: 587 için STARTTLS, 465 için SSL seçilmeli.</value></data>
+  <data name="Err_04" xml:space="preserve"><value>Sunucu adresinde yazım hatası olabilir. Internet bağlantınızı da kontrol edin.</value></data>
+  <data name="Err_05" xml:space="preserve"><value>Sunucu adresi ve portu kontrol edin. Şirket ağında iseniz güvenlik duvarı 587 veya 465 portunu engelliyor olabilir.</value></data>
+  <data name="Err_06" xml:space="preserve"><value>Bu geçici bir durum. Birkaç dakika sonra tekrar deneyin. Alpixa gönderim sırasında hızı otomatik düşürür.</value></data>
+  <data name="Err_07" xml:space="preserve"><value>Sunucu isteği reddetti ({0}).</value></data>
+  <data name="Err_08" xml:space="preserve"><value>Gönderen adresinin bu hesapla gönderim yapmaya yetkili olduğundan emin olun. Alan Adı Sağlığı ekranını da kontrol edin.</value></data>
+  <data name="Err_09" xml:space="preserve"><value>Port ve güvenlik ayarını kontrol edin, sonra tekrar deneyin.</value></data>
+  <data name="Err_10" xml:space="preserve"><value>Tekrar deneyin. Sorun devam ederse Ayarlar &gt; Destek paketi oluştur ile bir paket hazırlayıp destek ekibine iletin.</value></data>
+  <data name="Err_11" xml:space="preserve"><value>Alıcı sunucu hızımızı sınırladı. Tekrar denenecek.</value></data>
+  <data name="Err_12" xml:space="preserve"><value>Geçici hata. Tekrar denenecek.</value></data>
+  <data name="Err_13" xml:space="preserve"><value>Adres mevcut değil (kalıcı hata).</value></data>
+  <data name="Err_14" xml:space="preserve"><value>Alıcı sunucu güvenlik/politika nedeniyle reddetti. Alan adı ayarlarını kontrol edin.</value></data>
+  <data name="Err_15" xml:space="preserve"><value>Alıcı sunucu mesajı kalıcı olarak reddetti.</value></data>
+  <data name="Err_16" xml:space="preserve"><value>Giriş bilgileri reddedildi.</value></data>
+  <data name="Err_17" xml:space="preserve"><value>Sunucu bağlantısı koptu.</value></data>
+  <data name="Report_01" xml:space="preserve"><value>E-posta</value></data>
+  <data name="Report_02" xml:space="preserve"><value>Durum</value></data>
+  <data name="Report_03" xml:space="preserve"><value>Deneme</value></data>
+  <data name="Report_04" xml:space="preserve"><value>SMTP kodu</value></data>
+  <data name="Report_05" xml:space="preserve"><value>Hata</value></data>
+  <data name="Report_06" xml:space="preserve"><value>Gönderim zamanı (UTC)</value></data>
+  <data name="Report_07" xml:space="preserve"><value>Olaylar</value></data>
+  <data name="Report_08" xml:space="preserve"><value>Bekliyor</value></data>
+  <data name="Report_09" xml:space="preserve"><value>Gönderiliyor</value></data>
+  <data name="Report_10" xml:space="preserve"><value>Gönderildi</value></data>
+  <data name="Report_11" xml:space="preserve"><value>Başarısız</value></data>
+  <data name="Report_12" xml:space="preserve"><value>Atlandı</value></data>
+  <data name="Report_13" xml:space="preserve"><value>Durumu bilinmiyor</value></data>
+  <data name="Report_14" xml:space="preserve"><value>Ulaşmadı (kalıcı)</value></data>
+  <data name="Report_15" xml:space="preserve"><value>Ulaşmadı (geçici)</value></data>
+  <data name="Report_16" xml:space="preserve"><value>Abonelikten çıktı</value></data>
+  <data name="Report_17" xml:space="preserve"><value>Şikayet</value></data>
+  <data name="Report_18" xml:space="preserve"><value>Açıldı</value></data>
+  <data name="Runner_01" xml:space="preserve"><value>Kampanya tamamlandı</value></data>
+  <data name="Runner_02" xml:space="preserve"><value>Tüm e-postalar işlendi. Sonuçları Raporlar ekranında görebilirsiniz.</value></data>
+  <data name="Runner_03" xml:space="preserve"><value>Gönderim durduruldu</value></data>
+  <data name="Runner_04" xml:space="preserve"><value>Günlük sınır doldu</value></data>
+  <data name="Runner_05" xml:space="preserve"><value>Beklenmeyen bir hata oluştu. Ayarlar &gt; Destek paketi oluştur ile paket hazırlayıp destek ekibine iletin.</value></data>
+  <data name="Runner_06" xml:space="preserve"><value>Gönderim durdu</value></data>
+  <data name="Runner_07" xml:space="preserve"><value>Beklenmeyen bir hata oluştu.</value></data>
+  <data name="Runner_08" xml:space="preserve"><value>Uygulama gönderim sırasında kapandı; teslim durumu bilinmiyor. Tekrar gönderilmedi.</value></data>
+  <data name="Runner_09" xml:space="preserve"><value>Kullanıcı tarafından duraklatıldı.</value></data>
+  <data name="Runner_10" xml:space="preserve"><value>Kullanıcı tarafından iptal edildi.</value></data>
+  <data name="Runner_11" xml:space="preserve"><value>Kampanya iptal edildi</value></data>
+  <data name="Engine_01" xml:space="preserve"><value>Ticari ileti izni yok (IYS)</value></data>
+  <data name="Engine_02" xml:space="preserve"><value>Hata oranı %{0:0.#} eşiğini aştı. Gönderim güvenlik için durduruldu. Raporlar ekranında hataları inceleyin, sorunu giderin ve Devam et'e basın.</value></data>
+  <data name="Engine_03" xml:space="preserve"><value>Gönderim sırasında durduruldu; teslim durumu bilinmiyor</value></data>
+  <data name="Engine_04" xml:space="preserve"><value>E-posta sunucusu giriş bilgilerini reddetti. Gönderen Profilleri ekranında 'Bağlantıyı test et' ile kontrol edin.</value></data>
+  <data name="Engine_05" xml:space="preserve"><value>Gönderim tamamlanamadı. Devam et'e basarak kalanları gönderebilirsiniz.</value></data>
+  <data name="Engine_06" xml:space="preserve"><value>Ulaşmayan (hard bounce) oranı %{0:0.0}. Sınır %{1:0.#}. Listeniz eski veya hatalı olabilir. Listeyi temizleyip Devam et'e basın.</value></data>
+  <data name="Engine_07" xml:space="preserve"><value>Spam şikayet oranı %{0:0.00}. Sınır %{1:0.#}. Alıcıların izin verdiğinden emin olun.</value></data>
+  <data name="Engine_08" xml:space="preserve"><value>Bugünkü gönderim sınırı ({0}) doldu. Isınma planı gün {1}. Gönderim yarın otomatik devam edecek (uygulama açık olmalı).</value></data>
+  <data name="Engine_09" xml:space="preserve"><value>Bugünkü gönderim sınırı ({0}) doldu. Gönderim yarın otomatik devam edecek (uygulama açık olmalı).</value></data>
+  <data name="Asset_01" xml:space="preserve"><value>Bu dosya bir resim değil. PNG, JPG, GIF veya WEBP kullanın.</value></data>
+  <data name="Asset_02" xml:space="preserve"><value>Resim çok büyük ({0}). Resim başına sınır {1}. Resmi küçültüp tekrar deneyin.</value></data>
+  <data name="Asset_03" xml:space="preserve"><value>Ekler toplam {0} MB sınırını aşıyor (şu an {1}, eklenen {2}). Büyük dosyaları bir web adresinden link olarak paylaşın.</value></data>
+  <data name="Asset_04" xml:space="preserve"><value>Geçersiz dosya adı.</value></data>
+  <data name="Transport_01" xml:space="preserve"><value>IMAP sunucu adresi boş.</value></data>
+  <data name="Transport_02" xml:space="preserve"><value>Profil ayarlarında IMAP sunucusunu girin.</value></data>
+  <data name="Maint_01" xml:space="preserve"><value>Şifreler yedeğe dahil değildir.</value></data>
+  <data name="Maint_02" xml:space="preserve"><value>Bu dosya bir Alpixa yedeği değil.</value></data>
+  <data name="Preset_01" xml:space="preserve"><value>Özel SMTP</value></data>
+  <data name="Contacts_01" xml:space="preserve"><value>Açık rıza onayı olmadan liste oluşturulamaz.</value></data>
+  <data name="Tabular_01" xml:space="preserve"><value>Desteklenmeyen dosya türü: {0}. CSV veya XLSX kullanın.</value></data>
+  <data name="Import_01" xml:space="preserve"><value>E-posta kolonu seçilmedi.</value></data>
+  <data name="Suppress_01" xml:space="preserve"><value>Bastırma listesinde</value></data>
+  <data name="Consent_01" xml:space="preserve"><value>Yok (IYS entegrasyonu yapılandırılmamış)</value></data>
+  <data name="Campaign_01" xml:space="preserve"><value>Çalışan kampanya silinemez. Önce durdurun.</value></data>
+  <data name="Lint_01" xml:space="preserve"><value>E-posta HTML boyutu {0} KB. Gmail 102 KB üstünü kırpar ve abonelikten çıkış linki görünmez hale gelebilir. İçeriği kısaltın.</value></data>
+  <data name="Lint_02" xml:space="preserve"><value>E-posta çoğunlukla görselden oluşuyor. Spam filtreleri tek görselli e-postaları şüpheli bulur. Görselin yanına en az birkaç cümle metin ekleyin.</value></data>
+  <data name="Lint_03" xml:space="preserve"><value>{0} görselde açıklama (alt) metni yok. Görseller yüklenmediğinde okuyucu ne olduğunu anlamaz. Her görsele alt metni ekleyin.</value></data>
+  <data name="Lint_04" xml:space="preserve"><value>Link kısaltıcı kullanılmış ({0}). Spam filtreleri kısaltılmış linkleri engeller. Linkin tam adresini kullanın.</value></data>
+  <data name="Lint_05" xml:space="preserve"><value>Link metni '{0}' adresini gösteriyor ama link '{1}' adresine gidiyor. Bu, oltalama (phishing) belirtisi sayılır. Link metni ile adresi aynı yapın.</value></data>
+  <data name="Lint_06" xml:space="preserve"><value>Toplu e-postada ek dosya önerilmez. Dosyayı bir web adresine yükleyip link verin.</value></data>
+  <data name="Lint_07" xml:space="preserve"><value>E-postada JavaScript var. E-posta programları bunu çalıştırmaz ve spam puanını yükseltir. Kaldırın.</value></data>
+  <data name="Lint_08" xml:space="preserve"><value>E-postada form alanı var. Çoğu e-posta programı formları desteklemez. Bunun yerine web sayfanızdaki forma link verin.</value></data>
+  <data name="Lint_09" xml:space="preserve"><value>E-postada gömülü video/iframe var. E-posta programları bunları göstermez. Videonun kapak görselini koyup videoya link verin.</value></data>
+  <data name="Lint_10" xml:space="preserve"><value>Şablonda abonelikten çıkış linki yok. Alpixa e-postanın altına otomatik olarak ekleyecek. Kendiniz yerleştirmek için {{ unsubscribe_url }} kullanın.</value></data>
+  <data name="Lint_11" xml:space="preserve"><value>Spam filtrelerinin dikkat ettiği ifadeler bulundu: {0}. Daha doğal bir dil kullanın.</value></data>
+  <data name="Lint_12" xml:space="preserve"><value>Konu satırı boş. Kısa ve açık bir konu yazın.</value></data>
+  <data name="Lint_13" xml:space="preserve"><value>Konu satırının tamamı BÜYÜK HARF. Bu, spam belirtisi sayılır. Normal yazım kullanın.</value></data>
+  <data name="Lint_14" xml:space="preserve"><value>Konu satırında {0} ünlem işareti var. En fazla bir tane kullanın.</value></data>
+  <data name="Lint_15" xml:space="preserve"><value>Konu satırı çok uzun. Telefonda kesilecek. 60 karakterin altında tutmaya çalışın.</value></data>
+  <data name="Lint_16" xml:space="preserve"><value>Konu satırında para/yüzde vurgusu var. Abartılı ifadeler spam puanını artırabilir.</value></data>
+  <data name="OAuth_DoneTitle" xml:space="preserve"><value>Giriş tamamlandı</value></data>
+  <data name="OAuth_DoneBody" xml:space="preserve"><value>Bu pencereyi kapatıp Alpixa'ya dönebilirsiniz.</value></data>
+  <data name="OAuth_CancelTitle" xml:space="preserve"><value>Giriş iptal edildi</value></data>
+  <data name="OAuth_CancelBody" xml:space="preserve"><value>Alpixa'ya dönüp tekrar deneyin.</value></data>
+  <data name="Footer_SentTo" xml:space="preserve"><value>Bu e-postayı {0} adresine, bizden e-posta almayı kabul ettiğiniz için gönderdik.</value></data>
+  <data name="Footer_Unsubscribe" xml:space="preserve"><value>Abonelikten çık</value></data>
+  <data name="Footer_TextSentTo" xml:space="preserve"><value>Bu e-postayı {0} adresine gönderdik.</value></data>
+  <data name="Footer_TextUnsubscribe" xml:space="preserve"><value>Abonelikten çıkmak için: {0}</value></data>
+  <data name="Health_61" xml:space="preserve"><value>DMARC sadece SPF üzerinden geçer. E-posta yönlendirildiğinde SPF bozulur.</value></data>
+  <data name="Health_62" xml:space="preserve"><value>Gönderen alan adı ile SPF/DKIM alan adı uyumlu değil. DMARC testi başarısız olur ve e-postalar spama düşer.</value></data>
+  <data name="Err_18" xml:space="preserve"><value>Bu kurulumda tarayıcı ile giriş (OAuth) ayarlanmamış.</value></data>
+  <data name="Err_19" xml:space="preserve"><value>Gmail için 'Uygulama şifresi' ile giriş yapabilirsiniz ya da Ayarlar → 'Tarayıcı ile giriş' bölümüne istemci kimliğini girin.</value></data>
+  <data name="Err_20" xml:space="preserve"><value>Hesabınız için tekrar giriş yapmanız gerekiyor.</value></data>
+  <data name="Err_21" xml:space="preserve"><value>Gmail şifreniz kabul edilmedi.</value></data>
+  <data name="Err_22" xml:space="preserve"><value>Normal Gmail şifresi çalışmaz. Google hesabınızda 2 adımlı doğrulamayı açıp bir 'Uygulama şifresi' oluşturun ve onu girin. Ya da 'Tarayıcı ile giriş yap' seçeneğini kullanın.</value></data>
+  <data name="Err_23" xml:space="preserve"><value>Microsoft hesabına giriş yapılamadı.</value></data>
+  <data name="Err_24" xml:space="preserve"><value>Microsoft şifreyle SMTP girişini kapattı. 'Tarayıcı ile giriş yap' seçeneğini kullanın. Kurumsal hesaplarda yöneticinin 'SMTP AUTH' iznini açması gerekebilir.</value></data>
+  <data name="Err_25" xml:space="preserve"><value>Kullanıcı adı veya şifre kabul edilmedi.</value></data>
+  <data name="Err_26" xml:space="preserve"><value>Güvenli bağlantı kurulamadı.</value></data>
+  <data name="Err_27" xml:space="preserve"><value>Sunucu adresi bulunamadı.</value></data>
+  <data name="Err_28" xml:space="preserve"><value>Sunucuya bağlanılamadı.</value></data>
+  <data name="Err_29" xml:space="preserve"><value>Sunucu şu anda çok fazla istek aldığını söylüyor.</value></data>
+  <data name="Err_30" xml:space="preserve"><value>Sunucu ile bağlantı beklenmedik şekilde kesildi.</value></data>
+  <data name="Err_31" xml:space="preserve"><value>Beklenmeyen bir hata oluştu.</value></data>
+  <data name="Health_TitleLocal" xml:space="preserve"><value>Yerel test sunucusu</value></data>
+  <data name="Health_TitlePtr" xml:space="preserve"><value>PTR (ters DNS)</value></data>
+  <data name="Health_TitleAlignment" xml:space="preserve"><value>Hizalama (alignment)</value></data>
+  <data name="Preset_LocalTest" xml:space="preserve"><value>Yerel test sunucusu (smtp4dev / Papercut)</value></data>
+</root>

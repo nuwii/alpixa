@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     xmlns:m="clr-namespace:Alpixa.Core.Models;assembly=Alpixa.Core"
+                     x:Class="Alpixa.App.Views.TemplateEditPage"
+                     x:DataType="vm:TemplateEditViewModel"
+                     Title="{Binding Name}">
+    <Grid ColumnDefinitions="*,*" ColumnSpacing="24" Padding="28,20,28,24">
+        <!-- Editor column -->
+        <ScrollView>
+            <VerticalStackLayout Spacing="16" Padding="0,0,6,0">
+                <fx:PageHeader Title="{Binding Name}" Eyebrow="{loc:Tr TemplateEdit_Eyebrow}" Icon="File" />
+
+                <Border Style="{StaticResource StaticCard}">
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="{loc:Tr TemplateEdit_Basics}" Style="{StaticResource SectionTitle}" />
+                        <fx:InfoLabel Text="{loc:Tr TemplateEdit_Name}" Info="TemplateEdit_Name" LabelStyle="{StaticResource FieldLabel}" />
+                        <Entry Text="{Binding Name}" />
+                        <fx:InfoLabel Text="{loc:Tr TemplateEdit_Subject}" Info="TemplateEdit_Subject" LabelStyle="{StaticResource FieldLabel}" />
+                        <Entry Text="{Binding Subject}" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border x:Name="EditorCard" Style="{StaticResource StaticCard}">
+                    <Border.GestureRecognizers>
+                        <DropGestureRecognizer AllowDrop="True" DragOver="OnDragOver" DragLeave="OnDragLeave" Drop="OnDrop" />
+                    </Border.GestureRecognizers>
+                    <VerticalStackLayout Spacing="8">
+                        <fx:InfoLabel Text="{loc:Tr TemplateEdit_Html}" Info="TemplateEdit_Html" LabelStyle="{StaticResource SectionTitle}" />
+                        <Label Text="{loc:Tr TemplateEdit_Fields}" Style="{StaticResource MutedLabel}" />
+                        <Editor x:Name="HtmlEditor" Text="{Binding HtmlBody}" HeightRequest="380" FontFamily="Menlo" FontSize="12" AutoSize="Disabled" />
+
+                        <Border x:Name="DropZone" Style="{StaticResource DropZone}" Margin="0,6,0,0">
+                            <Border.GestureRecognizers>
+                                <DropGestureRecognizer AllowDrop="True" DragOver="OnDragOver" DragLeave="OnDragLeave" Drop="OnDrop" />
+                            </Border.GestureRecognizers>
+                            <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto" ColumnSpacing="16" RowSpacing="14">
+                                <Border Style="{StaticResource IconBadge}" WidthRequest="48" HeightRequest="48" Padding="12">
+                                    <Path Data="{fx:Icon Upload}" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                                </Border>
+                                <VerticalStackLayout Grid.Column="1" Spacing="4" VerticalOptions="Center">
+                                    <Label Text="{loc:Tr TemplateEdit_DropTitle}" FontAttributes="Bold" FontSize="15" />
+                                    <Label Text="{Binding LimitsHint}" Style="{StaticResource MutedLabel}" />
+                                </VerticalStackLayout>
+                                <FlexLayout Grid.Row="1" Grid.ColumnSpan="2" Wrap="Wrap" JustifyContent="Start" AlignItems="Center">
+                                    <fx:WithInfo Info="TemplateEdit_AddImage" Margin="0,0,10,0">
+                                        <Button Text="{loc:Tr TemplateEdit_AddImage}" Command="{Binding PickImageCommand}" />
+                                    </fx:WithInfo>
+                                    <fx:WithInfo Info="TemplateEdit_AddFile">
+                                        <Button Text="{loc:Tr TemplateEdit_AddFile}" Style="{StaticResource SecondaryButton}" Command="{Binding PickAttachmentCommand}" />
+                                    </fx:WithInfo>
+                                </FlexLayout>
+                            </Grid>
+                        </Border>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border x:Name="AttachmentsCard" Style="{StaticResource StaticCard}">
+                    <VerticalStackLayout Spacing="10">
+                        <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="10">
+                            <Path Data="{fx:Icon Paperclip}" WidthRequest="18" HeightRequest="18" Stroke="{StaticResource Primary}" StrokeThickness="1.8" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" VerticalOptions="Center" />
+                            <fx:InfoLabel Text="{loc:Tr TemplateEdit_Attachments}" Info="TemplateEdit_Attachments" LabelStyle="{StaticResource SectionTitle}" Grid.Column="1" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="{Binding AttachmentSummary}" Style="{StaticResource MutedLabel}" VerticalOptions="Center" />
+                        </Grid>
+                        <ProgressBar Progress="{Binding AttachmentUsage}">
+                            <ProgressBar.Triggers>
+                                <DataTrigger TargetType="ProgressBar" Binding="{Binding AttachmentNearLimit}" Value="True">
+                                    <Setter Property="ProgressColor" Value="{StaticResource StatusWarning}" />
+                                </DataTrigger>
+                            </ProgressBar.Triggers>
+                        </ProgressBar>
+                        <Label Text="{loc:Tr TemplateEdit_NoAttachments}" Style="{StaticResource MutedLabel}" IsVisible="{Binding HasAttachments, Converter={StaticResource Invert}}" />
+                        <VerticalStackLayout BindableLayout.ItemsSource="{Binding Attachments}" Spacing="8">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="vm:AttachmentItem">
+                                    <Border Style="{StaticResource InsetBox}">
+                                        <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+                                            <Border Style="{StaticResource Chip}" BackgroundColor="{AppThemeBinding Light={StaticResource SoftLight}, Dark={StaticResource SoftDark}}" WidthRequest="52" Padding="0,6">
+                                                <Label Text="{Binding Extension}" Style="{StaticResource ChipLabel}" HorizontalOptions="Center" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
+                                            </Border>
+                                            <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Spacing="0">
+                                                <Label Text="{Binding FileName}" FontAttributes="Bold" LineBreakMode="CharacterWrap" MaxLines="2" />
+                                                <Label Text="{Binding SizeText}" Style="{StaticResource MutedLabel}" />
+                                            </VerticalStackLayout>
+                                            <fx:WithInfo Info="TemplateEdit_Remove" Grid.Column="2" VerticalOptions="Center">
+                                                <Button Text="{loc:Tr TemplateEdit_Remove}" Style="{StaticResource DangerButton}"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:TemplateEditViewModel}}, Path=RemoveAttachmentCommand, x:DataType=vm:TemplateEditViewModel}"
+                                                    CommandParameter="{Binding .}" />
+                                            </fx:WithInfo>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Style="{StaticResource StaticCard}">
+                    <VerticalStackLayout Spacing="8">
+                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="8">
+                            <CheckBox IsChecked="{Binding ShowTextVersion}" VerticalOptions="Center" />
+                            <fx:InfoLabel Text="{loc:Tr TemplateEdit_TextToggle}" Info="TemplateEdit_TextToggle" Wrap="True" Grid.Column="1" VerticalOptions="Center" />
+                        </Grid>
+                        <Editor Text="{Binding TextBody}" HeightRequest="160" FontFamily="Menlo" FontSize="12" IsVisible="{Binding ShowTextVersion}" Placeholder="{loc:Tr TemplateEdit_TextPlaceholder}" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <FlexLayout Wrap="Wrap" AlignItems="Center" Margin="0,0,0,8">
+                    <fx:WithInfo Info="TemplateEdit_Common_Save" Margin="0,0,10,0">
+                        <Button Text="{loc:Tr Common_Save}" Command="{Binding SaveCommand}" />
+                    </fx:WithInfo>
+                    <fx:WithInfo Info="TemplateEdit_Refresh" Margin="0,0,10,0">
+                        <Button Text="{loc:Tr TemplateEdit_Refresh}" Style="{StaticResource SecondaryButton}" Command="{Binding RefreshPreviewCommand}" />
+                    </fx:WithInfo>
+                    <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" WidthRequest="22" HeightRequest="22" />
+                </FlexLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Preview column -->
+        <Grid Grid.Column="1" RowDefinitions="Auto,Auto,*,Auto" RowSpacing="12">
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                <VerticalStackLayout Spacing="0" VerticalOptions="Center">
+                    <fx:InfoLabel Text="{loc:Tr TemplateEdit_Preview}" Info="TemplateEdit_Preview" LabelStyle="{StaticResource SectionTitle}" />
+                    <Label Text="{loc:Tr TemplateEdit_AutoPreview}" Style="{StaticResource MutedLabel}" FontSize="12" />
+                </VerticalStackLayout>
+                <Border Grid.Column="1" Style="{StaticResource InsetBox}" Padding="4" StrokeShape="RoundRectangle 12">
+                    <HorizontalStackLayout Spacing="4">
+                        <Button Text="{loc:Tr TemplateEdit_Desktop}" Style="{StaticResource GhostButton}" Command="{Binding DesktopPreviewCommand}" Padding="14,6" MinimumHeightRequest="32">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{Binding IsMobilePreview}" Value="False">
+                                    <Setter Property="Background" Value="{StaticResource BrandGradient}" />
+                                    <Setter Property="TextColor" Value="White" />
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+                        <Button Text="{loc:Tr TemplateEdit_Mobile}" Style="{StaticResource GhostButton}" Command="{Binding MobilePreviewCommand}" Padding="14,6" MinimumHeightRequest="32">
+                            <Button.Triggers>
+                                <DataTrigger TargetType="Button" Binding="{Binding IsMobilePreview}" Value="True">
+                                    <Setter Property="Background" Value="{StaticResource BrandGradient}" />
+                                    <Setter Property="TextColor" Value="White" />
+                                </DataTrigger>
+                            </Button.Triggers>
+                        </Button>
+                    </HorizontalStackLayout>
+                </Border>
+            </Grid>
+            <Border Grid.Row="1" Style="{StaticResource InsetBox}">
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{loc:Tr TemplateEdit_SubjectPrefix}" TextColor="{AppThemeBinding Light={StaticResource MutedLight}, Dark={StaticResource MutedDark}}" />
+                            <Span Text="{Binding PreviewSubject}" FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Border>
+            <Border x:Name="PreviewFrame" Grid.Row="2" Style="{StaticResource StaticCard}" Padding="0" BackgroundColor="#F4F5F7" StrokeShape="RoundRectangle 18">
+                <WebView WidthRequest="{Binding PreviewWidth}" HorizontalOptions="Center">
+                    <WebView.Source>
+                        <HtmlWebViewSource Html="{Binding PreviewHtml}" />
+                    </WebView.Source>
+                </WebView>
+            </Border>
+            <Border Grid.Row="3" Style="{StaticResource StaticCard}" Padding="16,12">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="{Binding TemplateError}" TextColor="{StaticResource StatusFail}" IsVisible="{Binding TemplateError, Converter={StaticResource NotNull}}" />
+                    <fx:InfoLabel Text="{loc:Tr TemplateEdit_LintTitle}" Info="TemplateEdit_LintTitle" LabelStyle="{StaticResource SectionTitle}" FontSize="14" />
+                    <Label Text="{loc:Tr TemplateEdit_LintClean}" Style="{StaticResource MutedLabel}" IsVisible="{Binding Issues.Count, Converter={StaticResource NoItems}}" />
+                    <ScrollView MaximumHeightRequest="140">
+                        <VerticalStackLayout BindableLayout.ItemsSource="{Binding Issues}" Spacing="6">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="m:LintIssue">
+                                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="10">
+                                        <Ellipse WidthRequest="8" HeightRequest="8" Fill="{Binding Severity, Converter={StaticResource StatusColor}}" VerticalOptions="Start" Margin="0,6,0,0" />
+                                        <Label Grid.Column="1" Text="{Binding Message}" FontSize="13" />
+                                    </Grid>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </VerticalStackLayout>
+                    </ScrollView>
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+    </Grid>
+</views:AlpixaPage>

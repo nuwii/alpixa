@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Health_01" xml:space="preserve"><value>This profile sends to the local test server. Domain checks were skipped because it does not reach real recipients.</value></data>
+  <data name="Health_02" xml:space="preserve"><value>Sender address</value></data>
+  <data name="Health_03" xml:space="preserve"><value>The sender address is invalid.</value></data>
+  <data name="Health_04" xml:space="preserve"><value>Enter a valid sender address in the profile.</value></data>
+  <data name="Health_05" xml:space="preserve"><value>Personal account</value></data>
+  <data name="Health_06" xml:space="preserve"><value>{0} is a personal email address. Bulk sending from such addresses lands in spam or gets the account closed.</value></data>
+  <data name="Health_07" xml:space="preserve"><value>Add an address on your own domain (for example news.yourcompany.com).</value></data>
+  <data name="Health_08" xml:space="preserve"><value>Your domain has no SPF record.</value></data>
+  <data name="Health_09" xml:space="preserve"><value>Add the TXT record below in your DNS panel. Confirm the value in your email provider's dashboard.</value></data>
+  <data name="Health_10" xml:space="preserve"><value>Your domain has {0} separate SPF records. There must be only one.</value></data>
+  <data name="Health_11" xml:space="preserve"><value>Merge all 'include' values into one record and delete the others.</value></data>
+  <data name="Health_12" xml:space="preserve"><value>Your SPF record ends with '+all'. This means anyone can send email in your name.</value></data>
+  <data name="Health_13" xml:space="preserve"><value>Change the end of the record to '~all' or '-all'.</value></data>
+  <data name="Health_14" xml:space="preserve"><value>Your SPF record needs {0} DNS lookups. The limit is 10; more invalidates SPF.</value></data>
+  <data name="Health_15" xml:space="preserve"><value>Remove 'include' values you do not use.</value></data>
+  <data name="Health_16" xml:space="preserve"><value>the sending server's IP address ({0})</value></data>
+  <data name="Health_17" xml:space="preserve"><value>There is an SPF record, but it does not cover the server you send through ({0} is missing).</value></data>
+  <data name="Health_18" xml:space="preserve"><value>Add {0} to your existing SPF record.</value></data>
+  <data name="Health_19" xml:space="preserve"><value> DNS lookups: {0}/10, close to the limit.</value></data>
+  <data name="Health_20" xml:space="preserve"><value>The SPF record is correct and covers the sending server.</value></data>
+  <data name="Health_21" xml:space="preserve"><value>DKIM key '{0}' has been revoked (empty).</value></data>
+  <data name="Health_22" xml:space="preserve"><value>Get a new DKIM record from your email provider and add it to DNS.</value></data>
+  <data name="Health_23" xml:space="preserve"><value>The DKIM key is too short ({0} bits). It should be at least 1024, preferably 2048 bits.</value></data>
+  <data name="Health_24" xml:space="preserve"><value>Create a new 2048-bit DKIM key with your provider.</value></data>
+  <data name="Health_25" xml:space="preserve"><value>DKIM record found (selector '{0}', 1024 bits). It works, but 2048 bits is recommended.</value></data>
+  <data name="Health_26" xml:space="preserve"><value>Switch to a 2048-bit key when you get the chance.</value></data>
+  <data name="Health_27" xml:space="preserve"><value>DKIM record found (selector '{0}'{1}).</value></data>
+  <data name="Health_28" xml:space="preserve"><value>No TXT/CNAME record named '{0}._domainkey.{1}' was found. Add the DKIM record your provider gave you to DNS. If you just added it, wait up to 48 hours.</value></data>
+  <data name="Health_29" xml:space="preserve"><value>The DKIM selector is unknown. Add the DKIM record from your email provider's dashboard to DNS, then enter the selector name (e.g. 's1', 'google', 'selector1') in the profile settings.</value></data>
+  <data name="Health_30" xml:space="preserve"><value>The DKIM signature could not be verified.</value></data>
+  <data name="Health_31" xml:space="preserve"><value>There is no DMARC record. Gmail and Yahoo require one from bulk senders.</value></data>
+  <data name="Health_32" xml:space="preserve"><value>Add the TXT record below in your DNS panel. After 2–4 weeks you can switch to p=quarantine.</value></data>
+  <data name="Health_33" xml:space="preserve"><value>There is a DMARC record with policy 'p=none' (monitoring only). That is right for a start. If reports show no problems, switch to 'p=quarantine'.</value></data>
+  <data name="Health_34" xml:space="preserve"><value> No report address (rua) is set.</value></data>
+  <data name="Health_35" xml:space="preserve"><value>There is a DMARC record (p={0}).</value></data>
+  <data name="Health_36" xml:space="preserve"><value>Your domain can receive email ({0}).</value></data>
+  <data name="Health_37" xml:space="preserve"><value>Your sending domain has no MX record. Replies and bounces cannot reach you.</value></data>
+  <data name="Health_38" xml:space="preserve"><value>Use a sender address that can receive email, or set a Reply-To address.</value></data>
+  <data name="Health_39" xml:space="preserve"><value>The server is on the local network; the reverse DNS check was skipped.</value></data>
+  <data name="Health_40" xml:space="preserve"><value>The reverse DNS record for {0} is correct ({1}).</value></data>
+  <data name="Health_41" xml:space="preserve"><value>The server IP ({0}) has no reverse DNS record, or it does not match the server name. Gmail may reject email in this case.</value></data>
+  <data name="Health_42" xml:space="preserve"><value>Ask your hosting provider to set the PTR record for {0} to '{1}'.</value></data>
+  <data name="Health_43" xml:space="preserve"><value>The sender address domain matches the DKIM signature domain. DMARC passes.</value></data>
+  <data name="Health_44" xml:space="preserve"><value>Set up DKIM for your sending domain.</value></data>
+  <data name="Health_45" xml:space="preserve"><value>Verify your sending domain in your email provider's dashboard and add the DKIM records it gives you to DNS.</value></data>
+  <data name="Health_46" xml:space="preserve"><value>Blocklist (IP)</value></data>
+  <data name="Health_47" xml:space="preserve"><value>There is no public IPv4 address to check.</value></data>
+  <data name="Health_48" xml:space="preserve"><value>Blocklist (IP)</value></data>
+  <data name="Health_49" xml:space="preserve"><value>Request delisting on the list's website. First fix why you were listed (compromised account, list without consent).</value></data>
+  <data name="Health_50" xml:space="preserve"><value>Blocklist (IP)</value></data>
+  <data name="Health_51" xml:space="preserve"><value>Some lists could not be queried ({0}). Public DNS servers may block these queries. Check manually at mxtoolbox.com.</value></data>
+  <data name="Health_52" xml:space="preserve"><value>Blocklist (IP)</value></data>
+  <data name="Health_53" xml:space="preserve"><value>Your server IP is not on the checked blocklists.</value></data>
+  <data name="Health_54" xml:space="preserve"><value>Blocklist (domain)</value></data>
+  <data name="Health_55" xml:space="preserve"><value>{0} could not be queried. Check manually at mxtoolbox.com.</value></data>
+  <data name="Health_56" xml:space="preserve"><value>Blocklist (domain)</value></data>
+  <data name="Health_57" xml:space="preserve"><value>Your domain is on the {0} list.</value></data>
+  <data name="Health_58" xml:space="preserve"><value>Check your domain on the Spamhaus website and request removal.</value></data>
+  <data name="Health_59" xml:space="preserve"><value>Blocklist (domain)</value></data>
+  <data name="Health_60" xml:space="preserve"><value>Your domain is not on the checked blocklists.</value></data>
+  <data name="Err_01" xml:space="preserve"><value>Open the profile on the Sender Profiles screen and press 'Sign in with browser'.</value></data>
+  <data name="Err_02" xml:space="preserve"><value>Check the username and password. If you use an ESP, enter the SMTP username and password from its dashboard (not your account password).</value></data>
+  <data name="Err_03" xml:space="preserve"><value>Check the port and security setting: 587 needs STARTTLS, 465 needs SSL.</value></data>
+  <data name="Err_04" xml:space="preserve"><value>The server address may contain a typo. Also check your internet connection.</value></data>
+  <data name="Err_05" xml:space="preserve"><value>Check the server address and port. On a company network a firewall may block port 587 or 465.</value></data>
+  <data name="Err_06" xml:space="preserve"><value>This is temporary. Try again in a few minutes. Alpixa lowers the speed automatically while sending.</value></data>
+  <data name="Err_07" xml:space="preserve"><value>The server rejected the request ({0}).</value></data>
+  <data name="Err_08" xml:space="preserve"><value>Make sure the sender address is allowed to send with this account. Also check the Domain Health screen.</value></data>
+  <data name="Err_09" xml:space="preserve"><value>Check the port and security setting, then try again.</value></data>
+  <data name="Err_10" xml:space="preserve"><value>Try again. If the problem continues, create a bundle with Settings &gt; Create support bundle and send it to support.</value></data>
+  <data name="Err_11" xml:space="preserve"><value>The receiving server is limiting our speed. It will be retried.</value></data>
+  <data name="Err_12" xml:space="preserve"><value>Temporary error. It will be retried.</value></data>
+  <data name="Err_13" xml:space="preserve"><value>The address does not exist (permanent error).</value></data>
+  <data name="Err_14" xml:space="preserve"><value>The receiving server refused for security/policy reasons. Check your domain settings.</value></data>
+  <data name="Err_15" xml:space="preserve"><value>The receiving server permanently rejected the message.</value></data>
+  <data name="Err_16" xml:space="preserve"><value>Sign-in details were rejected.</value></data>
+  <data name="Err_17" xml:space="preserve"><value>The server connection dropped.</value></data>
+  <data name="Report_01" xml:space="preserve"><value>Email</value></data>
+  <data name="Report_02" xml:space="preserve"><value>Status</value></data>
+  <data name="Report_03" xml:space="preserve"><value>Attempts</value></data>
+  <data name="Report_04" xml:space="preserve"><value>SMTP code</value></data>
+  <data name="Report_05" xml:space="preserve"><value>Error</value></data>
+  <data name="Report_06" xml:space="preserve"><value>Sent at (UTC)</value></data>
+  <data name="Report_07" xml:space="preserve"><value>Events</value></data>
+  <data name="Report_08" xml:space="preserve"><value>Pending</value></data>
+  <data name="Report_09" xml:space="preserve"><value>Sending</value></data>
+  <data name="Report_10" xml:space="preserve"><value>Sent</value></data>
+  <data name="Report_11" xml:space="preserve"><value>Failed</value></data>
+  <data name="Report_12" xml:space="preserve"><value>Skipped</value></data>
+  <data name="Report_13" xml:space="preserve"><value>Status unknown</value></data>
+  <data name="Report_14" xml:space="preserve"><value>Bounced (permanent)</value></data>
+  <data name="Report_15" xml:space="preserve"><value>Bounced (temporary)</value></data>
+  <data name="Report_16" xml:space="preserve"><value>Unsubscribed</value></data>
+  <data name="Report_17" xml:space="preserve"><value>Complaint</value></data>
+  <data name="Report_18" xml:space="preserve"><value>Opened</value></data>
+  <data name="Runner_01" xml:space="preserve"><value>Campaign completed</value></data>
+  <data name="Runner_02" xml:space="preserve"><value>All emails were processed. You can see the results on the Reports screen.</value></data>
+  <data name="Runner_03" xml:space="preserve"><value>Sending stopped</value></data>
+  <data name="Runner_04" xml:space="preserve"><value>Daily limit reached</value></data>
+  <data name="Runner_05" xml:space="preserve"><value>An unexpected error occurred. Create a bundle with Settings &gt; Create support bundle and send it to support.</value></data>
+  <data name="Runner_06" xml:space="preserve"><value>Sending stopped</value></data>
+  <data name="Runner_07" xml:space="preserve"><value>An unexpected error occurred.</value></data>
+  <data name="Runner_08" xml:space="preserve"><value>The app closed while sending; delivery status is unknown. It was not sent again.</value></data>
+  <data name="Runner_09" xml:space="preserve"><value>Paused by the user.</value></data>
+  <data name="Runner_10" xml:space="preserve"><value>Cancelled by the user.</value></data>
+  <data name="Runner_11" xml:space="preserve"><value>Campaign cancelled</value></data>
+  <data name="Engine_01" xml:space="preserve"><value>No commercial message consent (IYS)</value></data>
+  <data name="Engine_02" xml:space="preserve"><value>The error rate exceeded {0:0.#}%. Sending was stopped for safety. Review the errors on the Reports screen, fix the problem and press Resume.</value></data>
+  <data name="Engine_03" xml:space="preserve"><value>Stopped while sending; delivery status unknown</value></data>
+  <data name="Engine_04" xml:space="preserve"><value>The email server rejected the sign-in details. Check with 'Test connection' on the Sender Profiles screen.</value></data>
+  <data name="Engine_05" xml:space="preserve"><value>Sending could not be completed. Press Resume to send the rest.</value></data>
+  <data name="Engine_06" xml:space="preserve"><value>Hard bounce rate is {0:0.0}%. The limit is {1:0.#}%. Your list may be old or contain errors. Clean the list and press Resume.</value></data>
+  <data name="Engine_07" xml:space="preserve"><value>Spam complaint rate is {0:0.00}%. The limit is {1:0.#}%. Make sure recipients gave consent.</value></data>
+  <data name="Engine_08" xml:space="preserve"><value>Today's sending limit ({0}) is reached. Warm-up day {1}. Sending continues automatically tomorrow (the app must be open).</value></data>
+  <data name="Engine_09" xml:space="preserve"><value>Today's sending limit ({0}) is reached. Sending continues automatically tomorrow (the app must be open).</value></data>
+  <data name="Asset_01" xml:space="preserve"><value>This file is not an image. Use PNG, JPG, GIF or WEBP.</value></data>
+  <data name="Asset_02" xml:space="preserve"><value>The image is too large ({0}). The limit per image is {1}. Make the image smaller and try again.</value></data>
+  <data name="Asset_03" xml:space="preserve"><value>Attachments exceed the {0} MB total limit (currently {1}, adding {2}). Share large files as a link from a website.</value></data>
+  <data name="Asset_04" xml:space="preserve"><value>Invalid file name.</value></data>
+  <data name="Transport_01" xml:space="preserve"><value>The IMAP server address is empty.</value></data>
+  <data name="Transport_02" xml:space="preserve"><value>Enter the IMAP server in the profile settings.</value></data>
+  <data name="Maint_01" xml:space="preserve"><value>Passwords are not included in the backup.</value></data>
+  <data name="Maint_02" xml:space="preserve"><value>This file is not an Alpixa backup.</value></data>
+  <data name="Preset_01" xml:space="preserve"><value>Custom SMTP</value></data>
+  <data name="Contacts_01" xml:space="preserve"><value>A list cannot be created without explicit consent.</value></data>
+  <data name="Tabular_01" xml:space="preserve"><value>Unsupported file type: {0}. Use CSV or XLSX.</value></data>
+  <data name="Import_01" xml:space="preserve"><value>No email column was selected.</value></data>
+  <data name="Suppress_01" xml:space="preserve"><value>On the suppression list</value></data>
+  <data name="Consent_01" xml:space="preserve"><value>None (IYS integration not configured)</value></data>
+  <data name="Campaign_01" xml:space="preserve"><value>A running campaign cannot be deleted. Stop it first.</value></data>
+  <data name="Lint_01" xml:space="preserve"><value>The email HTML is {0} KB. Gmail clips anything over 102 KB and the unsubscribe link may become hidden. Shorten the content.</value></data>
+  <data name="Lint_02" xml:space="preserve"><value>The email is mostly images. Spam filters distrust single-image emails. Add at least a few sentences of text next to the image.</value></data>
+  <data name="Lint_03" xml:space="preserve"><value>{0} image(s) have no description (alt) text. When images do not load, readers cannot tell what they are. Add alt text to each image.</value></data>
+  <data name="Lint_04" xml:space="preserve"><value>A link shortener is used ({0}). Spam filters block shortened links. Use the full link address.</value></data>
+  <data name="Lint_05" xml:space="preserve"><value>The link text shows '{0}' but the link goes to '{1}'. This counts as a sign of phishing. Make the link text and address match.</value></data>
+  <data name="Lint_06" xml:space="preserve"><value>Attachments are not recommended in bulk email. Upload the file to a website and share a link.</value></data>
+  <data name="Lint_07" xml:space="preserve"><value>The email contains JavaScript. Email programs do not run it and it raises the spam score. Remove it.</value></data>
+  <data name="Lint_08" xml:space="preserve"><value>The email contains a form. Most email programs do not support forms. Link to the form on your website instead.</value></data>
+  <data name="Lint_09" xml:space="preserve"><value>The email contains an embedded video/iframe. Email programs do not show these. Use the video's cover image and link to the video.</value></data>
+  <data name="Lint_10" xml:space="preserve"><value>The template has no unsubscribe link. Alpixa will add one at the bottom automatically. To place it yourself, use {{ unsubscribe_url }}.</value></data>
+  <data name="Lint_11" xml:space="preserve"><value>Phrases that spam filters watch for were found: {0}. Use more natural language.</value></data>
+  <data name="Lint_12" xml:space="preserve"><value>The subject line is empty. Write a short, clear subject.</value></data>
+  <data name="Lint_13" xml:space="preserve"><value>The whole subject line is in CAPITALS. This counts as a spam signal. Use normal capitalization.</value></data>
+  <data name="Lint_14" xml:space="preserve"><value>The subject line has {0} exclamation marks. Use at most one.</value></data>
+  <data name="Lint_15" xml:space="preserve"><value>The subject line is too long and will be cut off on phones. Try to keep it under 60 characters.</value></data>
+  <data name="Lint_16" xml:space="preserve"><value>The subject line emphasizes money/percentages. Exaggerated wording can raise the spam score.</value></data>
+  <data name="OAuth_DoneTitle" xml:space="preserve"><value>Sign-in complete</value></data>
+  <data name="OAuth_DoneBody" xml:space="preserve"><value>You can close this window and return to Alpixa.</value></data>
+  <data name="OAuth_CancelTitle" xml:space="preserve"><value>Sign-in cancelled</value></data>
+  <data name="OAuth_CancelBody" xml:space="preserve"><value>Return to Alpixa and try again.</value></data>
+  <data name="Footer_SentTo" xml:space="preserve"><value>We sent this email to {0} because you agreed to receive email from us.</value></data>
+  <data name="Footer_Unsubscribe" xml:space="preserve"><value>Unsubscribe</value></data>
+  <data name="Footer_TextSentTo" xml:space="preserve"><value>We sent this email to {0}.</value></data>
+  <data name="Footer_TextUnsubscribe" xml:space="preserve"><value>To unsubscribe: {0}</value></data>
+  <data name="Health_61" xml:space="preserve"><value>DMARC passes only through SPF. SPF breaks when email is forwarded.</value></data>
+  <data name="Health_62" xml:space="preserve"><value>The sender domain does not match the SPF/DKIM domain. DMARC fails and emails land in spam.</value></data>
+  <data name="Err_18" xml:space="preserve"><value>Browser sign-in (OAuth) is not set up in this installation.</value></data>
+  <data name="Err_19" xml:space="preserve"><value>For Gmail you can sign in with an 'App password', or enter the client ID under Settings → 'Browser sign-in'.</value></data>
+  <data name="Err_20" xml:space="preserve"><value>You need to sign in to your account again.</value></data>
+  <data name="Err_21" xml:space="preserve"><value>Your Gmail password was not accepted.</value></data>
+  <data name="Err_22" xml:space="preserve"><value>Your normal Gmail password does not work. Turn on 2-Step Verification in your Google account, create an 'App password' and enter it. Or use 'Sign in with browser'.</value></data>
+  <data name="Err_23" xml:space="preserve"><value>Could not sign in to the Microsoft account.</value></data>
+  <data name="Err_24" xml:space="preserve"><value>Microsoft has turned off SMTP sign-in with passwords. Use 'Sign in with browser'. For business accounts your admin may need to enable 'SMTP AUTH'.</value></data>
+  <data name="Err_25" xml:space="preserve"><value>The username or password was not accepted.</value></data>
+  <data name="Err_26" xml:space="preserve"><value>A secure connection could not be established.</value></data>
+  <data name="Err_27" xml:space="preserve"><value>The server address was not found.</value></data>
+  <data name="Err_28" xml:space="preserve"><value>Could not connect to the server.</value></data>
+  <data name="Err_29" xml:space="preserve"><value>The server says it is receiving too many requests right now.</value></data>
+  <data name="Err_30" xml:space="preserve"><value>The connection to the server was closed unexpectedly.</value></data>
+  <data name="Err_31" xml:space="preserve"><value>An unexpected error occurred.</value></data>
+  <data name="Health_TitleLocal" xml:space="preserve"><value>Local test server</value></data>
+  <data name="Health_TitlePtr" xml:space="preserve"><value>PTR (reverse DNS)</value></data>
+  <data name="Health_TitleAlignment" xml:space="preserve"><value>Alignment</value></data>
+  <data name="Preset_LocalTest" xml:space="preserve"><value>Local test server (smtp4dev / Papercut)</value></data>
+</root>

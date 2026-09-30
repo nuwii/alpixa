@@ -1,0 +1,13 @@
+bin/
+obj/
+artifacts/
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.db
+*.db-shm
+*.db-wal
+TestResults/
+.DS_Store

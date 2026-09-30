@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     x:Class="Alpixa.App.Views.SettingsPage"
+                     x:DataType="vm:SettingsViewModel"
+                     Title="{loc:Tr Nav_Settings}">
+    <ScrollView>
+        <VerticalStackLayout Padding="36,28,36,36" Spacing="18" MaximumWidthRequest="1040">
+            <fx:PageHeader Title="{loc:Tr Nav_Settings}" Subtitle="{loc:Tr Settings_Subtitle}" Icon="Sliders">
+                <fx:PageHeader.Actions>
+                    <fx:WithInfo Info="Settings_Common_Save">
+                        <Button Text="{loc:Tr Common_Save}" Command="{Binding SaveCommand}" />
+                    </fx:WithInfo>
+                </fx:PageHeader.Actions>
+            </fx:PageHeader>
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="{loc:Tr Settings_General}" Style="{StaticResource SectionTitle}" />
+                    <fx:InfoLabel Text="{loc:Tr Settings_Language}" Info="Settings_Language" LabelStyle="{StaticResource FieldLabel}" />
+                    <Picker ItemsSource="{Binding Languages}" SelectedIndex="{Binding LanguageIndex}" WidthRequest="240" HorizontalOptions="Start" />
+                    <fx:InfoLabel Text="{loc:Tr Settings_Seeds}" Info="Settings_Seeds" LabelStyle="{StaticResource FieldLabel}" />
+                    <Entry Text="{Binding SeedAddresses}" Placeholder="ben@gmail.com, ben@outlook.com, ben@yahoo.com" />
+                    <Label Text="{loc:Tr Settings_SeedsHint}" Style="{StaticResource MutedLabel}" />
+                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6" Margin="0,6,0,0">
+                        <CheckBox IsChecked="{Binding OpenTrackingDefault}" VerticalOptions="Center" />
+                        <fx:InfoLabel Text="{loc:Tr Settings_TrackingDefault}" Info="Settings_TrackingDefault" Wrap="True" Grid.Column="1" VerticalOptions="Center" />
+                    </Grid>
+                    <fx:WithInfo Info="Settings_RestartSetup" HorizontalOptions="Start" Margin="0,6,0,0">
+                        <Button Text="{loc:Tr Settings_RestartSetup}" Style="{StaticResource SecondaryButton}" Command="{Binding RestartSetupCommand}" />
+                    </fx:WithInfo>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="6">
+                    <fx:InfoLabel Text="{loc:Tr Settings_OAuthSection}" Info="Settings_OAuthSection" LabelStyle="{StaticResource SectionTitle}" />
+                    <Label Text="{loc:Tr Settings_OAuthIntro}" Style="{StaticResource MutedLabel}" />
+                    <fx:InfoLabel Text="{loc:Tr Settings_GoogleClientId}" Info="Settings_GoogleClientId" LabelStyle="{StaticResource FieldLabel}" />
+                    <Entry Text="{Binding GoogleClientId}" Placeholder="1234567890-xxxx.apps.googleusercontent.com" />
+                    <fx:InfoLabel Text="{loc:Tr Settings_GoogleClientSecret}" Info="Settings_GoogleClientSecret" LabelStyle="{StaticResource FieldLabel}" />
+                    <Entry Text="{Binding GoogleClientSecret}" IsPassword="True" Placeholder="GOCSPX-..." />
+                    <fx:InfoLabel Text="{loc:Tr Settings_MicrosoftClientId}" Info="Settings_MicrosoftClientId" LabelStyle="{StaticResource FieldLabel}" />
+                    <Entry Text="{Binding MicrosoftClientId}" Placeholder="00000000-0000-0000-0000-000000000000" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="6">
+                    <fx:InfoLabel Text="{loc:Tr Settings_FeedbackSection}" Info="Settings_FeedbackSection" LabelStyle="{StaticResource SectionTitle}" />
+                    <Label Text="{loc:Tr Settings_FeedbackIntro}" Style="{StaticResource MutedLabel}" />
+                    <fx:InfoLabel Text="{loc:Tr Settings_EndpointUrl}" Info="Settings_EndpointUrl" LabelStyle="{StaticResource FieldLabel}" />
+                    <Entry Text="{Binding EndpointUrl}" Placeholder="https://abonelik.firmaniz.com" Keyboard="Url" />
+                    <fx:InfoLabel Text="{loc:Tr Settings_EndpointKey}" Info="Settings_EndpointKey" LabelStyle="{StaticResource FieldLabel}" />
+                    <Entry Text="{Binding EndpointApiKey}" IsPassword="True" />
+                    <HorizontalStackLayout Spacing="10" Margin="0,6,0,0">
+                        <fx:WithInfo Info="Settings_CopySecret">
+                            <Button Text="{loc:Tr Settings_CopySecret}" Style="{StaticResource SecondaryButton}" Command="{Binding CopySecretCommand}" />
+                        </fx:WithInfo>
+                        <fx:WithInfo Info="Settings_CheckNow">
+                            <Button Text="{loc:Tr Settings_CheckNow}" Style="{StaticResource SecondaryButton}" Command="{Binding CheckFeedbackNowCommand}" />
+                        </fx:WithInfo>
+                    </HorizontalStackLayout>
+                    <Label Style="{StaticResource MutedLabel}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{loc:Tr Settings_LastCheck}" />
+                                <Span Text="{Binding LastFeedbackCheck}" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </VerticalStackLayout>
+            </Border>
+
+            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6">
+                <CheckBox IsChecked="{Binding ShowAdvanced}" VerticalOptions="Center" />
+                <fx:InfoLabel Text="{loc:Tr Common_ShowAdvanced}" Info="Common_ShowAdvanced" Wrap="True" Grid.Column="1" VerticalOptions="Center" FontAttributes="Bold" />
+            </Grid>
+
+            <Border Style="{StaticResource Card}" IsVisible="{Binding ShowAdvanced}">
+                <VerticalStackLayout Spacing="6">
+                    <fx:InfoLabel Text="{loc:Tr Settings_SendingSection}" Info="Settings_SendingSection" LabelStyle="{StaticResource SectionTitle}" />
+                    <Label Text="{loc:Tr Settings_SendingWarning}" Style="{StaticResource MutedLabel}" TextColor="{StaticResource StatusWarning}" />
+                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="16" RowDefinitions="Auto,Auto">
+                        <VerticalStackLayout>
+                            <fx:InfoLabel Text="{loc:Tr Settings_DelayMin}" Info="Settings_DelayMin" LabelStyle="{StaticResource FieldLabel}" />
+                            <Entry Text="{Binding DelayMin}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <fx:InfoLabel Text="{loc:Tr Settings_DelayMax}" Info="Settings_DelayMax" LabelStyle="{StaticResource FieldLabel}" />
+                            <Entry Text="{Binding DelayMax}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="2">
+                            <fx:InfoLabel Text="{loc:Tr Settings_Retries}" Info="Settings_Retries" LabelStyle="{StaticResource FieldLabel}" />
+                            <Entry Text="{Binding MaxRetries}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="1">
+                            <fx:InfoLabel Text="{loc:Tr Settings_DefaultParallel}" Info="Settings_DefaultParallel" LabelStyle="{StaticResource FieldLabel}" />
+                            <Entry Text="{Binding DefaultParallelism}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="1" Grid.Column="1">
+                            <fx:InfoLabel Text="{loc:Tr Settings_MaxParallel}" Info="Settings_MaxParallel" LabelStyle="{StaticResource FieldLabel}" />
+                            <Entry Text="{Binding MaxParallelism}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="1" Grid.Column="2">
+                            <fx:InfoLabel Text="{loc:Tr Settings_ErrorThreshold}" Info="Settings_ErrorThreshold" LabelStyle="{StaticResource FieldLabel}" />
+                            <Entry Text="{Binding ErrorThresholdPercent}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="16">
+                        <VerticalStackLayout>
+                            <fx:InfoLabel Text="{loc:Tr Settings_MaxAttachment}" Info="Settings_MaxAttachment" LabelStyle="{StaticResource FieldLabel}" />
+                            <Entry Text="{Binding MaxAttachmentMb}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <fx:InfoLabel Text="{loc:Tr Settings_MaxImage}" Info="Settings_MaxImage" LabelStyle="{StaticResource FieldLabel}" />
+                            <Entry Text="{Binding MaxImageKb}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <fx:InfoLabel Text="{loc:Tr Settings_DomainLimits}" Info="Settings_DomainLimits" LabelStyle="{StaticResource FieldLabel}" Margin="0,10,0,0" />
+                    <Grid ColumnDefinitions="*,*,*,*,*" ColumnSpacing="12">
+                        <VerticalStackLayout>
+                            <Label Text="Gmail" Style="{StaticResource MutedLabel}" />
+                            <Entry Text="{Binding GmailPerMinute}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="Outlook / Hotmail" Style="{StaticResource MutedLabel}" />
+                            <Entry Text="{Binding MicrosoftPerMinute}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="2">
+                            <Label Text="Yahoo" Style="{StaticResource MutedLabel}" />
+                            <Entry Text="{Binding YahooPerMinute}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="3">
+                            <Label Text="Yandex" Style="{StaticResource MutedLabel}" />
+                            <Entry Text="{Binding YandexPerMinute}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="4">
+                            <Label Text="{loc:Tr Settings_OtherDomains}" Style="{StaticResource MutedLabel}" />
+                            <Entry Text="{Binding OtherPerMinute}" Keyboard="Numeric" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <fx:InfoLabel Text="{loc:Tr Settings_WarmupPlan}" Info="Settings_WarmupPlan" LabelStyle="{StaticResource FieldLabel}" Margin="0,10,0,0" />
+                    <Label Text="{loc:Tr Settings_WarmupHint}" Style="{StaticResource MutedLabel}" />
+                    <Editor Text="{Binding WarmupPlanText}" HeightRequest="140" FontFamily="Menlo" WidthRequest="260" HorizontalOptions="Start" />
+                    <fx:WithInfo Info="Settings_WarmupReset" HorizontalOptions="Start">
+                        <Button Text="{loc:Tr Settings_WarmupReset}" Style="{StaticResource SecondaryButton}" Command="{Binding ResetWarmupCommand}" />
+                    </fx:WithInfo>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="6">
+                    <fx:InfoLabel Text="{loc:Tr Settings_PrivacySection}" Info="Settings_PrivacySection" LabelStyle="{StaticResource SectionTitle}" />
+                    <Label Text="{loc:Tr Settings_PrivacyIntro}" Style="{StaticResource MutedLabel}" />
+                    <Grid ColumnDefinitions="*,Auto,Auto" ColumnSpacing="10">
+                        <Entry Text="{Binding GdprEmail}" Placeholder="ayse@ornek.com" Keyboard="Email" />
+                        <fx:WithInfo Info="Settings_ExportData" Grid.Column="1">
+                            <Button Text="{loc:Tr Settings_ExportData}" Style="{StaticResource SecondaryButton}" Command="{Binding ExportPersonalDataCommand}" />
+                        </fx:WithInfo>
+                        <fx:WithInfo Info="Settings_Forget" Grid.Column="2">
+                            <Button Text="{loc:Tr Settings_Forget}" Style="{StaticResource DangerButton}" Command="{Binding ForgetPersonCommand}" />
+                        </fx:WithInfo>
+                    </Grid>
+                    <Label Style="{StaticResource MutedLabel}" Margin="0,6,0,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{loc:Tr Settings_Iys}" />
+                                <Span Text="{Binding ConsentProviderName}" FontAttributes="Bold" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Text="{loc:Tr Settings_IysHint}" Style="{StaticResource MutedLabel}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="8">
+                    <fx:InfoLabel Text="{loc:Tr Settings_DataSection}" Info="Settings_DataSection" LabelStyle="{StaticResource SectionTitle}" />
+                    <Label Style="{StaticResource MutedLabel}">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{loc:Tr Settings_DataFolder}" />
+                                <Span Text="{Binding DataFolder}" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <FlexLayout Wrap="Wrap" JustifyContent="Start">
+                        <fx:WithInfo Info="Settings_Backup" Margin="0,0,10,10">
+                            <Button Text="{loc:Tr Settings_Backup}" Command="{Binding BackupCommand}" />
+                        </fx:WithInfo>
+                        <fx:WithInfo Info="Settings_Restore" Margin="0,0,10,10">
+                            <Button Text="{loc:Tr Settings_Restore}" Style="{StaticResource SecondaryButton}" Command="{Binding RestoreCommand}" />
+                        </fx:WithInfo>
+                        <fx:WithInfo Info="Settings_OpenLogs" Margin="0,0,10,10">
+                            <Button Text="{loc:Tr Settings_OpenLogs}" Style="{StaticResource SecondaryButton}" Command="{Binding OpenLogFolderCommand}" />
+                        </fx:WithInfo>
+                        <fx:WithInfo Info="Settings_OpenData" Margin="0,0,10,10">
+                            <Button Text="{loc:Tr Settings_OpenData}" Style="{StaticResource SecondaryButton}" Command="{Binding OpenDataFolderCommand}" />
+                        </fx:WithInfo>
+                        <fx:WithInfo Info="Settings_SupportBundle" Margin="0,0,10,10">
+                            <Button Text="{loc:Tr Settings_SupportBundle}" Style="{StaticResource SecondaryButton}" Command="{Binding SupportBundleCommand}" />
+                        </fx:WithInfo>
+                    </FlexLayout>
+                    <Label Text="{loc:Tr Settings_BackupNote}" Style="{StaticResource MutedLabel}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Grid ColumnDefinitions="Auto,Auto,*" ColumnSpacing="10">
+                <fx:WithInfo Info="Settings_Common_Save">
+                    <Button Text="{loc:Tr Common_Save}" Command="{Binding SaveCommand}" />
+                </fx:WithInfo>
+                <ActivityIndicator Grid.Column="1" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+                <Label Grid.Column="2" Text="{Binding BusyText}" VerticalOptions="Center" Style="{StaticResource MutedLabel}" />
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</views:AlpixaPage>

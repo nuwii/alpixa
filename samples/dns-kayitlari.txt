@@ -1,0 +1,37 @@
+Alpixa - Örnek DNS kayıtları
+================================
+Aşağıdaki değerler ÖRNEKTİR. Gerçek değerleri e-posta sağlayıcınızın (ESP) panelinden alın.
+Örnekte toplu gönderim için "bulten.firmaniz.com" alt alan adı ve Amazon SES kullanılmıştır.
+
+1) SPF  (sadece BIR tane SPF kaydı olmalı)
+   Tür : TXT
+   Ad  : bülten            (ana alan adı için @)
+   Değer: v=spf1 include:amazonses.com ~all
+
+   Birden fazla sağlayıcı kullanıyorsanız tek kayıtta birleştirin:
+   v=spf1 include:amazonses.com include:_spf.google.com ~all
+
+2) DKIM  (ESP genelde 2-3 adet CNAME verir)
+   Tür : CNAME
+   Ad  : abcdefgh12345._domainkey.bulten
+   Değer: abcdefgh12345.dkim.amazonses.com
+
+   Kendi sunucunuzdan gönderiyorsanız (TXT):
+   Ad  : mp1._domainkey.bulten
+   Değer: v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...
+
+3) DMARC
+   Tür : TXT
+   Ad  : _dmarc.bulten      (ana alan adı için _dmarc)
+   Değer: v=DMARC1; p=none; rua=mailto:dmarc@firmaniz.com
+
+   2-4 hafta sonra sorun yoksa: p=quarantine, daha sonra p=reject.
+
+4) MX  (gönderen adresine yanıt ve geri dönüşler ulaşsın diye)
+   Tür : MX
+   Ad  : bülten
+   Değer: 10 feedback-smtp.eu-central-1.amazonses.com   (ESP'nin verdiği değer)
+
+5) PTR  (sadece kendi SMTP sunucunuz varsa)
+   Sunucu IP'sinin ters DNS kaydı sunucu adını göstermeli, örnek: 203.0.113.10 -> mail.firmaniz.com
+   Bu kaydı hosting sağlayıcınız ayarlar.

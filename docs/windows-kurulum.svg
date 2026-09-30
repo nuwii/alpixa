@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#F4F5F7" stroke="#D1D5DB" stroke-width="2"/>
+  <text x="480" y="255" font-family="Arial, sans-serif" font-size="28" fill="#6B7280" text-anchor="middle">Windows kurulum ekranı</text>
+  <text x="480" y="300" font-family="Arial, sans-serif" font-size="18" fill="#9CA3AF" text-anchor="middle">Ekran görüntüsü yer tutucusu - docs/windows-kurulum.png ile değiştirin</text>
+</svg>

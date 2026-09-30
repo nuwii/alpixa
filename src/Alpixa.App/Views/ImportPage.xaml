@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     xmlns:c="clr-namespace:Alpixa.Infrastructure.Contacts;assembly=Alpixa.Infrastructure"
+                     x:Class="Alpixa.App.Views.ImportPage"
+                     x:DataType="vm:ImportViewModel"
+                     Title="{loc:Tr Import_Title}">
+    <ScrollView x:Name="PageScroll">
+        <VerticalStackLayout Padding="36,28,36,36" Spacing="18" MaximumWidthRequest="1140">
+            <fx:PageHeader Title="{loc:Tr Import_Title}" Subtitle="{loc:Tr Import_Subtitle}" Icon="Upload" />
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="{loc:Tr Import_Step1}" Style="{StaticResource SectionTitle}" />
+                    <Label Text="{loc:Tr Import_FileHint}" Style="{StaticResource MutedLabel}" />
+                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="12">
+                        <fx:WithInfo Info="Import_PickFile">
+                            <Button Text="{loc:Tr Import_PickFile}" Command="{Binding PickFileCommand}" />
+                        </fx:WithInfo>
+                        <Label Grid.Column="1" Text="{Binding FilePath}" VerticalOptions="Center" Style="{StaticResource MutedLabel}" LineBreakMode="CharacterWrap" />
+                    </Grid>
+                    <fx:InfoLabel Text="{loc:Tr Import_OrPaste}" Info="Import_OrPaste" LabelStyle="{StaticResource FieldLabel}" />
+                    <Editor Text="{Binding PastedText}" HeightRequest="100" Placeholder="email,ad,soyad&#10;ayse@ornek.com,Ayşe,Yılmaz" />
+                    <fx:WithInfo Info="Import_PreviewPasted" HorizontalOptions="Start">
+                        <Button Text="{loc:Tr Import_PreviewPasted}" Style="{StaticResource SecondaryButton}" Command="{Binding PreviewPastedCommand}" />
+                    </fx:WithInfo>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Card}" IsVisible="{Binding HasPreview}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="{loc:Tr Import_Step2}" Style="{StaticResource SectionTitle}" />
+                    <Label Text="{loc:Tr Import_MappingHint}" Style="{StaticResource MutedLabel}" />
+                    <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto,Auto" ColumnSpacing="16" RowSpacing="4">
+                        <VerticalStackLayout>
+                            <fx:InfoLabel Text="{loc:Tr Import_ColEmail}" Info="Import_ColEmail" LabelStyle="{StaticResource FieldLabel}" />
+                            <Picker ItemsSource="{Binding Columns}" SelectedItem="{Binding EmailColumn}" ItemDisplayBinding="{Binding Name, x:DataType=vm:ColumnChoice}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <fx:InfoLabel Text="{loc:Tr Import_ColFirst}" Info="Import_ColFirst" LabelStyle="{StaticResource FieldLabel}" />
+                            <Picker ItemsSource="{Binding Columns}" SelectedItem="{Binding FirstNameColumn}" ItemDisplayBinding="{Binding Name, x:DataType=vm:ColumnChoice}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="2">
+                            <fx:InfoLabel Text="{loc:Tr Import_ColLast}" Info="Import_ColLast" LabelStyle="{StaticResource FieldLabel}" />
+                            <Picker ItemsSource="{Binding Columns}" SelectedItem="{Binding LastNameColumn}" ItemDisplayBinding="{Binding Name, x:DataType=vm:ColumnChoice}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="1">
+                            <fx:InfoLabel Text="{loc:Tr Import_ColCompany}" Info="Import_ColCompany" LabelStyle="{StaticResource FieldLabel}" />
+                            <Picker ItemsSource="{Binding Columns}" SelectedItem="{Binding CompanyColumn}" ItemDisplayBinding="{Binding Name, x:DataType=vm:ColumnChoice}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="1" Grid.Column="1">
+                            <fx:InfoLabel Text="{loc:Tr Import_ColConsentSource}" Info="Import_ColConsentSource" LabelStyle="{StaticResource FieldLabel}" />
+                            <Picker ItemsSource="{Binding Columns}" SelectedItem="{Binding ConsentSourceColumn}" ItemDisplayBinding="{Binding Name, x:DataType=vm:ColumnChoice}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="1" Grid.Column="2">
+                            <fx:InfoLabel Text="{loc:Tr Import_ColConsentDate}" Info="Import_ColConsentDate" LabelStyle="{StaticResource FieldLabel}" />
+                            <Picker ItemsSource="{Binding Columns}" SelectedItem="{Binding ConsentDateColumn}" ItemDisplayBinding="{Binding Name, x:DataType=vm:ColumnChoice}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <fx:InfoLabel Text="{loc:Tr Import_PreviewTitle}" Info="Import_PreviewTitle" LabelStyle="{StaticResource FieldLabel}" />
+                    <Border Padding="10" StrokeShape="RoundRectangle 6" Stroke="{AppThemeBinding Light={StaticResource BorderLight}, Dark={StaticResource BorderDark}}">
+                        <VerticalStackLayout BindableLayout.ItemsSource="{Binding PreviewRows}">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="vm:PreviewRow">
+                                    <Label Text="{Binding Text}" FontFamily="Menlo" FontSize="12" LineBreakMode="CharacterWrap" MaxLines="2" />
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </VerticalStackLayout>
+                    </Border>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Card}" IsVisible="{Binding HasPreview}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="{loc:Tr Import_Step3}" Style="{StaticResource SectionTitle}" />
+                    <FlexLayout Wrap="Wrap">
+                        <RadioButton IsChecked="{Binding CreateNewList}" Content="{loc:Tr Import_NewList}" GroupName="target" />
+                        <RadioButton IsChecked="{Binding CreateNewList, Converter={StaticResource Invert}}" Content="{loc:Tr Import_ExistingList}" GroupName="target" />
+                    </FlexLayout>
+                    <Entry Text="{Binding NewListName}" Placeholder="{loc:Tr Import_ListName}" IsVisible="{Binding CreateNewList}" />
+                    <Picker ItemsSource="{Binding ExistingLists}" SelectedItem="{Binding SelectedList}" ItemDisplayBinding="{Binding Name, x:DataType=c:ContactListSummary}"
+                            IsVisible="{Binding CreateNewList, Converter={StaticResource Invert}}" />
+
+                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6" Margin="0,8,0,0">
+                        <CheckBox IsChecked="{Binding CheckMx}" VerticalOptions="Center" />
+                        <fx:InfoLabel Text="{loc:Tr Import_CheckMx}" Info="Import_CheckMx" Wrap="True" Grid.Column="1" VerticalOptions="Center" />
+                    </Grid>
+                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6">
+                        <CheckBox IsChecked="{Binding ConsentConfirmed}" VerticalOptions="Center" />
+                        <fx:InfoLabel Text="{loc:Tr Import_Consent}" Info="Import_Consent" Wrap="True" Grid.Column="1" VerticalOptions="Center" FontAttributes="Bold" />
+                    </Grid>
+                    <Label Text="{loc:Tr Import_LegalNote}" Style="{StaticResource MutedLabel}" />
+
+                    <HorizontalStackLayout Spacing="10" Margin="0,8,0,0">
+                        <fx:WithInfo Info="Import_Run">
+                            <Button Text="{loc:Tr Import_Run}" Command="{Binding ImportCommand}" IsEnabled="{Binding IsNotBusy}" />
+                        </fx:WithInfo>
+                        <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+                        <Label Text="{Binding ProgressText}" VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border x:Name="ResultCard" Style="{StaticResource Card}" IsVisible="{Binding ResultText, Converter={StaticResource NotNull}}">
+                <VerticalStackLayout Spacing="8">
+                    <fx:InfoLabel Text="{loc:Tr Import_ResultTitle}" Info="Import_ResultTitle" LabelStyle="{StaticResource SectionTitle}" />
+                    <Label Text="{Binding ResultText}" />
+                    <fx:WithInfo Info="Import_GoToLists" HorizontalOptions="Start">
+                        <Button Text="{loc:Tr Import_GoToLists}" Command="{Binding DoneCommand}" />
+                    </fx:WithInfo>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</views:AlpixaPage>

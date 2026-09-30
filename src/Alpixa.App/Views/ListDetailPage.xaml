@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     xmlns:m="clr-namespace:Alpixa.Core.Models;assembly=Alpixa.Core"
+                     x:Class="Alpixa.App.Views.ListDetailPage"
+                     x:DataType="vm:ListDetailViewModel"
+                     Title="{Binding ListName}">
+    <Grid RowDefinitions="Auto,Auto,Auto,*,Auto" Padding="36,28,36,24" RowSpacing="14">
+        <fx:PageHeader Title="{Binding ListName}" Subtitle="{loc:Tr ListDetail_Subtitle}" Icon="Users" />
+        <Grid Grid.Row="1" ColumnDefinitions="*,220,Auto" ColumnSpacing="10">
+            <Entry Text="{Binding Search}" Placeholder="{loc:Tr ListDetail_Search}" ReturnCommand="{Binding FindCommand}" />
+            <Picker Grid.Column="1" ItemsSource="{Binding StatusFilters}" SelectedIndex="{Binding SelectedStatusIndex}" />
+            <fx:WithInfo Info="ListDetail_Common_Search" Grid.Column="2">
+                <Button Text="{loc:Tr Common_Search}" Command="{Binding FindCommand}" />
+            </fx:WithInfo>
+        </Grid>
+        <Grid Grid.Row="2" ColumnDefinitions="2*,*,*,*,90" ColumnSpacing="10" Padding="13,0">
+            <fx:InfoLabel Text="{loc:Tr ListDetail_Email}" Info="ListDetail_Email" LabelStyle="{StaticResource FieldLabel}" />
+            <fx:InfoLabel Text="{loc:Tr ListDetail_Name}" Info="ListDetail_Name" LabelStyle="{StaticResource FieldLabel}" Grid.Column="1" />
+            <fx:InfoLabel Text="{loc:Tr ListDetail_Company}" Info="ListDetail_Company" LabelStyle="{StaticResource FieldLabel}" Grid.Column="2" />
+            <fx:InfoLabel Text="{loc:Tr ListDetail_Status}" Info="ListDetail_Status" LabelStyle="{StaticResource FieldLabel}" Grid.Column="3" />
+        </Grid>
+        <CollectionView Grid.Row="3" ItemsSource="{Binding Contacts}">
+            <CollectionView.EmptyView>
+                <Label Text="{loc:Tr ListDetail_Empty}" Style="{StaticResource MutedLabel}" Margin="12" />
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="m:Contact">
+                    <Border Style="{StaticResource InsetBox}" Margin="0,0,0,6" Padding="12,8">
+                    <Grid ColumnDefinitions="2*,*,*,*,90" ColumnSpacing="10">
+                        <Label Text="{Binding Email}" VerticalOptions="Center" LineBreakMode="CharacterWrap" />
+                        <Label Grid.Column="1" VerticalOptions="Center" LineBreakMode="CharacterWrap">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding FirstName}" />
+                                    <Span Text=" " />
+                                    <Span Text="{Binding LastName}" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label Grid.Column="2" Text="{Binding Company}" VerticalOptions="Center" LineBreakMode="CharacterWrap" />
+                        <Border Grid.Column="3" Style="{StaticResource Chip}" BackgroundColor="{AppThemeBinding Light=#EEF0FF, Dark=#1A1D33}">
+                            <Label Text="{Binding Status, Converter={StaticResource EnumText}}" Style="{StaticResource ChipLabel}" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
+                        </Border>
+                        <fx:WithInfo Info="ListDetail_History" Grid.Column="4">
+                            <Button Text="{loc:Tr ListDetail_History}" Style="{StaticResource SecondaryButton}" Padding="10,4"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ListDetailViewModel}}, Path=HistoryCommand, x:DataType=vm:ListDetailViewModel}" CommandParameter="{Binding .}" />
+                        </fx:WithInfo>
+                    </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <HorizontalStackLayout Grid.Row="4" Spacing="10">
+            <fx:WithInfo Info="ListDetail_LoadMore" IsVisible="{Binding CanLoadMore}">
+                <Button Text="{loc:Tr ListDetail_LoadMore}" Style="{StaticResource SecondaryButton}" Command="{Binding LoadMoreCommand}" />
+            </fx:WithInfo>
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+        </HorizontalStackLayout>
+    </Grid>
+</views:AlpixaPage>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     xmlns:m="clr-namespace:Alpixa.Core.Models;assembly=Alpixa.Core"
+                     x:Class="Alpixa.App.Views.ProfilesPage"
+                     x:DataType="vm:ProfilesViewModel"
+                     Title="{loc:Tr Nav_Profiles}">
+    <Grid RowDefinitions="Auto,*" Padding="36,28,36,24" RowSpacing="18" MaximumWidthRequest="1240">
+        <fx:PageHeader Title="{loc:Tr Nav_Profiles}" Subtitle="{loc:Tr Profiles_Intro}" Icon="Mail">
+            <fx:PageHeader.Actions>
+                <fx:WithInfo Info="Profiles_New">
+                    <Button Text="{loc:Tr Profiles_New}" Command="{Binding AddCommand}" />
+                </fx:WithInfo>
+            </fx:PageHeader.Actions>
+        </fx:PageHeader>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Profiles}">
+            <CollectionView.EmptyView>
+                <Label Text="{loc:Tr Profiles_Empty}" Style="{StaticResource MutedLabel}" Margin="0,20" />
+            </CollectionView.EmptyView>
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="m:SenderProfile">
+                    <Border Style="{StaticResource Card}">
+                        <Grid ColumnDefinitions="Auto,*,Auto,Auto,Auto" ColumnSpacing="12">
+                            <Border Style="{StaticResource IconBadge}" VerticalOptions="Center">
+                                <Path Data="{fx:Icon Mail}" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                            </Border>
+                            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="16" />
+                                <Label Style="{StaticResource MutedLabel}">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding FromName}" />
+                                            <Span Text=" &lt;" />
+                                            <Span Text="{Binding FromAddress}" />
+                                            <Span Text="&gt; · " />
+                                            <Span Text="{Binding Kind, Converter={StaticResource EnumText}}" />
+                                            <Span Text=" · " />
+                                            <Span Text="{Binding SmtpHost}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label Style="{StaticResource MutedLabel}">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{loc:Tr Profiles_Limits}" />
+                                            <Span Text=" " />
+                                            <Span Text="{Binding DailyLimit}" />
+                                            <Span Text=" / " />
+                                            <Span Text="{Binding HourlyLimit}" />
+                                            <Span Text=" / " />
+                                            <Span Text="{Binding PerMinuteLimit}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </VerticalStackLayout>
+                            <fx:WithInfo Info="Profiles_Test" Grid.Column="2" VerticalOptions="Center">
+                                <Button Text="{loc:Tr Profiles_Test}" Style="{StaticResource SecondaryButton}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProfilesViewModel}}, Path=TestCommand, x:DataType=vm:ProfilesViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                            <fx:WithInfo Info="Profiles_Common_Edit" Grid.Column="3" VerticalOptions="Center">
+                                <Button Text="{loc:Tr Common_Edit}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProfilesViewModel}}, Path=EditCommand, x:DataType=vm:ProfilesViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                            <fx:WithInfo Info="Profiles_Common_Delete" Grid.Column="4" VerticalOptions="Center">
+                                <Button Text="{loc:Tr Common_Delete}" Style="{StaticResource DangerButton}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProfilesViewModel}}, Path=DeleteCommand, x:DataType=vm:ProfilesViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <ActivityIndicator Grid.Row="1" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Start" />
+    </Grid>
+</views:AlpixaPage>

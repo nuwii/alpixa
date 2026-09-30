@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:conv="clr-namespace:Alpixa.App.Converters"
+             x:Class="Alpixa.App.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <conv:CheckStatusColorConverter x:Key="StatusColor" />
+            <conv:EnumTextConverter x:Key="EnumText" />
+            <conv:InvertBoolConverter x:Key="Invert" />
+            <conv:NotNullConverter x:Key="NotNull" />
+            <conv:PercentConverter x:Key="Percent" />
+            <conv:LocalTimeConverter x:Key="LocalTime" />
+            <conv:HasItemsConverter x:Key="HasItems" />
+            <conv:HasItemsConverter x:Key="NoItems" Invert="True" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     xmlns:m="clr-namespace:Alpixa.Core.Models;assembly=Alpixa.Core"
+                     xmlns:r="clr-namespace:Alpixa.Core.Rules;assembly=Alpixa.Core"
+                     x:Class="Alpixa.App.Views.SetupWizardPage"
+                     x:DataType="vm:SetupWizardViewModel"
+                     Title="{loc:Tr Setup_Title}">
+    <Grid RowDefinitions="Auto,*,Auto" Padding="36,28,36,24" RowSpacing="18">
+        <VerticalStackLayout Spacing="16" MaximumWidthRequest="800" HorizontalOptions="Fill">
+            <fx:PageHeader Title="{loc:Tr Setup_Title}" Eyebrow="{Binding StepTitle}" Icon="Sparkle" />
+            <fx:StepBar Step="{Binding Step}" Count="4" />
+        </VerticalStackLayout>
+
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout x:Name="Steps" Spacing="12" MaximumWidthRequest="800" HorizontalOptions="Fill">
+                <Border Style="{StaticResource Card}" IsVisible="{Binding IsStep1}">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="{loc:Tr Setup_Welcome}" />
+                        <fx:InfoLabel Text="{loc:Tr Settings_Language}" Info="Settings_Language" LabelStyle="{StaticResource FieldLabel}" />
+                        <Picker ItemsSource="{Binding Languages}" SelectedIndex="{Binding LanguageIndex}" WidthRequest="240" HorizontalOptions="Start" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Style="{StaticResource Card}" IsVisible="{Binding IsStep2}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="{loc:Tr Setup_AccountIntro}" Style="{StaticResource MutedLabel}" />
+                        <fx:InfoLabel Text="{loc:Tr ProfileEdit_Provider}" Info="ProfileEdit_Provider" LabelStyle="{StaticResource FieldLabel}" />
+                        <Picker ItemsSource="{Binding Presets}" SelectedItem="{Binding SelectedPreset}" ItemDisplayBinding="{Binding DisplayName, x:DataType=r:ProviderPreset}" />
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="16">
+                            <VerticalStackLayout>
+                                <fx:InfoLabel Text="{loc:Tr ProfileEdit_FromName}" Info="ProfileEdit_FromName" LabelStyle="{StaticResource FieldLabel}" />
+                                <Entry Text="{Binding FromName}" Placeholder="Firmanız" />
+                            </VerticalStackLayout>
+                            <VerticalStackLayout Grid.Column="1">
+                                <fx:InfoLabel Text="{loc:Tr ProfileEdit_FromAddress}" Info="ProfileEdit_FromAddress" LabelStyle="{StaticResource FieldLabel}" />
+                                <Entry Text="{Binding FromAddress}" Placeholder="bulten@firmaniz.com" Keyboard="Email" />
+                            </VerticalStackLayout>
+                        </Grid>
+                        <VerticalStackLayout IsVisible="{Binding IsCustomHost}">
+                            <fx:InfoLabel Text="{loc:Tr ProfileEdit_Host}" Info="ProfileEdit_Host" LabelStyle="{StaticResource FieldLabel}" />
+                            <Entry Text="{Binding SmtpHost}" />
+                        </VerticalStackLayout>
+                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="6" IsVisible="{Binding IsOAuthCapable}" Margin="0,6,0,0">
+                            <CheckBox IsChecked="{Binding UseBrowserSignIn}" VerticalOptions="Center" />
+                            <fx:InfoLabel Text="{loc:Tr Setup_UseBrowser}" Info="Setup_UseBrowser" Wrap="True" Grid.Column="1" VerticalOptions="Center" />
+                        </Grid>
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="16" IsVisible="{Binding UseBrowserSignIn, Converter={StaticResource Invert}}">
+                            <VerticalStackLayout>
+                                <fx:InfoLabel Text="{loc:Tr ProfileEdit_Username}" Info="ProfileEdit_Username" LabelStyle="{StaticResource FieldLabel}" />
+                                <Entry Text="{Binding Username}" Placeholder="{loc:Tr Setup_UsernameHint}" />
+                            </VerticalStackLayout>
+                            <VerticalStackLayout Grid.Column="1">
+                                <fx:InfoLabel Text="{loc:Tr ProfileEdit_Password}" Info="ProfileEdit_Password" LabelStyle="{StaticResource FieldLabel}" />
+                                <Entry Text="{Binding Password}" IsPassword="True" />
+                            </VerticalStackLayout>
+                        </Grid>
+                        <fx:InfoLabel Text="{loc:Tr ProfileEdit_DkimSelector}" Info="ProfileEdit_DkimSelector" LabelStyle="{StaticResource FieldLabel}" />
+                        <Entry Text="{Binding DkimSelector}" Placeholder="{loc:Tr Setup_SelectorHint}" />
+                        <fx:WithInfo Info="Profiles_Test" HorizontalOptions="Start" Margin="0,10,0,0">
+                            <Button Text="{loc:Tr Profiles_Test}" Style="{StaticResource SecondaryButton}" Command="{Binding TestConnectionCommand}" />
+                        </fx:WithInfo>
+                        <Label Text="{Binding ConnectionMessage}" LineBreakMode="WordWrap" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Style="{StaticResource Card}" IsVisible="{Binding IsStep3}">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="{loc:Tr Setup_DomainIntro}" Style="{StaticResource MutedLabel}" />
+                        <Label Text="{Binding HealthSummary}" FontAttributes="Bold" />
+                        <VerticalStackLayout BindableLayout.ItemsSource="{Binding Checks}" Spacing="6">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="m:DomainCheck">
+                                    <Grid ColumnDefinitions="Auto,*" ColumnSpacing="10">
+                                        <Ellipse WidthRequest="10" HeightRequest="10" Fill="{Binding Status, Converter={StaticResource StatusColor}}" VerticalOptions="Start" Margin="0,4,0,0" />
+                                        <VerticalStackLayout Grid.Column="1">
+                                            <Label Text="{Binding Title}" FontAttributes="Bold" />
+                                            <Label Text="{Binding Message}" FontSize="13" />
+                                            <Label Text="{Binding SuggestedRecord}" FontFamily="Menlo" FontSize="12" IsVisible="{Binding SuggestedRecord, Converter={StaticResource NotNull}}" />
+                                        </VerticalStackLayout>
+                                    </Grid>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </VerticalStackLayout>
+                        <fx:WithInfo Info="Health_Recheck" HorizontalOptions="Start">
+                            <Button Text="{loc:Tr Health_Recheck}" Style="{StaticResource SecondaryButton}" Command="{Binding RecheckCommand}" />
+                        </fx:WithInfo>
+                        <Label Text="{loc:Tr Setup_DomainLater}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Style="{StaticResource Card}" IsVisible="{Binding IsStep4}">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="{loc:Tr Setup_TestIntro}" Style="{StaticResource MutedLabel}" />
+                        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                            <Entry Text="{Binding SeedAddresses}" Placeholder="ben@gmail.com, ben@outlook.com" />
+                            <fx:WithInfo Info="Wizard_SendTest" Grid.Column="1">
+                                <Button Text="{loc:Tr Wizard_SendTest}" Command="{Binding SendTestCommand}" />
+                            </fx:WithInfo>
+                        </Grid>
+                        <VerticalStackLayout BindableLayout.ItemsSource="{Binding TestResults}">
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate x:DataType="x:String">
+                                    <Label Text="{Binding .}" FontSize="13" />
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </VerticalStackLayout>
+                        <Label Text="{loc:Tr Setup_TestCheckInbox}" Style="{StaticResource MutedLabel}" />
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Border Grid.Row="2" Style="{StaticResource StaticCard}" Padding="14,10" MaximumWidthRequest="800" HorizontalOptions="Fill">
+            <Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,*" ColumnSpacing="10">
+                <fx:WithInfo Info="SetupWizard_Common_Back" Grid.Column="0">
+                    <Button Text="{loc:Tr Common_Back}" Style="{StaticResource SecondaryButton}" Command="{Binding BackCommand}" IsEnabled="{Binding CanGoBack}" />
+                </fx:WithInfo>
+                <fx:WithInfo Info="SetupWizard_Common_Next" Grid.Column="1" IsVisible="{Binding IsLastStep, Converter={StaticResource Invert}}">
+                    <Button Text="{loc:Tr Common_Next}" Command="{Binding NextCommand}" />
+                </fx:WithInfo>
+                <fx:WithInfo Info="Setup_Finish" Grid.Column="2" IsVisible="{Binding IsLastStep}">
+                    <Button Text="{loc:Tr Setup_Finish}" Command="{Binding FinishCommand}" />
+                </fx:WithInfo>
+                <fx:WithInfo Info="Setup_Skip" Grid.Column="3">
+                    <Button Text="{loc:Tr Setup_Skip}" Style="{StaticResource SecondaryButton}" Command="{Binding SkipCommand}" />
+                </fx:WithInfo>
+                <ActivityIndicator Grid.Column="4" IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+                <Label Grid.Column="5" Text="{Binding BusyText}" VerticalOptions="Center" Style="{StaticResource MutedLabel}" />
+            </Grid>
+        </Border>
+    </Grid>
+</views:AlpixaPage>

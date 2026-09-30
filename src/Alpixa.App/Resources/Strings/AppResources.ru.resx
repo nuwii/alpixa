@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="App_Tagline" xml:space="preserve"><value>Массовая сила, которая проходит фильтры.</value></data>
+  <data name="Campaigns_Cancel" xml:space="preserve"><value>Отменить кампанию</value></data>
+  <data name="Campaigns_CancelConfirm" xml:space="preserve"><value>Отменить «{0}»? Тем, кому письмо ещё не отправлено, оно не придёт. Это действие нельзя отменить.</value></data>
+  <data name="Campaigns_CancelTitle" xml:space="preserve"><value>Отмена кампании</value></data>
+  <data name="Campaigns_CancelYes" xml:space="preserve"><value>Да, отменить</value></data>
+  <data name="Campaigns_DeleteConfirm" xml:space="preserve"><value>Удалить кампанию «{0}» и данные об отправке?</value></data>
+  <data name="Campaigns_FailedSuffix" xml:space="preserve"><value> с ошибкой</value></data>
+  <data name="Campaigns_Pause" xml:space="preserve"><value>Приостановить</value></data>
+  <data name="Campaigns_Resume" xml:space="preserve"><value>Продолжить</value></data>
+  <data name="Campaigns_SentSuffix" xml:space="preserve"><value> отправлено · </value></data>
+  <data name="Common_Back" xml:space="preserve"><value>Назад</value></data>
+  <data name="Common_Browse" xml:space="preserve"><value>Обзор...</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Отмена</value></data>
+  <data name="Common_Close" xml:space="preserve"><value>Закрыть</value></data>
+  <data name="Common_Copied" xml:space="preserve"><value>Скопировано в буфер обмена.</value></data>
+  <data name="Common_Copy" xml:space="preserve"><value>Копировать</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>Удалить</value></data>
+  <data name="Common_Edit" xml:space="preserve"><value>Изменить</value></data>
+  <data name="Common_Error" xml:space="preserve"><value>Что-то пошло не так</value></data>
+  <data name="Common_HowTo" xml:space="preserve"><value>Как исправить</value></data>
+  <data name="Common_Missing" xml:space="preserve"><value>Не хватает данных</value></data>
+  <data name="Common_Next" xml:space="preserve"><value>Далее</value></data>
+  <data name="Common_No" xml:space="preserve"><value>Нет</value></data>
+  <data name="Common_Ok" xml:space="preserve"><value>ОК</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>Открыть</value></data>
+  <data name="Common_Refresh" xml:space="preserve"><value>Обновить</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>Сохранить</value></data>
+  <data name="Common_Saved" xml:space="preserve"><value>Сохранено.</value></data>
+  <data name="Common_Search" xml:space="preserve"><value>Найти</value></data>
+  <data name="Common_ShowAdvanced" xml:space="preserve"><value>Показать расширенные настройки</value></data>
+  <data name="Common_Working" xml:space="preserve"><value>Выполняется...</value></data>
+  <data name="Common_Yes" xml:space="preserve"><value>Да</value></data>
+  <data name="Dashboard_ActiveContacts" xml:space="preserve"><value>активных контактов</value></data>
+  <data name="Dashboard_Lists" xml:space="preserve"><value>списков</value></data>
+  <data name="Dashboard_NoCampaigns" xml:space="preserve"><value>Кампаний пока нет.</value></data>
+  <data name="Dashboard_NoProfile" xml:space="preserve"><value>Профиля отправителя пока нет. Добавьте его перед отправкой.</value></data>
+  <data name="Dashboard_Recent" xml:space="preserve"><value>Последние кампании</value></data>
+  <data name="Dashboard_Sent30" xml:space="preserve"><value>отправлено за 30 дней</value></data>
+  <data name="Dashboard_SetupBody" xml:space="preserve"><value>С помощью мастера настройки добавьте учётную запись отправителя и проверьте домен.</value></data>
+  <data name="Dashboard_SetupButton" xml:space="preserve"><value>Открыть мастер настройки</value></data>
+  <data name="Dashboard_SetupTitle" xml:space="preserve"><value>Настройка не завершена</value></data>
+  <data name="Dashboard_Suppressed" xml:space="preserve"><value>адресов в стоп-листе</value></data>
+  <data name="Dashboard_Tips" xml:space="preserve"><value>1. Добейтесь, чтобы в разделе «Состояние домена» всё было зелёным.
+2. Пишите только тем, кто дал согласие.
+3. Начинайте медленно; не отключайте план прогрева.
+4. Сначала отправьте тестовое письмо себе.</value></data>
+  <data name="Dashboard_TipsTitle" xml:space="preserve"><value>Чтобы попасть во «Входящие»</value></data>
+  <data name="Dashboard_Title" xml:space="preserve"><value>Обзор</value></data>
+  <data name="Dashboard_WarnBounces" xml:space="preserve"><value>Доля недоставленных у «{0}» — {1}. Цель — ниже 2 %. Очистите список.</value></data>
+  <data name="Dashboard_WarnComplaints" xml:space="preserve"><value>Доля жалоб у «{0}» — {1}. Цель — ниже 0,1 %.</value></data>
+  <data name="Dashboard_WarnPaused" xml:space="preserve"><value>Кампания «{0}» остановлена из соображений безопасности. Причина указана на странице кампании.</value></data>
+  <data name="Detail_BackgroundNote" xml:space="preserve"><value>Компьютер не уйдёт в сон, пока отправка не завершится. Письма с неизвестным статусом (приложение закрыто во время отправки) повторно не отправляются.</value></data>
+  <data name="Detail_Bounces" xml:space="preserve"><value>Не доставлено</value></data>
+  <data name="Detail_Complaints" xml:space="preserve"><value>Жалобы: </value></data>
+  <data name="Detail_DryRun" xml:space="preserve"><value>Пробный запуск</value></data>
+  <data name="Detail_Eta" xml:space="preserve"><value>Осталось примерно: {0}</value></data>
+  <data name="Detail_Failed" xml:space="preserve"><value>С ошибкой</value></data>
+  <data name="Detail_Hours" xml:space="preserve"><value>{0} ч {1} мин</value></data>
+  <data name="Detail_Minutes" xml:space="preserve"><value>{0} мин</value></data>
+  <data name="Detail_NextRun" xml:space="preserve"><value>Продолжится в: {0}</value></data>
+  <data name="Detail_OpenReports" xml:space="preserve"><value>Открыть отчёты</value></data>
+  <data name="Detail_Pending" xml:space="preserve"><value>В очереди</value></data>
+  <data name="Detail_Rate" xml:space="preserve"><value>Скорость: {0} писем/мин</value></data>
+  <data name="Detail_Scheduled" xml:space="preserve"><value>Начнётся в: {0}</value></data>
+  <data name="Detail_Sent" xml:space="preserve"><value>Отправлено</value></data>
+  <data name="Detail_Skipped" xml:space="preserve"><value>Пропущено: </value></data>
+  <data name="Detail_Uncertain" xml:space="preserve"><value>Статус неизвестен: </value></data>
+  <data name="Detail_Unsubscribes" xml:space="preserve"><value>Отписались</value></data>
+  <data name="Enum_CampaignStatus_Cancelled" xml:space="preserve"><value>Отменена</value></data>
+  <data name="Enum_CampaignStatus_Completed" xml:space="preserve"><value>Завершена</value></data>
+  <data name="Enum_CampaignStatus_Draft" xml:space="preserve"><value>Черновик</value></data>
+  <data name="Enum_CampaignStatus_Paused" xml:space="preserve"><value>Приостановлена</value></data>
+  <data name="Enum_CampaignStatus_PausedBySafety" xml:space="preserve"><value>Остановлена для безопасности</value></data>
+  <data name="Enum_CampaignStatus_Running" xml:space="preserve"><value>Идёт отправка</value></data>
+  <data name="Enum_CampaignStatus_Scheduled" xml:space="preserve"><value>Запланирована</value></data>
+  <data name="Enum_CampaignStatus_WaitingForQuota" xml:space="preserve"><value>Ждёт завтрашнего дня (дневной лимит)</value></data>
+  <data name="Enum_CheckStatus_Fail" xml:space="preserve"><value>Нужно исправить</value></data>
+  <data name="Enum_CheckStatus_Info" xml:space="preserve"><value>Инфо</value></data>
+  <data name="Enum_CheckStatus_Pass" xml:space="preserve"><value>В порядке</value></data>
+  <data name="Enum_CheckStatus_Warning" xml:space="preserve"><value>Предупреждение</value></data>
+  <data name="Enum_ContactStatus_Active" xml:space="preserve"><value>Активен</value></data>
+  <data name="Enum_ContactStatus_Complained" xml:space="preserve"><value>Жалоба</value></data>
+  <data name="Enum_ContactStatus_HardBounced" xml:space="preserve"><value>Постоянно не доставлено</value></data>
+  <data name="Enum_ContactStatus_Invalid" xml:space="preserve"><value>Неверный</value></data>
+  <data name="Enum_ContactStatus_Suppressed" xml:space="preserve"><value>В стоп-листе</value></data>
+  <data name="Enum_ContactStatus_Unsubscribed" xml:space="preserve"><value>Отписан</value></data>
+  <data name="Enum_LintSeverity_Error" xml:space="preserve"><value>Ошибка</value></data>
+  <data name="Enum_LintSeverity_Info" xml:space="preserve"><value>Инфо</value></data>
+  <data name="Enum_LintSeverity_Warning" xml:space="preserve"><value>Предупреждение</value></data>
+  <data name="Enum_SendJobStatus_Failed" xml:space="preserve"><value>Ошибка</value></data>
+  <data name="Enum_SendJobStatus_Pending" xml:space="preserve"><value>В очереди</value></data>
+  <data name="Enum_SendJobStatus_Sending" xml:space="preserve"><value>Отправляется</value></data>
+  <data name="Enum_SendJobStatus_Sent" xml:space="preserve"><value>Отправлено</value></data>
+  <data name="Enum_SendJobStatus_Skipped" xml:space="preserve"><value>Пропущено</value></data>
+  <data name="Enum_SendJobStatus_Uncertain" xml:space="preserve"><value>Неизвестно</value></data>
+  <data name="Enum_SuppressionReason_Complaint" xml:space="preserve"><value>Жалоба</value></data>
+  <data name="Enum_SuppressionReason_HardBounce" xml:space="preserve"><value>Постоянная ошибка доставки</value></data>
+  <data name="Enum_SuppressionReason_Manual" xml:space="preserve"><value>Добавлен вручную</value></data>
+  <data name="Enum_SuppressionReason_SoftBounceLimit" xml:space="preserve"><value>3 временные ошибки доставки</value></data>
+  <data name="Enum_SuppressionReason_Unsubscribed" xml:space="preserve"><value>Отписался</value></data>
+  <data name="Enum_TransportKind_AmazonSes" xml:space="preserve"><value>Amazon SES</value></data>
+  <data name="Enum_TransportKind_Brevo" xml:space="preserve"><value>Brevo</value></data>
+  <data name="Enum_TransportKind_CustomSmtp" xml:space="preserve"><value>Свой SMTP-сервер</value></data>
+  <data name="Enum_TransportKind_Gmail" xml:space="preserve"><value>Gmail / Google Workspace</value></data>
+  <data name="Enum_TransportKind_LocalTest" xml:space="preserve"><value>Локальный тестовый сервер</value></data>
+  <data name="Enum_TransportKind_Mailgun" xml:space="preserve"><value>Mailgun</value></data>
+  <data name="Enum_TransportKind_Microsoft365" xml:space="preserve"><value>Microsoft 365</value></data>
+  <data name="Enum_TransportKind_SendGrid" xml:space="preserve"><value>SendGrid</value></data>
+  <data name="Health_Checking" xml:space="preserve"><value>Проверка DNS-записей...</value></data>
+  <data name="Health_Footer" xml:space="preserve"><value>Изменения DNS вступают в силу от нескольких минут до 48 часов. Затем нажмите «Проверить снова».</value></data>
+  <data name="Health_Intro" xml:space="preserve"><value>Проверьте домен перед отправкой. Пока есть красные пункты, отправку начать нельзя.</value></data>
+  <data name="Health_PickProfile" xml:space="preserve"><value>Выберите профиль</value></data>
+  <data name="Health_Recheck" xml:space="preserve"><value>Проверить снова</value></data>
+  <data name="Health_SummaryFail" xml:space="preserve"><value>У {0} есть красные пункты, которые нужно исправить.</value></data>
+  <data name="Health_SummaryOk" xml:space="preserve"><value>{0} готов.</value></data>
+  <data name="Health_SummaryWarn" xml:space="preserve"><value>{0} может отправлять, но некоторые пункты можно улучшить.</value></data>
+  <data name="Help_CampaignDetail" xml:space="preserve"><value>Здесь в реальном времени видно ход отправки. Приложение специально отправляет медленно; при достижении плана прогрева или дневного лимита отправка автоматически продолжится на следующий день (приложение должно быть открыто).</value></data>
+  <data name="Help_CampaignWizard" xml:space="preserve"><value>В мастере 6 шагов: профиль, список, шаблон, проверки, режим и время, подтверждение. Сначала исправьте красные предупреждения. Не забудьте отправить тест себе.</value></data>
+  <data name="Help_Campaigns" xml:space="preserve"><value>Здесь перечислены все рассылки. Идущую кампанию можно приостановить, продолжить или отменить. Никто не получит одну и ту же кампанию дважды.</value></data>
+  <data name="Help_Dashboard" xml:space="preserve"><value>Обзор показывает общее состояние: активные контакты, последние кампании и предупреждения. Кнопка справа вверху запускает новую кампанию.</value></data>
+  <data name="Help_DomainHealth" xml:space="preserve"><value>Здесь проверяются DNS-записи вашего домена (SPF, DKIM, DMARC, MX). Из-за красных пунктов письма попадают в спам. Под каждым пунктом — что сделать и пример записи для DNS-панели.</value></data>
+  <data name="Help_Import" xml:space="preserve"><value>Выберите файл, проверьте столбцы и отметьте «Эти люди дали явное согласие». Неверные, повторяющиеся, одноразовые и ранее отписавшиеся адреса отсеиваются автоматически.</value></data>
+  <data name="Help_ListDetail" xml:space="preserve"><value>Ищите людей в списке и фильтруйте по статусу. «История» показывает, какие кампании получил человек.</value></data>
+  <data name="Help_Lists" xml:space="preserve"><value>Списки содержат ваших получателей. Перетащите CSV- или Excel-файл в окно или нажмите «Импорт списка». Адреса из стоп-листа никогда не получают рассылки.</value></data>
+  <data name="Help_OpenGuide" xml:space="preserve"><value>Открыть руководство</value></data>
+  <data name="Help_ProfileEdit" xml:space="preserve"><value>Сначала выберите провайдера — настройки сервера заполнятся сами. Адрес отправителя лучше взять на своём домене (например, news@вашакомпания.ru). Пароли хранятся в защищённом хранилище компьютера. Для новых доменов не отключайте план прогрева.</value></data>
+  <data name="Help_Profiles" xml:space="preserve"><value>Профиль отправителя определяет, с какой учётной записи и через какой сервер уходят письма. У каждого профиля есть лимиты в день, час и минуту. Проверьте данные кнопкой «Проверить подключение».</value></data>
+  <data name="Help_Reports" xml:space="preserve"><value>Отчёты показывают по каждой кампании отправки, недоставленные, отписки и жалобы. Держите долю жалоб ниже 0,1 %, а недоставленных — ниже 2 %.</value></data>
+  <data name="Help_Settings" xml:space="preserve"><value>Здесь язык, тестовые адреса, сервер отписки, конфиденциальность, резервные копии и пакет для поддержки. Скорость отправки — в разделе «Расширенные»; значения по умолчанию безопасны.</value></data>
+  <data name="Help_Setup" xml:space="preserve"><value>Мастер выполняет начальную настройку за 4 шага: язык, учётная запись отправителя, проверка домена и тестовая отправка. Его можно снова открыть: Настройки &gt; Перезапустить мастер.</value></data>
+  <data name="Help_TemplateEdit" xml:space="preserve"><value>Слева редактируйте HTML, справа смотрите предпросмотр. Список ниже показывает, что повышает риск попадания в спам. Если ссылки для отписки нет, Alpixa добавит её сам.</value></data>
+  <data name="Help_Templates" xml:space="preserve"><value>Шаблоны задают внешний вид письма. Скопируйте один из встроенных шаблонов и отредактируйте его. Для персонализации используйте поля вроде {{ ad }} или {{ firma }}.</value></data>
+  <data name="Help_Title" xml:space="preserve"><value>Справка</value></data>
+  <data name="Import_CheckMx" xml:space="preserve"><value>Проверять, может ли домен принимать почту (MX)</value></data>
+  <data name="Import_ColCompany" xml:space="preserve"><value>Компания</value></data>
+  <data name="Import_ColConsentDate" xml:space="preserve"><value>Дата согласия</value></data>
+  <data name="Import_ColConsentSource" xml:space="preserve"><value>Источник согласия</value></data>
+  <data name="Import_ColEmail" xml:space="preserve"><value>Эл. почта (обязательно)</value></data>
+  <data name="Import_ColFirst" xml:space="preserve"><value>Имя</value></data>
+  <data name="Import_ColLast" xml:space="preserve"><value>Фамилия</value></data>
+  <data name="Import_ColumnNone" xml:space="preserve"><value>(не использовать)</value></data>
+  <data name="Import_Consent" xml:space="preserve"><value>Эти люди дали явное согласие</value></data>
+  <data name="Import_DoneBody" xml:space="preserve"><value>Добавлено контактов: {0}.</value></data>
+  <data name="Import_DoneTitle" xml:space="preserve"><value>Импорт завершён</value></data>
+  <data name="Import_ExistingList" xml:space="preserve"><value>Добавить в существующий список</value></data>
+  <data name="Import_FileHint" xml:space="preserve"><value>CSV или Excel (.xlsx). В первой строке должны быть заголовки столбцов. Пример: samples/ornek-liste.csv</value></data>
+  <data name="Import_GoToLists" xml:space="preserve"><value>Вернуться к спискам</value></data>
+  <data name="Import_LegalNote" xml:space="preserve"><value>Не используйте купленные или собранные базы. Соблюдайте законы о персональных данных и рекламе в вашей стране.</value></data>
+  <data name="Import_ListName" xml:space="preserve"><value>Название списка</value></data>
+  <data name="Import_MappingHint" xml:space="preserve"><value>Alpixa сопоставил столбцы автоматически. Исправьте ошибки, если есть. Остальные столбцы можно использовать в шаблонах как {{ имя_столбца }}.</value></data>
+  <data name="Import_NeedConsent" xml:space="preserve"><value>Чтобы продолжить, отметьте «Эти люди дали явное согласие».</value></data>
+  <data name="Import_NeedEmailColumn" xml:space="preserve"><value>Выберите столбец с эл. почтой.</value></data>
+  <data name="Import_NeedFile" xml:space="preserve"><value>Сначала выберите файл или вставьте адреса.</value></data>
+  <data name="Import_NeedList" xml:space="preserve"><value>Выберите список, в который добавить.</value></data>
+  <data name="Import_NeedListName" xml:space="preserve"><value>Введите название списка.</value></data>
+  <data name="Import_NewList" xml:space="preserve"><value>Новый список</value></data>
+  <data name="Import_OrPaste" xml:space="preserve"><value>или вставьте адреса сюда</value></data>
+  <data name="Import_PastedListName" xml:space="preserve"><value>Вставленный список {0}</value></data>
+  <data name="Import_PickFile" xml:space="preserve"><value>Выбрать файл</value></data>
+  <data name="Import_PickTitle" xml:space="preserve"><value>Выберите файл списка</value></data>
+  <data name="Import_PreviewPasted" xml:space="preserve"><value>Просмотреть вставленное</value></data>
+  <data name="Import_PreviewTitle" xml:space="preserve"><value>Первые строки</value></data>
+  <data name="Import_Progress" xml:space="preserve"><value>Обработано строк: {0}...</value></data>
+  <data name="Import_Result" xml:space="preserve"><value>Всего строк: {0}
+Добавлено: {1}
+Повторы (пропущены): {2}
+Ошибка в написании: {3}
+Одноразовый адрес: {4}
+Ролевой адрес (info@, admin@... — добавлен, но отмечен): {5}
+Домен не принимает почту: {6}
+Ранее отписались / заблокированы: {7}
+Пустой столбец эл. почты: {8}</value></data>
+  <data name="Import_ResultTitle" xml:space="preserve"><value>Результат</value></data>
+  <data name="Import_Run" xml:space="preserve"><value>Импортировать</value></data>
+  <data name="Import_Step1" xml:space="preserve"><value>1. Выберите файл</value></data>
+  <data name="Import_Step2" xml:space="preserve"><value>2. Проверьте столбцы</value></data>
+  <data name="Import_Step3" xml:space="preserve"><value>3. Целевой список и согласие</value></data>
+  <data name="Import_Title" xml:space="preserve"><value>Импорт списка</value></data>
+  <data name="Import_Unsupported" xml:space="preserve"><value>Можно импортировать только файлы .csv, .txt и .xlsx.</value></data>
+  <data name="Import_UnsupportedTitle" xml:space="preserve"><value>Тип файла не поддерживается</value></data>
+  <data name="Import_Working" xml:space="preserve"><value>Импорт...</value></data>
+  <data name="ListDetail_All" xml:space="preserve"><value>Все статусы</value></data>
+  <data name="ListDetail_Company" xml:space="preserve"><value>Компания</value></data>
+  <data name="ListDetail_Email" xml:space="preserve"><value>Эл. почта</value></data>
+  <data name="ListDetail_Empty" xml:space="preserve"><value>Контакты не найдены.</value></data>
+  <data name="ListDetail_History" xml:space="preserve"><value>История</value></data>
+  <data name="ListDetail_LoadMore" xml:space="preserve"><value>Загрузить ещё</value></data>
+  <data name="ListDetail_Name" xml:space="preserve"><value>Имя</value></data>
+  <data name="ListDetail_NoHistory" xml:space="preserve"><value>На этот адрес пока ничего не отправлялось.</value></data>
+  <data name="ListDetail_Search" xml:space="preserve"><value>Поиск по почте, имени или компании</value></data>
+  <data name="ListDetail_Status" xml:space="preserve"><value>Статус</value></data>
+  <data name="Lists_ActiveSuffix" xml:space="preserve"><value> активных · </value></data>
+  <data name="Lists_AddMore" xml:space="preserve"><value>Добавить контакты</value></data>
+  <data name="Lists_AddSuppression" xml:space="preserve"><value>Добавить адрес</value></data>
+  <data name="Lists_AddSuppressionMessage" xml:space="preserve"><value>Введите адрес, на который больше никогда нельзя писать:</value></data>
+  <data name="Lists_AddSuppressionTitle" xml:space="preserve"><value>Добавить в стоп-лист</value></data>
+  <data name="Lists_DeleteConfirm" xml:space="preserve"><value>Удалить список «{0}» и {1} контактов в нём?</value></data>
+  <data name="Lists_DropHint" xml:space="preserve"><value>или нажмите кнопку «Импорт списка» справа вверху</value></data>
+  <data name="Lists_DropTitle" xml:space="preserve"><value>Перетащите сюда CSV- или Excel-файл</value></data>
+  <data name="Lists_Empty" xml:space="preserve"><value>Списков пока нет.</value></data>
+  <data name="Lists_Import" xml:space="preserve"><value>Импорт списка</value></data>
+  <data name="Lists_InvalidSuffix" xml:space="preserve"><value> неверных · </value></data>
+  <data name="Lists_SuppressedSuffix" xml:space="preserve"><value> отписались/заблокированы</value></data>
+  <data name="Lists_SuppressionIntro" xml:space="preserve"><value>Эти адреса никогда не получают рассылки: отписки, постоянные ошибки доставки и жалобы.</value></data>
+  <data name="Lists_SuppressionSearch" xml:space="preserve"><value>Найти адрес</value></data>
+  <data name="Lists_SuppressionTitle" xml:space="preserve"><value>Стоп-лист</value></data>
+  <data name="Lists_SuppressionTotal" xml:space="preserve"><value>Всего: </value></data>
+  <data name="Lists_TotalSuffix" xml:space="preserve"><value> всего · </value></data>
+  <data name="Lists_Unsuppress" xml:space="preserve"><value>Убрать</value></data>
+  <data name="Lists_UnsuppressConfirm" xml:space="preserve"><value>{0} снова сможет получать письма. Вы уверены, что человек повторно дал согласие?</value></data>
+  <data name="Lists_UnsuppressTitle" xml:space="preserve"><value>Убрать из стоп-листа</value></data>
+  <data name="Menu_File" xml:space="preserve"><value>Файл</value></data>
+  <data name="Menu_Help" xml:space="preserve"><value>Справка</value></data>
+  <data name="Menu_HelpThisPage" xml:space="preserve"><value>Справка по этому экрану</value></data>
+  <data name="Menu_ImportList" xml:space="preserve"><value>Импорт списка</value></data>
+  <data name="Menu_NewCampaign" xml:space="preserve"><value>Новая кампания</value></data>
+  <data name="Menu_Settings" xml:space="preserve"><value>Настройки</value></data>
+  <data name="Nav_Campaigns" xml:space="preserve"><value>Кампании</value></data>
+  <data name="Nav_Dashboard" xml:space="preserve"><value>Обзор</value></data>
+  <data name="Nav_DomainHealth" xml:space="preserve"><value>Состояние домена</value></data>
+  <data name="Nav_Lists" xml:space="preserve"><value>Списки</value></data>
+  <data name="Nav_Profiles" xml:space="preserve"><value>Профили отправителя</value></data>
+  <data name="Nav_Reports" xml:space="preserve"><value>Отчёты</value></data>
+  <data name="Nav_Settings" xml:space="preserve"><value>Настройки</value></data>
+  <data name="Nav_Templates" xml:space="preserve"><value>Шаблоны</value></data>
+  <data name="ProfileEdit_BadLimits" xml:space="preserve"><value>Лимиты отправки должны быть больше 0.</value></data>
+  <data name="ProfileEdit_BadReplyTo" xml:space="preserve"><value>Адрес для ответа указан неверно.</value></data>
+  <data name="ProfileEdit_Daily" xml:space="preserve"><value>В день</value></data>
+  <data name="ProfileEdit_DefaultName" xml:space="preserve"><value>Аккаунт рассылки</value></data>
+  <data name="ProfileEdit_DkimDomain" xml:space="preserve"><value>Домен DKIM (пусто = домен отправителя)</value></data>
+  <data name="ProfileEdit_DkimHint" xml:space="preserve"><value>Если вы используете сервис рассылок, он сам подписывает DKIM; укажите только селектор (для проверки домена). Если отправляете со своего сервера, Alpixa может подписывать письма файлом закрытого ключа.</value></data>
+  <data name="ProfileEdit_DkimKeyPath" xml:space="preserve"><value>Файл закрытого ключа (.pem)</value></data>
+  <data name="ProfileEdit_DkimKeyPick" xml:space="preserve"><value>Выберите файл ключа DKIM</value></data>
+  <data name="ProfileEdit_DkimSelector" xml:space="preserve"><value>Селектор DKIM</value></data>
+  <data name="ProfileEdit_DkimSign" xml:space="preserve"><value>Подписывать письма в Alpixa (нужен файл ключа)</value></data>
+  <data name="ProfileEdit_DkimTitle" xml:space="preserve"><value>DKIM</value></data>
+  <data name="ProfileEdit_FromAddress" xml:space="preserve"><value>Адрес отправителя</value></data>
+  <data name="ProfileEdit_FromName" xml:space="preserve"><value>Имя отправителя</value></data>
+  <data name="ProfileEdit_Host" xml:space="preserve"><value>Адрес сервера</value></data>
+  <data name="ProfileEdit_Hourly" xml:space="preserve"><value>В час</value></data>
+  <data name="ProfileEdit_ImapEnable" xml:space="preserve"><value>Проверять «Входящие» по IMAP</value></data>
+  <data name="ProfileEdit_ImapHint" xml:space="preserve"><value>Рекомендуется. Alpixa читает из этого ящика уведомления о недоставке и запросы на отписку и автоматически убирает эти адреса.</value></data>
+  <data name="ProfileEdit_ImapTitle" xml:space="preserve"><value>Учёт недоставленных и отписок (IMAP)</value></data>
+  <data name="ProfileEdit_ImapUsername" xml:space="preserve"><value>Имя пользователя IMAP</value></data>
+  <data name="ProfileEdit_LimitsTitle" xml:space="preserve"><value>Лимиты отправки</value></data>
+  <data name="ProfileEdit_Name" xml:space="preserve"><value>Название профиля</value></data>
+  <data name="ProfileEdit_NeedFrom" xml:space="preserve"><value>Поле «Адрес отправителя» пустое или заполнено неверно. Укажите адрес, который увидят получатели (для Gmail — ваш адрес Gmail).</value></data>
+  <data name="ProfileEdit_NeedFromName" xml:space="preserve"><value>Поле «Имя отправителя» пустое. Укажите имя, которое увидят получатели (например, название компании).</value></data>
+  <data name="ProfileEdit_NeedHost" xml:space="preserve"><value>Введите адрес сервера.</value></data>
+  <data name="ProfileEdit_NeedName" xml:space="preserve"><value>Введите название профиля.</value></data>
+  <data name="ProfileEdit_NeedUser" xml:space="preserve"><value>Введите имя пользователя.</value></data>
+  <data name="ProfileEdit_NewTitle" xml:space="preserve"><value>Новый профиль</value></data>
+  <data name="ProfileEdit_OAuthHint" xml:space="preserve"><value>Для Gmail и Microsoft 365 безопаснее всего вход через браузер. Для Gmail можно вместо этого использовать «пароль приложения».</value></data>
+  <data name="ProfileEdit_OAuthMissing" xml:space="preserve"><value>Для входа через браузер сначала нужен идентификатор клиента. Введите ID и секрет клиента Google в разделе Настройки → «Вход через браузер» (см. README) или отметьте «Использовать пароль приложения».</value></data>
+  <data name="ProfileEdit_OAuthMissingTitle" xml:space="preserve"><value>Вход через браузер не настроен</value></data>
+  <data name="ProfileEdit_Password" xml:space="preserve"><value>Пароль</value></data>
+  <data name="ProfileEdit_PasswordStored" xml:space="preserve"><value>Пароль хранится в зашифрованном виде в защищённом хранилище компьютера (DPAPI в Windows, Связка ключей в macOS).</value></data>
+  <data name="ProfileEdit_PerMinute" xml:space="preserve"><value>В минуту</value></data>
+  <data name="ProfileEdit_Port" xml:space="preserve"><value>Порт</value></data>
+  <data name="ProfileEdit_PostalAddress" xml:space="preserve"><value>Контактный / почтовый адрес (в подвале письма)</value></data>
+  <data name="ProfileEdit_PostalAddressHint" xml:space="preserve"><value>Адрес компании или телефон</value></data>
+  <data name="ProfileEdit_Provider" xml:space="preserve"><value>Провайдер</value></data>
+  <data name="ProfileEdit_ProviderHint" xml:space="preserve"><value>Для больших списков рекомендуется сервис рассылок: Amazon SES, Brevo, Mailgun или SendGrid.</value></data>
+  <data name="ProfileEdit_ReplyTo" xml:space="preserve"><value>Адрес для ответа (необязательно)</value></data>
+  <data name="ProfileEdit_Security" xml:space="preserve"><value>Шифрование</value></data>
+  <data name="ProfileEdit_ServerTitle" xml:space="preserve"><value>SMTP-сервер</value></data>
+  <data name="ProfileEdit_SignIn" xml:space="preserve"><value>Войти через браузер</value></data>
+  <data name="ProfileEdit_SignInTitle" xml:space="preserve"><value>Вход</value></data>
+  <data name="ProfileEdit_SignedIn" xml:space="preserve"><value>Выполнен вход: {0}</value></data>
+  <data name="ProfileEdit_TestImap" xml:space="preserve"><value>Проверить подключение IMAP</value></data>
+  <data name="ProfileEdit_UseAppPassword" xml:space="preserve"><value>Использовать имя пользователя и пароль приложения вместо браузера</value></data>
+  <data name="ProfileEdit_Username" xml:space="preserve"><value>Имя пользователя</value></data>
+  <data name="ProfileEdit_WaitingBrowser" xml:space="preserve"><value>Ожидание входа в браузере...</value></data>
+  <data name="ProfileEdit_Warmup" xml:space="preserve"><value>План прогрева включён (рекомендуется)</value></data>
+  <data name="ProfileEdit_WarmupHint" xml:space="preserve"><value>Для новых доменов дневной объём начинается с 50 и постепенно растёт. Действует меньшее из дневного лимита и лимита прогрева.</value></data>
+  <data name="Profiles_DeleteConfirm" xml:space="preserve"><value>Удалить профиль «{0}»? Сохранённые пароли тоже будут удалены.</value></data>
+  <data name="Profiles_Empty" xml:space="preserve"><value>Профилей пока нет. Добавьте профиль кнопкой «Новый профиль».</value></data>
+  <data name="Profiles_InUse" xml:space="preserve"><value>Этот профиль использует идущая или запланированная кампания. Сначала остановите кампанию.</value></data>
+  <data name="Profiles_Intro" xml:space="preserve"><value>Управляйте учётными записями, с которых отправляются письма.</value></data>
+  <data name="Profiles_Limits" xml:space="preserve"><value>Лимит в день / час / минуту:</value></data>
+  <data name="Profiles_New" xml:space="preserve"><value>Новый профиль</value></data>
+  <data name="Profiles_Test" xml:space="preserve"><value>Проверить подключение</value></data>
+  <data name="Profiles_TestOk" xml:space="preserve"><value>Подключение к {0} и вход выполнены.</value></data>
+  <data name="Profiles_TestOkTitle" xml:space="preserve"><value>Подключение работает</value></data>
+  <data name="Profiles_Testing" xml:space="preserve"><value>Проверка подключения...</value></data>
+  <data name="Reports_Bounce" xml:space="preserve"><value>Недоставка</value></data>
+  <data name="Reports_Campaign" xml:space="preserve"><value>Кампания</value></data>
+  <data name="Reports_Complaint" xml:space="preserve"><value>Жалобы</value></data>
+  <data name="Reports_HistoryTitle" xml:space="preserve"><value>История отправок по человеку</value></data>
+  <data name="Reports_Opens" xml:space="preserve"><value>Открытия</value></data>
+  <data name="Reports_Saved" xml:space="preserve"><value>Сохранено: {0}</value></data>
+  <data name="Reports_Targets" xml:space="preserve"><value>Цели: доля жалоб ниже 0,1 % (предел 0,3 %), доля постоянной недоставки ниже 2 % (предел 5 %). При превышении предела отправка приостанавливается автоматически.</value></data>
+  <data name="Reports_Tools" xml:space="preserve"><value>Google Postmaster Tools (postmaster.google.com): как Gmail видит ваш домен.
+Microsoft SNDS: сторона Outlook, если у вас свой IP.
+MXToolbox (mxtoolbox.com): проверка DNS и чёрных списков.
+mail-tester.com: спам-оценка отдельного письма.</value></data>
+  <data name="Reports_ToolsTitle" xml:space="preserve"><value>Внешний мониторинг</value></data>
+  <data name="Reports_Total" xml:space="preserve"><value>Всего</value></data>
+  <data name="Settings_Backup" xml:space="preserve"><value>Создать копию</value></data>
+  <data name="Settings_BackupDone" xml:space="preserve"><value>Копия сохранена: {0}</value></data>
+  <data name="Settings_BackupNote" xml:space="preserve"><value>Пароли в резервные копии не входят. Пакет для поддержки не содержит паролей, токенов и содержимого писем.</value></data>
+  <data name="Settings_BackupTitle" xml:space="preserve"><value>Копия сохранена</value></data>
+  <data name="Settings_BackupWorking" xml:space="preserve"><value>Подготовка копии...</value></data>
+  <data name="Settings_BadDelay" xml:space="preserve"><value>Неверные паузы. Максимум не может быть меньше минимума.</value></data>
+  <data name="Settings_BadSeeds" xml:space="preserve"><value>Неверный тестовый адрес: {0}</value></data>
+  <data name="Settings_BadThreshold" xml:space="preserve"><value>Доля ошибок должна быть от 0 до 100.</value></data>
+  <data name="Settings_BadWarmup" xml:space="preserve"><value>Не удалось прочитать строку прогрева: «{0}». Пример: 3: 100</value></data>
+  <data name="Settings_CheckNow" xml:space="preserve"><value>Проверить недоставку и отписки сейчас</value></data>
+  <data name="Settings_CopySecret" xml:space="preserve"><value>Копировать секретный ключ</value></data>
+  <data name="Settings_DataFolder" xml:space="preserve"><value>Папка данных: </value></data>
+  <data name="Settings_DataSection" xml:space="preserve"><value>Данные и поддержка</value></data>
+  <data name="Settings_DefaultParallel" xml:space="preserve"><value>Подключений в массовом режиме по умолчанию</value></data>
+  <data name="Settings_DelayMax" xml:space="preserve"><value>Макс. пауза в последовательном режиме (с)</value></data>
+  <data name="Settings_DelayMin" xml:space="preserve"><value>Мин. пауза в последовательном режиме (с)</value></data>
+  <data name="Settings_DomainLimits" xml:space="preserve"><value>Лимит в минуту по почтовому сервису получателя</value></data>
+  <data name="Settings_EndpointHttps" xml:space="preserve"><value>Адрес сервера должен начинаться с https://.</value></data>
+  <data name="Settings_EndpointKey" xml:space="preserve"><value>Ключ API</value></data>
+  <data name="Settings_EndpointUrl" xml:space="preserve"><value>Адрес сервера (https://...)</value></data>
+  <data name="Settings_ErrorThreshold" xml:space="preserve"><value>Автоостановка при доле ошибок (%)</value></data>
+  <data name="Settings_ExportData" xml:space="preserve"><value>Экспорт данных</value></data>
+  <data name="Settings_FeedbackIntro" xml:space="preserve"><value>Gmail и Yahoo ожидают отписку в один клик по HTTPS. Разверните проект Alpixa.UnsubscribeEndpoint на своём сервере и укажите здесь его адрес. Без него используется отписка по почте (mailto).</value></data>
+  <data name="Settings_FeedbackResult" xml:space="preserve"><value>Обработано новых недоставок/отписок/жалоб: {0}.</value></data>
+  <data name="Settings_FeedbackSection" xml:space="preserve"><value>Сервер отписки (необязательно)</value></data>
+  <data name="Settings_FeedbackTitle" xml:space="preserve"><value>Проверка завершена</value></data>
+  <data name="Settings_FeedbackWorking" xml:space="preserve"><value>Проверка «Входящих»...</value></data>
+  <data name="Settings_Forget" xml:space="preserve"><value>Удалить человека</value></data>
+  <data name="Settings_ForgetConfirm" xml:space="preserve"><value>Удалить {0} из всех списков и журналов событий? Это нельзя отменить.</value></data>
+  <data name="Settings_ForgetDone" xml:space="preserve"><value>Удалено записей: {0}.</value></data>
+  <data name="Settings_ForgetTitle" xml:space="preserve"><value>Удаление человека</value></data>
+  <data name="Settings_ForgetYes" xml:space="preserve"><value>Да, удалить</value></data>
+  <data name="Settings_General" xml:space="preserve"><value>Общие</value></data>
+  <data name="Settings_Iys" xml:space="preserve"><value>Интеграция IYS: </value></data>
+  <data name="Settings_IysHint" xml:space="preserve"><value>Для рекламных сообщений в Турции может требоваться согласие получателя в системе IYS. В Alpixa есть точка расширения (IConsentProvider); в этой установке она не активна.</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Язык</value></data>
+  <data name="Settings_LanguageRestart" xml:space="preserve"><value>Новый язык применится после перезапуска Alpixa.</value></data>
+  <data name="Settings_LanguageTitle" xml:space="preserve"><value>Язык изменён</value></data>
+  <data name="Settings_LastCheck" xml:space="preserve"><value>Последняя проверка: </value></data>
+  <data name="Settings_MaxParallel" xml:space="preserve"><value>Макс. подключений в массовом режиме</value></data>
+  <data name="Settings_NeedEmail" xml:space="preserve"><value>Введите корректный адрес эл. почты.</value></data>
+  <data name="Settings_OpenData" xml:space="preserve"><value>Открыть папку данных</value></data>
+  <data name="Settings_OpenLogs" xml:space="preserve"><value>Открыть папку журналов</value></data>
+  <data name="Settings_OtherDomains" xml:space="preserve"><value>Другие</value></data>
+  <data name="Settings_PrivacyIntro" xml:space="preserve"><value>Экспортируйте или полностью удалите данные человека (право на забвение). Если он в стоп-листе, он там останется, чтобы больше не получать писем.</value></data>
+  <data name="Settings_PrivacySection" xml:space="preserve"><value>Конфиденциальность (персональные данные)</value></data>
+  <data name="Settings_RestartSetup" xml:space="preserve"><value>Перезапустить мастер настройки</value></data>
+  <data name="Settings_Restore" xml:space="preserve"><value>Восстановить из копии</value></data>
+  <data name="Settings_RestoreConfirm" xml:space="preserve"><value>Текущие данные будут заменены данными из копии. Продолжить?</value></data>
+  <data name="Settings_RestoreDone" xml:space="preserve"><value>Копия готова и будет загружена при следующем запуске Alpixa. Паролей в копии нет — введите их в профилях заново.</value></data>
+  <data name="Settings_RestorePick" xml:space="preserve"><value>Выберите файл копии (.zip)</value></data>
+  <data name="Settings_RestoreTitle" xml:space="preserve"><value>Восстановление из копии</value></data>
+  <data name="Settings_RestoreYes" xml:space="preserve"><value>Да, восстановить</value></data>
+  <data name="Settings_Retries" xml:space="preserve"><value>Повторы при временных ошибках</value></data>
+  <data name="Settings_Seeds" xml:space="preserve"><value>Тестовые адреса</value></data>
+  <data name="Settings_SeedsHint" xml:space="preserve"><value>Ваши собственные адреса Gmail, Outlook и Yahoo. Сюда приходят тестовые письма. Разделяйте запятыми.</value></data>
+  <data name="Settings_SendingSection" xml:space="preserve"><value>Скорость отправки</value></data>
+  <data name="Settings_SendingWarning" xml:space="preserve"><value>Увеличение этих значений повышает риск спама. Если сомневаетесь, оставьте значения по умолчанию.</value></data>
+  <data name="Settings_SupportBundle" xml:space="preserve"><value>Создать пакет для поддержки</value></data>
+  <data name="Settings_SupportDone" xml:space="preserve"><value>Пакет сохранён: {0}
+Этот файл можно отправить в поддержку.</value></data>
+  <data name="Settings_SupportTitle" xml:space="preserve"><value>Пакет для поддержки</value></data>
+  <data name="Settings_TrackingDefault" xml:space="preserve"><value>Включать отслеживание открытий в новых кампаниях</value></data>
+  <data name="Settings_TrackingEnable" xml:space="preserve"><value>Всё равно включить</value></data>
+  <data name="Settings_TrackingTitle" xml:space="preserve"><value>Отслеживание открытий</value></data>
+  <data name="Settings_TrackingWarning" xml:space="preserve"><value>Отслеживание открытий фиксирует, когда получатель открыл письмо. Это персональные данные — упомяните это в политике конфиденциальности. Такие приложения, как Apple Mail, могут искажать цифры.</value></data>
+  <data name="Settings_WarmupHint" xml:space="preserve"><value>Каждая строка — «день: дневной лимит». Через четыре дня после последнего шага объём растёт на 20 % в день.</value></data>
+  <data name="Settings_WarmupPlan" xml:space="preserve"><value>План прогрева</value></data>
+  <data name="Settings_WarmupReset" xml:space="preserve"><value>Вернуть план по умолчанию</value></data>
+  <data name="Setup_AccountIntro" xml:space="preserve"><value>Добавьте учётную запись, с которой будут уходить письма. Используйте адрес на своём домене (например, news@вашакомпания.ru).</value></data>
+  <data name="Setup_DomainIntro" xml:space="preserve"><value>DNS-записи вашего домена проверены. Исправьте красные пункты в DNS-панели.</value></data>
+  <data name="Setup_DomainLater" xml:space="preserve"><value>Если сейчас не получается добавить записи, продолжайте и проверьте позже в разделе «Состояние домена».</value></data>
+  <data name="Setup_Finish" xml:space="preserve"><value>Готово</value></data>
+  <data name="Setup_NeedPassword" xml:space="preserve"><value>Введите пароль.</value></data>
+  <data name="Setup_SelectorHint" xml:space="preserve"><value>Указан в панели сервиса рассылок, например s1 (если не уверены, оставьте пустым)</value></data>
+  <data name="Setup_Skip" xml:space="preserve"><value>Пока пропустить</value></data>
+  <data name="Setup_Step1" xml:space="preserve"><value>Язык</value></data>
+  <data name="Setup_Step2" xml:space="preserve"><value>Учётная запись отправителя</value></data>
+  <data name="Setup_Step3" xml:space="preserve"><value>Проверка домена</value></data>
+  <data name="Setup_Step4" xml:space="preserve"><value>Тестовая отправка</value></data>
+  <data name="Setup_StepTitle" xml:space="preserve"><value>Шаг {0}/4: {1}</value></data>
+  <data name="Setup_TestCampaign" xml:space="preserve"><value>Тест настройки</value></data>
+  <data name="Setup_TestCheckInbox" xml:space="preserve"><value>Если письмо попало в спам, проверьте пункты в разделе «Состояние домена».</value></data>
+  <data name="Setup_TestIntro" xml:space="preserve"><value>Отправьте пример письма на свои адреса и убедитесь, что оно попадает во «Входящие».</value></data>
+  <data name="Setup_TestSubject" xml:space="preserve"><value>Тестовое письмо Alpixa</value></data>
+  <data name="Setup_Title" xml:space="preserve"><value>Мастер настройки</value></data>
+  <data name="Setup_UseBrowser" xml:space="preserve"><value>Войти через браузер</value></data>
+  <data name="Setup_UsernameHint" xml:space="preserve"><value>Если пусто — адрес отправителя</value></data>
+  <data name="Setup_Welcome" xml:space="preserve"><value>Добро пожаловать в Alpixa. Всего несколько шагов — и можно делать первую рассылку. Настройки по умолчанию безопасны: низкая скорость, последовательный режим и включённый прогрев.</value></data>
+  <data name="TemplateEdit_Desktop" xml:space="preserve"><value>Компьютер</value></data>
+  <data name="TemplateEdit_Fields" xml:space="preserve"><value>Доступные поля: {{ ad }}, {{ soyad }}, {{ firma }}, {{ email }}, {{ gonderen_adi }}, {{ unsubscribe_url }}, другие столбцы списка. Значение для пустого поля: {{ ad ?? "Уважаемый читатель" }}</value></data>
+  <data name="TemplateEdit_Html" xml:space="preserve"><value>Содержимое письма (HTML)</value></data>
+  <data name="TemplateEdit_LintClean" xml:space="preserve"><value>Проблем не найдено.</value></data>
+  <data name="TemplateEdit_LintTitle" xml:space="preserve"><value>Проверка содержимого</value></data>
+  <data name="TemplateEdit_Mobile" xml:space="preserve"><value>Телефон</value></data>
+  <data name="TemplateEdit_Name" xml:space="preserve"><value>Название шаблона</value></data>
+  <data name="TemplateEdit_Preview" xml:space="preserve"><value>Предпросмотр</value></data>
+  <data name="TemplateEdit_Refresh" xml:space="preserve"><value>Обновить предпросмотр</value></data>
+  <data name="TemplateEdit_Subject" xml:space="preserve"><value>Тема</value></data>
+  <data name="TemplateEdit_SubjectPrefix" xml:space="preserve"><value>Тема: </value></data>
+  <data name="TemplateEdit_TextPlaceholder" xml:space="preserve"><value>Текстовая версия</value></data>
+  <data name="TemplateEdit_TextToggle" xml:space="preserve"><value>Я сам напишу текстовую версию (если пусто, создаётся автоматически)</value></data>
+  <data name="Templates_CopyName" xml:space="preserve"><value>{0} (копия)</value></data>
+  <data name="Templates_DeleteConfirm" xml:space="preserve"><value>Удалить шаблон «{0}»?</value></data>
+  <data name="Templates_Duplicate" xml:space="preserve"><value>Дублировать</value></data>
+  <data name="Templates_Error" xml:space="preserve"><value>В шаблоне ошибка: {0}</value></data>
+  <data name="Templates_Intro" xml:space="preserve"><value>Простые письма, похожие на личные, надёжнее попадают во «Входящие».</value></data>
+  <data name="Templates_NeedName" xml:space="preserve"><value>Введите название шаблона.</value></data>
+  <data name="Templates_New" xml:space="preserve"><value>Новый шаблон</value></data>
+  <data name="Templates_NewName" xml:space="preserve"><value>Новый шаблон</value></data>
+  <data name="Templates_SampleAddress" xml:space="preserve"><value>ул. Примерная, 1, Москва</value></data>
+  <data name="Templates_SampleSender" xml:space="preserve"><value>Пример-Компания</value></data>
+  <data name="Wizard_Blocked" xml:space="preserve"><value>Проверки не пройдены. Исправьте красные предупреждения (для домена можно отметить «всё равно отправить»). В списке должны быть получатели.</value></data>
+  <data name="Wizard_CampaignName" xml:space="preserve"><value>Название кампании</value></data>
+  <data name="Wizard_Checking" xml:space="preserve"><value>Проверка...</value></data>
+  <data name="Wizard_ConfirmNote" xml:space="preserve"><value>Во время отправки окно можно свернуть. Если закрыть приложение, при следующем запуске оно продолжит с того же места.</value></data>
+  <data name="Wizard_ContentCheck" xml:space="preserve"><value>Проверка содержимого</value></data>
+  <data name="Wizard_DefaultName" xml:space="preserve"><value>Кампания {0}</value></data>
+  <data name="Wizard_DryRun" xml:space="preserve"><value>Пробный запуск (пройти весь процесс без реальной отправки)</value></data>
+  <data name="Wizard_HealthBlocks" xml:space="preserve"><value>У домена есть красные пункты. Рекомендуется сначала их исправить.</value></data>
+  <data name="Wizard_HealthOk" xml:space="preserve"><value>Проверка домена пройдена.</value></data>
+  <data name="Wizard_Later" xml:space="preserve"><value>Позже</value></data>
+  <data name="Wizard_LaterNote" xml:space="preserve"><value>Чтобы запланированная кампания началась, в это время Alpixa должен быть открыт.</value></data>
+  <data name="Wizard_Launch" xml:space="preserve"><value>Начать отправку</value></data>
+  <data name="Wizard_LintBlocks" xml:space="preserve"><value>Отправку нельзя начать, пока не исправлены красные предупреждения по содержимому. Отредактируйте шаблон и проверьте снова кнопками Назад / Далее.</value></data>
+  <data name="Wizard_Mode" xml:space="preserve"><value>Режим отправки</value></data>
+  <data name="Wizard_ModeBulkLong" xml:space="preserve"><value>Массовый: несколько подключений одновременно в пределах лимитов скорости. Для прогретых доменов и больших списков.</value></data>
+  <data name="Wizard_ModeBulkWith" xml:space="preserve"><value>Массовый ({0} подключений)</value></data>
+  <data name="Wizard_ModeSequential" xml:space="preserve"><value>Последовательный</value></data>
+  <data name="Wizard_ModeSequentialLong" xml:space="preserve"><value>Последовательный (по умолчанию): по одному письму с паузой в несколько секунд. Самый безопасный для новых доменов и небольших списков.</value></data>
+  <data name="Wizard_NeedList" xml:space="preserve"><value>Выберите список.</value></data>
+  <data name="Wizard_NeedProfile" xml:space="preserve"><value>Выберите профиль отправителя.</value></data>
+  <data name="Wizard_NeedSeeds" xml:space="preserve"><value>Введите хотя бы один корректный тестовый адрес.</value></data>
+  <data name="Wizard_NeedTemplate" xml:space="preserve"><value>Название кампании, шаблон и тема обязательны.</value></data>
+  <data name="Wizard_NoList" xml:space="preserve"><value>Сначала импортируйте список в разделе «Списки».</value></data>
+  <data name="Wizard_NoListTitle" xml:space="preserve"><value>Нет списка</value></data>
+  <data name="Wizard_NoProfile" xml:space="preserve"><value>Сначала добавьте профиль в разделе «Профили отправителя».</value></data>
+  <data name="Wizard_NoProfileTitle" xml:space="preserve"><value>Нет профиля отправителя</value></data>
+  <data name="Wizard_Now" xml:space="preserve"><value>Сейчас</value></data>
+  <data name="Wizard_OneByOne" xml:space="preserve"><value>В обоих режимах каждый получатель получает отдельное письмо; получатели не видят друг друга.</value></data>
+  <data name="Wizard_OpenHealth" xml:space="preserve"><value>Открыть «Состояние домена»</value></data>
+  <data name="Wizard_Override" xml:space="preserve"><value>Я понимаю риски, всё равно отправить</value></data>
+  <data name="Wizard_Parallelism" xml:space="preserve"><value>Параллельных подключений:</value></data>
+  <data name="Wizard_PastSchedule" xml:space="preserve"><value>Время запуска не может быть в прошлом.</value></data>
+  <data name="Wizard_Quota" xml:space="preserve"><value>Лимит на сегодня: {0} (отправлено сегодня: {1})</value></data>
+  <data name="Wizard_QuotaWarmup" xml:space="preserve"><value>День прогрева {0}: лимит на сегодня {1} (отправлено сегодня: {2}). Примерная длительность: {3} дн.</value></data>
+  <data name="Wizard_Recipients" xml:space="preserve"><value>Получателей: {0}</value></data>
+  <data name="Wizard_SendTest" xml:space="preserve"><value>Отправить тест</value></data>
+  <data name="Wizard_Sending" xml:space="preserve"><value>Отправка...</value></data>
+  <data name="Wizard_Starting" xml:space="preserve"><value>Запуск...</value></data>
+  <data name="Wizard_Step1" xml:space="preserve"><value>Профиль</value></data>
+  <data name="Wizard_Step1Hint" xml:space="preserve"><value>С какой учётной записи отправлять письма?</value></data>
+  <data name="Wizard_Step2" xml:space="preserve"><value>Список</value></data>
+  <data name="Wizard_Step2Hint" xml:space="preserve"><value>По какому списку отправляете? Письма получат только активные контакты; адреса из стоп-листа пропускаются.</value></data>
+  <data name="Wizard_Step3" xml:space="preserve"><value>Шаблон</value></data>
+  <data name="Wizard_Step3Hint" xml:space="preserve"><value>Шаблоны редактируются в разделе «Шаблоны». Тему можно изменить здесь.</value></data>
+  <data name="Wizard_Step4" xml:space="preserve"><value>Проверки</value></data>
+  <data name="Wizard_Step5" xml:space="preserve"><value>Режим и время</value></data>
+  <data name="Wizard_Step6" xml:space="preserve"><value>Подтверждение</value></data>
+  <data name="Wizard_StepTitle" xml:space="preserve"><value>Шаг {0}/{1}: {2}</value></data>
+  <data name="Wizard_Summary" xml:space="preserve"><value>Кампания: {0}
+Отправитель: {1}
+Список: {2} ({3} чел.)
+Шаблон: {4}
+Тема: {5}
+Режим: {6}
+Время: {7}
+Пробный запуск: {8}
+Отслеживание открытий: {9}</value></data>
+  <data name="Wizard_Template" xml:space="preserve"><value>Шаблон</value></data>
+  <data name="Wizard_TestFail" xml:space="preserve"><value>✗ {0}: {1}</value></data>
+  <data name="Wizard_TestHint" xml:space="preserve"><value>Отправьте на свои адреса Gmail, Outlook и Yahoo и убедитесь, что письмо пришло во «Входящие». К теме добавляется [TEST].</value></data>
+  <data name="Wizard_TestOk" xml:space="preserve"><value>✓ {0}: отправлено</value></data>
+  <data name="Wizard_TestTitle" xml:space="preserve"><value>Тестовая отправка</value></data>
+  <data name="Wizard_Title" xml:space="preserve"><value>Новая кампания</value></data>
+  <data name="Wizard_TrackOpens" xml:space="preserve"><value>Отслеживание открытий</value></data>
+  <data name="Wizard_TrackOpensNote" xml:space="preserve"><value>Отслеживание открытий добавляет невидимое изображение. По умолчанию выключено ради конфиденциальности и требует настроенного сервера отписки.</value></data>
+  <data name="Wizard_Volume" xml:space="preserve"><value>Объём</value></data>
+  <data name="Wizard_When" xml:space="preserve"><value>Когда?</value></data>
+  <data name="Wizard_TotalSuffix" xml:space="preserve"><value> всего</value></data>
+  <data name="ProfileEdit_NoAuth" xml:space="preserve"><value>Этому провайдеру вход не нужен.</value></data>
+  <data name="TemplateEdit_PickImage" xml:space="preserve"><value>Выберите изображение</value></data>
+  <data name="TemplateEdit_PickAttachment" xml:space="preserve"><value>Выберите файлы для вложения</value></data>
+  <data name="TemplateEdit_Added" xml:space="preserve"><value>Добавлено: {0}</value></data>
+  <data name="TemplateEdit_Adding" xml:space="preserve"><value>Добавление файлов…</value></data>
+  <data name="TemplateEdit_AttachmentSummary" xml:space="preserve"><value>Файлов: {0} · {1} из {2} МБ</value></data>
+  <data name="TemplateEdit_DropHint" xml:space="preserve"><value>Изображения вставляются в письмо там, где стоит курсор (до {0} каждое). Остальные файлы отправляются вложениями (всего до {1} МБ).</value></data>
+  <data name="TemplateEdit_DropTitle" xml:space="preserve"><value>Перетащите сюда изображение или файл</value></data>
+  <data name="TemplateEdit_AddImage" xml:space="preserve"><value>Добавить изображение</value></data>
+  <data name="TemplateEdit_AddFile" xml:space="preserve"><value>Прикрепить файл</value></data>
+  <data name="TemplateEdit_Attachments" xml:space="preserve"><value>Вложения</value></data>
+  <data name="TemplateEdit_NoAttachments" xml:space="preserve"><value>Вложений пока нет. Вложения получает каждый адресат; ссылка вместо большого файла улучшает доставляемость.</value></data>
+  <data name="TemplateEdit_Remove" xml:space="preserve"><value>Убрать</value></data>
+  <data name="TemplateEdit_Basics" xml:space="preserve"><value>Основное</value></data>
+  <data name="TemplateEdit_Eyebrow" xml:space="preserve"><value>РЕДАКТОР ШАБЛОНА</value></data>
+  <data name="TemplateEdit_AutoPreview" xml:space="preserve"><value>Предпросмотр обновляется автоматически по мере ввода.</value></data>
+  <data name="Settings_MaxAttachment" xml:space="preserve"><value>Лимит вложений (МБ, всего на шаблон)</value></data>
+  <data name="Settings_MaxImage" xml:space="preserve"><value>Лимит изображения (КБ, на одно)</value></data>
+  <data name="Dashboard_Subtitle" xml:space="preserve"><value>Ваши контакты, кампании и доставляемость — одним взглядом.</value></data>
+  <data name="Dashboard_GreetingNight" xml:space="preserve"><value>Доброй ночи</value></data>
+  <data name="Dashboard_GreetingMorning" xml:space="preserve"><value>Доброе утро</value></data>
+  <data name="Dashboard_GreetingDay" xml:space="preserve"><value>Добрый день</value></data>
+  <data name="Dashboard_GreetingEvening" xml:space="preserve"><value>Добрый вечер</value></data>
+  <data name="Lists_Subtitle" xml:space="preserve"><value>Импортируйте, очищайте и ведите списки получателей.</value></data>
+  <data name="Campaigns_Subtitle" xml:space="preserve"><value>Запускайте, отслеживайте, приостанавливайте и продолжайте рассылки.</value></data>
+  <data name="Settings_Subtitle" xml:space="preserve"><value>Язык, скорость отправки, конфиденциальность и резервные копии.</value></data>
+  <data name="ProfileEdit_Subtitle" xml:space="preserve"><value>Выберите, с какой учётной записи и под каким именем уходят письма.</value></data>
+  <data name="Import_Subtitle" xml:space="preserve"><value>Безопасный импорт контактов из CSV, Excel или вставленного текста.</value></data>
+  <data name="ListDetail_Subtitle" xml:space="preserve"><value>Ищите, фильтруйте и управляйте людьми в этом списке.</value></data>
+  <data name="ProfileEdit_AppPasswordHelp" xml:space="preserve"><value>Gmail не принимает ваш обычный пароль — нужен 16-символьный пароль приложения. 1) Включите двухэтапную аутентификацию в аккаунте Google. 2) Создайте пароль приложения с именем «Alpixa» на myaccount.google.com/apppasswords. 3) Укажите адрес Gmail как имя пользователя и 16-символьный пароль (без пробелов). Если адрес отправителя пуст, используется имя пользователя. В Microsoft 365 это работает, только если разрешил администратор.</value></data>
+  <data name="Settings_OAuthSection" xml:space="preserve"><value>Вход через браузер (Google / Microsoft)</value></data>
+  <data name="Settings_OAuthIntro" xml:space="preserve"><value>Чтобы входить в Gmail или Microsoft 365 через браузер, укажите идентификатор клиента, созданный в вашем аккаунте Google Cloud / Microsoft Entra, и нажмите «Сохранить». Перезапуск не нужен. Пошаговая инструкция — в разделе README «OAuth client IDs». Иначе используйте в профиле пароль приложения.</value></data>
+  <data name="Settings_GoogleClientId" xml:space="preserve"><value>ID клиента Google</value></data>
+  <data name="Settings_GoogleClientSecret" xml:space="preserve"><value>Секрет клиента Google</value></data>
+  <data name="Settings_MicrosoftClientId" xml:space="preserve"><value>ID приложения (клиента) Microsoft</value></data>
+  <data name="Settings_BadGoogleClientId" xml:space="preserve"><value>ID клиента Google должен заканчиваться на «.apps.googleusercontent.com». Скопируйте значение «Client ID» из Google Cloud Console.</value></data>
+  <data name="Info_WhatTitle" xml:space="preserve"><value>Для чего это?</value></data>
+  <data name="Info_HowTitle" xml:space="preserve"><value>Что мне делать?</value></data>
+  <data name="Info_Ok" xml:space="preserve"><value>Понятно</value></data>
+  <data name="Info_ProfileEdit_Provider_What" xml:space="preserve"><value>Через какой сервер доставляются ваши письма. После выбора технические настройки заполнятся сами.</value></data>
+  <data name="Info_ProfileEdit_Provider_How" xml:space="preserve"><value>Адрес Gmail → «Gmail / Google Workspace»; Outlook/Hotmail → «Microsoft 365». Для тысяч получателей используйте сервис рассылок, например Amazon SES или Brevo.</value></data>
+  <data name="Info_ProfileEdit_Name_What" xml:space="preserve"><value>Название, которое видите только вы, чтобы различать учётные записи.</value></data>
+  <data name="Info_ProfileEdit_Name_How" xml:space="preserve"><value>Например: «Рассылка компании».</value></data>
+  <data name="Info_ProfileEdit_FromName_What" xml:space="preserve"><value>Имя, которое получатели видят рядом с письмом во «Входящих».</value></data>
+  <data name="Info_ProfileEdit_FromName_How" xml:space="preserve"><value>Укажите узнаваемое имя, например название компании.</value></data>
+  <data name="Info_ProfileEdit_FromAddress_What" xml:space="preserve"><value>Адрес, с которого приходит письмо.</value></data>
+  <data name="Info_ProfileEdit_FromAddress_How" xml:space="preserve"><value>Используйте свой адрес. Для Gmail это должен быть ваш адрес Gmail. Если поле пустое, используется имя пользователя.</value></data>
+  <data name="Info_ProfileEdit_ReplyTo_What" xml:space="preserve"><value>Необязательно: куда приходят ответы, если не отправителю.</value></data>
+  <data name="Info_ProfileEdit_ReplyTo_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_PostalAddress_What" xml:space="preserve"><value>Контакты внизу каждого письма; обязательны для массовых рассылок.</value></data>
+  <data name="Info_ProfileEdit_PostalAddress_How" xml:space="preserve"><value>Адрес или телефон вашей компании.</value></data>
+  <data name="Info_ProfileEdit_Username_What" xml:space="preserve"><value>Имя для входа на почтовый сервер.</value></data>
+  <data name="Info_ProfileEdit_Username_How" xml:space="preserve"><value>Gmail/Outlook: ваш адрес эл. почты. Другие сервисы: «SMTP-пользователь» в их панели.</value></data>
+  <data name="Info_ProfileEdit_Password_What" xml:space="preserve"><value>Пароль сервера; хранится в защищённой связке ключей компьютера.</value></data>
+  <data name="Info_ProfileEdit_Password_How" xml:space="preserve"><value>Для Gmail нужен 16-символьный пароль приложения (myaccount.google.com/apppasswords), а не обычный пароль.</value></data>
+  <data name="Info_ProfileEdit_Daily_What" xml:space="preserve"><value>Максимум писем в день с этой учётной записи.</value></data>
+  <data name="Info_ProfileEdit_Daily_How" xml:space="preserve"><value>Для личного Gmail не больше 500 в день.</value></data>
+  <data name="Info_ProfileEdit_Hourly_What" xml:space="preserve"><value>Максимум писем в час.</value></data>
+  <data name="Info_ProfileEdit_Hourly_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_PerMinute_What" xml:space="preserve"><value>Максимум писем в минуту; слишком быстрая отправка похожа на спам.</value></data>
+  <data name="Info_ProfileEdit_PerMinute_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_Host_What" xml:space="preserve"><value>Адрес сервера исходящей почты (SMTP).</value></data>
+  <data name="Info_ProfileEdit_Host_How" xml:space="preserve"><value>Заполняется автоматически. Gmail: smtp.gmail.com, Outlook: smtp.office365.com.</value></data>
+  <data name="Info_ProfileEdit_Port_What" xml:space="preserve"><value>«Номер двери» на сервере.</value></data>
+  <data name="Info_ProfileEdit_Port_How" xml:space="preserve"><value>Обычно 587 (StartTls) или 465 (SslOnConnect).</value></data>
+  <data name="Info_ProfileEdit_Security_What" xml:space="preserve"><value>Как шифруется соединение.</value></data>
+  <data name="Info_ProfileEdit_Security_How" xml:space="preserve"><value>Порт 587 → StartTls, порт 465 → SslOnConnect.</value></data>
+  <data name="Info_ProfileEdit_DkimSelector_What" xml:space="preserve"><value>DKIM — цифровая подпись, доказывающая, что письмо действительно от вас; селектор — её имя.</value></data>
+  <data name="Info_ProfileEdit_DkimSelector_How" xml:space="preserve"><value>Указан в DNS-записях от вашего сервиса рассылок (часть перед «._domainkey»). Для Gmail оставьте пустым.</value></data>
+  <data name="Info_ProfileEdit_DkimDomain_What" xml:space="preserve"><value>Домен, от имени которого ставится подпись.</value></data>
+  <data name="Info_ProfileEdit_DkimDomain_How" xml:space="preserve"><value>Обычно оставьте пустым.</value></data>
+  <data name="Info_ProfileEdit_ImapUsername_What" xml:space="preserve"><value>Имя для чтения «Входящих», чтобы находить недоставку и отписки.</value></data>
+  <data name="Info_ProfileEdit_ImapUsername_How" xml:space="preserve"><value>Оставьте пустым, чтобы использовать имя для отправки.</value></data>
+  <data name="Info_Import_OrPaste_What" xml:space="preserve"><value>Нет файла? Введите или вставьте контакты сюда.</value></data>
+  <data name="Info_Import_OrPaste_How" xml:space="preserve"><value>Первая строка — заголовки, далее по одному контакту в строке, через запятую.</value></data>
+  <data name="Info_Import_ColEmail_What" xml:space="preserve"><value>Столбец с адресами эл. почты (обязательно).</value></data>
+  <data name="Info_Import_ColEmail_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ColFirst_What" xml:space="preserve"><value>Столбец с именами, для «Здравствуйте, Анна».</value></data>
+  <data name="Info_Import_ColFirst_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ColLast_What" xml:space="preserve"><value>Столбец с фамилиями.</value></data>
+  <data name="Info_Import_ColLast_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ColCompany_What" xml:space="preserve"><value>Столбец с компанией; доступен как {{ firma }}.</value></data>
+  <data name="Info_Import_ColCompany_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ColConsentSource_What" xml:space="preserve"><value>Где человек дал согласие (для юридического учёта).</value></data>
+  <data name="Info_Import_ColConsentSource_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ColConsentDate_What" xml:space="preserve"><value>Когда человек дал согласие.</value></data>
+  <data name="Info_Import_ColConsentDate_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_PreviewTitle_What" xml:space="preserve"><value>Первые строки вашего файла в том виде, как их читает приложение.</value></data>
+  <data name="Info_Import_PreviewTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Email_What" xml:space="preserve"><value>Адрес эл. почты контакта.</value></data>
+  <data name="Info_ListDetail_Email_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Name_What" xml:space="preserve"><value>Имя контакта.</value></data>
+  <data name="Info_ListDetail_Name_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Company_What" xml:space="preserve"><value>Компания контакта.</value></data>
+  <data name="Info_ListDetail_Company_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Status_What" xml:space="preserve"><value>Письма получают только «Активные» контакты; отписавшиеся, недоставляемые и пожаловавшиеся — никогда.</value></data>
+  <data name="Info_ListDetail_Status_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Campaign_What" xml:space="preserve"><value>Название и статус кампании.</value></data>
+  <data name="Info_Reports_Campaign_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Total_What" xml:space="preserve"><value>Всего запланировано получателей.</value></data>
+  <data name="Info_Reports_Total_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_Sent_What" xml:space="preserve"><value>Письма, принятые сервером (они всё равно могут попасть в спам).</value></data>
+  <data name="Info_Detail_Sent_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_Failed_What" xml:space="preserve"><value>Письма, которые не удалось отправить.</value></data>
+  <data name="Info_Detail_Failed_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Bounce_What" xml:space="preserve"><value>Доля недоставленных адресов. Выше 2 % вредит репутации.</value></data>
+  <data name="Info_Reports_Bounce_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Complaint_What" xml:space="preserve"><value>Доля получателей, отметивших письмо как спам. Держите ниже 0,1 %.</value></data>
+  <data name="Info_Reports_Complaint_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_Unsubscribes_What" xml:space="preserve"><value>Отписавшиеся; им больше не будут писать.</value></data>
+  <data name="Info_Detail_Unsubscribes_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Opens_What" xml:space="preserve"><value>Открытия (только при включённом отслеживании).</value></data>
+  <data name="Info_Reports_Opens_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Language_What" xml:space="preserve"><value>Язык приложения.</value></data>
+  <data name="Info_Settings_Language_How" xml:space="preserve"><value>После смены перезапустите приложение.</value></data>
+  <data name="Info_Settings_Seeds_What" xml:space="preserve"><value>Ваши собственные адреса для тестовых писем.</value></data>
+  <data name="Info_Settings_Seeds_How" xml:space="preserve"><value>Через запятую, у разных почтовых сервисов.</value></data>
+  <data name="Info_Settings_EndpointUrl_What" xml:space="preserve"><value>Необязательный сервер отписки в один клик.</value></data>
+  <data name="Info_Settings_EndpointUrl_How" xml:space="preserve"><value>Оставьте пустым, если у вас нет сервера.</value></data>
+  <data name="Info_Settings_EndpointKey_What" xml:space="preserve"><value>Пароль сервера отписки.</value></data>
+  <data name="Info_Settings_EndpointKey_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_DelayMin_What" xml:space="preserve"><value>Минимальная пауза между письмами в последовательном режиме (секунды).</value></data>
+  <data name="Info_Settings_DelayMin_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_DelayMax_What" xml:space="preserve"><value>Максимальная пауза между письмами (секунды).</value></data>
+  <data name="Info_Settings_DelayMax_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Retries_What" xml:space="preserve"><value>Сколько раз повторять при временной ошибке.</value></data>
+  <data name="Info_Settings_Retries_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_DefaultParallel_What" xml:space="preserve"><value>Число параллельных подключений в массовом режиме по умолчанию.</value></data>
+  <data name="Info_Settings_DefaultParallel_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_MaxParallel_What" xml:space="preserve"><value>Максимально допустимое число параллельных подключений.</value></data>
+  <data name="Info_Settings_MaxParallel_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_ErrorThreshold_What" xml:space="preserve"><value>При превышении этой доли ошибок отправка останавливается сама.</value></data>
+  <data name="Info_Settings_ErrorThreshold_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_DomainLimits_What" xml:space="preserve"><value>Лимиты в минуту по почтовому сервису получателя.</value></data>
+  <data name="Info_Settings_DomainLimits_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_WarmupPlan_What" xml:space="preserve"><value>Постепенно повышает дневной лимит для новых учётных записей.</value></data>
+  <data name="Info_Settings_WarmupPlan_How" xml:space="preserve"><value>По строке на шаг: «день: лимит».</value></data>
+  <data name="Info_Settings_MaxAttachment_What" xml:space="preserve"><value>Общий размер вложений на шаблон (МБ).</value></data>
+  <data name="Info_Settings_MaxAttachment_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_MaxImage_What" xml:space="preserve"><value>Предельный размер одного изображения (КБ).</value></data>
+  <data name="Info_Settings_MaxImage_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_GoogleClientId_What" xml:space="preserve"><value>ID приложения Google для входа в Gmail через браузер.</value></data>
+  <data name="Info_Settings_GoogleClientId_How" xml:space="preserve"><value>Google Cloud Console → Google Auth Platform → Clients → Desktop app.</value></data>
+  <data name="Info_Settings_GoogleClientSecret_What" xml:space="preserve"><value>Секрет, который показывается вместе с ID клиента.</value></data>
+  <data name="Info_Settings_GoogleClientSecret_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_MicrosoftClientId_What" xml:space="preserve"><value>ID приложения Microsoft для входа в Outlook через браузер.</value></data>
+  <data name="Info_Settings_MicrosoftClientId_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Name_What" xml:space="preserve"><value>Название шаблона, видно только вам.</value></data>
+  <data name="Info_TemplateEdit_Name_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Subject_What" xml:space="preserve"><value>Тема письма, которую видят получатели.</value></data>
+  <data name="Info_TemplateEdit_Subject_How" xml:space="preserve"><value>Коротко и ясно; без ЗАГЛАВНЫХ БУКВ и !!!.</value></data>
+  <data name="Info_Wizard_CampaignName_What" xml:space="preserve"><value>Название этой рассылки; видно только вам.</value></data>
+  <data name="Info_Wizard_CampaignName_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Template_What" xml:space="preserve"><value>Оформление содержимого письма.</value></data>
+  <data name="Info_Wizard_Template_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Common_ShowAdvanced_What" xml:space="preserve"><value>Показывает технические настройки, которые большинству не нужны.</value></data>
+  <data name="Info_Common_ShowAdvanced_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_CheckMx_What" xml:space="preserve"><value>Проверяет по сети, может ли домен каждого адреса принимать почту.</value></data>
+  <data name="Info_Import_CheckMx_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_Consent_What" xml:space="preserve"><value>Подтверждает, что эти люди согласились получать ваши письма.</value></data>
+  <data name="Info_Import_Consent_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_DkimSign_What" xml:space="preserve"><value>Подписывать письма на этом компьютере своим ключом (для опытных).</value></data>
+  <data name="Info_ProfileEdit_DkimSign_How" xml:space="preserve"><value>Для Gmail, Outlook и сервисов рассылок оставьте выключенным.</value></data>
+  <data name="Info_ProfileEdit_ImapEnable_What" xml:space="preserve"><value>Проверяет «Входящие» на недоставку и отписки и автоматически убирает этих людей.</value></data>
+  <data name="Info_ProfileEdit_ImapEnable_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_UseAppPassword_What" xml:space="preserve"><value>Подключаться по имени пользователя и паролю приложения вместо браузера.</value></data>
+  <data name="Info_ProfileEdit_UseAppPassword_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_Warmup_What" xml:space="preserve"><value>Начинает новые учётные записи с низких лимитов и постепенно их повышает.</value></data>
+  <data name="Info_ProfileEdit_Warmup_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_TrackingDefault_What" xml:space="preserve"><value>Считает открытия с помощью невидимого изображения. Рекомендуется выключить.</value></data>
+  <data name="Info_Settings_TrackingDefault_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Setup_UseBrowser_What" xml:space="preserve"><value>Входить в Gmail/Outlook через браузер без ввода пароля.</value></data>
+  <data name="Info_Setup_UseBrowser_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_TextToggle_What" xml:space="preserve"><value>Самому написать текстовую версию (обычно создаётся автоматически).</value></data>
+  <data name="Info_TemplateEdit_TextToggle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_DryRun_What" xml:space="preserve"><value>Выполняет всё, не отправляя настоящих писем.</value></data>
+  <data name="Info_Wizard_DryRun_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Override_What" xml:space="preserve"><value>Отправить несмотря на серьёзные проблемы домена (не рекомендуется).</value></data>
+  <data name="Info_Wizard_Override_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_TrackOpens_What" xml:space="preserve"><value>Считать открытия в этой кампании.</value></data>
+  <data name="Info_Wizard_TrackOpens_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_SuppressionTitle_What" xml:space="preserve"><value>Адреса, на которые писать нельзя никогда (отписки, недоставка, жалобы).</value></data>
+  <data name="Info_Lists_SuppressionTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_DkimTitle_What" xml:space="preserve"><value>DKIM — цифровая печать, подтверждающая подлинность ваших писем.</value></data>
+  <data name="Info_ProfileEdit_DkimTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_ImapTitle_What" xml:space="preserve"><value>Читает уведомления о недоставке и запросы на отписку из «Входящих».</value></data>
+  <data name="Info_ProfileEdit_ImapTitle_How" xml:space="preserve"><value>Gmail: imap.gmail.com, порт 993.</value></data>
+  <data name="Info_ProfileEdit_LimitsTitle_What" xml:space="preserve"><value>Защитные лимиты скорости и объёма отправки.</value></data>
+  <data name="Info_ProfileEdit_LimitsTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_ServerTitle_What" xml:space="preserve"><value>Настройки сервера исходящей почты, заполняются автоматически.</value></data>
+  <data name="Info_ProfileEdit_ServerTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_SignInTitle_What" xml:space="preserve"><value>Как приложение входит в вашу почту.</value></data>
+  <data name="Info_ProfileEdit_SignInTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_HistoryTitle_What" xml:space="preserve"><value>Всё, что отправлялось одному человеку.</value></data>
+  <data name="Info_Reports_HistoryTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_DataSection_What" xml:space="preserve"><value>Резервные копии, восстановление, журналы и пакет для поддержки.</value></data>
+  <data name="Info_Settings_DataSection_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_FeedbackSection_What" xml:space="preserve"><value>Необязательный сервер отписки в один клик.</value></data>
+  <data name="Info_Settings_FeedbackSection_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_OAuthSection_What" xml:space="preserve"><value>ID клиентов для входа в Gmail/Outlook через браузер.</value></data>
+  <data name="Info_Settings_OAuthSection_How" xml:space="preserve"><value>См. раздел 16.7 в README.</value></data>
+  <data name="Info_Settings_PrivacySection_What" xml:space="preserve"><value>Экспорт или удаление данных человека.</value></data>
+  <data name="Info_Settings_PrivacySection_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_SendingSection_What" xml:space="preserve"><value>Расширенные настройки скорости и безопасности.</value></data>
+  <data name="Info_Settings_SendingSection_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Attachments_What" xml:space="preserve"><value>Файлы, отправляемые вместе с письмом.</value></data>
+  <data name="Info_TemplateEdit_Attachments_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Html_What" xml:space="preserve"><value>Содержимое письма; предпросмотр показывает результат.</value></data>
+  <data name="Info_TemplateEdit_Html_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_LintTitle_What" xml:space="preserve"><value>Проверка содержимого глазами спам-фильтра.</value></data>
+  <data name="Info_TemplateEdit_LintTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Preview_What" xml:space="preserve"><value>Как письмо увидит пример получателя.</value></data>
+  <data name="Info_TemplateEdit_Preview_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_ContentCheck_What" xml:space="preserve"><value>Проблемы в содержимом, из-за которых могут сработать спам-фильтры.</value></data>
+  <data name="Info_Wizard_ContentCheck_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Mode_What" xml:space="preserve"><value>Последовательный отправляет по одному (безопаснее всего); массовый — параллельно.</value></data>
+  <data name="Info_Wizard_Mode_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_TestTitle_What" xml:space="preserve"><value>Сначала отправьте письмо себе.</value></data>
+  <data name="Info_Wizard_TestTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Volume_What" xml:space="preserve"><value>Сколько получателей и сколько дней это займёт.</value></data>
+  <data name="Info_Wizard_Volume_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_When_What" xml:space="preserve"><value>Отправить сейчас или позже.</value></data>
+  <data name="Info_Wizard_When_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_ResultTitle_What" xml:space="preserve"><value>Итоги импорта.</value></data>
+  <data name="Info_Import_ResultTitle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Profiles_New_What" xml:space="preserve"><value>Добавить новую учётную запись отправителя.</value></data>
+  <data name="Info_Profiles_New_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Profiles_Test_What" xml:space="preserve"><value>Пытается подключиться к серверу; ничего не отправляет.</value></data>
+  <data name="Info_Profiles_Test_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Profiles_Common_Edit_What" xml:space="preserve"><value>Открывает настройки этой учётной записи.</value></data>
+  <data name="Info_Profiles_Common_Edit_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Profiles_Common_Delete_What" xml:space="preserve"><value>Удаляет эту учётную запись отправителя.</value></data>
+  <data name="Info_Profiles_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_SignIn_What" xml:space="preserve"><value>Открывает браузер для входа в вашу учётную запись.</value></data>
+  <data name="Info_ProfileEdit_SignIn_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_TestImap_What" xml:space="preserve"><value>Пытается подключиться к вашим «Входящим».</value></data>
+  <data name="Info_ProfileEdit_TestImap_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_Common_Save_What" xml:space="preserve"><value>Сохраняет профиль.</value></data>
+  <data name="Info_ProfileEdit_Common_Save_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_Common_Browse_What" xml:space="preserve"><value>Выбрать файл закрытого ключа DKIM.</value></data>
+  <data name="Info_ProfileEdit_Common_Browse_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Menu_NewCampaign_What" xml:space="preserve"><value>Запускает новую рассылку.</value></data>
+  <data name="Info_Menu_NewCampaign_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Menu_ImportList_What" xml:space="preserve"><value>Импортирует контакты из Excel или CSV.</value></data>
+  <data name="Info_Menu_ImportList_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Dashboard_SetupButton_What" xml:space="preserve"><value>Проводит через первоначальную настройку.</value></data>
+  <data name="Info_Dashboard_SetupButton_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Dashboard_Common_Open_What" xml:space="preserve"><value>Показывает подробности этой кампании.</value></data>
+  <data name="Info_Dashboard_Common_Open_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Health_Recheck_What" xml:space="preserve"><value>Снова проверяет почтовые DNS-записи вашего домена.</value></data>
+  <data name="Info_Health_Recheck_How" xml:space="preserve"><value></value></data>
+  <data name="Info_DomainHealth_Common_Copy_What" xml:space="preserve"><value>Копирует рекомендуемую DNS-запись, чтобы вставить её в DNS-панель домена.</value></data>
+  <data name="Info_DomainHealth_Common_Copy_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Import_What" xml:space="preserve"><value>Загружает новый список контактов.</value></data>
+  <data name="Info_Lists_Import_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Common_Open_What" xml:space="preserve"><value>Показывает контакты этого списка.</value></data>
+  <data name="Info_Lists_Common_Open_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_AddMore_What" xml:space="preserve"><value>Добавляет контакты в этот список.</value></data>
+  <data name="Info_Lists_AddMore_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Common_Delete_What" xml:space="preserve"><value>Удаляет список.</value></data>
+  <data name="Info_Lists_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Common_Search_What" xml:space="preserve"><value>Ищет в стоп-листе.</value></data>
+  <data name="Info_Lists_Common_Search_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_AddSuppression_What" xml:space="preserve"><value>Добавляет адрес в стоп-лист.</value></data>
+  <data name="Info_Lists_AddSuppression_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Unsuppress_What" xml:space="preserve"><value>Убирает адрес из стоп-листа.</value></data>
+  <data name="Info_Lists_Unsuppress_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_PickFile_What" xml:space="preserve"><value>Выбрать файл Excel или CSV.</value></data>
+  <data name="Info_Import_PickFile_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_PreviewPasted_What" xml:space="preserve"><value>Читает вставленный текст и показывает столбцы.</value></data>
+  <data name="Info_Import_PreviewPasted_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_Run_What" xml:space="preserve"><value>Сохраняет контакты, отсеивая неверные адреса.</value></data>
+  <data name="Info_Import_Run_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_GoToLists_What" xml:space="preserve"><value>Вернуться к спискам.</value></data>
+  <data name="Info_Import_GoToLists_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Common_Search_What" xml:space="preserve"><value>Ищет в этом списке.</value></data>
+  <data name="Info_ListDetail_Common_Search_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_History_What" xml:space="preserve"><value>Показывает, что отправлялось этому человеку.</value></data>
+  <data name="Info_ListDetail_History_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_LoadMore_What" xml:space="preserve"><value>Загружает ещё контакты.</value></data>
+  <data name="Info_ListDetail_LoadMore_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_New_What" xml:space="preserve"><value>Создаёт пустой шаблон.</value></data>
+  <data name="Info_Templates_New_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_Common_Edit_What" xml:space="preserve"><value>Редактирует шаблон.</value></data>
+  <data name="Info_Templates_Common_Edit_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_Duplicate_What" xml:space="preserve"><value>Копирует шаблон вместе с вложениями.</value></data>
+  <data name="Info_Templates_Duplicate_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_Common_Delete_What" xml:space="preserve"><value>Удаляет шаблон.</value></data>
+  <data name="Info_Templates_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_AddImage_What" xml:space="preserve"><value>Вставляет изображение там, где стоит курсор.</value></data>
+  <data name="Info_TemplateEdit_AddImage_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_AddFile_What" xml:space="preserve"><value>Прикрепляет файлы к письму.</value></data>
+  <data name="Info_TemplateEdit_AddFile_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Remove_What" xml:space="preserve"><value>Убирает это вложение.</value></data>
+  <data name="Info_TemplateEdit_Remove_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Refresh_What" xml:space="preserve"><value>Сразу обновляет предпросмотр.</value></data>
+  <data name="Info_TemplateEdit_Refresh_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Common_Save_What" xml:space="preserve"><value>Сохраняет шаблон.</value></data>
+  <data name="Info_TemplateEdit_Common_Save_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Common_Open_What" xml:space="preserve"><value>Показывает ход кампании.</value></data>
+  <data name="Info_Campaigns_Common_Open_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Pause_What" xml:space="preserve"><value>Приостанавливает отправку.</value></data>
+  <data name="Info_Campaigns_Pause_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Resume_What" xml:space="preserve"><value>Продолжает отправку с места остановки.</value></data>
+  <data name="Info_Campaigns_Resume_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Cancel_What" xml:space="preserve"><value>Окончательно отменяет отправку.</value></data>
+  <data name="Info_Campaigns_Cancel_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Common_Delete_What" xml:space="preserve"><value>Удаляет кампанию и её отчёт.</value></data>
+  <data name="Info_Campaigns_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_OpenReports_What" xml:space="preserve"><value>Открывает раздел отчётов.</value></data>
+  <data name="Info_Detail_OpenReports_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_SendTest_What" xml:space="preserve"><value>Отправляет копию [TEST] на ваши тестовые адреса.</value></data>
+  <data name="Info_Wizard_SendTest_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_OpenHealth_What" xml:space="preserve"><value>Открывает «Состояние домена».</value></data>
+  <data name="Info_Wizard_OpenHealth_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Launch_What" xml:space="preserve"><value>Начинает отправку.</value></data>
+  <data name="Info_Wizard_Launch_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Common_Back_What" xml:space="preserve"><value>Предыдущий шаг.</value></data>
+  <data name="Info_Common_Back_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Common_Next_What" xml:space="preserve"><value>Следующий шаг.</value></data>
+  <data name="Info_Common_Next_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Setup_Finish_What" xml:space="preserve"><value>Завершает настройку.</value></data>
+  <data name="Info_Setup_Finish_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Setup_Skip_What" xml:space="preserve"><value>Пропускает настройку на время.</value></data>
+  <data name="Info_Setup_Skip_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Common_Refresh_What" xml:space="preserve"><value>Обновляет цифры.</value></data>
+  <data name="Info_Reports_Common_Refresh_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Csv_What" xml:space="preserve"><value>Сохраняет результаты по каждому получателю в CSV.</value></data>
+  <data name="Info_Reports_Csv_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Excel_What" xml:space="preserve"><value>Сохраняет результаты по каждому получателю в Excel.</value></data>
+  <data name="Info_Reports_Excel_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Common_Search_What" xml:space="preserve"><value>Показывает историю для этого адреса.</value></data>
+  <data name="Info_Reports_Common_Search_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Common_Save_What" xml:space="preserve"><value>Сохраняет все настройки.</value></data>
+  <data name="Info_Settings_Common_Save_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_RestartSetup_What" xml:space="preserve"><value>Снова открывает мастер настройки.</value></data>
+  <data name="Info_Settings_RestartSetup_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_CopySecret_What" xml:space="preserve"><value>Копирует секретный ключ сервера отписки.</value></data>
+  <data name="Info_Settings_CopySecret_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_CheckNow_What" xml:space="preserve"><value>Сразу проверяет «Входящие» на недоставку и отписки.</value></data>
+  <data name="Info_Settings_CheckNow_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_ExportData_What" xml:space="preserve"><value>Экспортирует данные человека.</value></data>
+  <data name="Info_Settings_ExportData_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Forget_What" xml:space="preserve"><value>Безвозвратно удаляет данные человека.</value></data>
+  <data name="Info_Settings_Forget_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Backup_What" xml:space="preserve"><value>Сохраняет все данные в один файл (без паролей).</value></data>
+  <data name="Info_Settings_Backup_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Restore_What" xml:space="preserve"><value>Восстанавливает резервную копию.</value></data>
+  <data name="Info_Settings_Restore_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_OpenLogs_What" xml:space="preserve"><value>Открывает папку журналов.</value></data>
+  <data name="Info_Settings_OpenLogs_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_OpenData_What" xml:space="preserve"><value>Открывает папку данных.</value></data>
+  <data name="Info_Settings_OpenData_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_SupportBundle_What" xml:space="preserve"><value>Создаёт файл для поддержки без паролей и содержимого писем.</value></data>
+  <data name="Info_Settings_SupportBundle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_WarmupReset_What" xml:space="preserve"><value>Возвращает план прогрева по умолчанию.</value></data>
+  <data name="Info_Settings_WarmupReset_How" xml:space="preserve"><value></value></data>
+</root>

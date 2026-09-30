@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     x:Class="Alpixa.App.Views.CampaignsPage"
+                     x:DataType="vm:CampaignsViewModel"
+                     Title="{loc:Tr Nav_Campaigns}">
+    <Grid RowDefinitions="Auto,*" Padding="36,28,36,24" RowSpacing="18" MaximumWidthRequest="1240">
+        <fx:PageHeader Title="{loc:Tr Nav_Campaigns}" Subtitle="{loc:Tr Campaigns_Subtitle}" Icon="Send">
+            <fx:PageHeader.Actions>
+                <fx:WithInfo Info="Menu_NewCampaign">
+                    <Button Text="{loc:Tr Menu_NewCampaign}" Command="{Binding NewCommand}" />
+                </fx:WithInfo>
+            </fx:PageHeader.Actions>
+        </fx:PageHeader>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Campaigns}">
+            <CollectionView.EmptyView>
+                <Label Text="{loc:Tr Dashboard_NoCampaigns}" Style="{StaticResource MutedLabel}" Margin="0,20" />
+            </CollectionView.EmptyView>
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:CampaignRow">
+                    <Border Style="{StaticResource Card}">
+                        <Grid ColumnDefinitions="Auto,*,Auto,Auto,Auto,Auto,Auto" RowDefinitions="Auto,Auto" ColumnSpacing="10" RowSpacing="12">
+                            <Border Style="{StaticResource IconBadge}" VerticalOptions="Center">
+                                <Path Data="{fx:Icon Send}" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                            </Border>
+                            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                                <Label Text="{Binding Campaign.Name}" FontAttributes="Bold" FontSize="16" />
+                                <Label Style="{StaticResource MutedLabel}">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding Status, Converter={StaticResource EnumText}}" FontAttributes="Bold" />
+                                            <Span Text=" · " />
+                                            <Span Text="{Binding Report.Sent}" />
+                                            <Span Text="/" />
+                                            <Span Text="{Binding Report.Total}" />
+                                            <Span Text="{loc:Tr Campaigns_SentSuffix}" />
+                                            <Span Text="{Binding Report.Failed}" />
+                                            <Span Text="{loc:Tr Campaigns_FailedSuffix}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label Text="{Binding Campaign.PauseReason}" TextColor="{StaticResource StatusWarning}" FontSize="12" IsVisible="{Binding Campaign.PauseReason, Converter={StaticResource NotNull}}" />
+                            </VerticalStackLayout>
+                            <fx:WithInfo Info="Campaigns_Common_Open" Grid.Column="2" VerticalOptions="Center">
+                                <Button Text="{loc:Tr Common_Open}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CampaignsViewModel}}, Path=OpenCommand, x:DataType=vm:CampaignsViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                            <fx:WithInfo Info="Campaigns_Pause" Grid.Column="3" VerticalOptions="Center" IsVisible="{Binding CanPause}">
+                                <Button Text="{loc:Tr Campaigns_Pause}" Style="{StaticResource SecondaryButton}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CampaignsViewModel}}, Path=PauseCommand, x:DataType=vm:CampaignsViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                            <fx:WithInfo Info="Campaigns_Resume" Grid.Column="4" VerticalOptions="Center" IsVisible="{Binding CanResume}">
+                                <Button Text="{loc:Tr Campaigns_Resume}" Style="{StaticResource SecondaryButton}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CampaignsViewModel}}, Path=ResumeCommand, x:DataType=vm:CampaignsViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                            <fx:WithInfo Info="Campaigns_Cancel" Grid.Column="5" VerticalOptions="Center" IsVisible="{Binding CanCancel}">
+                                <Button Text="{loc:Tr Campaigns_Cancel}" Style="{StaticResource DangerButton}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CampaignsViewModel}}, Path=CancelCommand, x:DataType=vm:CampaignsViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                            <fx:WithInfo Info="Campaigns_Common_Delete" Grid.Column="6" VerticalOptions="Center">
+                                <Button Text="{loc:Tr Common_Delete}" Style="{StaticResource DangerButton}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CampaignsViewModel}}, Path=DeleteCommand, x:DataType=vm:CampaignsViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                            <ProgressBar Grid.Row="1" Grid.ColumnSpan="7" Progress="{Binding Progress}" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</views:AlpixaPage>

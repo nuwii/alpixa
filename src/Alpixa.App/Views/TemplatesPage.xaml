@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     xmlns:m="clr-namespace:Alpixa.Core.Models;assembly=Alpixa.Core"
+                     x:Class="Alpixa.App.Views.TemplatesPage"
+                     x:DataType="vm:TemplatesViewModel"
+                     Title="{loc:Tr Nav_Templates}">
+    <Grid RowDefinitions="Auto,*" Padding="36,28,36,24" RowSpacing="18" MaximumWidthRequest="1240">
+        <fx:PageHeader Title="{loc:Tr Nav_Templates}" Subtitle="{loc:Tr Templates_Intro}" Icon="File">
+            <fx:PageHeader.Actions>
+                <fx:WithInfo Info="Templates_New">
+                    <Button Text="{loc:Tr Templates_New}" Command="{Binding AddCommand}" />
+                </fx:WithInfo>
+            </fx:PageHeader.Actions>
+        </fx:PageHeader>
+        <CollectionView Grid.Row="1" ItemsSource="{Binding Templates}">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="m:EmailTemplate">
+                    <Border Style="{StaticResource Card}">
+                        <Grid ColumnDefinitions="Auto,*,Auto,Auto,Auto" ColumnSpacing="12">
+                            <Border Style="{StaticResource IconBadge}" VerticalOptions="Center">
+                                <Path Data="{fx:Icon File}" Stroke="White" StrokeThickness="2" StrokeLineCap="Round" StrokeLineJoin="Round" Aspect="Uniform" />
+                            </Border>
+                            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="16" />
+                                <Label Text="{Binding Subject}" Style="{StaticResource MutedLabel}" />
+                            </VerticalStackLayout>
+                            <fx:WithInfo Info="Templates_Common_Edit" Grid.Column="2" VerticalOptions="Center">
+                                <Button Text="{loc:Tr Common_Edit}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:TemplatesViewModel}}, Path=EditCommand, x:DataType=vm:TemplatesViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                            <fx:WithInfo Info="Templates_Duplicate" Grid.Column="3" VerticalOptions="Center">
+                                <Button Text="{loc:Tr Templates_Duplicate}" Style="{StaticResource SecondaryButton}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:TemplatesViewModel}}, Path=DuplicateCommand, x:DataType=vm:TemplatesViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                            <fx:WithInfo Info="Templates_Common_Delete" Grid.Column="4" VerticalOptions="Center">
+                                <Button Text="{loc:Tr Common_Delete}" Style="{StaticResource DangerButton}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:TemplatesViewModel}}, Path=DeleteCommand, x:DataType=vm:TemplatesViewModel}" CommandParameter="{Binding .}" />
+                            </fx:WithInfo>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</views:AlpixaPage>

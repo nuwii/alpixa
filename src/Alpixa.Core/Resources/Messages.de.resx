@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Health_01" xml:space="preserve"><value>Dieses Profil sendet an den lokalen Testserver. Die Domain-Prüfungen wurden übersprungen, da keine echten Empfänger erreicht werden.</value></data>
+  <data name="Health_02" xml:space="preserve"><value>Absenderadresse</value></data>
+  <data name="Health_03" xml:space="preserve"><value>Die Absenderadresse ist ungültig.</value></data>
+  <data name="Health_04" xml:space="preserve"><value>Geben Sie im Profil eine gültige Absenderadresse ein.</value></data>
+  <data name="Health_05" xml:space="preserve"><value>Privates Konto</value></data>
+  <data name="Health_06" xml:space="preserve"><value>{0} ist eine private E-Mail-Adresse. Massenversand von solchen Adressen landet im Spam oder führt zur Kontosperrung.</value></data>
+  <data name="Health_07" xml:space="preserve"><value>Fügen Sie eine Adresse Ihrer eigenen Domain hinzu (z. B. news.ihrefirma.de).</value></data>
+  <data name="Health_08" xml:space="preserve"><value>Ihre Domain hat keinen SPF-Eintrag.</value></data>
+  <data name="Health_09" xml:space="preserve"><value>Fügen Sie den folgenden TXT-Eintrag in Ihrem DNS-Panel hinzu. Prüfen Sie den Wert im Dashboard Ihres E-Mail-Anbieters.</value></data>
+  <data name="Health_10" xml:space="preserve"><value>Ihre Domain hat {0} getrennte SPF-Einträge. Es darf nur einen geben.</value></data>
+  <data name="Health_11" xml:space="preserve"><value>Fassen Sie alle 'include'-Werte in einem Eintrag zusammen und löschen Sie die anderen.</value></data>
+  <data name="Health_12" xml:space="preserve"><value>Ihr SPF-Eintrag endet mit '+all'. Damit darf jeder in Ihrem Namen E-Mails senden.</value></data>
+  <data name="Health_13" xml:space="preserve"><value>Ändern Sie das Ende des Eintrags in '~all' oder '-all'.</value></data>
+  <data name="Health_14" xml:space="preserve"><value>Ihr SPF-Eintrag benötigt {0} DNS-Abfragen. Das Limit ist 10; mehr macht SPF ungültig.</value></data>
+  <data name="Health_15" xml:space="preserve"><value>Entfernen Sie 'include'-Werte, die Sie nicht nutzen.</value></data>
+  <data name="Health_16" xml:space="preserve"><value>die IP-Adresse des sendenden Servers ({0})</value></data>
+  <data name="Health_17" xml:space="preserve"><value>Es gibt einen SPF-Eintrag, er deckt aber den Server, über den Sie senden, nicht ab ({0} fehlt).</value></data>
+  <data name="Health_18" xml:space="preserve"><value>Fügen Sie Ihrem SPF-Eintrag {0} hinzu.</value></data>
+  <data name="Health_19" xml:space="preserve"><value> DNS-Abfragen: {0}/10, nahe am Limit.</value></data>
+  <data name="Health_20" xml:space="preserve"><value>Der SPF-Eintrag ist korrekt und deckt den sendenden Server ab.</value></data>
+  <data name="Health_21" xml:space="preserve"><value>Der DKIM-Schlüssel '{0}' wurde widerrufen (leer).</value></data>
+  <data name="Health_22" xml:space="preserve"><value>Holen Sie sich bei Ihrem E-Mail-Anbieter einen neuen DKIM-Eintrag und tragen Sie ihn im DNS ein.</value></data>
+  <data name="Health_23" xml:space="preserve"><value>Der DKIM-Schlüssel ist zu kurz ({0} Bit). Er sollte mindestens 1024, besser 2048 Bit haben.</value></data>
+  <data name="Health_24" xml:space="preserve"><value>Erstellen Sie bei Ihrem Anbieter einen neuen 2048-Bit-DKIM-Schlüssel.</value></data>
+  <data name="Health_25" xml:space="preserve"><value>DKIM-Eintrag gefunden (Selector '{0}', 1024 Bit). Das funktioniert, 2048 Bit werden aber empfohlen.</value></data>
+  <data name="Health_26" xml:space="preserve"><value>Wechseln Sie bei Gelegenheit zu einem 2048-Bit-Schlüssel.</value></data>
+  <data name="Health_27" xml:space="preserve"><value>DKIM-Eintrag gefunden (Selector '{0}'{1}).</value></data>
+  <data name="Health_28" xml:space="preserve"><value>Kein TXT/CNAME-Eintrag namens '{0}._domainkey.{1}' gefunden. Tragen Sie den DKIM-Eintrag Ihres Anbieters im DNS ein. Wurde er gerade hinzugefügt, warten Sie bis zu 48 Stunden.</value></data>
+  <data name="Health_29" xml:space="preserve"><value>Der DKIM-Selector ist unbekannt. Tragen Sie den DKIM-Eintrag aus dem Dashboard Ihres Anbieters im DNS ein und geben Sie dann den Selector-Namen (z. B. 's1', 'google', 'selector1') in den Profileinstellungen ein.</value></data>
+  <data name="Health_30" xml:space="preserve"><value>Die DKIM-Signatur konnte nicht bestätigt werden.</value></data>
+  <data name="Health_31" xml:space="preserve"><value>Es gibt keinen DMARC-Eintrag. Gmail und Yahoo verlangen ihn von Massenversendern.</value></data>
+  <data name="Health_32" xml:space="preserve"><value>Fügen Sie den folgenden TXT-Eintrag in Ihrem DNS-Panel hinzu. Nach 2–4 Wochen können Sie auf p=quarantine umstellen.</value></data>
+  <data name="Health_33" xml:space="preserve"><value>Es gibt einen DMARC-Eintrag mit der Richtlinie 'p=none' (nur Überwachung). Für den Anfang richtig. Zeigen die Berichte keine Probleme, stellen Sie auf 'p=quarantine' um.</value></data>
+  <data name="Health_34" xml:space="preserve"><value> Keine Berichtsadresse (rua) festgelegt.</value></data>
+  <data name="Health_35" xml:space="preserve"><value>Es gibt einen DMARC-Eintrag (p={0}).</value></data>
+  <data name="Health_36" xml:space="preserve"><value>Ihre Domain kann E-Mails empfangen ({0}).</value></data>
+  <data name="Health_37" xml:space="preserve"><value>Ihre Absenderdomain hat keinen MX-Eintrag. Antworten und Bounces erreichen Sie nicht.</value></data>
+  <data name="Health_38" xml:space="preserve"><value>Verwenden Sie eine Absenderadresse, die E-Mails empfangen kann, oder legen Sie eine Antwortadresse fest.</value></data>
+  <data name="Health_39" xml:space="preserve"><value>Der Server ist im lokalen Netz; die Reverse-DNS-Prüfung wurde übersprungen.</value></data>
+  <data name="Health_40" xml:space="preserve"><value>Der Reverse-DNS-Eintrag von {0} ist korrekt ({1}).</value></data>
+  <data name="Health_41" xml:space="preserve"><value>Die Server-IP ({0}) hat keinen Reverse-DNS-Eintrag oder er passt nicht zum Servernamen. Gmail kann E-Mails dann ablehnen.</value></data>
+  <data name="Health_42" xml:space="preserve"><value>Bitten Sie Ihren Hoster, den PTR-Eintrag für {0} auf '{1}' zu setzen.</value></data>
+  <data name="Health_43" xml:space="preserve"><value>Die Domain der Absenderadresse passt zur Domain der DKIM-Signatur. DMARC besteht.</value></data>
+  <data name="Health_44" xml:space="preserve"><value>Richten Sie DKIM für Ihre Absenderdomain ein.</value></data>
+  <data name="Health_45" xml:space="preserve"><value>Bestätigen Sie Ihre Absenderdomain im Dashboard Ihres E-Mail-Anbieters und tragen Sie die angegebenen DKIM-Einträge im DNS ein.</value></data>
+  <data name="Health_46" xml:space="preserve"><value>Blacklist (IP)</value></data>
+  <data name="Health_47" xml:space="preserve"><value>Keine öffentliche IPv4-Adresse zum Prüfen vorhanden.</value></data>
+  <data name="Health_48" xml:space="preserve"><value>Blacklist (IP)</value></data>
+  <data name="Health_49" xml:space="preserve"><value>Beantragen Sie die Entfernung auf der Website der Liste. Beheben Sie zuerst den Grund der Listung (gehacktes Konto, Liste ohne Einwilligung).</value></data>
+  <data name="Health_50" xml:space="preserve"><value>Blacklist (IP)</value></data>
+  <data name="Health_51" xml:space="preserve"><value>Einige Listen konnten nicht abgefragt werden ({0}). Öffentliche DNS-Server blockieren solche Abfragen oft. Prüfen Sie manuell auf mxtoolbox.com.</value></data>
+  <data name="Health_52" xml:space="preserve"><value>Blacklist (IP)</value></data>
+  <data name="Health_53" xml:space="preserve"><value>Ihre Server-IP steht auf keiner der geprüften Blacklists.</value></data>
+  <data name="Health_54" xml:space="preserve"><value>Blacklist (Domain)</value></data>
+  <data name="Health_55" xml:space="preserve"><value>{0} konnte nicht abgefragt werden. Prüfen Sie manuell auf mxtoolbox.com.</value></data>
+  <data name="Health_56" xml:space="preserve"><value>Blacklist (Domain)</value></data>
+  <data name="Health_57" xml:space="preserve"><value>Ihre Domain steht auf der Liste {0}.</value></data>
+  <data name="Health_58" xml:space="preserve"><value>Prüfen Sie Ihre Domain auf der Spamhaus-Website und beantragen Sie die Entfernung.</value></data>
+  <data name="Health_59" xml:space="preserve"><value>Blacklist (Domain)</value></data>
+  <data name="Health_60" xml:space="preserve"><value>Ihre Domain steht auf keiner der geprüften Blacklists.</value></data>
+  <data name="Err_01" xml:space="preserve"><value>Öffnen Sie das Profil im Bereich Absenderprofile und klicken Sie auf 'Im Browser anmelden'.</value></data>
+  <data name="Err_02" xml:space="preserve"><value>Prüfen Sie Benutzername und Passwort. Bei einem Versanddienst geben Sie den SMTP-Benutzernamen und das SMTP-Passwort aus dessen Dashboard ein (nicht Ihr Kontopasswort).</value></data>
+  <data name="Err_03" xml:space="preserve"><value>Prüfen Sie Port und Sicherheit: 587 braucht STARTTLS, 465 braucht SSL.</value></data>
+  <data name="Err_04" xml:space="preserve"><value>Die Serveradresse enthält vielleicht einen Tippfehler. Prüfen Sie auch Ihre Internetverbindung.</value></data>
+  <data name="Err_05" xml:space="preserve"><value>Prüfen Sie Serveradresse und Port. In einem Firmennetz blockiert eine Firewall eventuell Port 587 oder 465.</value></data>
+  <data name="Err_06" xml:space="preserve"><value>Das ist vorübergehend. Versuchen Sie es in einigen Minuten erneut. Alpixa senkt beim Senden automatisch die Geschwindigkeit.</value></data>
+  <data name="Err_07" xml:space="preserve"><value>Der Server hat die Anfrage abgelehnt ({0}).</value></data>
+  <data name="Err_08" xml:space="preserve"><value>Stellen Sie sicher, dass die Absenderadresse über dieses Konto senden darf. Prüfen Sie auch den Domain-Zustand.</value></data>
+  <data name="Err_09" xml:space="preserve"><value>Prüfen Sie Port und Sicherheit und versuchen Sie es erneut.</value></data>
+  <data name="Err_10" xml:space="preserve"><value>Versuchen Sie es erneut. Bleibt das Problem, erstellen Sie unter Einstellungen &gt; Support-Paket erstellen ein Paket und senden Sie es an den Support.</value></data>
+  <data name="Err_11" xml:space="preserve"><value>Der Empfangsserver drosselt unsere Geschwindigkeit. Es wird erneut versucht.</value></data>
+  <data name="Err_12" xml:space="preserve"><value>Vorübergehender Fehler. Es wird erneut versucht.</value></data>
+  <data name="Err_13" xml:space="preserve"><value>Die Adresse existiert nicht (dauerhafter Fehler).</value></data>
+  <data name="Err_14" xml:space="preserve"><value>Der Empfangsserver hat aus Sicherheits-/Richtliniengründen abgelehnt. Prüfen Sie Ihre Domain-Einstellungen.</value></data>
+  <data name="Err_15" xml:space="preserve"><value>Der Empfangsserver hat die Nachricht dauerhaft abgelehnt.</value></data>
+  <data name="Err_16" xml:space="preserve"><value>Die Anmeldedaten wurden abgelehnt.</value></data>
+  <data name="Err_17" xml:space="preserve"><value>Die Serververbindung wurde getrennt.</value></data>
+  <data name="Report_01" xml:space="preserve"><value>E-Mail</value></data>
+  <data name="Report_02" xml:space="preserve"><value>Status</value></data>
+  <data name="Report_03" xml:space="preserve"><value>Versuche</value></data>
+  <data name="Report_04" xml:space="preserve"><value>SMTP-Code</value></data>
+  <data name="Report_05" xml:space="preserve"><value>Fehler</value></data>
+  <data name="Report_06" xml:space="preserve"><value>Gesendet um (UTC)</value></data>
+  <data name="Report_07" xml:space="preserve"><value>Ereignisse</value></data>
+  <data name="Report_08" xml:space="preserve"><value>Ausstehend</value></data>
+  <data name="Report_09" xml:space="preserve"><value>Wird gesendet</value></data>
+  <data name="Report_10" xml:space="preserve"><value>Gesendet</value></data>
+  <data name="Report_11" xml:space="preserve"><value>Fehlgeschlagen</value></data>
+  <data name="Report_12" xml:space="preserve"><value>Übersprungen</value></data>
+  <data name="Report_13" xml:space="preserve"><value>Status unbekannt</value></data>
+  <data name="Report_14" xml:space="preserve"><value>Unzustellbar (dauerhaft)</value></data>
+  <data name="Report_15" xml:space="preserve"><value>Unzustellbar (vorübergehend)</value></data>
+  <data name="Report_16" xml:space="preserve"><value>Abgemeldet</value></data>
+  <data name="Report_17" xml:space="preserve"><value>Beschwerde</value></data>
+  <data name="Report_18" xml:space="preserve"><value>Geöffnet</value></data>
+  <data name="Runner_01" xml:space="preserve"><value>Kampagne abgeschlossen</value></data>
+  <data name="Runner_02" xml:space="preserve"><value>Alle E-Mails wurden verarbeitet. Die Ergebnisse finden Sie in den Berichten.</value></data>
+  <data name="Runner_03" xml:space="preserve"><value>Versand gestoppt</value></data>
+  <data name="Runner_04" xml:space="preserve"><value>Tageslimit erreicht</value></data>
+  <data name="Runner_05" xml:space="preserve"><value>Ein unerwarteter Fehler ist aufgetreten. Erstellen Sie unter Einstellungen &gt; Support-Paket erstellen ein Paket und senden Sie es an den Support.</value></data>
+  <data name="Runner_06" xml:space="preserve"><value>Versand gestoppt</value></data>
+  <data name="Runner_07" xml:space="preserve"><value>Ein unerwarteter Fehler ist aufgetreten.</value></data>
+  <data name="Runner_08" xml:space="preserve"><value>Die App wurde während des Sendens geschlossen; der Zustellstatus ist unbekannt. Es wurde nicht erneut gesendet.</value></data>
+  <data name="Runner_09" xml:space="preserve"><value>Vom Benutzer pausiert.</value></data>
+  <data name="Runner_10" xml:space="preserve"><value>Vom Benutzer abgebrochen.</value></data>
+  <data name="Runner_11" xml:space="preserve"><value>Kampagne abgebrochen</value></data>
+  <data name="Engine_01" xml:space="preserve"><value>Keine Einwilligung für kommerzielle Nachrichten (IYS)</value></data>
+  <data name="Engine_02" xml:space="preserve"><value>Die Fehlerrate hat {0:0.#} % überschritten. Der Versand wurde aus Sicherheitsgründen gestoppt. Prüfen Sie die Fehler in den Berichten, beheben Sie das Problem und klicken Sie auf Fortsetzen.</value></data>
+  <data name="Engine_03" xml:space="preserve"><value>Während des Sendens gestoppt; Zustellstatus unbekannt</value></data>
+  <data name="Engine_04" xml:space="preserve"><value>Der E-Mail-Server hat die Anmeldedaten abgelehnt. Prüfen Sie sie im Bereich Absenderprofile mit 'Verbindung testen'.</value></data>
+  <data name="Engine_05" xml:space="preserve"><value>Der Versand konnte nicht abgeschlossen werden. Klicken Sie auf Fortsetzen, um den Rest zu senden.</value></data>
+  <data name="Engine_06" xml:space="preserve"><value>Die Rate dauerhafter Bounces beträgt {0:0.0} %. Das Limit ist {1:0.#} %. Ihre Liste ist vielleicht veraltet oder fehlerhaft. Bereinigen Sie sie und klicken Sie auf Fortsetzen.</value></data>
+  <data name="Engine_07" xml:space="preserve"><value>Die Spam-Beschwerderate beträgt {0:0.00} %. Das Limit ist {1:0.#} %. Stellen Sie sicher, dass die Empfänger zugestimmt haben.</value></data>
+  <data name="Engine_08" xml:space="preserve"><value>Das heutige Sendelimit ({0}) ist erreicht. Aufwärmtag {1}. Der Versand geht morgen automatisch weiter (die App muss geöffnet sein).</value></data>
+  <data name="Engine_09" xml:space="preserve"><value>Das heutige Sendelimit ({0}) ist erreicht. Der Versand geht morgen automatisch weiter (die App muss geöffnet sein).</value></data>
+  <data name="Asset_01" xml:space="preserve"><value>Diese Datei ist kein Bild. Verwenden Sie PNG, JPG, GIF oder WEBP.</value></data>
+  <data name="Asset_02" xml:space="preserve"><value>Das Bild ist zu groß ({0}). Das Limit pro Bild ist {1}. Verkleinern Sie das Bild und versuchen Sie es erneut.</value></data>
+  <data name="Asset_03" xml:space="preserve"><value>Die Anhänge überschreiten das Gesamtlimit von {0} MB (aktuell {1}, hinzugefügt {2}). Teilen Sie große Dateien als Link von einer Website.</value></data>
+  <data name="Asset_04" xml:space="preserve"><value>Ungültiger Dateiname.</value></data>
+  <data name="Transport_01" xml:space="preserve"><value>Die IMAP-Serveradresse ist leer.</value></data>
+  <data name="Transport_02" xml:space="preserve"><value>Geben Sie den IMAP-Server in den Profileinstellungen ein.</value></data>
+  <data name="Maint_01" xml:space="preserve"><value>Passwörter sind nicht in der Sicherung enthalten.</value></data>
+  <data name="Maint_02" xml:space="preserve"><value>Diese Datei ist keine Alpixa-Sicherung.</value></data>
+  <data name="Preset_01" xml:space="preserve"><value>Eigener SMTP-Server</value></data>
+  <data name="Contacts_01" xml:space="preserve"><value>Ohne ausdrückliche Einwilligung kann keine Liste erstellt werden.</value></data>
+  <data name="Tabular_01" xml:space="preserve"><value>Nicht unterstützter Dateityp: {0}. Verwenden Sie CSV oder XLSX.</value></data>
+  <data name="Import_01" xml:space="preserve"><value>Es wurde keine E-Mail-Spalte ausgewählt.</value></data>
+  <data name="Suppress_01" xml:space="preserve"><value>Auf der Sperrliste</value></data>
+  <data name="Consent_01" xml:space="preserve"><value>Keine (IYS-Integration nicht eingerichtet)</value></data>
+  <data name="Campaign_01" xml:space="preserve"><value>Eine laufende Kampagne kann nicht gelöscht werden. Stoppen Sie sie zuerst.</value></data>
+  <data name="Lint_01" xml:space="preserve"><value>Das E-Mail-HTML ist {0} KB groß. Gmail kürzt alles über 102 KB, und der Abmeldelink kann verschwinden. Kürzen Sie den Inhalt.</value></data>
+  <data name="Lint_02" xml:space="preserve"><value>Die E-Mail besteht überwiegend aus Bildern. Spamfilter misstrauen E-Mails mit nur einem Bild. Fügen Sie neben dem Bild ein paar Sätze Text hinzu.</value></data>
+  <data name="Lint_03" xml:space="preserve"><value>{0} Bild(er) ohne Beschreibung (Alt-Text). Wenn Bilder nicht geladen werden, weiß der Leser nicht, was sie zeigen. Fügen Sie jedem Bild einen Alt-Text hinzu.</value></data>
+  <data name="Lint_04" xml:space="preserve"><value>Ein Link-Kürzer wird verwendet ({0}). Spamfilter blockieren gekürzte Links. Verwenden Sie die vollständige Adresse.</value></data>
+  <data name="Lint_05" xml:space="preserve"><value>Der Linktext zeigt '{0}', der Link führt aber zu '{1}'. Das gilt als Phishing-Merkmal. Machen Sie Linktext und Adresse gleich.</value></data>
+  <data name="Lint_06" xml:space="preserve"><value>Anhänge werden in Massen-E-Mails nicht empfohlen. Laden Sie die Datei auf eine Website und teilen Sie einen Link.</value></data>
+  <data name="Lint_07" xml:space="preserve"><value>Die E-Mail enthält JavaScript. E-Mail-Programme führen es nicht aus, und es erhöht die Spam-Bewertung. Entfernen Sie es.</value></data>
+  <data name="Lint_08" xml:space="preserve"><value>Die E-Mail enthält ein Formular. Die meisten E-Mail-Programme unterstützen keine Formulare. Verlinken Sie stattdessen das Formular auf Ihrer Website.</value></data>
+  <data name="Lint_09" xml:space="preserve"><value>Die E-Mail enthält ein eingebettetes Video/iframe. E-Mail-Programme zeigen das nicht an. Verwenden Sie das Vorschaubild und verlinken Sie das Video.</value></data>
+  <data name="Lint_10" xml:space="preserve"><value>Die Vorlage hat keinen Abmeldelink. Alpixa fügt ihn automatisch unten ein. Um ihn selbst zu platzieren, verwenden Sie {{ unsubscribe_url }}.</value></data>
+  <data name="Lint_11" xml:space="preserve"><value>Es wurden Ausdrücke gefunden, auf die Spamfilter achten: {0}. Verwenden Sie eine natürlichere Sprache.</value></data>
+  <data name="Lint_12" xml:space="preserve"><value>Die Betreffzeile ist leer. Schreiben Sie einen kurzen, klaren Betreff.</value></data>
+  <data name="Lint_13" xml:space="preserve"><value>Die ganze Betreffzeile ist in GROSSBUCHSTABEN. Das gilt als Spam-Merkmal. Verwenden Sie normale Schreibweise.</value></data>
+  <data name="Lint_14" xml:space="preserve"><value>Die Betreffzeile hat {0} Ausrufezeichen. Verwenden Sie höchstens eines.</value></data>
+  <data name="Lint_15" xml:space="preserve"><value>Die Betreffzeile ist zu lang und wird auf dem Handy abgeschnitten. Bleiben Sie möglichst unter 60 Zeichen.</value></data>
+  <data name="Lint_16" xml:space="preserve"><value>Die Betreffzeile betont Geld/Prozente. Übertriebene Formulierungen können die Spam-Bewertung erhöhen.</value></data>
+  <data name="OAuth_DoneTitle" xml:space="preserve"><value>Anmeldung abgeschlossen</value></data>
+  <data name="OAuth_DoneBody" xml:space="preserve"><value>Sie können dieses Fenster schließen und zu Alpixa zurückkehren.</value></data>
+  <data name="OAuth_CancelTitle" xml:space="preserve"><value>Anmeldung abgebrochen</value></data>
+  <data name="OAuth_CancelBody" xml:space="preserve"><value>Kehren Sie zu Alpixa zurück und versuchen Sie es erneut.</value></data>
+  <data name="Footer_SentTo" xml:space="preserve"><value>Wir haben diese E-Mail an {0} gesendet, weil Sie dem Empfang unserer E-Mails zugestimmt haben.</value></data>
+  <data name="Footer_Unsubscribe" xml:space="preserve"><value>Abmelden</value></data>
+  <data name="Footer_TextSentTo" xml:space="preserve"><value>Wir haben diese E-Mail an {0} gesendet.</value></data>
+  <data name="Footer_TextUnsubscribe" xml:space="preserve"><value>Zum Abmelden: {0}</value></data>
+  <data name="Health_61" xml:space="preserve"><value>DMARC besteht nur über SPF. Bei Weiterleitungen bricht SPF.</value></data>
+  <data name="Health_62" xml:space="preserve"><value>Die Absenderdomain passt nicht zur SPF/DKIM-Domain. DMARC schlägt fehl und E-Mails landen im Spam.</value></data>
+  <data name="Err_18" xml:space="preserve"><value>Die Browser-Anmeldung (OAuth) ist in dieser Installation nicht eingerichtet.</value></data>
+  <data name="Err_19" xml:space="preserve"><value>Bei Gmail können Sie sich mit einem 'App-Passwort' anmelden oder unter Einstellungen → 'Browser-Anmeldung' die Client-ID eintragen.</value></data>
+  <data name="Err_20" xml:space="preserve"><value>Sie müssen sich erneut bei Ihrem Konto anmelden.</value></data>
+  <data name="Err_21" xml:space="preserve"><value>Ihr Gmail-Passwort wurde nicht akzeptiert.</value></data>
+  <data name="Err_22" xml:space="preserve"><value>Ihr normales Gmail-Passwort funktioniert nicht. Aktivieren Sie die Bestätigung in zwei Schritten, erstellen Sie ein 'App-Passwort' und geben Sie es ein. Oder verwenden Sie 'Im Browser anmelden'.</value></data>
+  <data name="Err_23" xml:space="preserve"><value>Anmeldung beim Microsoft-Konto fehlgeschlagen.</value></data>
+  <data name="Err_24" xml:space="preserve"><value>Microsoft hat die SMTP-Anmeldung per Passwort abgeschaltet. Verwenden Sie 'Im Browser anmelden'. Bei Firmenkonten muss der Administrator eventuell 'SMTP AUTH' freischalten.</value></data>
+  <data name="Err_25" xml:space="preserve"><value>Benutzername oder Passwort wurden nicht akzeptiert.</value></data>
+  <data name="Err_26" xml:space="preserve"><value>Es konnte keine sichere Verbindung hergestellt werden.</value></data>
+  <data name="Err_27" xml:space="preserve"><value>Die Serveradresse wurde nicht gefunden.</value></data>
+  <data name="Err_28" xml:space="preserve"><value>Keine Verbindung zum Server möglich.</value></data>
+  <data name="Err_29" xml:space="preserve"><value>Der Server meldet, dass er gerade zu viele Anfragen erhält.</value></data>
+  <data name="Err_30" xml:space="preserve"><value>Die Verbindung zum Server wurde unerwartet geschlossen.</value></data>
+  <data name="Err_31" xml:space="preserve"><value>Ein unerwarteter Fehler ist aufgetreten.</value></data>
+  <data name="Health_TitleLocal" xml:space="preserve"><value>Lokaler Testserver</value></data>
+  <data name="Health_TitlePtr" xml:space="preserve"><value>PTR (Reverse-DNS)</value></data>
+  <data name="Health_TitleAlignment" xml:space="preserve"><value>Ausrichtung (Alignment)</value></data>
+  <data name="Preset_LocalTest" xml:space="preserve"><value>Lokaler Testserver (smtp4dev / Papercut)</value></data>
+</root>

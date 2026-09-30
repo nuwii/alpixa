@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     x:Class="Alpixa.App.Views.ReportsPage"
+                     x:DataType="vm:ReportsViewModel"
+                     Title="{loc:Tr Nav_Reports}">
+    <ScrollView>
+        <VerticalStackLayout Padding="36,28,36,36" Spacing="18" MaximumWidthRequest="1240">
+            <fx:PageHeader Title="{loc:Tr Nav_Reports}" Subtitle="{loc:Tr Reports_Targets}" Icon="Chart">
+                <fx:PageHeader.Actions>
+                    <fx:WithInfo Info="Reports_Common_Refresh">
+                        <Button Text="{loc:Tr Common_Refresh}" Style="{StaticResource SecondaryButton}" Command="{Binding RefreshCommand}" />
+                    </fx:WithInfo>
+                </fx:PageHeader.Actions>
+            </fx:PageHeader>
+
+            <Grid ColumnDefinitions="2*,*,*,*,*,*,*,*,64,72" ColumnSpacing="8" Padding="16,0">
+                <fx:InfoLabel Text="{loc:Tr Reports_Campaign}" Info="Reports_Campaign" LabelStyle="{StaticResource FieldLabel}" />
+                <fx:InfoLabel Text="{loc:Tr Reports_Total}" Info="Reports_Total" LabelStyle="{StaticResource FieldLabel}" Grid.Column="1" />
+                <fx:InfoLabel Text="{loc:Tr Detail_Sent}" Info="Detail_Sent" LabelStyle="{StaticResource FieldLabel}" Grid.Column="2" />
+                <fx:InfoLabel Text="{loc:Tr Detail_Failed}" Info="Detail_Failed" LabelStyle="{StaticResource FieldLabel}" Grid.Column="3" />
+                <fx:InfoLabel Text="{loc:Tr Reports_Bounce}" Info="Reports_Bounce" LabelStyle="{StaticResource FieldLabel}" Grid.Column="4" />
+                <fx:InfoLabel Text="{loc:Tr Reports_Complaint}" Info="Reports_Complaint" LabelStyle="{StaticResource FieldLabel}" Grid.Column="5" />
+                <fx:InfoLabel Text="{loc:Tr Detail_Unsubscribes}" Info="Detail_Unsubscribes" LabelStyle="{StaticResource FieldLabel}" Grid.Column="6" />
+                <fx:InfoLabel Text="{loc:Tr Reports_Opens}" Info="Reports_Opens" LabelStyle="{StaticResource FieldLabel}" Grid.Column="7" />
+            </Grid>
+            <Label Text="{loc:Tr Dashboard_NoCampaigns}" Style="{StaticResource MutedLabel}" IsVisible="{Binding Rows.Count, Converter={StaticResource NoItems}}" />
+            <VerticalStackLayout BindableLayout.ItemsSource="{Binding Rows}" Spacing="6">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="vm:ReportRow">
+                        <Border Style="{StaticResource Card}" Padding="16,12">
+                            <Grid ColumnDefinitions="2*,*,*,*,*,*,*,*,64,72" ColumnSpacing="8">
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Report.Name}" FontAttributes="Bold" />
+                                    <Label Text="{Binding Report.Status, Converter={StaticResource EnumText}}" Style="{StaticResource MutedLabel}" />
+                                </VerticalStackLayout>
+                                <Label Grid.Column="1" Text="{Binding Report.Total}" VerticalOptions="Center" />
+                                <Label Grid.Column="2" Text="{Binding Report.Sent}" VerticalOptions="Center" />
+                                <Label Grid.Column="3" Text="{Binding Report.Failed}" VerticalOptions="Center" />
+                                <Label Grid.Column="4" Text="{Binding BounceText}" TextColor="{Binding BounceColor}" FontAttributes="Bold" VerticalOptions="Center" />
+                                <Label Grid.Column="5" Text="{Binding ComplaintText}" TextColor="{Binding ComplaintColor}" FontAttributes="Bold" VerticalOptions="Center" />
+                                <Label Grid.Column="6" Text="{Binding Report.Unsubscribes}" VerticalOptions="Center" />
+                                <Label Grid.Column="7" Text="{Binding Report.Opens}" VerticalOptions="Center" />
+                                <fx:WithInfo Info="Reports_Csv" Grid.Column="8">
+                                    <Button Text="CSV" Style="{StaticResource SecondaryButton}" Padding="10,4"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ReportsViewModel}}, Path=ExportCsvCommand, x:DataType=vm:ReportsViewModel}" CommandParameter="{Binding .}" />
+                                </fx:WithInfo>
+                                <fx:WithInfo Info="Reports_Excel" Grid.Column="9">
+                                    <Button Text="Excel" Style="{StaticResource SecondaryButton}" Padding="10,4"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ReportsViewModel}}, Path=ExportXlsxCommand, x:DataType=vm:ReportsViewModel}" CommandParameter="{Binding .}" />
+                                </fx:WithInfo>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+
+            <Border Style="{StaticResource StaticCard}">
+                <VerticalStackLayout Spacing="10">
+                    <fx:InfoLabel Text="{loc:Tr Reports_HistoryTitle}" Info="Reports_HistoryTitle" LabelStyle="{StaticResource SectionTitle}" />
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                        <Entry Text="{Binding HistoryEmail}" Placeholder="ayse@ornek.com" Keyboard="Email" ReturnCommand="{Binding FindHistoryCommand}" />
+                        <fx:WithInfo Info="Reports_Common_Search" Grid.Column="1">
+                            <Button Text="{loc:Tr Common_Search}" Command="{Binding FindHistoryCommand}" />
+                        </fx:WithInfo>
+                    </Grid>
+                    <VerticalStackLayout BindableLayout.ItemsSource="{Binding History}" Spacing="2">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate x:DataType="x:String">
+                                <Label Text="{Binding .}" FontSize="13" />
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource HeroCard}">
+                <VerticalStackLayout Spacing="6">
+                    <Label Text="{loc:Tr Reports_ToolsTitle}" Style="{StaticResource SectionTitle}" />
+                    <Label Text="{loc:Tr Reports_Tools}" Style="{StaticResource MutedLabel}" />
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</views:AlpixaPage>

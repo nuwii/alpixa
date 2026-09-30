@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="App_Tagline" xml:space="preserve"><value>Filtreleri aşan kitlesel güç.</value></data>
+  <data name="Campaigns_Cancel" xml:space="preserve"><value>İptal et</value></data>
+  <data name="Campaigns_CancelConfirm" xml:space="preserve"><value>'{0}' iptal edilsin mi? Henüz gönderilmemiş kişilere gönderilmeyecek. Bu işlem geri alınamaz.</value></data>
+  <data name="Campaigns_CancelTitle" xml:space="preserve"><value>Kampanyayı iptal et</value></data>
+  <data name="Campaigns_CancelYes" xml:space="preserve"><value>Evet, iptal et</value></data>
+  <data name="Campaigns_DeleteConfirm" xml:space="preserve"><value>'{0}' kampanyası ve gönderim kayıtları silinsin mi?</value></data>
+  <data name="Campaigns_FailedSuffix" xml:space="preserve"><value> başarısız</value></data>
+  <data name="Campaigns_Pause" xml:space="preserve"><value>Duraklat</value></data>
+  <data name="Campaigns_Resume" xml:space="preserve"><value>Devam et</value></data>
+  <data name="Campaigns_SentSuffix" xml:space="preserve"><value> gönderildi · </value></data>
+  <data name="Common_Back" xml:space="preserve"><value>Geri</value></data>
+  <data name="Common_Browse" xml:space="preserve"><value>Seç...</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Vazgeç</value></data>
+  <data name="Common_Close" xml:space="preserve"><value>Kapat</value></data>
+  <data name="Common_Copied" xml:space="preserve"><value>Panoya kopyalandı.</value></data>
+  <data name="Common_Copy" xml:space="preserve"><value>Kopyala</value></data>
+  <data name="Common_Delete" xml:space="preserve"><value>Sil</value></data>
+  <data name="Common_Edit" xml:space="preserve"><value>Düzenle</value></data>
+  <data name="Common_Error" xml:space="preserve"><value>Bir sorun var</value></data>
+  <data name="Common_HowTo" xml:space="preserve"><value>Nasıl yapılır?</value></data>
+  <data name="Common_Missing" xml:space="preserve"><value>Eksik bilgi</value></data>
+  <data name="Common_Next" xml:space="preserve"><value>İleri</value></data>
+  <data name="Common_No" xml:space="preserve"><value>Hayır</value></data>
+  <data name="Common_Ok" xml:space="preserve"><value>Tamam</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>Aç</value></data>
+  <data name="Common_Refresh" xml:space="preserve"><value>Yenile</value></data>
+  <data name="Common_Save" xml:space="preserve"><value>Kaydet</value></data>
+  <data name="Common_Saved" xml:space="preserve"><value>Kaydedildi.</value></data>
+  <data name="Common_Search" xml:space="preserve"><value>Ara</value></data>
+  <data name="Common_ShowAdvanced" xml:space="preserve"><value>Gelişmiş ayarları göster</value></data>
+  <data name="Common_Working" xml:space="preserve"><value>Çalışıyor...</value></data>
+  <data name="Common_Yes" xml:space="preserve"><value>Evet</value></data>
+  <data name="Dashboard_ActiveContacts" xml:space="preserve"><value>aktif kişi</value></data>
+  <data name="Dashboard_Lists" xml:space="preserve"><value>liste</value></data>
+  <data name="Dashboard_NoCampaigns" xml:space="preserve"><value>Henüz kampanya yok.</value></data>
+  <data name="Dashboard_NoProfile" xml:space="preserve"><value>Henüz gönderen profili yok. Gönderim yapmak için önce bir profil ekleyin.</value></data>
+  <data name="Dashboard_Recent" xml:space="preserve"><value>Son kampanyalar</value></data>
+  <data name="Dashboard_Sent30" xml:space="preserve"><value>son 30 günde gönderilen</value></data>
+  <data name="Dashboard_SetupBody" xml:space="preserve"><value>Kurulum sihirbazı ile gönderen hesabınızı ekleyin ve alan adınızı kontrol edin.</value></data>
+  <data name="Dashboard_SetupButton" xml:space="preserve"><value>Kurulum sihirbazını aç</value></data>
+  <data name="Dashboard_SetupTitle" xml:space="preserve"><value>Kurulum tamamlanmadı</value></data>
+  <data name="Dashboard_Suppressed" xml:space="preserve"><value>bastırma listesinde</value></data>
+  <data name="Dashboard_Tips" xml:space="preserve"><value>1. Alan Adı Sağlığı ekranında her şey yeşil olsun.
+2. Sadece izin veren kişilere gönderin.
+3. Yavaş başlayın; ısınma planını kapatmayın.
+4. Önce kendinize test gönderimi yapın.</value></data>
+  <data name="Dashboard_TipsTitle" xml:space="preserve"><value>Gelen kutusuna ulaşmak için</value></data>
+  <data name="Dashboard_Title" xml:space="preserve"><value>Panel</value></data>
+  <data name="Dashboard_WarnBounces" xml:space="preserve"><value>'{0}' kampanyasında ulaşmama oranı {1}. Hedef %2'nin altıdır. Listeyi temizleyin.</value></data>
+  <data name="Dashboard_WarnComplaints" xml:space="preserve"><value>'{0}' kampanyasında şikayet oranı {1}. Hedef %0,1'in altıdır.</value></data>
+  <data name="Dashboard_WarnPaused" xml:space="preserve"><value>'{0}' kampanyası güvenlik nedeniyle durduruldu. Nedeni kampanya ekranında yazıyor.</value></data>
+  <data name="Detail_BackgroundNote" xml:space="preserve"><value>Bilgisayar gönderim bitene kadar uyku moduna geçmez. Durumu bilinmeyen e-postalar (uygulama gönderim anında kapandıysa) tekrar gönderilmez.</value></data>
+  <data name="Detail_Bounces" xml:space="preserve"><value>Ulaşmayan</value></data>
+  <data name="Detail_Complaints" xml:space="preserve"><value>Şikayet: </value></data>
+  <data name="Detail_DryRun" xml:space="preserve"><value>Deneme modu</value></data>
+  <data name="Detail_Eta" xml:space="preserve"><value>Tahmini bitiş: {0}</value></data>
+  <data name="Detail_Failed" xml:space="preserve"><value>Başarısız</value></data>
+  <data name="Detail_Hours" xml:space="preserve"><value>{0} sa {1} dk</value></data>
+  <data name="Detail_Minutes" xml:space="preserve"><value>{0} dk</value></data>
+  <data name="Detail_NextRun" xml:space="preserve"><value>Devam zamanı: {0}</value></data>
+  <data name="Detail_OpenReports" xml:space="preserve"><value>Raporları aç</value></data>
+  <data name="Detail_Pending" xml:space="preserve"><value>Bekleyen</value></data>
+  <data name="Detail_Rate" xml:space="preserve"><value>Hız: {0} e-posta/dk</value></data>
+  <data name="Detail_Scheduled" xml:space="preserve"><value>Başlama zamanı: {0}</value></data>
+  <data name="Detail_Sent" xml:space="preserve"><value>Gönderilen</value></data>
+  <data name="Detail_Skipped" xml:space="preserve"><value>Atlanan: </value></data>
+  <data name="Detail_Uncertain" xml:space="preserve"><value>Durumu bilinmeyen: </value></data>
+  <data name="Detail_Unsubscribes" xml:space="preserve"><value>Çıkan</value></data>
+  <data name="Enum_CampaignStatus_Cancelled" xml:space="preserve"><value>İptal edildi</value></data>
+  <data name="Enum_CampaignStatus_Completed" xml:space="preserve"><value>Tamamlandı</value></data>
+  <data name="Enum_CampaignStatus_Draft" xml:space="preserve"><value>Taslak</value></data>
+  <data name="Enum_CampaignStatus_Paused" xml:space="preserve"><value>Duraklatıldı</value></data>
+  <data name="Enum_CampaignStatus_PausedBySafety" xml:space="preserve"><value>Güvenlik için durduruldu</value></data>
+  <data name="Enum_CampaignStatus_Running" xml:space="preserve"><value>Gönderiliyor</value></data>
+  <data name="Enum_CampaignStatus_Scheduled" xml:space="preserve"><value>Zamanlandi</value></data>
+  <data name="Enum_CampaignStatus_WaitingForQuota" xml:space="preserve"><value>Yarını bekliyor (günlük sınır)</value></data>
+  <data name="Enum_CheckStatus_Fail" xml:space="preserve"><value>Düzeltilmeli</value></data>
+  <data name="Enum_CheckStatus_Info" xml:space="preserve"><value>Bilgi</value></data>
+  <data name="Enum_CheckStatus_Pass" xml:space="preserve"><value>Geçti</value></data>
+  <data name="Enum_CheckStatus_Warning" xml:space="preserve"><value>Uyarı</value></data>
+  <data name="Enum_ContactStatus_Active" xml:space="preserve"><value>Aktif</value></data>
+  <data name="Enum_ContactStatus_Complained" xml:space="preserve"><value>Şikayet etti</value></data>
+  <data name="Enum_ContactStatus_HardBounced" xml:space="preserve"><value>Ulaşmıyor (hard bounce)</value></data>
+  <data name="Enum_ContactStatus_Invalid" xml:space="preserve"><value>Geçersiz</value></data>
+  <data name="Enum_ContactStatus_Suppressed" xml:space="preserve"><value>Engelli</value></data>
+  <data name="Enum_ContactStatus_Unsubscribed" xml:space="preserve"><value>Abonelikten çıktı</value></data>
+  <data name="Enum_LintSeverity_Error" xml:space="preserve"><value>Hata</value></data>
+  <data name="Enum_LintSeverity_Info" xml:space="preserve"><value>Bilgi</value></data>
+  <data name="Enum_LintSeverity_Warning" xml:space="preserve"><value>Uyarı</value></data>
+  <data name="Enum_SendJobStatus_Failed" xml:space="preserve"><value>Başarısız</value></data>
+  <data name="Enum_SendJobStatus_Pending" xml:space="preserve"><value>Bekliyor</value></data>
+  <data name="Enum_SendJobStatus_Sending" xml:space="preserve"><value>Gönderiliyor</value></data>
+  <data name="Enum_SendJobStatus_Sent" xml:space="preserve"><value>Gönderildi</value></data>
+  <data name="Enum_SendJobStatus_Skipped" xml:space="preserve"><value>Atlandı</value></data>
+  <data name="Enum_SendJobStatus_Uncertain" xml:space="preserve"><value>Durumu bilinmiyor</value></data>
+  <data name="Enum_SuppressionReason_Complaint" xml:space="preserve"><value>Şikayet</value></data>
+  <data name="Enum_SuppressionReason_HardBounce" xml:space="preserve"><value>Ulaşmıyor</value></data>
+  <data name="Enum_SuppressionReason_Manual" xml:space="preserve"><value>Elle eklendi</value></data>
+  <data name="Enum_SuppressionReason_SoftBounceLimit" xml:space="preserve"><value>3 kez geçici hata</value></data>
+  <data name="Enum_SuppressionReason_Unsubscribed" xml:space="preserve"><value>Abonelikten çıktı</value></data>
+  <data name="Enum_TransportKind_AmazonSes" xml:space="preserve"><value>Amazon SES</value></data>
+  <data name="Enum_TransportKind_Brevo" xml:space="preserve"><value>Brevo</value></data>
+  <data name="Enum_TransportKind_CustomSmtp" xml:space="preserve"><value>Özel SMTP</value></data>
+  <data name="Enum_TransportKind_Gmail" xml:space="preserve"><value>Gmail / Google Workspace</value></data>
+  <data name="Enum_TransportKind_LocalTest" xml:space="preserve"><value>Yerel test sunucusu</value></data>
+  <data name="Enum_TransportKind_Mailgun" xml:space="preserve"><value>Mailgun</value></data>
+  <data name="Enum_TransportKind_Microsoft365" xml:space="preserve"><value>Microsoft 365</value></data>
+  <data name="Enum_TransportKind_SendGrid" xml:space="preserve"><value>SendGrid</value></data>
+  <data name="Health_Checking" xml:space="preserve"><value>DNS kayıtları kontrol ediliyor...</value></data>
+  <data name="Health_Footer" xml:space="preserve"><value>DNS değişikliklerinin geçerli olması birkaç dakika ile 48 saat arası sürebilir. Sonra 'Tekrar kontrol et' butonuna basın.</value></data>
+  <data name="Health_Intro" xml:space="preserve"><value>Gönderimden önce alan adınızın ayarlarını kontrol edin. Kırmızı maddeler düzeltilmeden gönderim başlatılamaz.</value></data>
+  <data name="Health_PickProfile" xml:space="preserve"><value>Profil seçin</value></data>
+  <data name="Health_Recheck" xml:space="preserve"><value>Tekrar kontrol et</value></data>
+  <data name="Health_SummaryFail" xml:space="preserve"><value>{0} için düzeltilmesi gereken kırmızı maddeler var.</value></data>
+  <data name="Health_SummaryOk" xml:space="preserve"><value>{0} için her şey hazır.</value></data>
+  <data name="Health_SummaryWarn" xml:space="preserve"><value>{0} gönderime hazır ama iyileştirilebilecek maddeler var.</value></data>
+  <data name="Help_CampaignDetail" xml:space="preserve"><value>Bu ekran gönderimin canlı ilerlemesini gösterir. Uygulama bilerek yavaş gönderir; ısınma planı veya günlük sınır dolarsa gönderim ertesi gün otomatik devam eder (uygulama açık olmalı).</value></data>
+  <data name="Help_CampaignWizard" xml:space="preserve"><value>Sihirbaz 6 adımdır: profil, liste, şablon, kontroller, mod ve zaman, onay. Kontroller adımında kırmızı uyarı varsa önce düzeltin. Kendinize test gönderimi yapmayı unutmayin.</value></data>
+  <data name="Help_Campaigns" xml:space="preserve"><value>Kampanyalar ekranında tüm gönderimlerinizi görürsünüz. Çalışan bir kampanyayı duraklatabilir, devam ettirebilir veya iptal edebilirsiniz. Kimseye iki kez gönderilmez.</value></data>
+  <data name="Help_Dashboard" xml:space="preserve"><value>Panel, hesabınızın genel durumunu gösterir: aktif kişi sayısı, son kampanyalar ve dikkat etmeniz gereken uyarılar. Yeni kampanya başlatmak için sağ üstteki butonu kullanın.</value></data>
+  <data name="Help_DomainHealth" xml:space="preserve"><value>Bu ekran alan adınızın DNS kayıtlarını (SPF, DKIM, DMARC, MX) kontrol eder. Kırmızı maddeler e-postaların spama düşmesine neden olur. Her maddenin altında ne yapmanız gerektiği ve DNS panelinize eklemeniz gereken örnek kayıt yazar.</value></data>
+  <data name="Help_Import" xml:space="preserve"><value>Dosyanızı seçin, kolonları kontrol edin ve 'Bu kişilerin açık rızası var' kutusunu işaretleyin. Uygulama hatalı, tekrar eden, geçici ve daha önce çıkmış adresleri otomatik ayırır.</value></data>
+  <data name="Help_ListDetail" xml:space="preserve"><value>Listedeki kişileri arayabilir ve duruma göre süzebilirsiniz. 'Geçmiş' butonu kişiye hangi kampanyaların gittiğini gösterir.</value></data>
+  <data name="Help_Lists" xml:space="preserve"><value>Listeler, e-posta gönderilecek kişileri tutar. CSV veya Excel dosyasını pencereye sürükleyebilir ya da 'Liste içe aktar' butonunu kullanabilirsiniz. Bastırma listesindeki adreslere hiçbir kampanyada e-posta gönderilmez.</value></data>
+  <data name="Help_OpenGuide" xml:space="preserve"><value>Kullanım kılavuzunu aç</value></data>
+  <data name="Help_ProfileEdit" xml:space="preserve"><value>Önce sağlayıcınızı seçin; sunucu ayarları otomatik dolar. Gönderen adresi kendi alan adınızda olmalı (örnek bulten@firmaniz.com). Şifreler bilgisayarınızın güvenli deposunda saklanır. Isınma planı yeni alan adlarında açık kalmalıdır.</value></data>
+  <data name="Help_Profiles" xml:space="preserve"><value>Gönderen profili, e-postaların hangi hesaptan ve hangi sunucudan gideceğini belirler. Her profil için günlük, saatlik ve dakikalık gönderim sınırı vardır. 'Bağlantıyı test et' ile bilgilerin doğru olduğunu kontrol edin.</value></data>
+  <data name="Help_Reports" xml:space="preserve"><value>Raporlar kampanya bazında gönderim, ulaşmama (bounce), abonelikten çıkma ve şikayet sayılarını gösterir. Şikayet oranı %0,1'in, bounce oranı %2'nin altında kalmalı.</value></data>
+  <data name="Help_Settings" xml:space="preserve"><value>Ayarlar ekranında dil, test adresleri, abonelikten çıkış sunucusu, KVKK işlemleri, yedekleme ve destek paketi bulunur. Gönderim hızı ayarları 'Gelişmiş' bölümündedir; varsayılanlar güvenlidir.</value></data>
+  <data name="Help_Setup" xml:space="preserve"><value>Kurulum sihirbazı 4 adımda ilk ayarları yapar: dil, gönderen hesabı, alan adı kontrolü ve deneme gönderimi. İstediğiniz zaman Ayarlar &gt; Kurulum sihirbazını yeniden başlat ile tekrar açabilirsiniz.</value></data>
+  <data name="Help_TemplateEdit" xml:space="preserve"><value>Sol tarafta HTML'i düzenleyin, sağ tarafta önizlemeyi görün. Alttaki kontrol listesi spam riskini artıran şeyleri gösterir. Abonelikten çıkış linki yoksa Alpixa otomatik ekler.</value></data>
+  <data name="Help_Templates" xml:space="preserve"><value>Şablonlar e-postanızın görünümüdür. Hazır şablonlardan birini kopyalayıp düzenleyebilirsiniz. Kişiselleştirme için {{ ad }}, {{ firma }} gibi alanları kullanın.</value></data>
+  <data name="Help_Title" xml:space="preserve"><value>Yardım</value></data>
+  <data name="Import_CheckMx" xml:space="preserve"><value>Alan adının e-posta alıp alamadığını kontrol et (MX)</value></data>
+  <data name="Import_ColCompany" xml:space="preserve"><value>Firma</value></data>
+  <data name="Import_ColConsentDate" xml:space="preserve"><value>İzin tarihi</value></data>
+  <data name="Import_ColConsentSource" xml:space="preserve"><value>İzin kaynağı</value></data>
+  <data name="Import_ColEmail" xml:space="preserve"><value>E-posta (zorunlu)</value></data>
+  <data name="Import_ColFirst" xml:space="preserve"><value>Ad</value></data>
+  <data name="Import_ColLast" xml:space="preserve"><value>Soyad</value></data>
+  <data name="Import_ColumnNone" xml:space="preserve"><value>(kullanma)</value></data>
+  <data name="Import_Consent" xml:space="preserve"><value>Bu kişilerin açık rızası var</value></data>
+  <data name="Import_DoneBody" xml:space="preserve"><value>{0} kişi eklendi.</value></data>
+  <data name="Import_DoneTitle" xml:space="preserve"><value>İçe aktarma tamamlandı</value></data>
+  <data name="Import_ExistingList" xml:space="preserve"><value>Mevcut listeye ekle</value></data>
+  <data name="Import_FileHint" xml:space="preserve"><value>CSV veya Excel (.xlsx). İlk satır kolon başlıkları olmalı. Örnek: samples/ornek-liste.csv</value></data>
+  <data name="Import_GoToLists" xml:space="preserve"><value>Listelere dön</value></data>
+  <data name="Import_LegalNote" xml:space="preserve"><value>Satın alınmış veya izinsiz toplanmış liste kullanmayın. Türkiye'de ticari ileti gönderiyorsanız IYS kaydı ve izin kontrolü gerekebilir. KVKK/GDPR yükümlülüklerinizi yerine getirin.</value></data>
+  <data name="Import_ListName" xml:space="preserve"><value>Liste adı</value></data>
+  <data name="Import_MappingHint" xml:space="preserve"><value>Alpixa kolonları otomatik eşleştirdi. Yanlış olan varsa düzeltin. Diğer kolonlar şablonda {{ kolon_adi }} olarak kullanılabilir.</value></data>
+  <data name="Import_NeedConsent" xml:space="preserve"><value>Devam etmek için 'Bu kişilerin açık rızası var' kutusunu işaretleyin.</value></data>
+  <data name="Import_NeedEmailColumn" xml:space="preserve"><value>E-posta kolonunu seçin.</value></data>
+  <data name="Import_NeedFile" xml:space="preserve"><value>Önce bir dosya seçin veya adres yapıştırın.</value></data>
+  <data name="Import_NeedList" xml:space="preserve"><value>Eklenecek listeyi seçin.</value></data>
+  <data name="Import_NeedListName" xml:space="preserve"><value>Liste adını girin.</value></data>
+  <data name="Import_NewList" xml:space="preserve"><value>Yeni liste</value></data>
+  <data name="Import_OrPaste" xml:space="preserve"><value>veya adresleri buraya yapıştırın</value></data>
+  <data name="Import_PastedListName" xml:space="preserve"><value>Yapıştırılan liste {0}</value></data>
+  <data name="Import_PickFile" xml:space="preserve"><value>Dosya seç</value></data>
+  <data name="Import_PickTitle" xml:space="preserve"><value>Liste dosyasını seçin</value></data>
+  <data name="Import_PreviewPasted" xml:space="preserve"><value>Yapıştırılanı önizle</value></data>
+  <data name="Import_PreviewTitle" xml:space="preserve"><value>İlk satırlar</value></data>
+  <data name="Import_Progress" xml:space="preserve"><value>{0} satır işlendi...</value></data>
+  <data name="Import_Result" xml:space="preserve"><value>Toplam satır: {0}
+Eklenen: {1}
+Tekrar eden (atlandı): {2}
+Hatalı yazılmış: {3}
+Geçici (tek kullanımlık) adres: {4}
+Genel adres (info@, admin@ vb., eklendi ama işaretlendi): {5}
+E-posta alamayan alan adı: {6}
+Daha önce çıkmış / engelli: {7}
+E-posta kolonu boş: {8}</value></data>
+  <data name="Import_ResultTitle" xml:space="preserve"><value>Sonuç</value></data>
+  <data name="Import_Run" xml:space="preserve"><value>İçe aktar</value></data>
+  <data name="Import_Step1" xml:space="preserve"><value>1. Dosya seçin</value></data>
+  <data name="Import_Step2" xml:space="preserve"><value>2. Kolonları kontrol edin</value></data>
+  <data name="Import_Step3" xml:space="preserve"><value>3. Hedef liste ve onay</value></data>
+  <data name="Import_Title" xml:space="preserve"><value>Liste içe aktar</value></data>
+  <data name="Import_Unsupported" xml:space="preserve"><value>Sadece .csv, .txt ve .xlsx dosyaları içe aktarılabilir.</value></data>
+  <data name="Import_UnsupportedTitle" xml:space="preserve"><value>Dosya türü desteklenmiyor</value></data>
+  <data name="Import_Working" xml:space="preserve"><value>İçe aktarılıyor...</value></data>
+  <data name="ListDetail_All" xml:space="preserve"><value>Tüm durumlar</value></data>
+  <data name="ListDetail_Company" xml:space="preserve"><value>Firma</value></data>
+  <data name="ListDetail_Email" xml:space="preserve"><value>E-posta</value></data>
+  <data name="ListDetail_Empty" xml:space="preserve"><value>Kayıt bulunamadı.</value></data>
+  <data name="ListDetail_History" xml:space="preserve"><value>Geçmiş</value></data>
+  <data name="ListDetail_LoadMore" xml:space="preserve"><value>Daha fazla yükle</value></data>
+  <data name="ListDetail_Name" xml:space="preserve"><value>Ad Soyad</value></data>
+  <data name="ListDetail_NoHistory" xml:space="preserve"><value>Bu adrese henüz gönderim yapılmamış.</value></data>
+  <data name="ListDetail_Search" xml:space="preserve"><value>E-posta, ad veya firma ara</value></data>
+  <data name="ListDetail_Status" xml:space="preserve"><value>Durum</value></data>
+  <data name="Lists_ActiveSuffix" xml:space="preserve"><value> aktif · </value></data>
+  <data name="Lists_AddMore" xml:space="preserve"><value>Kişi ekle</value></data>
+  <data name="Lists_AddSuppression" xml:space="preserve"><value>Adres ekle</value></data>
+  <data name="Lists_AddSuppressionMessage" xml:space="preserve"><value>Bir daha e-posta gönderilmeyecek adresi yazın:</value></data>
+  <data name="Lists_AddSuppressionTitle" xml:space="preserve"><value>Bastırma listesine ekle</value></data>
+  <data name="Lists_DeleteConfirm" xml:space="preserve"><value>'{0}' listesi ve içindeki {1} kişi silinsin mi?</value></data>
+  <data name="Lists_DropHint" xml:space="preserve"><value>veya sağ üstteki 'Liste içe aktar' butonunu kullanın</value></data>
+  <data name="Lists_DropTitle" xml:space="preserve"><value>CSV veya Excel dosyasını buraya sürükleyin</value></data>
+  <data name="Lists_Empty" xml:space="preserve"><value>Henüz liste yok.</value></data>
+  <data name="Lists_Import" xml:space="preserve"><value>Liste içe aktar</value></data>
+  <data name="Lists_InvalidSuffix" xml:space="preserve"><value> geçersiz · </value></data>
+  <data name="Lists_SuppressedSuffix" xml:space="preserve"><value> çıkmış/engelli</value></data>
+  <data name="Lists_SuppressionIntro" xml:space="preserve"><value>Bu adreslere hiçbir kampanyada e-posta gönderilmez: abonelikten çıkanlar, ulaşmayan (hard bounce) adresler ve şikayet edenler.</value></data>
+  <data name="Lists_SuppressionSearch" xml:space="preserve"><value>Adres ara</value></data>
+  <data name="Lists_SuppressionTitle" xml:space="preserve"><value>Bastırma listesi</value></data>
+  <data name="Lists_SuppressionTotal" xml:space="preserve"><value>Toplam: </value></data>
+  <data name="Lists_TotalSuffix" xml:space="preserve"><value> toplam · </value></data>
+  <data name="Lists_Unsuppress" xml:space="preserve"><value>Listeden çıkar</value></data>
+  <data name="Lists_UnsuppressConfirm" xml:space="preserve"><value>{0} adresine tekrar e-posta gönderilebilecek. Bu kişinin tekrar izin verdiğinden emin misiniz?</value></data>
+  <data name="Lists_UnsuppressTitle" xml:space="preserve"><value>Bastırma listesinden çıkar</value></data>
+  <data name="Menu_File" xml:space="preserve"><value>Dosya</value></data>
+  <data name="Menu_Help" xml:space="preserve"><value>Yardım</value></data>
+  <data name="Menu_HelpThisPage" xml:space="preserve"><value>Bu ekran için yardım</value></data>
+  <data name="Menu_ImportList" xml:space="preserve"><value>Liste içe aktar</value></data>
+  <data name="Menu_NewCampaign" xml:space="preserve"><value>Yeni kampanya</value></data>
+  <data name="Menu_Settings" xml:space="preserve"><value>Ayarlar</value></data>
+  <data name="Nav_Campaigns" xml:space="preserve"><value>Kampanyalar</value></data>
+  <data name="Nav_Dashboard" xml:space="preserve"><value>Panel</value></data>
+  <data name="Nav_DomainHealth" xml:space="preserve"><value>Alan Adı Sağlığı</value></data>
+  <data name="Nav_Lists" xml:space="preserve"><value>Listeler</value></data>
+  <data name="Nav_Profiles" xml:space="preserve"><value>Gönderen Profilleri</value></data>
+  <data name="Nav_Reports" xml:space="preserve"><value>Raporlar</value></data>
+  <data name="Nav_Settings" xml:space="preserve"><value>Ayarlar</value></data>
+  <data name="Nav_Templates" xml:space="preserve"><value>Şablonlar</value></data>
+  <data name="ProfileEdit_BadLimits" xml:space="preserve"><value>Gönderim sınırları 0'dan büyük olmalı.</value></data>
+  <data name="ProfileEdit_BadReplyTo" xml:space="preserve"><value>Yanıt adresi geçersiz.</value></data>
+  <data name="ProfileEdit_Daily" xml:space="preserve"><value>Günlük</value></data>
+  <data name="ProfileEdit_DefaultName" xml:space="preserve"><value>Bülten hesabı</value></data>
+  <data name="ProfileEdit_DkimDomain" xml:space="preserve"><value>DKIM alan adı (boş bırakılırsa gönderen alan adı)</value></data>
+  <data name="ProfileEdit_DkimHint" xml:space="preserve"><value>ESP kullanıyorsanız DKIM imzasını ESP atar; sadece selector adını girin (Alan Adı Sağlığı kontrolü için). Kendi sunucunuzdan gönderiyorsanız özel anahtar dosyası ile Alpixa imzalayabilir.</value></data>
+  <data name="ProfileEdit_DkimKeyPath" xml:space="preserve"><value>Özel anahtar dosyası (.pem)</value></data>
+  <data name="ProfileEdit_DkimKeyPick" xml:space="preserve"><value>DKIM özel anahtar dosyasını seçin</value></data>
+  <data name="ProfileEdit_DkimSelector" xml:space="preserve"><value>DKIM selector</value></data>
+  <data name="ProfileEdit_DkimSign" xml:space="preserve"><value>E-postaları Alpixa imzalasın (özel anahtar dosyası gerekir)</value></data>
+  <data name="ProfileEdit_DkimTitle" xml:space="preserve"><value>DKIM</value></data>
+  <data name="ProfileEdit_FromAddress" xml:space="preserve"><value>Gönderen adresi</value></data>
+  <data name="ProfileEdit_FromName" xml:space="preserve"><value>Gönderen adı</value></data>
+  <data name="ProfileEdit_Host" xml:space="preserve"><value>Sunucu adresi</value></data>
+  <data name="ProfileEdit_Hourly" xml:space="preserve"><value>Saatlik</value></data>
+  <data name="ProfileEdit_ImapEnable" xml:space="preserve"><value>IMAP ile gelen kutusunu tara</value></data>
+  <data name="ProfileEdit_ImapHint" xml:space="preserve"><value>Önerilir. Alpixa geri dönen e-postaları ve abonelikten çıkış isteklerini bu gelen kutusundan okuyup listeden otomatik çıkarır.</value></data>
+  <data name="ProfileEdit_ImapTitle" xml:space="preserve"><value>Bounce ve abonelikten çıkış takibi (IMAP)</value></data>
+  <data name="ProfileEdit_ImapUsername" xml:space="preserve"><value>IMAP kullanıcı adı</value></data>
+  <data name="ProfileEdit_LimitsTitle" xml:space="preserve"><value>Gönderim sınırları</value></data>
+  <data name="ProfileEdit_Name" xml:space="preserve"><value>Profil adı</value></data>
+  <data name="ProfileEdit_NeedFrom" xml:space="preserve"><value>'Gönderen adresi' alanı boş veya hatalı. Alıcıların göreceği e-posta adresini yazın (Gmail için kendi Gmail adresiniz, örnek: adiniz@gmail.com).</value></data>
+  <data name="ProfileEdit_NeedFromName" xml:space="preserve"><value>'Gönderen adı' alanı boş. Alıcıların göreceği adı yazın (örnek: firmanızın adı).</value></data>
+  <data name="ProfileEdit_NeedHost" xml:space="preserve"><value>Sunucu adresini girin.</value></data>
+  <data name="ProfileEdit_NeedName" xml:space="preserve"><value>Profil adını girin.</value></data>
+  <data name="ProfileEdit_NeedUser" xml:space="preserve"><value>Kullanıcı adını girin.</value></data>
+  <data name="ProfileEdit_NewTitle" xml:space="preserve"><value>Yeni profil</value></data>
+  <data name="ProfileEdit_OAuthHint" xml:space="preserve"><value>Gmail ve Microsoft 365 için en güvenli yol tarayıcı ile giriş yapmaktır. Gmail'de alternatif olarak 'Uygulama şifresi' kullanabilirsiniz.</value></data>
+  <data name="ProfileEdit_OAuthMissing" xml:space="preserve"><value>Tarayıcı ile giriş için önce bir istemci kimliği tanımlanmalı. Ayarlar → 'Tarayıcı ile giriş' bölümüne Google Client ID ve Client secret değerlerini girin (README'de adım adım anlatılır) ya da 'Uygulama şifresi kullan' seçeneğini işaretleyin.</value></data>
+  <data name="ProfileEdit_OAuthMissingTitle" xml:space="preserve"><value>Tarayıcı ile giriş ayarlanmamış</value></data>
+  <data name="ProfileEdit_Password" xml:space="preserve"><value>Şifre</value></data>
+  <data name="ProfileEdit_PasswordStored" xml:space="preserve"><value>Şifre bilgisayarınızın güvenli deposunda (Windows'ta DPAPI veri koruması, macOS'ta Anahtar Zinciri) şifreli saklanır.</value></data>
+  <data name="ProfileEdit_PerMinute" xml:space="preserve"><value>Dakikalık</value></data>
+  <data name="ProfileEdit_Port" xml:space="preserve"><value>Port</value></data>
+  <data name="ProfileEdit_PostalAddress" xml:space="preserve"><value>İletişim / posta adresi (e-posta altında görünür)</value></data>
+  <data name="ProfileEdit_PostalAddressHint" xml:space="preserve"><value>Firma adresi veya telefon</value></data>
+  <data name="ProfileEdit_Provider" xml:space="preserve"><value>Sağlayıcı</value></data>
+  <data name="ProfileEdit_ProviderHint" xml:space="preserve"><value>Büyük listeler için Amazon SES, Brevo, Mailgun veya SendGrid gibi bir ESP önerilir.</value></data>
+  <data name="ProfileEdit_ReplyTo" xml:space="preserve"><value>Yanıt adresi (Reply-To, isteğe bağlı)</value></data>
+  <data name="ProfileEdit_Security" xml:space="preserve"><value>Güvenlik</value></data>
+  <data name="ProfileEdit_ServerTitle" xml:space="preserve"><value>SMTP sunucusu</value></data>
+  <data name="ProfileEdit_SignIn" xml:space="preserve"><value>Tarayıcı ile giriş yap</value></data>
+  <data name="ProfileEdit_SignInTitle" xml:space="preserve"><value>Giriş</value></data>
+  <data name="ProfileEdit_SignedIn" xml:space="preserve"><value>Giriş yapıldı: {0}</value></data>
+  <data name="ProfileEdit_TestImap" xml:space="preserve"><value>IMAP bağlantısını test et</value></data>
+  <data name="ProfileEdit_UseAppPassword" xml:space="preserve"><value>Tarayıcı yerine kullanıcı adı ve uygulama şifresi kullan</value></data>
+  <data name="ProfileEdit_Username" xml:space="preserve"><value>Kullanıcı adı</value></data>
+  <data name="ProfileEdit_WaitingBrowser" xml:space="preserve"><value>Tarayıcıda giriş bekleniyor...</value></data>
+  <data name="ProfileEdit_Warmup" xml:space="preserve"><value>Isınma planı açık (önerilir)</value></data>
+  <data name="ProfileEdit_WarmupHint" xml:space="preserve"><value>Yeni alan adlarında günlük hacim 50'den başlayıp kademeli artar. Günlük sınır ve ısınma limitinden küçük olan uygulanır.</value></data>
+  <data name="Profiles_DeleteConfirm" xml:space="preserve"><value>'{0}' profili silinsin mi? Kayıtlı şifreler de silinir.</value></data>
+  <data name="Profiles_Empty" xml:space="preserve"><value>Henüz profil yok. 'Yeni profil' ile ekleyin.</value></data>
+  <data name="Profiles_InUse" xml:space="preserve"><value>Bu profil çalışan veya zamanlanmis bir kampanyada kullanılıyor. Önce kampanyayı durdurun.</value></data>
+  <data name="Profiles_Intro" xml:space="preserve"><value>E-postaların hangi hesaptan gideceğini buradan yönetin.</value></data>
+  <data name="Profiles_Limits" xml:space="preserve"><value>Günlük / saatlik / dakikalık sınır:</value></data>
+  <data name="Profiles_New" xml:space="preserve"><value>Yeni profil</value></data>
+  <data name="Profiles_Test" xml:space="preserve"><value>Bağlantıyı test et</value></data>
+  <data name="Profiles_TestOk" xml:space="preserve"><value>{0} sunucusuna bağlanıldı ve giriş yapıldı.</value></data>
+  <data name="Profiles_TestOkTitle" xml:space="preserve"><value>Bağlantı başarılı</value></data>
+  <data name="Profiles_Testing" xml:space="preserve"><value>Bağlantı test ediliyor...</value></data>
+  <data name="Reports_Bounce" xml:space="preserve"><value>Bounce</value></data>
+  <data name="Reports_Campaign" xml:space="preserve"><value>Kampanya</value></data>
+  <data name="Reports_Complaint" xml:space="preserve"><value>Şikayet</value></data>
+  <data name="Reports_HistoryTitle" xml:space="preserve"><value>Kişi bazında gönderim geçmişi</value></data>
+  <data name="Reports_Opens" xml:space="preserve"><value>Açılma</value></data>
+  <data name="Reports_Saved" xml:space="preserve"><value>Kaydedildi: {0}</value></data>
+  <data name="Reports_Targets" xml:space="preserve"><value>Hedefler: şikayet oranı %0,1'in altı (üst sınır %0,3), ulaşmama (hard bounce) oranı %2'nin altı (üst sınır %5). Üst sınır aşılırsa gönderim otomatik duraklatılır.</value></data>
+  <data name="Reports_Tools" xml:space="preserve"><value>Google Postmaster Tools (postmaster.google.com): Gmail'in alan adınıza bakışı.
+Microsoft SNDS: kendi IP'niz varsa Outlook tarafı.
+MXToolbox (mxtoolbox.com): DNS ve kara liste kontrolü.
+mail-tester.com: tek bir e-postanın spam puanı.</value></data>
+  <data name="Reports_ToolsTitle" xml:space="preserve"><value>Dışarıdan izleme</value></data>
+  <data name="Reports_Total" xml:space="preserve"><value>Toplam</value></data>
+  <data name="Settings_Backup" xml:space="preserve"><value>Yedek al</value></data>
+  <data name="Settings_BackupDone" xml:space="preserve"><value>Yedek kaydedildi: {0}</value></data>
+  <data name="Settings_BackupNote" xml:space="preserve"><value>Yedeğe şifreler dahil edilmez. Destek paketi şifre, token veya e-posta içeriği içermez.</value></data>
+  <data name="Settings_BackupTitle" xml:space="preserve"><value>Yedek alındı</value></data>
+  <data name="Settings_BackupWorking" xml:space="preserve"><value>Yedek hazırlanıyor...</value></data>
+  <data name="Settings_BadDelay" xml:space="preserve"><value>Bekleme süreleri geçersiz. En fazla, en azdan küçük olamaz.</value></data>
+  <data name="Settings_BadSeeds" xml:space="preserve"><value>Geçersiz test adresi: {0}</value></data>
+  <data name="Settings_BadThreshold" xml:space="preserve"><value>Hata oranı 0 ile 100 arasında olmalı.</value></data>
+  <data name="Settings_BadWarmup" xml:space="preserve"><value>Isınma planı satırı anlaşılamadı: '{0}'. Örnek: 3: 100</value></data>
+  <data name="Settings_CheckNow" xml:space="preserve"><value>Bounce ve çıkışları şimdi kontrol et</value></data>
+  <data name="Settings_CopySecret" xml:space="preserve"><value>Gizli anahtarı kopyala</value></data>
+  <data name="Settings_DataFolder" xml:space="preserve"><value>Veri klasörü: </value></data>
+  <data name="Settings_DataSection" xml:space="preserve"><value>Veri ve destek</value></data>
+  <data name="Settings_DefaultParallel" xml:space="preserve"><value>Toplu mod varsayılan bağlantı</value></data>
+  <data name="Settings_DelayMax" xml:space="preserve"><value>Sıralı mod en fazla bekleme (sn)</value></data>
+  <data name="Settings_DelayMin" xml:space="preserve"><value>Sıralı mod en az bekleme (sn)</value></data>
+  <data name="Settings_DomainLimits" xml:space="preserve"><value>Alıcı sağlayıcısına göre dakikalık sınır</value></data>
+  <data name="Settings_EndpointHttps" xml:space="preserve"><value>Sunucu adresi https:// ile başlamalı.</value></data>
+  <data name="Settings_EndpointKey" xml:space="preserve"><value>API anahtarı</value></data>
+  <data name="Settings_EndpointUrl" xml:space="preserve"><value>Sunucu adresi (https://...)</value></data>
+  <data name="Settings_ErrorThreshold" xml:space="preserve"><value>Otomatik durdurma hata oranı (%)</value></data>
+  <data name="Settings_ExportData" xml:space="preserve"><value>Verilerini dışa aktar</value></data>
+  <data name="Settings_FeedbackIntro" xml:space="preserve"><value>Gmail ve Yahoo tek tıkla abonelikten çıkış (HTTPS) istiyor. Kendi sunucunuza Alpixa.UnsubscribeEndpoint projesini kurun ve adresini buraya yazın. Tanımlı değilse e-posta ile çıkış (mailto) kullanılır.</value></data>
+  <data name="Settings_FeedbackResult" xml:space="preserve"><value>{0} yeni geri dönüş/abonelik iptali/şikayet işlendi.</value></data>
+  <data name="Settings_FeedbackSection" xml:space="preserve"><value>Abonelikten çıkış sunucusu (isteğe bağlı)</value></data>
+  <data name="Settings_FeedbackTitle" xml:space="preserve"><value>Kontrol tamamlandı</value></data>
+  <data name="Settings_FeedbackWorking" xml:space="preserve"><value>Gelen kutusu taranıyor...</value></data>
+  <data name="Settings_Forget" xml:space="preserve"><value>Kişiyi sil</value></data>
+  <data name="Settings_ForgetConfirm" xml:space="preserve"><value>{0} tüm listelerden ve olay kayıtlarından silinsin mi? Bu işlem geri alınamaz.</value></data>
+  <data name="Settings_ForgetDone" xml:space="preserve"><value>{0} kayıt silindi.</value></data>
+  <data name="Settings_ForgetTitle" xml:space="preserve"><value>Kişiyi sil</value></data>
+  <data name="Settings_ForgetYes" xml:space="preserve"><value>Evet, sil</value></data>
+  <data name="Settings_General" xml:space="preserve"><value>Genel</value></data>
+  <data name="Settings_Iys" xml:space="preserve"><value>IYS entegrasyonu: </value></data>
+  <data name="Settings_IysHint" xml:space="preserve"><value>Türkiye'de ticari elektronik ileti gönderiyorsanız alıcıların IYS'de izninin olması gerekebilir. Alpixa'da IYS kontrolü için bir bağlantı noktası (IConsentProvider) vardır; bu kurulumda etkin değildir.</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Dil</value></data>
+  <data name="Settings_LanguageRestart" xml:space="preserve"><value>Yeni dil, Alpixa'yı kapatıp açtığınızda geçerli olur.</value></data>
+  <data name="Settings_LanguageTitle" xml:space="preserve"><value>Dil değişti</value></data>
+  <data name="Settings_LastCheck" xml:space="preserve"><value>Son kontrol: </value></data>
+  <data name="Settings_MaxParallel" xml:space="preserve"><value>Toplu mod en fazla bağlantı</value></data>
+  <data name="Settings_NeedEmail" xml:space="preserve"><value>Geçerli bir e-posta adresi girin.</value></data>
+  <data name="Settings_OpenData" xml:space="preserve"><value>Veri klasörünü aç</value></data>
+  <data name="Settings_OpenLogs" xml:space="preserve"><value>Log klasörünü aç</value></data>
+  <data name="Settings_OtherDomains" xml:space="preserve"><value>Diğer</value></data>
+  <data name="Settings_PrivacyIntro" xml:space="preserve"><value>Bir kişinin verilerini dışa aktarabilir veya tamamen silebilirsiniz (unutulma hakkı). Silinen kişi bastırma listesindeyse orada kalır, böylece tekrar e-posta almaz.</value></data>
+  <data name="Settings_PrivacySection" xml:space="preserve"><value>KVKK / GDPR</value></data>
+  <data name="Settings_RestartSetup" xml:space="preserve"><value>Kurulum sihirbazını yeniden başlat</value></data>
+  <data name="Settings_Restore" xml:space="preserve"><value>Yedekten yükle</value></data>
+  <data name="Settings_RestoreConfirm" xml:space="preserve"><value>Mevcut verilerin yerine yedekteki veriler gelecek. Devam edilsin mi?</value></data>
+  <data name="Settings_RestoreDone" xml:space="preserve"><value>Yedek hazır. Alpixa'yı kapatıp açtığınızda yüklenecek. Şifreler yedekte yoktur; profillerde yeniden girmeniz gerekir.</value></data>
+  <data name="Settings_RestorePick" xml:space="preserve"><value>Yedek dosyasını (.zip) seçin</value></data>
+  <data name="Settings_RestoreTitle" xml:space="preserve"><value>Yedekten yükle</value></data>
+  <data name="Settings_RestoreYes" xml:space="preserve"><value>Evet, yükle</value></data>
+  <data name="Settings_Retries" xml:space="preserve"><value>Geçici hatada deneme sayısı</value></data>
+  <data name="Settings_Seeds" xml:space="preserve"><value>Test adresleri</value></data>
+  <data name="Settings_SeedsHint" xml:space="preserve"><value>Kendi Gmail, Outlook ve Yahoo adresleriniz. Test gönderimi bu adreslere yapılır. Virgülle ayırın.</value></data>
+  <data name="Settings_SendingSection" xml:space="preserve"><value>Gönderim hızı</value></data>
+  <data name="Settings_SendingWarning" xml:space="preserve"><value>Bu değerleri artırmak spam riskini artırır. Emin değilseniz varsayılanları kullanın.</value></data>
+  <data name="Settings_SupportBundle" xml:space="preserve"><value>Destek paketi oluştur</value></data>
+  <data name="Settings_SupportDone" xml:space="preserve"><value>Paket kaydedildi: {0}
+Bu dosyayı destek ekibine iletebilirsiniz.</value></data>
+  <data name="Settings_SupportTitle" xml:space="preserve"><value>Destek paketi</value></data>
+  <data name="Settings_TrackingDefault" xml:space="preserve"><value>Yeni kampanyalarda açılma takibi açık olsun</value></data>
+  <data name="Settings_TrackingEnable" xml:space="preserve"><value>Yine de aç</value></data>
+  <data name="Settings_TrackingTitle" xml:space="preserve"><value>Açılma takibi</value></data>
+  <data name="Settings_TrackingWarning" xml:space="preserve"><value>Açılma takibi alıcının e-postayı ne zaman açtığını kaydeder. Bu kişisel veridir; aydınlatma metninizde belirtmeniz gerekir. Apple Mail gibi programlar sonuçları yanıltıcı gösterebilir.</value></data>
+  <data name="Settings_WarmupHint" xml:space="preserve"><value>Her satır 'gün: günlük sınır'. Son adımdan 4 gün sonra hacim her gün %20 artar.</value></data>
+  <data name="Settings_WarmupPlan" xml:space="preserve"><value>Isınma planı</value></data>
+  <data name="Settings_WarmupReset" xml:space="preserve"><value>Varsayılan plana dön</value></data>
+  <data name="Setup_AccountIntro" xml:space="preserve"><value>E-postaların gideceği hesabı ekleyin. Kendi alan adınızda bir adres kullanın (örnek bulten@firmaniz.com).</value></data>
+  <data name="Setup_DomainIntro" xml:space="preserve"><value>Alan adınızın DNS kayıtları kontrol edildi. Kırmızı maddeleri DNS panelinizden düzeltin.</value></data>
+  <data name="Setup_DomainLater" xml:space="preserve"><value>Kayıtları şimdi ekleyemiyorsanız devam edebilirsiniz; Alan Adı Sağlığı ekranından tekrar kontrol edebilirsiniz.</value></data>
+  <data name="Setup_Finish" xml:space="preserve"><value>Bitir</value></data>
+  <data name="Setup_NeedPassword" xml:space="preserve"><value>Şifreyi girin.</value></data>
+  <data name="Setup_SelectorHint" xml:space="preserve"><value>ESP panelinizde yazar, örnek s1 (bilmiyorsanız boş bırakın)</value></data>
+  <data name="Setup_Skip" xml:space="preserve"><value>Şimdilik atla</value></data>
+  <data name="Setup_Step1" xml:space="preserve"><value>Dil</value></data>
+  <data name="Setup_Step2" xml:space="preserve"><value>Gönderen hesabı</value></data>
+  <data name="Setup_Step3" xml:space="preserve"><value>Alan adı kontrolü</value></data>
+  <data name="Setup_Step4" xml:space="preserve"><value>Deneme gönderimi</value></data>
+  <data name="Setup_StepTitle" xml:space="preserve"><value>Adım {0}/4: {1}</value></data>
+  <data name="Setup_TestCampaign" xml:space="preserve"><value>Kurulum testi</value></data>
+  <data name="Setup_TestCheckInbox" xml:space="preserve"><value>Spam klasörüne düştüyse Alan Adı Sağlığı ekranındaki maddeleri kontrol edin.</value></data>
+  <data name="Setup_TestIntro" xml:space="preserve"><value>Kendi adreslerinize örnek bir e-posta gönderin ve gelen kutusuna düştüğünü kontrol edin.</value></data>
+  <data name="Setup_TestSubject" xml:space="preserve"><value>Alpixa deneme e-postası</value></data>
+  <data name="Setup_Title" xml:space="preserve"><value>Kurulum sihirbazı</value></data>
+  <data name="Setup_UseBrowser" xml:space="preserve"><value>Tarayıcı ile giriş yap</value></data>
+  <data name="Setup_UsernameHint" xml:space="preserve"><value>Boş bırakılırsa gönderen adresi</value></data>
+  <data name="Setup_Welcome" xml:space="preserve"><value>Alpixa'ya hoş geldiniz. Birkaç adımda ilk gönderiminize hazır olacaksınız. Varsayılan ayarlar güvenlidir: düşük hız, sıralı mod ve ısınma planı açık.</value></data>
+  <data name="TemplateEdit_Desktop" xml:space="preserve"><value>Masaüstü</value></data>
+  <data name="TemplateEdit_Fields" xml:space="preserve"><value>Kullanılabilir alanlar: {{ ad }}, {{ soyad }}, {{ firma }}, {{ email }}, {{ gonderen_adi }}, {{ unsubscribe_url }}, listedeki diğer kolonlar. Boş alan için varsayılan: {{ ad ?? "Değerli okurumuz" }}</value></data>
+  <data name="TemplateEdit_Html" xml:space="preserve"><value>E-posta içeriği (HTML)</value></data>
+  <data name="TemplateEdit_LintClean" xml:space="preserve"><value>Sorun bulunmadı.</value></data>
+  <data name="TemplateEdit_LintTitle" xml:space="preserve"><value>İçerik kontrolü</value></data>
+  <data name="TemplateEdit_Mobile" xml:space="preserve"><value>Mobil</value></data>
+  <data name="TemplateEdit_Name" xml:space="preserve"><value>Şablon adı</value></data>
+  <data name="TemplateEdit_Preview" xml:space="preserve"><value>Önizleme</value></data>
+  <data name="TemplateEdit_Refresh" xml:space="preserve"><value>Önizlemeyi yenile</value></data>
+  <data name="TemplateEdit_Subject" xml:space="preserve"><value>Konu</value></data>
+  <data name="TemplateEdit_SubjectPrefix" xml:space="preserve"><value>Konu: </value></data>
+  <data name="TemplateEdit_TextPlaceholder" xml:space="preserve"><value>Düz metin sürümü</value></data>
+  <data name="TemplateEdit_TextToggle" xml:space="preserve"><value>Düz metin sürümünü kendim yazacağım (boş bırakılırsa otomatik üretilir)</value></data>
+  <data name="Templates_CopyName" xml:space="preserve"><value>{0} (kopya)</value></data>
+  <data name="Templates_DeleteConfirm" xml:space="preserve"><value>'{0}' şablonu silinsin mi?</value></data>
+  <data name="Templates_Duplicate" xml:space="preserve"><value>Kopyala</value></data>
+  <data name="Templates_Error" xml:space="preserve"><value>Şablonda hata var: {0}</value></data>
+  <data name="Templates_Intro" xml:space="preserve"><value>Sade ve kişisel görünen e-postalar gelen kutusuna daha iyi ulaşır.</value></data>
+  <data name="Templates_NeedName" xml:space="preserve"><value>Şablon adını girin.</value></data>
+  <data name="Templates_New" xml:space="preserve"><value>Yeni şablon</value></data>
+  <data name="Templates_NewName" xml:space="preserve"><value>Yeni şablon</value></data>
+  <data name="Templates_SampleAddress" xml:space="preserve"><value>Örnek Mah. 1, İstanbul</value></data>
+  <data name="Templates_SampleSender" xml:space="preserve"><value>Örnek Firma</value></data>
+  <data name="Wizard_Blocked" xml:space="preserve"><value>Kontroller geçmedi. Kırmızı uyarıları düzeltin (alan adı için 'yine de gönder' kutusunu işaretleyebilirsiniz). Listede gönderilecek kişi olmalı.</value></data>
+  <data name="Wizard_CampaignName" xml:space="preserve"><value>Kampanya adı</value></data>
+  <data name="Wizard_Checking" xml:space="preserve"><value>Kontrol ediliyor...</value></data>
+  <data name="Wizard_ConfirmNote" xml:space="preserve"><value>Gönderim sırasında pencereyi küçültebilirsiniz. Uygulamayı kapatırsanız tekrar açtığınızda kaldığı yerden devam eder.</value></data>
+  <data name="Wizard_ContentCheck" xml:space="preserve"><value>İçerik kontrolü</value></data>
+  <data name="Wizard_DefaultName" xml:space="preserve"><value>Kampanya {0}</value></data>
+  <data name="Wizard_DryRun" xml:space="preserve"><value>Deneme modu (gerçek gönderim yapmadan tüm akışı çalıştır)</value></data>
+  <data name="Wizard_HealthBlocks" xml:space="preserve"><value>Alan adında kırmızı maddeler var. Önce düzeltmeniz önerilir.</value></data>
+  <data name="Wizard_HealthOk" xml:space="preserve"><value>Alan adı kontrolü geçti.</value></data>
+  <data name="Wizard_Later" xml:space="preserve"><value>İleri bir tarihte</value></data>
+  <data name="Wizard_LaterNote" xml:space="preserve"><value>Zamanlanan kampanyaların başlaması için Alpixa'nın o saatte açık olması gerekir.</value></data>
+  <data name="Wizard_Launch" xml:space="preserve"><value>Gönderimi başlat</value></data>
+  <data name="Wizard_LintBlocks" xml:space="preserve"><value>Kırmızı içerik uyarıları düzeltilmeden gönderim başlatılamaz. Şablonu düzenleyip Geri / İleri ile tekrar kontrol edin.</value></data>
+  <data name="Wizard_Mode" xml:space="preserve"><value>Gönderim modu</value></data>
+  <data name="Wizard_ModeBulkLong" xml:space="preserve"><value>Toplu: aynı anda birkaç bağlantı ile, hız sınırları içinde gönderir. Isınmış alan adı ve büyük listeler için.</value></data>
+  <data name="Wizard_ModeBulkWith" xml:space="preserve"><value>Toplu ({0} bağlantı)</value></data>
+  <data name="Wizard_ModeSequential" xml:space="preserve"><value>Sıralı</value></data>
+  <data name="Wizard_ModeSequentialLong" xml:space="preserve"><value>Sıralı (varsayılan): tek tek, her e-posta arasında birkaç saniye bekler. Yeni alan adı ve küçük listeler için en güvenli seçim.</value></data>
+  <data name="Wizard_NeedList" xml:space="preserve"><value>Bir liste seçin.</value></data>
+  <data name="Wizard_NeedProfile" xml:space="preserve"><value>Bir gönderen profili seçin.</value></data>
+  <data name="Wizard_NeedSeeds" xml:space="preserve"><value>En az bir geçerli test adresi girin.</value></data>
+  <data name="Wizard_NeedTemplate" xml:space="preserve"><value>Kampanya adı, şablon ve konu gerekli.</value></data>
+  <data name="Wizard_NoList" xml:space="preserve"><value>Kampanya için önce Listeler ekranından bir liste içe aktarın.</value></data>
+  <data name="Wizard_NoListTitle" xml:space="preserve"><value>Liste yok</value></data>
+  <data name="Wizard_NoProfile" xml:space="preserve"><value>Kampanya için önce Gönderen Profilleri ekranından bir profil ekleyin.</value></data>
+  <data name="Wizard_NoProfileTitle" xml:space="preserve"><value>Gönderen profili yok</value></data>
+  <data name="Wizard_Now" xml:space="preserve"><value>Şimdi</value></data>
+  <data name="Wizard_OneByOne" xml:space="preserve"><value>İki modda da her alıcıya ayrı e-posta gider; alıcılar birbirini görmez.</value></data>
+  <data name="Wizard_OpenHealth" xml:space="preserve"><value>Alan Adı Sağlığı'ni aç</value></data>
+  <data name="Wizard_Override" xml:space="preserve"><value>Riskleri anlıyorum, yine de gönder</value></data>
+  <data name="Wizard_Parallelism" xml:space="preserve"><value>Aynı anda bağlantı:</value></data>
+  <data name="Wizard_PastSchedule" xml:space="preserve"><value>Zamanlama geçmiş bir tarih olamaz.</value></data>
+  <data name="Wizard_Quota" xml:space="preserve"><value>Bugünkü sınır: {0} (bugün gönderilen: {1})</value></data>
+  <data name="Wizard_QuotaWarmup" xml:space="preserve"><value>Isınma planı gün {0}: bugünkü sınır {1} (bugün gönderilen: {2}). Tahmini süre: {3} gün.</value></data>
+  <data name="Wizard_Recipients" xml:space="preserve"><value>Gönderilecek kişi sayısı: {0}</value></data>
+  <data name="Wizard_SendTest" xml:space="preserve"><value>Test gönder</value></data>
+  <data name="Wizard_Sending" xml:space="preserve"><value>Gönderiliyor...</value></data>
+  <data name="Wizard_Starting" xml:space="preserve"><value>Başlatılıyor...</value></data>
+  <data name="Wizard_Step1" xml:space="preserve"><value>Profil</value></data>
+  <data name="Wizard_Step1Hint" xml:space="preserve"><value>E-postalar hangi hesaptan gidecek?</value></data>
+  <data name="Wizard_Step2" xml:space="preserve"><value>Liste</value></data>
+  <data name="Wizard_Step2Hint" xml:space="preserve"><value>Hangi listeye gönderilecek? Sadece aktif kişilere gönderilir; bastırma listesindekiler atlanır.</value></data>
+  <data name="Wizard_Step3" xml:space="preserve"><value>Şablon</value></data>
+  <data name="Wizard_Step3Hint" xml:space="preserve"><value>Şablonu Şablonlar ekranında düzenleyebilirsiniz. Konu satırını burada değiştirebilirsiniz.</value></data>
+  <data name="Wizard_Step4" xml:space="preserve"><value>Kontroller</value></data>
+  <data name="Wizard_Step5" xml:space="preserve"><value>Mod ve zaman</value></data>
+  <data name="Wizard_Step6" xml:space="preserve"><value>Onay</value></data>
+  <data name="Wizard_StepTitle" xml:space="preserve"><value>Adım {0}/{1}: {2}</value></data>
+  <data name="Wizard_Summary" xml:space="preserve"><value>Kampanya: {0}
+Gönderen: {1}
+Liste: {2} ({3} kişi)
+Şablon: {4}
+Konu: {5}
+Mod: {6}
+Zaman: {7}
+Deneme modu: {8}
+Açılma takibi: {9}</value></data>
+  <data name="Wizard_Template" xml:space="preserve"><value>Şablon</value></data>
+  <data name="Wizard_TestFail" xml:space="preserve"><value>✗ {0}: {1}</value></data>
+  <data name="Wizard_TestHint" xml:space="preserve"><value>Kendi Gmail, Outlook ve Yahoo adreslerinize gönderin ve gelen kutusuna düştüğünü kontrol edin. Konu satırının başına [TEST] eklenir.</value></data>
+  <data name="Wizard_TestOk" xml:space="preserve"><value>✓ {0}: gönderildi</value></data>
+  <data name="Wizard_TestTitle" xml:space="preserve"><value>Test gönderimi</value></data>
+  <data name="Wizard_Title" xml:space="preserve"><value>Yeni kampanya</value></data>
+  <data name="Wizard_TrackOpens" xml:space="preserve"><value>Açılma takibi</value></data>
+  <data name="Wizard_TrackOpensNote" xml:space="preserve"><value>Açılma takibi e-postaya görünmez bir resim ekler. Gizlilik nedeniyle varsayılan kapalı; abonelikten çıkış sunucusu tanımlı değilse çalışmaz.</value></data>
+  <data name="Wizard_Volume" xml:space="preserve"><value>Hacim</value></data>
+  <data name="Wizard_When" xml:space="preserve"><value>Ne zaman?</value></data>
+  <data name="Wizard_TotalSuffix" xml:space="preserve"><value> toplam</value></data>
+  <data name="ProfileEdit_NoAuth" xml:space="preserve"><value>Bu sağlayıcı giriş gerektirmez.</value></data>
+  <data name="TemplateEdit_PickImage" xml:space="preserve"><value>Resim seçin</value></data>
+  <data name="TemplateEdit_PickAttachment" xml:space="preserve"><value>Eklenecek dosyaları seçin</value></data>
+  <data name="TemplateEdit_Added" xml:space="preserve"><value>Eklendi: {0}</value></data>
+  <data name="TemplateEdit_Adding" xml:space="preserve"><value>Dosyalar ekleniyor…</value></data>
+  <data name="TemplateEdit_AttachmentSummary" xml:space="preserve"><value>{0} dosya · {1} / {2} MB</value></data>
+  <data name="TemplateEdit_DropHint" xml:space="preserve"><value>Resimler e-postanın içine, imlecin bulunduğu yere yerleşir (resim başına en fazla {0}). Diğer dosyalar ek olarak gönderilir (toplam en fazla {1} MB).</value></data>
+  <data name="TemplateEdit_DropTitle" xml:space="preserve"><value>Resim veya dosyayı buraya sürükleyin</value></data>
+  <data name="TemplateEdit_AddImage" xml:space="preserve"><value>Resim ekle</value></data>
+  <data name="TemplateEdit_AddFile" xml:space="preserve"><value>Dosya ekle</value></data>
+  <data name="TemplateEdit_Attachments" xml:space="preserve"><value>Ekler</value></data>
+  <data name="TemplateEdit_NoAttachments" xml:space="preserve"><value>Henüz ek yok. Ekler her alıcıya gönderilir; büyük dosyalar yerine bağlantı paylaşmak e-postanın gelen kutusuna ulaşma şansını artırır.</value></data>
+  <data name="TemplateEdit_Remove" xml:space="preserve"><value>Kaldır</value></data>
+  <data name="TemplateEdit_Basics" xml:space="preserve"><value>Temel bilgiler</value></data>
+  <data name="TemplateEdit_Eyebrow" xml:space="preserve"><value>ŞABLON DÜZENLEYİCİ</value></data>
+  <data name="TemplateEdit_AutoPreview" xml:space="preserve"><value>Siz yazdıkça önizleme kendiliğinden güncellenir.</value></data>
+  <data name="Settings_MaxAttachment" xml:space="preserve"><value>Ek sınırı (MB, şablon başına toplam)</value></data>
+  <data name="Settings_MaxImage" xml:space="preserve"><value>Resim sınırı (KB, resim başına)</value></data>
+  <data name="Dashboard_Subtitle" xml:space="preserve"><value>Kişileriniz, kampanyalarınız ve teslim durumunuz tek bakışta.</value></data>
+  <data name="Dashboard_GreetingNight" xml:space="preserve"><value>İyi geceler</value></data>
+  <data name="Dashboard_GreetingMorning" xml:space="preserve"><value>Günaydın</value></data>
+  <data name="Dashboard_GreetingDay" xml:space="preserve"><value>İyi günler</value></data>
+  <data name="Dashboard_GreetingEvening" xml:space="preserve"><value>İyi akşamlar</value></data>
+  <data name="Lists_Subtitle" xml:space="preserve"><value>Alıcı listelerinizi içe aktarın, temizleyin ve yönetin.</value></data>
+  <data name="Campaigns_Subtitle" xml:space="preserve"><value>Gönderimlerinizi başlatın, izleyin, duraklatın ya da devam ettirin.</value></data>
+  <data name="Settings_Subtitle" xml:space="preserve"><value>Dil, gönderim hızı, gizlilik ve yedekleme ayarları.</value></data>
+  <data name="ProfileEdit_Subtitle" xml:space="preserve"><value>E-postaların hangi hesaptan ve hangi adla gönderileceğini belirleyin.</value></data>
+  <data name="Import_Subtitle" xml:space="preserve"><value>CSV, Excel veya yapıştırılan metinden kişileri güvenle içe aktarın.</value></data>
+  <data name="ListDetail_Subtitle" xml:space="preserve"><value>Listedeki kişileri arayın, filtreleyin ve yönetin.</value></data>
+  <data name="ProfileEdit_AppPasswordHelp" xml:space="preserve"><value>Gmail normal hesap şifrenizi kabul etmez; 16 haneli bir uygulama şifresi gerekir. 1) Google hesabınızda 2 adımlı doğrulamayı açın. 2) myaccount.google.com/apppasswords adresinde 'Alpixa' adıyla bir uygulama şifresi oluşturun. 3) Kullanıcı adına Gmail adresinizi, Şifre'ye bu 16 haneli şifreyi (boşluksuz) yazın. Gönderen adresi boş bırakılırsa kullanıcı adı kullanılır. Microsoft 365'te uygulama şifresi yalnızca yöneticiniz izin verdiyse çalışır.</value></data>
+  <data name="Settings_OAuthSection" xml:space="preserve"><value>Tarayıcı ile giriş (Google / Microsoft)</value></data>
+  <data name="Settings_OAuthIntro" xml:space="preserve"><value>Gmail veya Microsoft 365 hesabına tarayıcıdan giriş yapabilmek için kendi Google Cloud / Microsoft Entra hesabınızda oluşturduğunuz istemci kimliğini buraya girin ve Kaydet'e basın. Uygulamayı yeniden başlatmanıza gerek yoktur. Adım adım anlatım README'de 'OAuth istemci kimlikleri' bölümündedir. İstemezseniz profilde uygulama şifresi kullanabilirsiniz.</value></data>
+  <data name="Settings_GoogleClientId" xml:space="preserve"><value>Google istemci kimliği (Client ID)</value></data>
+  <data name="Settings_GoogleClientSecret" xml:space="preserve"><value>Google istemci gizli anahtarı (Client secret)</value></data>
+  <data name="Settings_MicrosoftClientId" xml:space="preserve"><value>Microsoft uygulama (istemci) kimliği</value></data>
+  <data name="Settings_BadGoogleClientId" xml:space="preserve"><value>Google istemci kimliği '.apps.googleusercontent.com' ile bitmelidir. Google Cloud Console'daki 'Client ID' değerini kopyalayın.</value></data>
+  <data name="Info_WhatTitle" xml:space="preserve"><value>Bu ne işe yarar?</value></data>
+  <data name="Info_HowTitle" xml:space="preserve"><value>Ne yapmalıyım?</value></data>
+  <data name="Info_Ok" xml:space="preserve"><value>Anladım</value></data>
+  <data name="Info_ProfileEdit_Provider_What" xml:space="preserve"><value>E-postalarınızı hangi şirketin sunucusu üzerinden göndereceğinizi seçersiniz. Tıpkı bir mektubu PTT ile mi yoksa bir kargo firmasıyla mı göndereceğinizi seçmek gibi. Seçtiğiniz anda sunucu adresi, port gibi teknik ayarlar otomatik doldurulur.</value></data>
+  <data name="Info_ProfileEdit_Provider_How" xml:space="preserve"><value>E-postanız Gmail ise 'Gmail / Google Workspace', Outlook/Hotmail ise 'Microsoft 365' seçin. Binlerce kişiye gönderecekseniz Amazon SES, Brevo, Mailgun veya SendGrid gibi toplu gönderim servislerinden birine üye olup onu seçin. Emin değilseniz e-posta adresinizin @ işaretinden sonraki kısmına bakın.</value></data>
+  <data name="Info_ProfileEdit_Name_What" xml:space="preserve"><value>Bu profil için sadece sizin göreceğiniz bir takma ad. Birden fazla hesabınız varsa hangisinin hangisi olduğunu ayırt etmenizi sağlar. Alıcılar bu adı görmez.</value></data>
+  <data name="Info_ProfileEdit_Name_How" xml:space="preserve"><value>Aklınızda kalacak herhangi bir şey yazın. Örnek: 'Şirket bülteni' veya 'Kişisel Gmail'.</value></data>
+  <data name="Info_ProfileEdit_FromName_What" xml:space="preserve"><value>Alıcının gelen kutusunda e-postanın yanında görünen isim. İnsanlar e-postayı açıp açmamaya çoğunlukla bu isme bakarak karar verir.</value></data>
+  <data name="Info_ProfileEdit_FromName_How" xml:space="preserve"><value>Sizi tanıyacakları bir ad yazın: firma adınız ya da 'Ayşe - Firma Adı' gibi. Tanıdık bir isim spama düşme riskini azaltır. Örnek: Nurullah Balçık</value></data>
+  <data name="Info_ProfileEdit_FromAddress_What" xml:space="preserve"><value>E-postanın hangi adresten geldiğini gösterir. Alıcı 'Yanıtla' dediğinde genellikle bu adrese yazar.</value></data>
+  <data name="Info_ProfileEdit_FromAddress_How" xml:space="preserve"><value>Kendi e-posta adresinizi yazın. Gmail kullanıyorsanız Gmail adresiniz olmalı; başka bir adres yazarsanız Gmail e-postayı reddedebilir. Boş bırakırsanız kullanıcı adınız kullanılır. Örnek: adiniz@gmail.com</value></data>
+  <data name="Info_ProfileEdit_ReplyTo_What" xml:space="preserve"><value>Alıcı 'Yanıtla' dediğinde cevabın gideceği farklı bir adres. Zorunlu değil.</value></data>
+  <data name="Info_ProfileEdit_ReplyTo_How" xml:space="preserve"><value>Cevapların başka bir kutuya (örneğin destek@firmaniz.com) gitmesini istiyorsanız yazın. İstemiyorsanız boş bırakın; cevaplar gönderen adresine gelir.</value></data>
+  <data name="Info_ProfileEdit_PostalAddress_What" xml:space="preserve"><value>Her e-postanın en altında küçük yazıyla görünen iletişim bilgisi. Yasalar ve Gmail gibi sağlayıcılar toplu e-postalarda gönderenin kim olduğunun belli olmasını ister.</value></data>
+  <data name="Info_ProfileEdit_PostalAddress_How" xml:space="preserve"><value>Firma adresinizi veya bir telefon numarası yazın. Örnek: Atatürk Cad. No:1, İstanbul · 0212 000 00 00</value></data>
+  <data name="Info_ProfileEdit_Username_What" xml:space="preserve"><value>E-posta sunucusuna giriş yaparken kullanılan ad. Kapıyı açan anahtarın bir parçası gibidir.</value></data>
+  <data name="Info_ProfileEdit_Username_How" xml:space="preserve"><value>Gmail ve Outlook'ta bu, e-posta adresinizin kendisidir (örnek: adiniz@gmail.com). Amazon SES, Brevo gibi servislerde ise servisin panelinde 'SMTP kullanıcı adı' ya da 'SMTP credentials' bölümünde yazar; o değeri kopyalayıp yapıştırın.</value></data>
+  <data name="Info_ProfileEdit_Password_What" xml:space="preserve"><value>Sunucuya girişte kullanılan şifre. Bilgisayarınızın güvenli kasasında (macOS'ta Anahtar Zinciri, Windows'ta şifreli depo) saklanır, başka hiçbir yere gönderilmez.</value></data>
+  <data name="Info_ProfileEdit_Password_How" xml:space="preserve"><value>Gmail'de normal şifreniz ÇALIŞMAZ. myaccount.google.com/apppasswords adresinden 16 haneli bir 'uygulama şifresi' oluşturup buraya yapıştırın (önce 2 adımlı doğrulama açık olmalı). ESP servislerinde panelde gösterilen 'SMTP şifresi'ni kullanın.</value></data>
+  <data name="Info_ProfileEdit_Daily_What" xml:space="preserve"><value>Bu hesaptan bir günde en fazla kaç e-posta gönderileceği. Sınır dolunca gönderim durur ve ertesi gün kaldığı yerden devam eder.</value></data>
+  <data name="Info_ProfileEdit_Daily_How" xml:space="preserve"><value>Emin değilseniz dokunmayın. Kişisel Gmail için günde 500'ün üstüne çıkmayın, Google hesabınızı kilitleyebilir. Toplu gönderim servislerinde servis panelinde yazan günlük kotanızı yazın.</value></data>
+  <data name="Info_ProfileEdit_Hourly_What" xml:space="preserve"><value>Bir saat içinde gönderilebilecek en fazla e-posta sayısı. E-postaları zamana yaymak spama düşme riskini azaltır.</value></data>
+  <data name="Info_ProfileEdit_Hourly_How" xml:space="preserve"><value>Varsayılan değer çoğu durum için uygundur. Günlük sınırın yaklaşık onda biri iyi bir başlangıçtır.</value></data>
+  <data name="Info_ProfileEdit_PerMinute_What" xml:space="preserve"><value>Bir dakikada gönderilebilecek en fazla e-posta sayısı. Çok hızlı gönderim, alıcı sunucuların sizi 'spamcı' sanmasına yol açar.</value></data>
+  <data name="Info_ProfileEdit_PerMinute_How" xml:space="preserve"><value>Kişisel hesaplarda 10 civarında bırakın. Toplu gönderim servislerinde panelde yazan 'saniyede gönderim' sınırının 60 katını geçmeyin.</value></data>
+  <data name="Info_ProfileEdit_Host_What" xml:space="preserve"><value>E-postaların teslim edileceği postanenin adresi (SMTP sunucusu). Uygulama e-postayı önce bu sunucuya verir, o da alıcılara ulaştırır.</value></data>
+  <data name="Info_ProfileEdit_Host_How" xml:space="preserve"><value>Sağlayıcıyı seçtiğinizde otomatik dolar, genelde değiştirmeniz gerekmez. Gmail: smtp.gmail.com, Outlook: smtp.office365.com. Başka bir servis kullanıyorsanız panelinde 'SMTP host / server' olarak yazar.</value></data>
+  <data name="Info_ProfileEdit_Port_What" xml:space="preserve"><value>Sunucudaki 'kapı numarası'. Aynı binada farklı kapılar gibi; doğru kapıdan girmezseniz bağlantı kurulamaz.</value></data>
+  <data name="Info_ProfileEdit_Port_How" xml:space="preserve"><value>Çoğu zaman 587 doğrudur (güvenlik: StartTls). Bazı servisler 465 ister (güvenlik: SslOnConnect). Sağlayıcıyı seçince otomatik ayarlanır; bağlantı hatası almadıkça dokunmayın.</value></data>
+  <data name="Info_ProfileEdit_Security_What" xml:space="preserve"><value>Sunucuyla konuşurken bağlantının nasıl şifreleneceği. Şifreleme, şifrenizin ve e-postalarınızın yolda okunmasını engeller.</value></data>
+  <data name="Info_ProfileEdit_Security_How" xml:space="preserve"><value>Port 587 ise 'StartTls', port 465 ise 'SslOnConnect' seçin. 'None' (şifresiz) seçeneğini sadece kendi bilgisayarınızdaki test sunucuları için kullanın.</value></data>
+  <data name="Info_ProfileEdit_DkimSelector_What" xml:space="preserve"><value>DKIM, e-postalarınıza eklenen dijital bir imzadır; alıcı sunucular bu imzaya bakarak e-postanın gerçekten sizden geldiğini anlar. Selector bu imzanın 'adı'dır.</value></data>
+  <data name="Info_ProfileEdit_DkimSelector_How" xml:space="preserve"><value>Toplu gönderim servisi kullanıyorsanız servisin panelinde alan adınızı doğrularken verdiği DNS kayıtlarında '...._domainkey' ile biten kaydın başındaki kelimedir (örnek: s1, google, mail). Gmail kullanıyorsanız boş bırakabilirsiniz.</value></data>
+  <data name="Info_ProfileEdit_DkimDomain_What" xml:space="preserve"><value>İmzanın hangi alan adı adına atıldığı. Genellikle gönderen adresinizin @ işaretinden sonraki kısmıdır.</value></data>
+  <data name="Info_ProfileEdit_DkimDomain_How" xml:space="preserve"><value>Çoğu zaman boş bırakın; gönderen adresinizin alan adı otomatik kullanılır. Örnek: firmaniz.com</value></data>
+  <data name="Info_ProfileEdit_ImapUsername_What" xml:space="preserve"><value>Gelen kutunuzu okumak için kullanılan kullanıcı adı. Uygulama bu sayede geri dönen e-postaları ve 'abonelikten çık' isteklerini bulur.</value></data>
+  <data name="Info_ProfileEdit_ImapUsername_How" xml:space="preserve"><value>Boş bırakırsanız gönderim için kullanılan kullanıcı adı kullanılır, çoğu durumda bu doğrudur.</value></data>
+  <data name="Info_Import_OrPaste_What" xml:space="preserve"><value>Dosyanız yoksa kişileri buraya yazıp ya da Excel'den kopyalayıp yapıştırabilirsiniz.</value></data>
+  <data name="Info_Import_OrPaste_How" xml:space="preserve"><value>İlk satıra başlıkları, altına her satıra bir kişiyi yazın ve değerleri virgülle ayırın. Örnek:
+email,ad,soyad
+ayse@ornek.com,Ayşe,Yılmaz
+Sonra 'Yapıştırılanı önizle'ye basın.</value></data>
+  <data name="Info_Import_ColEmail_What" xml:space="preserve"><value>Listenizde e-posta adreslerinin bulunduğu sütun. Bu seçim zorunlu; e-posta olmadan kimseye gönderim yapılamaz.</value></data>
+  <data name="Info_Import_ColEmail_How" xml:space="preserve"><value>Uygulama genellikle doğru sütunu kendisi bulur. Yanlışsa açılır menüden içinde '@' işareti olan sütunu seçin.</value></data>
+  <data name="Info_Import_ColFirst_What" xml:space="preserve"><value>Kişilerin adlarının bulunduğu sütun. E-postada 'Merhaba Ayşe' gibi kişisel hitap için kullanılır.</value></data>
+  <data name="Info_Import_ColFirst_How" xml:space="preserve"><value>Listenizde ad sütunu varsa seçin, yoksa '(kullanma)' bırakın.</value></data>
+  <data name="Info_Import_ColLast_What" xml:space="preserve"><value>Kişilerin soyadlarının bulunduğu sütun.</value></data>
+  <data name="Info_Import_ColLast_How" xml:space="preserve"><value>Varsa seçin, yoksa '(kullanma)' bırakın.</value></data>
+  <data name="Info_Import_ColCompany_What" xml:space="preserve"><value>Kişinin çalıştığı firma. Şablonda {{ firma }} yazarak e-postada kullanabilirsiniz.</value></data>
+  <data name="Info_Import_ColCompany_How" xml:space="preserve"><value>Varsa seçin, yoksa '(kullanma)' bırakın.</value></data>
+  <data name="Info_Import_ColConsentSource_What" xml:space="preserve"><value>Kişinin size e-posta izni nereden verdiği (örneğin web sitesi formu, mağaza). KVKK'da 'bu kişi bana ne zaman, nasıl izin verdi' sorusuna cevap vermenizi sağlar.</value></data>
+  <data name="Info_Import_ColConsentSource_How" xml:space="preserve"><value>Listenizde böyle bir sütun varsa seçin. Yoksa '(kullanma)' bırakın, zorunlu değil.</value></data>
+  <data name="Info_Import_ColConsentDate_What" xml:space="preserve"><value>Kişinin izni verdiği tarih. İzin kaynağıyla birlikte yasal kayıt tutmanıza yardımcı olur.</value></data>
+  <data name="Info_Import_ColConsentDate_How" xml:space="preserve"><value>Varsa seçin, yoksa '(kullanma)' bırakın.</value></data>
+  <data name="Info_Import_PreviewTitle_What" xml:space="preserve"><value>Dosyanızın ilk birkaç satırı, uygulamanın onu nasıl okuduğunu görmeniz için burada gösterilir.</value></data>
+  <data name="Info_Import_PreviewTitle_How" xml:space="preserve"><value>Sütunlar karışık görünüyorsa dosyanız farklı bir ayraç (noktalı virgül gibi) kullanıyor olabilir; Excel'den 'CSV UTF-8' olarak tekrar kaydedip deneyin.</value></data>
+  <data name="Info_ListDetail_Email_What" xml:space="preserve"><value>Kişinin e-posta adresi.</value></data>
+  <data name="Info_ListDetail_Email_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Name_What" xml:space="preserve"><value>Kişinin adı ve soyadı. E-postada kişisel hitap için kullanılır.</value></data>
+  <data name="Info_ListDetail_Name_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Company_What" xml:space="preserve"><value>Kişinin çalıştığı firma.</value></data>
+  <data name="Info_ListDetail_Company_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Status_What" xml:space="preserve"><value>Kişinin durumu. 'Aktif' kişilere e-posta gider. 'Çıktı' (abonelikten çıktı), 'Ulaşmadı' (adres geçersiz) veya 'Şikayet' durumundaki kişilere uygulama bir daha e-posta göndermez; bu sizi spam listelerinden korur.</value></data>
+  <data name="Info_ListDetail_Status_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Campaign_What" xml:space="preserve"><value>Kampanyanın adı ve şu anki durumu.</value></data>
+  <data name="Info_Reports_Campaign_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Total_What" xml:space="preserve"><value>Bu kampanyada gönderilmesi planlanan toplam kişi sayısı.</value></data>
+  <data name="Info_Reports_Total_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_Sent_What" xml:space="preserve"><value>Sunucunun başarıyla teslim aldığı e-posta sayısı. Bu, e-postanın alıcının gelen kutusuna düştüğü anlamına gelmez; spam klasörüne de gitmiş olabilir.</value></data>
+  <data name="Info_Detail_Sent_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_Failed_What" xml:space="preserve"><value>Gönderilemeyen e-posta sayısı. Genelde geçersiz adres ya da sunucu reddi yüzündendir. Ayrıntıyı raporu CSV olarak indirip 'Hata' sütununda görebilirsiniz.</value></data>
+  <data name="Info_Detail_Failed_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Bounce_What" xml:space="preserve"><value>'Ulaşmama oranı' (bounce): Alıcı sunucunun e-postayı geri çevirdiği adreslerin oranı. %2'nin üstü listenizde çok fazla eski ya da hatalı adres olduğunu gösterir ve itibarınızı zedeler.</value></data>
+  <data name="Info_Reports_Bounce_How" xml:space="preserve"><value>Oran yüksekse listeyi temizleyin. Uygulama geri dönen adresleri zaten otomatik olarak bastırma listesine alır.</value></data>
+  <data name="Info_Reports_Complaint_What" xml:space="preserve"><value>Alıcıların e-postanızı 'Spam' olarak işaretleme oranı. En tehlikeli göstergedir; %0,1'i geçerse Gmail gibi sağlayıcılar tüm e-postalarınızı spam'e atmaya başlar.</value></data>
+  <data name="Info_Reports_Complaint_How" xml:space="preserve"><value>Oran yükseliyorsa sadece gerçekten izin veren kişilere gönderin ve 'abonelikten çık' linkinin görünür olduğundan emin olun.</value></data>
+  <data name="Info_Detail_Unsubscribes_What" xml:space="preserve"><value>Bu kampanyadan sonra listeden çıkan kişi sayısı. Bu kişilere bir daha otomatik olarak e-posta gönderilmez.</value></data>
+  <data name="Info_Detail_Unsubscribes_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Opens_What" xml:space="preserve"><value>E-postayı açan kişi sayısı (sadece 'Açılma takibi' açıksa sayılır). Birçok e-posta programı resimleri engellediği için gerçek sayı daha yüksektir.</value></data>
+  <data name="Info_Reports_Opens_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Language_What" xml:space="preserve"><value>Uygulamanın dili.</value></data>
+  <data name="Info_Settings_Language_How" xml:space="preserve"><value>Seçtikten sonra uygulamayı kapatıp açın.</value></data>
+  <data name="Info_Settings_Seeds_What" xml:space="preserve"><value>'Test gönder' düğmesine bastığınızda deneme e-postasının gideceği kendi adresleriniz. Gerçek gönderimden önce e-postanın nasıl göründüğünü ve spam'e düşüp düşmediğini görmenizi sağlar.</value></data>
+  <data name="Info_Settings_Seeds_How" xml:space="preserve"><value>Farklı sağlayıcılardan kendi adreslerinizi virgülle ayırarak yazın. Örnek: ben@gmail.com, ben@outlook.com, ben@yandex.com</value></data>
+  <data name="Info_Settings_EndpointUrl_What" xml:space="preserve"><value>İleri seviye, isteğe bağlı. Gmail ve Yahoo, toplu e-postalarda tek tıkla 'abonelikten çık' için bir internet adresi ister. Bu adres, kendi sunucunuza kurduğunuz küçük Alpixa servisini gösterir.</value></data>
+  <data name="Info_Settings_EndpointUrl_How" xml:space="preserve"><value>Bir sunucunuz ve teknik desteğiniz yoksa boş bırakın; uygulama abonelikten çıkış için e-posta yöntemini kullanır ve bu da çalışır.</value></data>
+  <data name="Info_Settings_EndpointKey_What" xml:space="preserve"><value>Yukarıdaki abonelikten çıkış sunucusunun şifresi. Uygulama bu şifreyle sunucudan kimin abonelikten çıktığını öğrenir.</value></data>
+  <data name="Info_Settings_EndpointKey_How" xml:space="preserve"><value>Sunucuyu kurarken belirlediğiniz uzun, rastgele anahtarı yazın. Sunucu yoksa boş bırakın.</value></data>
+  <data name="Info_Settings_DelayMin_What" xml:space="preserve"><value>'Sıralı' gönderimde iki e-posta arasında beklenecek en kısa süre (saniye). Beklemek, gönderimin insan gibi doğal görünmesini sağlar.</value></data>
+  <data name="Info_Settings_DelayMin_How" xml:space="preserve"><value>Varsayılan 3 saniyedir. Düşürmek hızlandırır ama spam riskini artırır.</value></data>
+  <data name="Info_Settings_DelayMax_What" xml:space="preserve"><value>İki e-posta arasındaki en uzun bekleme (saniye). Uygulama her seferinde en kısa ile en uzun arasında rastgele bir süre bekler.</value></data>
+  <data name="Info_Settings_DelayMax_How" xml:space="preserve"><value>Varsayılan 8 saniyedir.</value></data>
+  <data name="Info_Settings_Retries_What" xml:space="preserve"><value>Geçici bir sorun olduğunda (sunucu meşgul gibi) bir e-postanın kaç kez tekrar deneneceği.</value></data>
+  <data name="Info_Settings_Retries_How" xml:space="preserve"><value>3 idealdir. Kalıcı hatalar (adres yok gibi) hiç tekrar denenmez.</value></data>
+  <data name="Info_Settings_DefaultParallel_What" xml:space="preserve"><value>'Toplu' modda aynı anda kaç bağlantıyla gönderileceği. Birden fazla kasiyerin aynı anda çalışması gibi düşünün.</value></data>
+  <data name="Info_Settings_DefaultParallel_How" xml:space="preserve"><value>Yeni başlıyorsanız 1 veya 2 bırakın.</value></data>
+  <data name="Info_Settings_MaxParallel_What" xml:space="preserve"><value>Kampanya sihirbazında seçilebilecek en fazla eş zamanlı bağlantı sayısı.</value></data>
+  <data name="Info_Settings_MaxParallel_How" xml:space="preserve"><value>Kişisel hesaplarda 2'yi geçmeyin. Toplu gönderim servislerinde 5'e kadar çıkabilirsiniz.</value></data>
+  <data name="Info_Settings_ErrorThreshold_What" xml:space="preserve"><value>Gönderimlerin yüzde kaçı hata verirse gönderimin kendiliğinden duracağı. Bir şeyler ters gittiğinde yüzlerce hatalı gönderim yapıp itibarınızı zedelemenizi engelleyen bir sigortadır.</value></data>
+  <data name="Info_Settings_ErrorThreshold_How" xml:space="preserve"><value>Varsayılan %5 uygundur.</value></data>
+  <data name="Info_Settings_DomainLimits_What" xml:space="preserve"><value>Alıcının e-posta sağlayıcısına göre dakikada en fazla kaç e-posta gönderileceği. Gmail, Outlook gibi sağlayıcılar kısa sürede çok e-posta gelince kapıyı kapatabilir.</value></data>
+  <data name="Info_Settings_DomainLimits_How" xml:space="preserve"><value>Varsayılanlara dokunmayın; sorun yaşarsanız düşürün.</value></data>
+  <data name="Info_Settings_WarmupPlan_What" xml:space="preserve"><value>Isınma planı: Yeni bir hesaptan ilk gün 5.000 e-posta göndermek spam alarmı çaldırır. Plan, günlük sınırı her gün kademeli olarak artırır; 'kaçıncı gün: en fazla kaç e-posta' şeklinde yazılır.</value></data>
+  <data name="Info_Settings_WarmupPlan_How" xml:space="preserve"><value>Her satıra 'gün: sınır' yazın. Örnek:
+1: 50
+4: 100
+8: 250
+Emin değilseniz 'Varsayılana dön'e basın.</value></data>
+  <data name="Info_Settings_MaxAttachment_What" xml:space="preserve"><value>Bir şablona eklenebilecek dosyaların toplam boyut sınırı (MB). Büyük ekler e-postanın spam'e düşmesine ya da reddedilmesine yol açar.</value></data>
+  <data name="Info_Settings_MaxAttachment_How" xml:space="preserve"><value>10 MB çoğu durum için uygundur. 20 MB'ı geçmeyin; birçok sağlayıcı daha büyük e-postaları kabul etmez.</value></data>
+  <data name="Info_Settings_MaxImage_What" xml:space="preserve"><value>E-postaya eklenen her bir resmin en büyük boyutu (KB). Büyük resimler e-postayı ağırlaştırır.</value></data>
+  <data name="Info_Settings_MaxImage_How" xml:space="preserve"><value>2048 KB (2 MB) uygundur. Resimleriniz büyükse bir resim programıyla küçültün.</value></data>
+  <data name="Info_Settings_GoogleClientId_What" xml:space="preserve"><value>Gmail'e 'Tarayıcı ile giriş' yapabilmek için Google'ın size verdiği uygulama kimliği. Google'a 'bu uygulama benim' demenin yoludur.</value></data>
+  <data name="Info_Settings_GoogleClientId_How" xml:space="preserve"><value>console.cloud.google.com → Google Auth Platform → Clients → 'Desktop app' türünde bir istemci oluşturun. Çıkan 'Client ID' değerini (…apps.googleusercontent.com ile biter) kopyalayıp buraya yapıştırın. Uygulama şifresi kullanıyorsanız boş bırakabilirsiniz.</value></data>
+  <data name="Info_Settings_GoogleClientSecret_What" xml:space="preserve"><value>Client ID ile birlikte verilen ikinci değer.</value></data>
+  <data name="Info_Settings_GoogleClientSecret_How" xml:space="preserve"><value>İstemciyi oluşturduğunuzda çıkan pencerede 'Client secret' yazan değer (GOCSPX- ile başlar). Pencere kapandıysa Clients sayfasından istemciyi açıp yeni bir secret ekleyin.</value></data>
+  <data name="Info_Settings_MicrosoftClientId_What" xml:space="preserve"><value>Outlook / Microsoft 365 hesabına 'Tarayıcı ile giriş' yapabilmek için Microsoft'tan alınan uygulama kimliği.</value></data>
+  <data name="Info_Settings_MicrosoftClientId_How" xml:space="preserve"><value>portal.azure.com → Microsoft Entra ID → App registrations → New registration. Oluşan sayfadaki 'Application (client) ID' değerini yapıştırın. Outlook kullanmıyorsanız boş bırakın.</value></data>
+  <data name="Info_TemplateEdit_Name_What" xml:space="preserve"><value>Şablonun sadece sizin göreceğiniz adı; şablon listesinde ve kampanya sihirbazında görünür.</value></data>
+  <data name="Info_TemplateEdit_Name_How" xml:space="preserve"><value>Örnek: 'Ekim kampanyası' veya 'Hoş geldin e-postası'.</value></data>
+  <data name="Info_TemplateEdit_Subject_What" xml:space="preserve"><value>Alıcının gelen kutusunda göreceği e-posta başlığı (konu). E-postanın açılıp açılmayacağını en çok bu satır belirler.</value></data>
+  <data name="Info_TemplateEdit_Subject_How" xml:space="preserve"><value>Kısa ve net yazın; BÜYÜK HARF ve !!! kullanmayın. İsterseniz kişiselleştirebilirsiniz. Örnek: {{ ad }}, Ekim fırsatları sizi bekliyor</value></data>
+  <data name="Info_Wizard_CampaignName_What" xml:space="preserve"><value>Bu gönderime vereceğiniz ad. Sadece sizin raporlarınızda görünür; alıcılar görmez.</value></data>
+  <data name="Info_Wizard_CampaignName_How" xml:space="preserve"><value>Örnek: 'Ekim bülteni - müşteriler'.</value></data>
+  <data name="Info_Wizard_Template_What" xml:space="preserve"><value>E-postanın içeriği için kullanılacak hazır tasarım.</value></data>
+  <data name="Info_Wizard_Template_How" xml:space="preserve"><value>Listeden seçin. Yeni bir tasarım için önce Şablonlar ekranında şablon oluşturun.</value></data>
+  <data name="Info_Common_ShowAdvanced_What" xml:space="preserve"><value>Teknik ayarları gösterir veya gizler. Çoğu kullanıcının bu ayarlara hiç dokunması gerekmez.</value></data>
+  <data name="Info_Common_ShowAdvanced_How" xml:space="preserve"><value>Sadece bir sorunu çözmeniz ya da bir servisin verdiği özel ayarları girmeniz gerekiyorsa açın.</value></data>
+  <data name="Info_Import_CheckMx_What" xml:space="preserve"><value>Her adresin alan adının (örneğin @firma.com) gerçekten e-posta alabildiğini internetten kontrol eder. Yazım hatalı alan adlarını (gmial.com gibi) yakalar.</value></data>
+  <data name="Info_Import_CheckMx_How" xml:space="preserve"><value>Açık bırakmanız önerilir. Çok büyük listelerde içe aktarma biraz uzar.</value></data>
+  <data name="Info_Import_Consent_What" xml:space="preserve"><value>Bu kişilerin size e-posta göndermeniz için izin verdiğini onaylarsınız. İzinsiz toplu e-posta hem yasal sorun (KVKK, İYS) çıkarır hem de hesabınızın kapanmasına yol açar.</value></data>
+  <data name="Info_Import_Consent_How" xml:space="preserve"><value>Satın alınmış, internetten toplanmış veya izin vermemiş kişilerin listesini kullanmayın.</value></data>
+  <data name="Info_ProfileEdit_DkimSign_What" xml:space="preserve"><value>E-postaların bu bilgisayarda, sizin özel anahtarınızla imzalanmasını sağlar. Sadece kendi e-posta sunucusunu yöneten ileri seviye kullanıcılar içindir.</value></data>
+  <data name="Info_ProfileEdit_DkimSign_How" xml:space="preserve"><value>Gmail, Outlook veya bir toplu gönderim servisi kullanıyorsanız KAPALI bırakın; imzayı onlar zaten atıyor.</value></data>
+  <data name="Info_ProfileEdit_ImapEnable_What" xml:space="preserve"><value>Uygulama gelen kutunuzu belirli aralıklarla tarar ve 'teslim edilemedi' bildirimleriyle 'abonelikten çıkmak istiyorum' e-postalarını bulur. Bu kişileri listeden otomatik çıkarır, böylece onlara bir daha e-posta gitmez.</value></data>
+  <data name="Info_ProfileEdit_ImapEnable_How" xml:space="preserve"><value>Açmanız önerilir. Uygulama sadece bu tür bildirimleri okur ve işaretler, diğer e-postalarınıza dokunmaz.</value></data>
+  <data name="Info_ProfileEdit_UseAppPassword_What" xml:space="preserve"><value>Gmail/Outlook'a tarayıcıdan giriş yapmak yerine kullanıcı adı ve 'uygulama şifresi' ile bağlanmanızı sağlar.</value></data>
+  <data name="Info_ProfileEdit_UseAppPassword_How" xml:space="preserve"><value>Tarayıcı ile giriş ayarlanmamışsa bunu işaretleyin. Gmail'de normal şifreniz çalışmaz; myaccount.google.com/apppasswords adresinden 16 haneli bir uygulama şifresi alın.</value></data>
+  <data name="Info_ProfileEdit_Warmup_What" xml:space="preserve"><value>Yeni hesaplarda günlük gönderim sınırını ilk günlerde düşük tutup her gün kademeli olarak artırır. Yeni bir arabayı ilk kilometrelerde yavaş sürmek gibidir; sağlayıcılar size güvenmeyi öğrenir.</value></data>
+  <data name="Info_ProfileEdit_Warmup_How" xml:space="preserve"><value>Açık bırakın. Aylardır düzenli toplu gönderim yapan bir hesabınız varsa kapatabilirsiniz.</value></data>
+  <data name="Info_Settings_TrackingDefault_What" xml:space="preserve"><value>E-postaya görünmez küçük bir resim ekleyerek kimin e-postayı açtığını sayar.</value></data>
+  <data name="Info_Settings_TrackingDefault_How" xml:space="preserve"><value>Kapalı bırakmanız önerilir: gizlilik açısından hassastır, bazı sağlayıcılar izleme resmini şüpheli bulur ve abonelikten çıkış sunucusu kurulmadan çalışmaz.</value></data>
+  <data name="Info_Setup_UseBrowser_What" xml:space="preserve"><value>Gmail veya Outlook hesabınıza şifre yazmadan, tarayıcıda tek tıkla giriş yapmanızı sağlar. En güvenli yöntemdir.</value></data>
+  <data name="Info_Setup_UseBrowser_How" xml:space="preserve"><value>Önce Ayarlar → 'Tarayıcı ile giriş' bölümüne istemci kimliği girilmiş olmalı. Girilmediyse bu işareti kaldırıp uygulama şifresi kullanın.</value></data>
+  <data name="Info_TemplateEdit_TextToggle_What" xml:space="preserve"><value>Her e-postanın, resim ve renk içermeyen bir 'düz yazı' sürümü de gönderilir. Bazı e-posta programları sadece bunu gösterir, spam filtreleri de bu sürümün varlığını olumlu değerlendirir.</value></data>
+  <data name="Info_TemplateEdit_TextToggle_How" xml:space="preserve"><value>Normalde işaretlemeyin; uygulama düz yazı sürümünü sizin tasarımınızdan otomatik üretir.</value></data>
+  <data name="Info_Wizard_DryRun_What" xml:space="preserve"><value>Kampanyanın bütün adımlarını çalıştırır ama hiç kimseye gerçek e-posta göndermez. Provaya benzer.</value></data>
+  <data name="Info_Wizard_DryRun_How" xml:space="preserve"><value>Uygulamayı ilk kez deniyorsanız işaretleyin. Gerçek gönderim için işaretsiz bırakın.</value></data>
+  <data name="Info_Wizard_Override_What" xml:space="preserve"><value>Alan adınızda kırmızı (ciddi) sorunlar varken bile gönderimi başlatmanıza izin verir.</value></data>
+  <data name="Info_Wizard_Override_How" xml:space="preserve"><value>Önerilmez. Önce 'Alan Adı Sağlığı' ekranındaki kırmızı maddeleri düzeltin; aksi halde e-postalarınız büyük olasılıkla spam'e düşer.</value></data>
+  <data name="Info_Wizard_TrackOpens_What" xml:space="preserve"><value>Bu kampanyada e-postayı kimin açtığını saymak için görünmez bir resim ekler.</value></data>
+  <data name="Info_Wizard_TrackOpens_How" xml:space="preserve"><value>Abonelikten çıkış sunucusu kurulu değilse işe yaramaz. Emin değilseniz kapalı bırakın.</value></data>
+  <data name="Info_Lists_SuppressionTitle_What" xml:space="preserve"><value>Bastırma listesi, 'bu adreslere asla e-posta gönderme' listesidir. Abonelikten çıkanlar, e-postası geri dönenler ve şikayet edenler buraya otomatik eklenir. Hangi listede olurlarsa olsunlar onlara e-posta gitmez.</value></data>
+  <data name="Info_Lists_SuppressionTitle_How" xml:space="preserve"><value>Birinin elle eklenmesini istiyorsanız 'Adres ekle'ye basın. Yanlışlıkla eklenen bir adresi 'Kaldır' ile çıkarabilirsiniz; bunu sadece kişi açıkça tekrar izin verdiyse yapın.</value></data>
+  <data name="Info_ProfileEdit_DkimTitle_What" xml:space="preserve"><value>DKIM, e-postalarınıza eklenen dijital bir mühürdür. Alıcı sunucular bu mühre bakarak e-postanın yolda değiştirilmediğini ve gerçekten sizin alan adınızdan geldiğini anlar. Mühür yoksa e-postalar spam'e düşer.</value></data>
+  <data name="Info_ProfileEdit_DkimTitle_How" xml:space="preserve"><value>Gmail/Outlook kullanıyorsanız bir şey yapmanıza gerek yok. Kendi alan adınızla bir servis kullanıyorsanız servisin verdiği DNS kayıtlarını alan adınızın DNS paneline ekleyin ve 'Alan Adı Sağlığı' ekranından kontrol edin.</value></data>
+  <data name="Info_ProfileEdit_ImapTitle_What" xml:space="preserve"><value>Gönderdiğiniz e-postalardan bazıları geri döner (adres yok, kutu dolu) ya da alıcılar 'beni listeden çıkar' der. Bu bildirimler sizin gelen kutunuza gelir. Uygulama IMAP ile kutunuzu okuyarak bunları bulur ve ilgili kişileri otomatik olarak listeden çıkarır.</value></data>
+  <data name="Info_ProfileEdit_ImapTitle_How" xml:space="preserve"><value>Gmail için ayarlar hazırdır: imap.gmail.com, port 993. Sadece kutuyu işaretleyip 'IMAP bağlantısını test et'e basın.</value></data>
+  <data name="Info_ProfileEdit_LimitsTitle_What" xml:space="preserve"><value>Bu hesaptan ne kadar hızlı ve ne kadar çok e-posta gönderileceğini belirleyen güvenlik sınırları. Aşırı hızlı gönderim hesabınızın kilitlenmesine ya da e-postalarınızın spam'e düşmesine yol açar.</value></data>
+  <data name="Info_ProfileEdit_LimitsTitle_How" xml:space="preserve"><value>Varsayılanlar güvenlidir; bir servisin size verdiği kotayı biliyorsanız ona göre ayarlayın.</value></data>
+  <data name="Info_ProfileEdit_ServerTitle_What" xml:space="preserve"><value>E-postaların teslim edileceği sunucunun adresi ve bağlantı ayarları. Sağlayıcıyı seçince otomatik dolar.</value></data>
+  <data name="Info_ProfileEdit_ServerTitle_How" xml:space="preserve"><value>Bağlantı hatası almadıkça değiştirmeyin.</value></data>
+  <data name="Info_ProfileEdit_SignInTitle_What" xml:space="preserve"><value>Uygulamanın e-posta hesabınız adına gönderim yapabilmesi için hesaba nasıl giriş yapacağını belirler.</value></data>
+  <data name="Info_ProfileEdit_SignInTitle_How" xml:space="preserve"><value>Gmail/Outlook'ta en kolay yol 'Tarayıcı ile giriş yap' düğmesidir. Olmazsa uygulama şifresi seçeneğini kullanın.</value></data>
+  <data name="Info_Reports_HistoryTitle_What" xml:space="preserve"><value>Belirli bir kişiye hangi kampanyalarda e-posta gittiğini ve ne olduğunu (gönderildi, geri döndü, abonelikten çıktı) gösterir. 'Bu kişiye neden e-posta gitti/gitmedi?' sorusunu yanıtlar.</value></data>
+  <data name="Info_Reports_HistoryTitle_How" xml:space="preserve"><value>Kişinin e-posta adresini yazıp 'Ara'ya basın.</value></data>
+  <data name="Info_Settings_DataSection_What" xml:space="preserve"><value>Uygulamanın tüm verileri (listeler, şablonlar, raporlar) bilgisayarınızda bu klasörde durur. Buradan yedek alabilir, yedekten dönebilir ya da sorun yaşadığınızda destek paketi hazırlayabilirsiniz.</value></data>
+  <data name="Info_Settings_DataSection_How" xml:space="preserve"><value>Haftada bir 'Yedek al'a basıp dosyayı başka bir yere (bulut, USB bellek) kopyalamanız önerilir.</value></data>
+  <data name="Info_Settings_FeedbackSection_What" xml:space="preserve"><value>Toplu e-postalarda 'tek tıkla abonelikten çık' özelliği için isteğe bağlı bir sunucu ayarı. Kurmazsanız abonelikten çıkış e-posta ile yapılır ve yine çalışır.</value></data>
+  <data name="Info_Settings_FeedbackSection_How" xml:space="preserve"><value>Bir sunucunuz yoksa bu bölümü boş bırakın.</value></data>
+  <data name="Info_Settings_OAuthSection_What" xml:space="preserve"><value>Gmail veya Outlook'a şifre yazmadan tarayıcıyla giriş yapabilmek için gereken kimlik bilgileri. Bunları bir kez girersiniz, sonra her profilde 'Tarayıcı ile giriş yap' düğmesi çalışır.</value></data>
+  <data name="Info_Settings_OAuthSection_How" xml:space="preserve"><value>Google için: console.cloud.google.com adresinde bir proje açıp 'Desktop app' türünde OAuth istemcisi oluşturun, çıkan iki değeri buraya yapıştırın ve Kaydet'e basın. Adım adım anlatım README'nin 16.7 bölümündedir.</value></data>
+  <data name="Info_Settings_PrivacySection_What" xml:space="preserve"><value>KVKK/GDPR gereği bir kişi 'hakkımda ne veri tutuyorsunuz?' veya 'verilerimi silin' dediğinde bu bölümü kullanırsınız.</value></data>
+  <data name="Info_Settings_PrivacySection_How" xml:space="preserve"><value>Kişinin e-posta adresini yazın; verilerini dosyaya almak için 'Verilerini dışa aktar', tamamen silmek için 'Kişiyi sil'e basın.</value></data>
+  <data name="Info_Settings_SendingSection_What" xml:space="preserve"><value>Gönderim hızını ve güvenlik sınırlarını belirleyen ileri seviye ayarlar.</value></data>
+  <data name="Info_Settings_SendingSection_How" xml:space="preserve"><value>Emin değilseniz dokunmayın; varsayılanlar spam'e düşmemeniz için özenle seçildi.</value></data>
+  <data name="Info_TemplateEdit_Attachments_What" xml:space="preserve"><value>E-postayla birlikte gönderilecek dosyalar (PDF, Excel vb.). Her alıcı bu dosyaların bir kopyasını alır.</value></data>
+  <data name="Info_TemplateEdit_Attachments_How" xml:space="preserve"><value>Dosyayı yukarıdaki kesikli alana sürükleyin ya da 'Dosya ekle'ye basın. Mümkünse büyük dosyaları Google Drive gibi bir yere yükleyip e-postada link verin; ekler spam riskini artırır.</value></data>
+  <data name="Info_TemplateEdit_Html_What" xml:space="preserve"><value>E-postanızın içeriği. Buradaki kod, alıcının göreceği renkli ve düzenli e-postaya dönüşür; sağ taraftaki önizlemede sonucu anında görürsünüz.</value></data>
+  <data name="Info_TemplateEdit_Html_How" xml:space="preserve"><value>Yazıları değiştirmek için sadece etiketlerin (&lt; &gt; arası) dışındaki metinleri düzenleyin. {{ ad }} gibi alanlar her alıcıda o kişinin bilgisiyle değişir. Resim eklemek için resmi aşağıdaki alana sürükleyin.</value></data>
+  <data name="Info_TemplateEdit_LintTitle_What" xml:space="preserve"><value>Uygulama e-postanızı spam filtrelerinin gözüyle inceler ve riskli şeyleri listeler (büyük harf, !!!, link kısaltıcılar gibi).</value></data>
+  <data name="Info_TemplateEdit_LintTitle_How" xml:space="preserve"><value>Kırmızı maddeler gönderimi engeller, mutlaka düzeltin. Turuncular uyarıdır. Mavi maddeler sadece bilgi içindir.</value></data>
+  <data name="Info_TemplateEdit_Preview_What" xml:space="preserve"><value>E-postanın alıcıda nasıl görüneceği. Örnek kişi olarak 'Ayşe Yılmaz' kullanılır.</value></data>
+  <data name="Info_TemplateEdit_Preview_How" xml:space="preserve"><value>'Masaüstü' ve 'Mobil' düğmeleriyle bilgisayarda ve telefonda nasıl göründüğünü karşılaştırın.</value></data>
+  <data name="Info_Wizard_ContentCheck_What" xml:space="preserve"><value>E-posta içeriğinizin spam filtrelerine takılabilecek noktaları.</value></data>
+  <data name="Info_Wizard_ContentCheck_How" xml:space="preserve"><value>Kırmızı madde varsa Şablonlar ekranına dönüp düzeltin.</value></data>
+  <data name="Info_Wizard_Mode_What" xml:space="preserve"><value>E-postaların nasıl gönderileceği. 'Sıralı' modda e-postalar tek tek, aralarında birkaç saniye beklenerek gider; en güvenli yöntemdir. 'Toplu' modda birkaç bağlantıyla aynı anda gider, daha hızlıdır.</value></data>
+  <data name="Info_Wizard_Mode_How" xml:space="preserve"><value>Yeni bir hesap veya küçük bir liste (birkaç yüz kişi) için 'Sıralı'yı seçin. İki modda da her alıcıya ayrı bir e-posta gider; alıcılar birbirini görmez.</value></data>
+  <data name="Info_Wizard_TestTitle_What" xml:space="preserve"><value>Gerçek listeye göndermeden önce e-postayı kendinize gönderip kontrol etmenizi sağlar. Konunun başına [TEST] eklenir.</value></data>
+  <data name="Info_Wizard_TestTitle_How" xml:space="preserve"><value>Farklı sağlayıcılardan (Gmail, Outlook, Yandex) kendi adreslerinizi virgülle yazıp 'Test gönder'e basın. Sonra her kutuda e-postanın gelen kutusuna mı, spam'e mi düştüğüne bakın.</value></data>
+  <data name="Info_Wizard_Volume_What" xml:space="preserve"><value>Bu kampanyada kaç kişiye e-posta gideceği ve günlük sınırlarınızla bunun kaç gün süreceği.</value></data>
+  <data name="Info_Wizard_Volume_How" xml:space="preserve"><value>Liste günlük sınırdan büyükse gönderim ertesi günlere otomatik yayılır, bir şey yapmanız gerekmez.</value></data>
+  <data name="Info_Wizard_When_What" xml:space="preserve"><value>Gönderimin hemen mi yoksa ileri bir tarihte mi başlayacağı.</value></data>
+  <data name="Info_Wizard_When_How" xml:space="preserve"><value>İleri tarih seçerseniz o saatte uygulamanın ve bilgisayarın açık olması gerekir.</value></data>
+  <data name="Info_Import_ResultTitle_What" xml:space="preserve"><value>İçe aktarmanın özeti: kaç kişi eklendi, hangileri neden atlandı.</value></data>
+  <data name="Info_Import_ResultTitle_How" xml:space="preserve"><value>'Hatalı yazılmış' ve 'E-posta alamayan alan adı' sayıları yüksekse listenizin kaynağını kontrol edin.</value></data>
+  <data name="Info_Profiles_New_What" xml:space="preserve"><value>E-posta göndereceğiniz yeni bir hesap ekler.</value></data>
+  <data name="Info_Profiles_New_How" xml:space="preserve"><value>Açılan ekranda sağlayıcınızı seçin, bilgilerinizi girin, 'Bağlantıyı test et'e ve sonra 'Kaydet'e basın.</value></data>
+  <data name="Info_Profiles_Test_What" xml:space="preserve"><value>Girdiğiniz bilgilerle e-posta sunucusuna gerçekten bağlanıp bağlanılamadığını dener. Hiç kimseye e-posta göndermez.</value></data>
+  <data name="Info_Profiles_Test_How" xml:space="preserve"><value>Kaydetmeden önce mutlaka deneyin. Hata alırsanız mesajda ne yapmanız gerektiği yazar.</value></data>
+  <data name="Info_Profiles_Common_Edit_What" xml:space="preserve"><value>Bu gönderen hesabının ayarlarını açar.</value></data>
+  <data name="Info_Profiles_Common_Edit_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Profiles_Common_Delete_What" xml:space="preserve"><value>Bu gönderen hesabını uygulamadan siler. Kayıtlı şifresi de bilgisayardan silinir. Geçmiş raporlar kalır.</value></data>
+  <data name="Info_Profiles_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_SignIn_What" xml:space="preserve"><value>Tarayıcıyı açar; hesabınızı seçip izin verirsiniz ve uygulama şifrenizi hiç görmeden e-posta gönderebilir hale gelir.</value></data>
+  <data name="Info_ProfileEdit_SignIn_How" xml:space="preserve"><value>Tarayıcıda 'Google bu uygulamayı doğrulamadı' uyarısı çıkarsa 'Devam'a basın; uygulama kendi projeniz olduğu için güvenlidir. Sonra uygulamaya geri dönün.</value></data>
+  <data name="Info_ProfileEdit_TestImap_What" xml:space="preserve"><value>Gelen kutunuza bağlanılıp bağlanılamadığını dener. Hiçbir e-postayı değiştirmez.</value></data>
+  <data name="Info_ProfileEdit_TestImap_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ProfileEdit_Common_Save_What" xml:space="preserve"><value>Profil ayarlarını kaydeder.</value></data>
+  <data name="Info_ProfileEdit_Common_Save_How" xml:space="preserve"><value>Kaydetmeden önce 'Bağlantıyı test et' ile bilgilerin doğru olduğundan emin olun.</value></data>
+  <data name="Info_ProfileEdit_Common_Browse_What" xml:space="preserve"><value>DKIM özel anahtar dosyasını bilgisayarınızdan seçmenizi sağlar.</value></data>
+  <data name="Info_ProfileEdit_Common_Browse_How" xml:space="preserve"><value>Sadece kendi sunucusunu yöneten ileri seviye kullanıcılar içindir.</value></data>
+  <data name="Info_Menu_NewCampaign_What" xml:space="preserve"><value>Yeni bir toplu e-posta gönderimi başlatır. Adım adım sihirbaz sizi yönlendirir: hangi hesaptan, hangi listeye, hangi şablonla, ne zaman.</value></data>
+  <data name="Info_Menu_NewCampaign_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Menu_ImportList_What" xml:space="preserve"><value>Excel veya CSV dosyasındaki kişileri uygulamaya aktarır.</value></data>
+  <data name="Info_Menu_ImportList_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Dashboard_SetupButton_What" xml:space="preserve"><value>Uygulamayı ilk kez kullanıyorsanız sizi adım adım kurulumdan geçirir: hesap ekleme, alan adı kontrolü, deneme e-postası.</value></data>
+  <data name="Info_Dashboard_SetupButton_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Dashboard_Common_Open_What" xml:space="preserve"><value>Bu kampanyanın ayrıntılarını ve ilerlemesini gösterir.</value></data>
+  <data name="Info_Dashboard_Common_Open_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Health_Recheck_What" xml:space="preserve"><value>Alan adınızın e-posta güvenlik ayarlarını (SPF, DKIM, DMARC) internetten yeniden kontrol eder.</value></data>
+  <data name="Info_Health_Recheck_How" xml:space="preserve"><value>DNS'te bir değişiklik yaptıysanız birkaç dakika bekleyip tekrar basın; değişikliklerin yayılması bazen birkaç saat sürer.</value></data>
+  <data name="Info_DomainHealth_Common_Copy_What" xml:space="preserve"><value>Önerilen DNS kaydını kopyalar; alan adınızı satın aldığınız firmanın (GoDaddy, İsimtescil, Cloudflare vb.) DNS paneline yapıştırırsınız.</value></data>
+  <data name="Info_DomainHealth_Common_Copy_How" xml:space="preserve"><value>Panelde 'Yeni kayıt ekle' deyin, türü TXT seçin ve kopyaladığınız değeri yapıştırın. Emin değilseniz bu ekranın görüntüsünü alan adınızı yöneten kişiye gönderin.</value></data>
+  <data name="Info_Lists_Import_What" xml:space="preserve"><value>Yeni bir kişi listesi yükler (Excel, CSV ya da yapıştırma).</value></data>
+  <data name="Info_Lists_Import_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Common_Open_What" xml:space="preserve"><value>Listedeki kişileri görmenizi, aramanızı ve durumlarını kontrol etmenizi sağlar.</value></data>
+  <data name="Info_Lists_Common_Open_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_AddMore_What" xml:space="preserve"><value>Bu mevcut listeye yeni kişiler ekler. Listede zaten olan adresler tekrar eklenmez.</value></data>
+  <data name="Info_Lists_AddMore_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Common_Delete_What" xml:space="preserve"><value>Listeyi ve içindeki kişileri siler. Bastırma listesindeki (asla gönderme) adresler korunur.</value></data>
+  <data name="Info_Lists_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Common_Search_What" xml:space="preserve"><value>Bastırma listesinde bir adres arar.</value></data>
+  <data name="Info_Lists_Common_Search_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_AddSuppression_What" xml:space="preserve"><value>Bir adresi elle 'asla e-posta gönderme' listesine ekler. Örneğin biri telefonla 'bana bir daha e-posta atmayın' dediyse kullanın.</value></data>
+  <data name="Info_Lists_AddSuppression_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Lists_Unsuppress_What" xml:space="preserve"><value>Adresi bastırma listesinden çıkarır; bu kişiye tekrar e-posta gidebilir.</value></data>
+  <data name="Info_Lists_Unsuppress_How" xml:space="preserve"><value>Sadece kişi size açıkça tekrar izin verdiyse kullanın.</value></data>
+  <data name="Info_Import_PickFile_What" xml:space="preserve"><value>Bilgisayarınızdan bir Excel (.xlsx) ya da CSV dosyası seçmenizi sağlar.</value></data>
+  <data name="Info_Import_PickFile_How" xml:space="preserve"><value>Dosyanın ilk satırı sütun başlıkları (email, ad, soyad...) olmalı. Dosyayı Listeler ekranındaki kutuya sürükleyerek de ekleyebilirsiniz.</value></data>
+  <data name="Info_Import_PreviewPasted_What" xml:space="preserve"><value>Yapıştırdığınız metni okuyup sütunları gösterir. Henüz hiçbir şey kaydedilmez.</value></data>
+  <data name="Info_Import_PreviewPasted_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_Run_What" xml:space="preserve"><value>Kişileri listeye kaydeder. Bu sırada hatalı, tekrar eden ve tek kullanımlık adresler otomatik temizlenir.</value></data>
+  <data name="Info_Import_Run_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Import_GoToLists_What" xml:space="preserve"><value>Listeler ekranına döner.</value></data>
+  <data name="Info_Import_GoToLists_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_Common_Search_What" xml:space="preserve"><value>Listede ad veya e-posta ile arar; yanındaki menüden duruma göre (aktif, çıktı...) filtreleyebilirsiniz.</value></data>
+  <data name="Info_ListDetail_Common_Search_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_History_What" xml:space="preserve"><value>Bu kişiye hangi e-postaların gittiğini ve ne olduğunu gösterir.</value></data>
+  <data name="Info_ListDetail_History_How" xml:space="preserve"><value></value></data>
+  <data name="Info_ListDetail_LoadMore_What" xml:space="preserve"><value>Listenin devamını yükler. Büyük listeler hız için parça parça gösterilir.</value></data>
+  <data name="Info_ListDetail_LoadMore_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_New_What" xml:space="preserve"><value>Boş bir e-posta tasarımı oluşturur.</value></data>
+  <data name="Info_Templates_New_How" xml:space="preserve"><value>Sıfırdan başlamak yerine hazır şablonlardan birini 'Kopyala' ile çoğaltıp düzenlemek daha kolaydır.</value></data>
+  <data name="Info_Templates_Common_Edit_What" xml:space="preserve"><value>Şablonun içeriğini, konusunu, resimlerini ve eklerini düzenler.</value></data>
+  <data name="Info_Templates_Common_Edit_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_Duplicate_What" xml:space="preserve"><value>Şablonun bir kopyasını oluşturur (ekleriyle birlikte). Orijinali bozmadan üzerinde değişiklik yapabilirsiniz.</value></data>
+  <data name="Info_Templates_Duplicate_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Templates_Common_Delete_What" xml:space="preserve"><value>Şablonu siler. Bu şablonla daha önce gönderilmiş kampanyaların raporları kalır.</value></data>
+  <data name="Info_Templates_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_AddImage_What" xml:space="preserve"><value>Bilgisayarınızdan bir resim seçip e-postanın içine, imlecin bulunduğu yere ekler.</value></data>
+  <data name="Info_TemplateEdit_AddImage_How" xml:space="preserve"><value>PNG veya JPG kullanın. Logo, ürün fotoğrafı, afiş gibi. Resmi aşağıdaki kesikli alana sürükleyerek de ekleyebilirsiniz.</value></data>
+  <data name="Info_TemplateEdit_AddFile_What" xml:space="preserve"><value>E-postaya ek dosya (PDF, Excel vb.) ekler.</value></data>
+  <data name="Info_TemplateEdit_AddFile_How" xml:space="preserve"><value>Birden fazla dosya seçebilirsiniz. Toplam boyut sınırı Ayarlar'dan değiştirilebilir.</value></data>
+  <data name="Info_TemplateEdit_Remove_What" xml:space="preserve"><value>Bu eki şablondan çıkarır.</value></data>
+  <data name="Info_TemplateEdit_Remove_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Refresh_What" xml:space="preserve"><value>Önizlemeyi hemen yeniler. Normalde siz yazdıkça kendiliğinden yenilenir.</value></data>
+  <data name="Info_TemplateEdit_Refresh_How" xml:space="preserve"><value></value></data>
+  <data name="Info_TemplateEdit_Common_Save_What" xml:space="preserve"><value>Şablonu kaydedip şablon listesine döner.</value></data>
+  <data name="Info_TemplateEdit_Common_Save_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Common_Open_What" xml:space="preserve"><value>Kampanyanın canlı ilerlemesini ve sonuçlarını gösterir.</value></data>
+  <data name="Info_Campaigns_Common_Open_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Pause_What" xml:space="preserve"><value>Gönderimi geçici olarak durdurur. Kaldığı yerden devam ettirebilirsiniz; kimseye iki kez gönderilmez.</value></data>
+  <data name="Info_Campaigns_Pause_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Resume_What" xml:space="preserve"><value>Duraklatılmış ya da güvenlik nedeniyle durdurulmuş gönderimi kaldığı yerden devam ettirir.</value></data>
+  <data name="Info_Campaigns_Resume_How" xml:space="preserve"><value>Güvenlik nedeniyle durduysa önce ekrandaki nedeni okuyup sorunu giderin.</value></data>
+  <data name="Info_Campaigns_Cancel_What" xml:space="preserve"><value>Gönderimi kalıcı olarak iptal eder. Henüz gönderilmemiş kişilere e-posta gitmez.</value></data>
+  <data name="Info_Campaigns_Cancel_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Campaigns_Common_Delete_What" xml:space="preserve"><value>Kampanyayı ve raporunu siler.</value></data>
+  <data name="Info_Campaigns_Common_Delete_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Detail_OpenReports_What" xml:space="preserve"><value>Tüm kampanyaların sonuçlarını karşılaştırmalı olarak gösteren Raporlar ekranını açar.</value></data>
+  <data name="Info_Detail_OpenReports_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_SendTest_What" xml:space="preserve"><value>E-postayı yazdığınız test adreslerine, konusunun başında [TEST] olacak şekilde gönderir.</value></data>
+  <data name="Info_Wizard_SendTest_How" xml:space="preserve"><value>Gerçek gönderimden önce mutlaka yapın ve e-postanın gelen kutusuna mı, spam'e mi düştüğüne bakın.</value></data>
+  <data name="Info_Wizard_OpenHealth_What" xml:space="preserve"><value>Alan adınızın güvenlik ayarlarını ayrıntılı gösteren ekranı açar.</value></data>
+  <data name="Info_Wizard_OpenHealth_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Wizard_Launch_What" xml:space="preserve"><value>Gönderimi başlatır. Başladıktan sonra pencereyi küçültebilirsiniz; uygulamayı kapatırsanız tekrar açtığınızda kaldığı yerden devam eder.</value></data>
+  <data name="Info_Wizard_Launch_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Common_Back_What" xml:space="preserve"><value>Bir önceki adıma döner. Girdiğiniz bilgiler kaybolmaz.</value></data>
+  <data name="Info_Common_Back_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Common_Next_What" xml:space="preserve"><value>Sonraki adıma geçer. Bu adımda eksik ya da hatalı bir şey varsa uyarı çıkar.</value></data>
+  <data name="Info_Common_Next_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Setup_Finish_What" xml:space="preserve"><value>Kurulumu tamamlar ve ana ekrana geçer.</value></data>
+  <data name="Info_Setup_Finish_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Setup_Skip_What" xml:space="preserve"><value>Kurulumu şimdilik atlar. Daha sonra Ayarlar → 'Kurulum sihirbazını yeniden başlat' ile dönebilirsiniz.</value></data>
+  <data name="Info_Setup_Skip_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Common_Refresh_What" xml:space="preserve"><value>Rapor sayılarını yeniler.</value></data>
+  <data name="Info_Reports_Common_Refresh_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Csv_What" xml:space="preserve"><value>Kampanyadaki her kişinin gönderim sonucunu Excel'de açılabilen bir CSV dosyasına kaydeder.</value></data>
+  <data name="Info_Reports_Csv_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Excel_What" xml:space="preserve"><value>Kampanyadaki her kişinin gönderim sonucunu Excel (.xlsx) dosyasına kaydeder.</value></data>
+  <data name="Info_Reports_Excel_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Reports_Common_Search_What" xml:space="preserve"><value>Yazdığınız e-posta adresine ait tüm gönderim geçmişini gösterir.</value></data>
+  <data name="Info_Reports_Common_Search_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Common_Save_What" xml:space="preserve"><value>Bu ekrandaki tüm ayarları kaydeder.</value></data>
+  <data name="Info_Settings_Common_Save_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_RestartSetup_What" xml:space="preserve"><value>Kurulum sihirbazını baştan açar. Mevcut hesaplarınız ve listeleriniz silinmez.</value></data>
+  <data name="Info_Settings_RestartSetup_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_CopySecret_What" xml:space="preserve"><value>Abonelikten çıkış sunucusu için gereken gizli anahtarı panoya kopyalar.</value></data>
+  <data name="Info_Settings_CopySecret_How" xml:space="preserve"><value>Sadece abonelikten çıkış sunucusu kuruyorsanız gerekir.</value></data>
+  <data name="Info_Settings_CheckNow_What" xml:space="preserve"><value>Gelen kutunuzu hemen tarayıp geri dönen e-postaları ve abonelikten çıkma isteklerini işler. Normalde bu otomatik olarak 15 dakikada bir yapılır.</value></data>
+  <data name="Info_Settings_CheckNow_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_ExportData_What" xml:space="preserve"><value>Yazdığınız kişiye ait tüm verileri (liste üyelikleri, gönderim geçmişi) bir dosyaya kaydeder. KVKK kapsamında 'verilerimi istiyorum' taleplerinde kullanılır.</value></data>
+  <data name="Info_Settings_ExportData_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Forget_What" xml:space="preserve"><value>Yazdığınız kişinin tüm verilerini kalıcı olarak siler (unutulma hakkı). Adres, bir daha e-posta gitmemesi için bastırma listesinde kalır.</value></data>
+  <data name="Info_Settings_Forget_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_Backup_What" xml:space="preserve"><value>Tüm verilerinizin (listeler, şablonlar, resimler, raporlar) yedeğini tek bir dosyaya alır. Şifreler güvenlik için yedeğe dahil edilmez.</value></data>
+  <data name="Info_Settings_Backup_How" xml:space="preserve"><value>Yedek dosyasını bilgisayarınızın dışında bir yerde (bulut, USB bellek) saklayın.</value></data>
+  <data name="Info_Settings_Restore_What" xml:space="preserve"><value>Daha önce aldığınız bir yedeği geri yükler. Uygulama yeniden açıldığında yedekteki veriler geçerli olur.</value></data>
+  <data name="Info_Settings_Restore_How" xml:space="preserve"><value>Mevcut verilerin yerine geçer; önce güncel bir yedek almanız önerilir.</value></data>
+  <data name="Info_Settings_OpenLogs_What" xml:space="preserve"><value>Uygulamanın kayıt (log) dosyalarının bulunduğu klasörü açar. Bir sorunun nedenini bulmak için kullanılır.</value></data>
+  <data name="Info_Settings_OpenLogs_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_OpenData_What" xml:space="preserve"><value>Uygulamanın tüm verilerinin bulunduğu klasörü açar.</value></data>
+  <data name="Info_Settings_OpenData_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_SupportBundle_What" xml:space="preserve"><value>Sorun yaşadığınızda destek ekibine gönderebileceğiniz bir dosya hazırlar. İçinde şifre, alıcı adresi veya e-posta içeriği bulunmaz.</value></data>
+  <data name="Info_Settings_SupportBundle_How" xml:space="preserve"><value></value></data>
+  <data name="Info_Settings_WarmupReset_What" xml:space="preserve"><value>Isınma planını önerilen varsayılan değerlere döndürür.</value></data>
+  <data name="Info_Settings_WarmupReset_How" xml:space="preserve"><value></value></data>
+</root>

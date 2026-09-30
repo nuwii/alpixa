@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<views:AlpixaPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:views="clr-namespace:Alpixa.App.Views"
+                     xmlns:vm="clr-namespace:Alpixa.App.ViewModels"
+                     xmlns:loc="clr-namespace:Alpixa.App.Services"
+                     xmlns:fx="clr-namespace:Alpixa.App.Controls"
+                     xmlns:m="clr-namespace:Alpixa.Core.Models;assembly=Alpixa.Core"
+                     x:Class="Alpixa.App.Views.DomainHealthPage"
+                     x:DataType="vm:DomainHealthViewModel"
+                     Title="{loc:Tr Nav_DomainHealth}">
+    <ScrollView>
+        <VerticalStackLayout Padding="36,28,36,36" Spacing="18" MaximumWidthRequest="1140">
+            <fx:PageHeader Title="{loc:Tr Nav_DomainHealth}" Subtitle="{loc:Tr Health_Intro}" Icon="Shield" />
+
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12" VerticalOptions="Center">
+                <Picker ItemsSource="{Binding Profiles}" SelectedItem="{Binding SelectedProfile}" Title="{loc:Tr Health_PickProfile}"
+                        ItemDisplayBinding="{Binding FromAddress, x:DataType=m:SenderProfile}" />
+                <fx:WithInfo Info="Health_Recheck" Grid.Column="1">
+                    <Button Text="{loc:Tr Health_Recheck}" Command="{Binding CheckCommand}" />
+                </fx:WithInfo>
+            </Grid>
+
+            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="10" IsVisible="{Binding IsBusy}">
+                <ActivityIndicator IsRunning="{Binding IsBusy}" />
+                <Label Grid.Column="1" Text="{Binding BusyText}" VerticalOptions="Center" />
+            </Grid>
+
+            <Border Style="{StaticResource HeroCard}" IsVisible="{Binding HasReport}">
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="14">
+                    <Ellipse WidthRequest="18" HeightRequest="18" Fill="{Binding Overall, Converter={StaticResource StatusColor}}" VerticalOptions="Center" />
+                    <Label Grid.Column="1" Text="{Binding Summary}" FontAttributes="Bold" FontSize="16" VerticalOptions="Center" />
+                </Grid>
+            </Border>
+
+            <VerticalStackLayout BindableLayout.ItemsSource="{Binding Checks}" Spacing="10">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="m:DomainCheck">
+                        <Border Style="{StaticResource Card}">
+                            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="14">
+                                <Ellipse WidthRequest="14" HeightRequest="14" Fill="{Binding Status, Converter={StaticResource StatusColor}}" VerticalOptions="Start" Margin="0,4,0,0" />
+                                <VerticalStackLayout Grid.Column="1" Spacing="4">
+                                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                                        <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="15" VerticalOptions="Center" />
+                                        <Border Grid.Column="1" Style="{StaticResource Chip}" BackgroundColor="{AppThemeBinding Light=#F1F5F9, Dark=#1B2030}">
+                                            <Label Text="{Binding Status, Converter={StaticResource EnumText}}" Style="{StaticResource ChipLabel}" TextColor="{Binding Status, Converter={StaticResource StatusColor}}" />
+                                        </Border>
+                                    </Grid>
+                                    <Label Text="{Binding Message}" />
+                                    <Label Text="{Binding FixHint}" Style="{StaticResource MutedLabel}" IsVisible="{Binding FixHint, Converter={StaticResource NotNull}}" />
+                                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10" IsVisible="{Binding SuggestedRecord, Converter={StaticResource NotNull}}" Margin="0,6,0,0">
+                                        <Border Style="{StaticResource InsetBox}">
+                                            <Label Text="{Binding SuggestedRecord}" Style="{StaticResource MonoLabel}" />
+                                        </Border>
+                                        <fx:WithInfo Info="DomainHealth_Common_Copy" Grid.Column="1" VerticalOptions="Center">
+                                            <Button Text="{loc:Tr Common_Copy}" Style="{StaticResource SecondaryButton}"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:DomainHealthViewModel}}, Path=CopyCommand, x:DataType=vm:DomainHealthViewModel}" CommandParameter="{Binding .}" />
+                                        </fx:WithInfo>
+                                    </Grid>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+
+            <Label Text="{loc:Tr Health_Footer}" Style="{StaticResource MutedLabel}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</views:AlpixaPage>
